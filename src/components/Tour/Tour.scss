@@ -8,9 +8,18 @@
     width: 90%;
     margin: auto;
 
+    @include sm {
+      width: 99%;
+      text-align: left;
+    }
+
     h1 {
       font-size: 30px;
       color: $primary-color;
+
+      @include sm {
+        font-size: 25px;
+      }
     }
     p {
       margin-top: 10px;
@@ -24,19 +33,19 @@
     grid-template-columns: repeat(3, 1fr);
     margin-top: 30px;
     gap: 40px;
+    padding: 0px 10px;
 
     @include xl {
       grid-template-columns: repeat(3, 1fr);
     }
 
     @include lg {
-      grid-template-columns: repeat(3, 1fr);
-      gap: 10px;
+      grid-template-columns: repeat(2, 1fr);
     }
 
     @include md {
-      grid-template-columns: repeat(2, 1fr);
-      gap: 15px;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 10px;
     }
 
     @include sm {
@@ -46,10 +55,10 @@
 
     .tour-card {
       width: 340px;
+      height: 400px;
       padding: 40px 20px;
       border-radius: 10px;
       display: flex;
-
       flex-direction: column;
       justify-content: space-between;
       border: 1px solid #dddddd;
@@ -62,22 +71,12 @@
       cursor: pointer;
 
       @include lg {
-        margin: 0 auto;
-        padding: 20px 10px;
-        width: 250px;
-        height: 280px;
       }
 
       @include md {
-        width: 100%;
-        padding: 20px;
-        height: 280px;
       }
 
       @include sm {
-        margin: 0 auto;
-        width: 270px;
-        height: 220px;
       }
 
       .tour-card-top {
@@ -129,7 +128,6 @@
         border: 1px solid #989898;
         background: $primary-color;
         box-shadow: 0px 35px 40px 10px rgba(16, 106, 181, 0.25);
-
 
         .tour-card-top {
           .tour-card-icon {

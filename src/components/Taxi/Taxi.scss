@@ -6,9 +6,18 @@
     width: 90%;
     margin: auto;
 
+    @include sm {
+      width: 99%;
+      text-align: left;
+    }
+
     h1 {
       font-size: 30px;
       color: $primary-color;
+
+      @include sm {
+        font-size: 25px;
+      }
     }
     p {
       margin-top: 10px;
@@ -19,6 +28,7 @@
 
   .taxi-cards {
     margin-top: 40px;
+    padding: 0px 10px;
 
     .taxi-card {
       max-width: 400px;
@@ -91,6 +101,14 @@
   transform: translateY(410%);
   z-index: 111;
   font-size: 30px;
+
+  @include xl{
+    transform: translateY(430%);
+  }
+
+  @include lg{
+    transform: translateY(410%);
+  }
 }
 
 .swiper-button-next:after {
@@ -108,11 +126,35 @@
 .swiper-button-next,
 .swiper-rtl .swiper-button-prev {
   left: 58% !important;
+
+  
+  @include xl{
+    left: 68% !important;
+  }
+  @include lg{
+    left: 68% !important;
+  }
+
+  @include  md {
+    display: none;
+  }
 }
 
 .swiper-button-prev,
 .swiper-rtl .swiper-button-next {
   left: 40% !important;
+
+  @include xl{
+    left: 30% !important;
+  }
+
+  @include lg{
+    left: 30% !important;
+  }
+
+  @include  md {
+    display: none;
+  }
 }
 
 // .swiper-button-next {

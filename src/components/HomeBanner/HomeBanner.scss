@@ -1,8 +1,14 @@
+@use "../../styles/responsive.scss" as *;
+
 .homeBanner {
   padding-top: 90px;
+
+  @include xl {
+   padding-top: 0;
+  }
   .homeBanner-imgs {
     width: 100%;
-    
+
     .service_slide {
       img {
         width: 100%;
@@ -10,6 +16,11 @@
         object-fit: cover;
         filter: brightness(0.9);
         object-position: 50% -10%;
+
+        @include xl {
+          object-position: 50% 50%;
+          height: 100vh;
+        }
       }
     }
   }

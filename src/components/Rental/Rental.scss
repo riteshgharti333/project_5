@@ -5,10 +5,19 @@
         text-align: center;
         width: 90%;
         margin: auto;
+
+        @include sm {
+          width: 99%;
+          text-align: left;
+        }
     
         h1 {
           font-size: 30px;
           color: $primary-color;
+          
+          @include sm {
+            font-size: 25px;
+          }
         }
         p {
           margin-top: 10px;
@@ -19,6 +28,14 @@
 
     .ourTaxi-cards {
       padding: 0px 20px;
+
+      @include lg{
+        margin-top: 20px;
+      }
+
+      @include md{
+        margin-top: 0;
+      }
       .ourTaxi-card {
         img {
           width: 100%;

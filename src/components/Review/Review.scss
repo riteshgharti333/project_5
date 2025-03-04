@@ -6,8 +6,17 @@
     max-width: 1200px;
     margin: auto;
     display: flex;
-    padding: 60px 0px;
+    padding: 60px 10px;
     gap: 90px;
+
+    @include lg{
+      flex-direction: column;
+      padding: 60px;
+    }
+
+    @include sm{
+      padding: 40px 10px;
+    }
 
     .review-left {
       flex: 4;

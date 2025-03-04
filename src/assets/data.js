@@ -4,6 +4,19 @@ import banner2 from "../assets/images/bannerimg/banner2.jpeg";
 import banner3 from "../assets/images/bannerimg/banner3.jpeg";
 import banner4 from "../assets/images/bannerimg/banner4.jpeg";
 
+//sm banner
+import smBanner1 from "../assets/images/smBanner/smbanner1.jpeg";
+import smBanner2 from "../assets/images/smBanner/smbanner2.jpeg";
+import smBanner3 from "../assets/images/smBanner/smbanner3.jpeg";
+import smBanner4 from "../assets/images/smBanner/smbanner4.jpeg";
+import smBanner5 from "../assets/images/smBanner/smbanner5.jpeg";
+import smBanner6 from "../assets/images/smBanner/smbanner6.jpeg";
+import smBanner7 from "../assets/images/smBanner/smbanner7.jpeg";
+import smBanner8 from "../assets/images/smBanner/smbanner8.jpeg";
+import smBanner9 from "../assets/images/smBanner/smbanner9.jpeg";
+import smBanner10 from "../assets/images/smBanner/smbanner10.jpeg";
+
+
 // services icon
 import { RiCustomerService2Line } from "react-icons/ri";
 import { MdOutlineAccessTime } from "react-icons/md";
@@ -26,6 +39,32 @@ import popular_img from "../assets/images/popular.jpg";
 import service_img1 from "../assets/images/servicesimg/service1.jpeg";
 import service_img2 from "../assets/images/servicesimg/service2.jpeg";
 import service_img3 from "../assets/images/servicesimg/service3.jpeg";
+
+
+export const smBanner = [
+  {
+    img: smBanner1
+  },
+  {
+    img: smBanner2
+  }, {
+    img: smBanner3
+  }, {
+    img: smBanner4
+  }, {
+    img: smBanner5
+  }, {
+    img: smBanner6
+  }, {
+    img: smBanner7
+  }, {
+    img: smBanner8
+  }, {
+    img: smBanner9
+  }, {
+    img: smBanner10
+  }
+]
 
 
 export const services = [

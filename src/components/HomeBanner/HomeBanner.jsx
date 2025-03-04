@@ -1,13 +1,26 @@
+import { useState, useEffect } from "react";
 import "./HomeBanner.scss";
-
 import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectFade, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/effect-fade";
-import { banners } from "../../assets/data";
-
+import { banners, smBanner } from "../../assets/data";
 
 const HomeBanner = () => {
+  const [isMobile, setIsMobile] = useState(
+    window.matchMedia("(max-width: 1199px)").matches
+  );
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia("(max-width: 1199px)");
+
+    const handleMediaChange = (e) => setIsMobile(e.matches);
+
+    mediaQuery.addEventListener("change", handleMediaChange);
+
+    return () => mediaQuery.removeEventListener("change", handleMediaChange);
+  }, []);
+
   return (
     <div className="homeBanner">
       <div className="homeBanner-imgs">
@@ -20,9 +33,9 @@ const HomeBanner = () => {
           pagination={{ clickable: true }}
           className="services-slide"
         >
-          {banners.map((item, index) => (
+          {(isMobile ? smBanner : banners).map((item, index) => (
             <SwiperSlide key={index} className="service_slide">
-              <img src={item.img} alt="services" />
+              <img src={item.img} alt="services" loading="lazy" />
             </SwiperSlide>
           ))}
         </Swiper>

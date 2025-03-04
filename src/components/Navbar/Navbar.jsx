@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { IoCall } from "react-icons/io5";
 import { IoIosArrowDown } from "react-icons/io";
 import { useState } from "react";
+import MobileMenu from "../MobileMenu/MobileMenu";
 
 const Navbar = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
@@ -48,10 +49,17 @@ const Navbar = () => {
         </ul>
       </div>
       <div className="navbar-right">
+        <div className="navbar-right-button">
         <button>
           <IoCall className="call-icon" />
           +91 123456789
         </button>
+
+        </div>
+        
+        <div className="mobile-menu">
+          <MobileMenu />
+        </div>
       </div>
     </div>
   );

@@ -13,10 +13,12 @@
   .navbar-left {
     img {
       width: 100px;
-     
     }
   }
   .navbar-center {
+    @include md {
+      display: none;
+    }
     ul {
       display: flex;
       list-style: none;
@@ -96,6 +98,16 @@
   }
 
   .navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+    .navbar-right-button{
+      @include sm{
+        display: none;
+      }
+    }
+
     button {
       background: $primary-color;
       border: none;
@@ -110,6 +122,11 @@
       font-weight: 500;
       border-radius: 5px;
       box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+    
+      
+
+     
 
       &:hover {
         border: 1px solid $primary-color;

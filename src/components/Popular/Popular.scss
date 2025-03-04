@@ -21,6 +21,29 @@
     grid-template-columns: repeat(4, 1fr);
     gap: 30px;
     margin-top: 40px;
+    padding: 0px 10px;
+
+    @include xl{
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+    }
+
+    @include lg{
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+    }
+
+    @include md {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+      
+    }
+
+    @include md {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 10px;
+      
+    }
 
     .popular-card {
       position: relative;
