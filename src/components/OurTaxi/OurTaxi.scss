@@ -1,0 +1,30 @@
+@use "../../styles/responsive.scss" as *;
+
+.ourTaxi {
+  .ourTaxi-top {
+    text-align: center;
+    width: 90%;
+    margin: auto;
+
+    h1 {
+      font-size: 30px;
+      color: $primary-color;
+    }
+    p {
+      margin-top: 10px;
+      line-height: 1.3;
+      font-weight: 500;
+    }
+  }
+
+  .ourTaxi-cards {
+    padding: 0px 20px;
+    .ourTaxi-card {
+      img {
+        width: 100%;
+        height: 400px;
+        object-fit: contain;
+      }
+    }
+  }
+}

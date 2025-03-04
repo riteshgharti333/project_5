@@ -1,0 +1,16 @@
+.homeBanner {
+  padding-top: 90px;
+  .homeBanner-imgs {
+    width: 100%;
+    
+    .service_slide {
+      img {
+        width: 100%;
+        height: 90vh;
+        object-fit: cover;
+        filter: brightness(0.9);
+        object-position: 50% -10%;
+      }
+    }
+  }
+}

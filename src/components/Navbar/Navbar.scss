@@ -1,0 +1,127 @@
+@use "../../styles/responsive.scss" as *;
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 20px;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+  background: #fff;
+  .navbar-left {
+    img {
+      width: 100px;
+     
+    }
+  }
+  .navbar-center {
+    ul {
+      display: flex;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      gap: 20px;
+      align-items: center;
+      li {
+        span {
+          font-size: 18px;
+          font-weight: 500;
+          color: $primary-color;
+          padding: 30px 0px;
+        }
+
+        transition: all 0.3s ease-in-out;
+        &:hover {
+          transform: translateY(-2px);
+        }
+      }
+    }
+    .services {
+      position: relative;
+
+      .services-link {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        top: 80%;
+        left: 0;
+        width: 200px;
+        background: #fff;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.5s ease, visibility 0.3s ease;
+        border: 1px solid $primary-color;
+        border-radius: 5px;
+      }
+
+      &:hover .services-link {
+        opacity: 1;
+        visibility: visible;
+      }
+
+      li {
+        span {
+          display: flex;
+          align-items: center;
+          cursor: pointer;
+
+          .down-icon {
+            margin-left: 5px;
+            transition: transform 0.5s ease;
+          }
+        }
+
+        &:hover {
+          transform: translateY(-0);
+        }
+      }
+
+      &:hover .down-icon {
+        transform: rotate(180deg);
+      }
+
+      .service-link {
+        padding: 10px;
+        transition: all 0.3s ease-in-out;
+        font-weight: 500;
+
+        &:hover {
+          color: $primary-color;
+          background: rgba(128, 128, 128, 0.151);
+        }
+      }
+    }
+  }
+
+  .navbar-right {
+    button {
+      background: $primary-color;
+      border: none;
+      padding: 15px 17px;
+      font-size: 16px;
+      color: #fff;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      border: 1px solid transparent;
+      transition: all 0.3s ease-in-out;
+      font-weight: 500;
+      border-radius: 5px;
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+      &:hover {
+        border: 1px solid $primary-color;
+        color: #000;
+        background: #fff;
+        transform: translateY(-2px);
+      }
+
+      .call-icon {
+        margin-right: 10px;
+        font-size: 16px;
+      }
+    }
+  }
+}
