@@ -11,6 +11,9 @@ const Homepage = () => {
   return (
     <div className="homepage">
       <HomeBanner />
+      <div className="homepage-content">
+        <div className="child">
+
       <Tour />
       <OurTaxi />
       <Rental />
@@ -18,7 +21,11 @@ const Homepage = () => {
       <Taxi />
 
       <Popular />
+      </div>
+      </div>
       <Review />
+    
+
     </div>
   );
 };

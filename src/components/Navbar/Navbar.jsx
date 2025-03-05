@@ -17,6 +17,11 @@ const Navbar = () => {
 
       <div className="navbar-center">
         <ul>
+          <Link to={"/"}>
+            <li>
+              <span>Home</span>
+            </li>
+          </Link>
           <Link className="services">
             <li
               onMouseEnter={() => setDropdownOpen(true)}
@@ -36,7 +41,7 @@ const Navbar = () => {
               )}
             </li>
           </Link>
-          <Link>
+          <Link to={"/about-us"}>
             <li>
               <span>About Us</span>
             </li>
@@ -50,13 +55,12 @@ const Navbar = () => {
       </div>
       <div className="navbar-right">
         <div className="navbar-right-button">
-        <button>
-          <IoCall className="call-icon" />
-          +91 123456789
-        </button>
-
+          <button>
+            <IoCall className="call-icon" />
+            +91 123456789
+          </button>
         </div>
-        
+
         <div className="mobile-menu">
           <MobileMenu />
         </div>

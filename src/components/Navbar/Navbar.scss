@@ -26,6 +26,7 @@
       padding: 0;
       gap: 20px;
       align-items: center;
+      
       li {
         span {
           font-size: 18px;
@@ -56,11 +57,13 @@
         transition: opacity 0.5s ease, visibility 0.3s ease;
         border: 1px solid $primary-color;
         border-radius: 5px;
+        padding: 10px 20px;
       }
 
       &:hover .services-link {
         opacity: 1;
         visibility: visible;
+      
       }
 
       li {
@@ -92,6 +95,7 @@
         &:hover {
           color: $primary-color;
           background: rgba(128, 128, 128, 0.151);
+          border-radius: 5px;
         }
       }
     }

@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import "./Taxi.scss";
 import { taxies } from "../../assets/data";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -7,6 +8,22 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 
 const Taxi = () => {
+  useEffect(() => {
+    const checkSwiper = setInterval(() => {
+      if (document.querySelector(".taxi-swiper-prev") && document.querySelector(".taxi-swiper-next")) {
+        clearInterval(checkSwiper);
+        new Swiper(".taxi-swiper", {
+          modules: [Navigation, Pagination],
+          navigation: {
+            nextEl: ".taxi-swiper-next",
+            prevEl: ".taxi-swiper-prev",
+          },
+          loop: true,
+        });
+      }
+    }, 100);
+  }, []);
+
   return (
     <div className="taxi">
       <div className="taxi-top">
@@ -24,11 +41,13 @@ const Taxi = () => {
           spaceBetween={10}
           slidesPerView={1}
           loop={true}
-          navigation
+          navigation={{
+            nextEl: ".taxi-swiper-next",
+            prevEl: ".taxi-swiper-prev",
+          }}
           speed={1000}
           pagination={{ clickable: true }}
           breakpoints={{
-                 
             480: { slidesPerView: 1 },
             768: { slidesPerView: 2 },
             1024: { slidesPerView: 3 },
@@ -40,18 +59,15 @@ const Taxi = () => {
             <SwiperSlide key={index}>
               <div className="taxi-card">
                 <img src={item.img} alt={item.vehicle} />
-
                 <div className="taxi-card-desc">
                   <div className="taxi-card-item">
                     <p>Taxi Vehicle Type</p>
                     <p>{item.vehicle}</p>
                   </div>
-
                   <div className="taxi-card-item">
                     <p>Rate Per KM</p>
                     <p>Rs. {item.rate} Per KM</p>
                   </div>
-
                   <div className="taxi-card-item">
                     <p>Driver Charges</p>
                     <p>Rs. {item.charges} per Day</p>
@@ -61,6 +77,10 @@ const Taxi = () => {
             </SwiperSlide>
           ))}
         </Swiper>
+
+        {/* Custom Navigation Arrows */}
+        <div className="taxi-swiper-prev">❮</div>
+        <div className="taxi-swiper-next">❯</div>
       </div>
     </div>
   );

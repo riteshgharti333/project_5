@@ -1,6 +1,9 @@
 @use "../../styles/responsive.scss" as *;
 
 .taxi {
+  position: relative;
+  // max-width: 1200px;
+  // margin: 0 auto;
   .taxi-top {
     text-align: center;
     width: 90%;
@@ -93,76 +96,51 @@
   }
 }
 
-.swiper-button-prev,
-.swiper-button-next {
-  color: $primary-color;
-  position: absolute;
-  // top: 101%;
-  transform: translateY(410%);
-  z-index: 111;
-  font-size: 30px;
-
-  @include xl{
-    transform: translateY(430%);
-  }
-
-  @include lg{
-    transform: translateY(410%);
-  }
-}
-
-.swiper-button-next:after {
-  font-size: 20px !important;
-}
-
-.swiper-button-prev:after {
-  font-size: 20px !important;
-}
-
-// .swiper-button-prev {
-//   left: 50%;
-// }
-
-.swiper-button-next,
-.swiper-rtl .swiper-button-prev {
-  left: 58% !important;
-
-  
-  @include xl{
-    left: 68% !important;
-  }
-  @include lg{
-    left: 68% !important;
-  }
-
-  @include  md {
-    display: none;
-  }
-}
-
-.swiper-button-prev,
-.swiper-rtl .swiper-button-next {
-  left: 40% !important;
-
-  @include xl{
-    left: 30% !important;
-  }
-
-  @include lg{
-    left: 30% !important;
-  }
-
-  @include  md {
-    display: none;
-  }
-}
-
-// .swiper-button-next {
-//   right: -40px; /* Adjust right position */
-// }
-
 .taxi-swiper {
+  overflow: hidden;
   .swiper-slide {
     padding-bottom: 50px;
   }
+}
+
+.taxi-swiper-prev,
+.taxi-swiper-next {
+  position: absolute;
+  bottom: -35px;
+  transform: translateY(-50%);
+  z-index: 1000;
+  cursor: pointer;
+  font-size: 24px;
+  color: $primary-color;
+  padding: 10px;
+  border-radius: 50%;
+  transition: background 0.3s ease;
+}
+
+.taxi-swiper-prev {
+  left: 38%;
+
+  @include lg {
+    left: 35%;
+  }
+
+  @include md {
+    display: none;
+  }
+}
+
+.taxi-swiper-next {
+  right: 38%;
+
+  @include lg {
+    right: 35%;
+  }
+
+  @include md {
+    display: none;
+  }
+}
+
+.taxi-swiper-prev:hover,
+.taxi-swiper-next:hover {
 }
