@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import "./Taxi.scss";
 import { taxies } from "../../assets/data";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination } from "swiper/modules";
+import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -10,7 +10,10 @@ import "swiper/css/pagination";
 const Taxi = () => {
   useEffect(() => {
     const checkSwiper = setInterval(() => {
-      if (document.querySelector(".taxi-swiper-prev") && document.querySelector(".taxi-swiper-next")) {
+      if (
+        document.querySelector(".taxi-swiper-prev") &&
+        document.querySelector(".taxi-swiper-next")
+      ) {
         clearInterval(checkSwiper);
         new Swiper(".taxi-swiper", {
           modules: [Navigation, Pagination],
@@ -37,7 +40,7 @@ const Taxi = () => {
 
       <div className="taxi-cards">
         <Swiper
-          modules={[Navigation, Pagination]}
+          modules={[Navigation, Pagination, Autoplay]}
           spaceBetween={10}
           slidesPerView={1}
           loop={true}
@@ -46,6 +49,10 @@ const Taxi = () => {
             prevEl: ".taxi-swiper-prev",
           }}
           speed={1000}
+          autoplay={{
+            delay: 3000,
+            disableOnInteraction: false,
+          }}
           pagination={{ clickable: true }}
           breakpoints={{
             480: { slidesPerView: 1 },

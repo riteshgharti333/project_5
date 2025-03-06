@@ -1,0 +1,33 @@
+@use "../../styles/responsive.scss" as *;
+
+.service-card {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    img {
+      width: 100%;
+      height: 150px;
+      object-fit: contain;
+      flex: 1;
+    }
+
+    .service-card-items {
+      margin-top: 10px;
+      flex: 9;
+      .service-card-item {
+        display: flex;
+        justify-content: space-between;
+        p {
+          padding: 10px;
+          font-weight: 500;
+          color: $p-color;
+
+          &:last-child {
+            color: $text-color;
+          }
+        }
+      }
+    }
+  }

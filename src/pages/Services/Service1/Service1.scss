@@ -1,0 +1,40 @@
+@use "../../../styles/responsive.scss" as *;
+
+.service {
+  .service-container {
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 50px;
+    .service-container-top {
+      display: flex;
+      justify-content: space-between;
+      gap: 30px;
+
+     .service-content{
+      flex: 6;
+     }
+      .service-sidebar {
+        flex: 4;
+      }
+    }
+  }
+
+  .service-content-bottom {
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+    h1 {
+      color: $text-color;
+      margin-bottom: 20px;
+      font-size: 30px;
+    }
+    .service-cards {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+
+    }
+  }
+}

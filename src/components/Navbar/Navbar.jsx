@@ -28,12 +28,14 @@ const Navbar = () => {
               onMouseLeave={() => setDropdownOpen(false)}
             >
               <span>
-                Services <IoIosArrowDown className="down-icon" />
+                India Taxi Service <IoIosArrowDown className="down-icon" />
               </span>
 
               {dropdownOpen && (
                 <div className="services-link">
-                  <Link className="service-link">Car Rental</Link>
+                  <Link to={"/delhi-taxi-service"} className="service-link">
+                    Delhi Taxi
+                  </Link>
                   <Link className="service-link">Hotels Rooms</Link>
                   <Link className="service-link">Tour Guide</Link>
                   <Link className="service-link">Bike Rent</Link>

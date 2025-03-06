@@ -222,3 +222,26 @@ export const popularDestinations = [
   { img: popular_img, title: "Himalya Tour Package" },
   { img: popular_img, title: "Himalya Tour Package" },
 ];
+
+
+export const tourImgs = [
+  {
+    img : "https://www.ghumindiaghum.com/images/State/jgS3NH4y9R/udaipur2.jpg",
+  },
+
+  {
+    img : "https://www.ghumindiaghum.com/images/State/jgS3NH4y9R/udaipur2.jpg",
+  }, {
+    img : "https://www.ghumindiaghum.com/images/State/jgS3NH4y9R/udaipur2.jpg",
+  }, {
+    img : "https://www.ghumindiaghum.com/images/State/jgS3NH4y9R/udaipur2.jpg",
+  }, {
+    img : "https://www.ghumindiaghum.com/images/State/jgS3NH4y9R/udaipur2.jpg",
+  }, {
+    img : "https://www.ghumindiaghum.com/images/State/jgS3NH4y9R/udaipur2.jpg",
+  }, {
+    img : "https://www.ghumindiaghum.com/images/State/jgS3NH4y9R/udaipur2.jpg",
+  }, {
+    img : "https://www.ghumindiaghum.com/images/State/jgS3NH4y9R/udaipur2.jpg",
+  },
+]
