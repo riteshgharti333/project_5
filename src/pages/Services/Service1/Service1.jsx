@@ -27,7 +27,7 @@ const Service1 = () => {
 
       <div className="service-content-bottom">
         {delhiTaxiFare.map((item, index) => (
-          <k>
+          <>
             <h1>{item.taxiFare}</h1>
 
             <div className="service-cards">
@@ -35,7 +35,7 @@ const Service1 = () => {
                 <ServiceCard item={item} key={index} />
               ))}
             </div>
-          </k>
+          </>
         ))}
       </div>
     </div>
