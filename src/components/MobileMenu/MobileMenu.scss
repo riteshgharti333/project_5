@@ -5,6 +5,7 @@
   width: 30px;
   height: 25px;
   right: 10px;
+  z-index: 100;
 
   @media (min-width: 769px) {
     display: none;
