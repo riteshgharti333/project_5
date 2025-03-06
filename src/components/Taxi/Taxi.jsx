@@ -10,14 +10,13 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 const Taxi = () => {
- 
-    useEffect(() => {
-      AOS.init({
-        duration: 1000, 
-        easing: "ease-in-out",
-        once: true, 
-      });
-    }, []);
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      easing: "ease-in-out",
+      once: true,
+    });
+  }, []);
 
   return (
     <div className="taxi">
@@ -55,7 +54,7 @@ const Taxi = () => {
           className="taxi-swiper"
         >
           {taxies.map((item, index) => (
-            <SwiperSlide key={index} data-aos="fade-up">
+            <SwiperSlide key={index}>
               <div className="taxi-card">
                 <img src={item.img} alt={item.vehicle} />
                 <div className="taxi-card-desc">

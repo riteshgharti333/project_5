@@ -1,50 +1,53 @@
 @use "../../styles/responsive.scss" as *;
 
-.rental{
+.rental {
   // max-width: 1200px;
   // margin: 0 auto;
-    .rental-top{
-        text-align: center;
-        width: 90%;
-        margin: auto;
+  .rental-top {
+    text-align: center;
+    width: 90%;
+    margin: auto;
 
-        @include sm {
-          width: 99%;
-          text-align: left;
-        }
-    
-        h1 {
-          font-size: 30px;
-          color: $text-color;
-          
-          @include sm {
-            font-size: 25px;
-          }
-        }
-        p {
-          margin-top: 10px;
-          line-height: 1.3;
-          font-weight: 500;
-          color: $p-color;
-        }
+    @include sm {
+      width: 99%;
+      text-align: left;
     }
 
-    .ourTaxi-cards {
-      padding: 0px 20px;
+    h1 {
+      font-size: 30px;
+      color: $text-color;
 
-      @include lg{
-        margin-top: 20px;
-      }
-
-      @include md{
-        margin-top: 0;
-      }
-      .ourTaxi-card {
-        img {
-          width: 100%;
-          height: 400px;
-          object-fit: contain;
-        }
+      @include sm {
+        font-size: 25px;
       }
     }
+    p {
+      margin-top: 10px;
+      line-height: 1.3;
+      font-weight: 500;
+      color: $p-color;
+    }
+  }
+
+  .ourTaxi-cards {
+    padding: 0px 20px;
+
+    @include lg {
+      margin-top: 20px;
+    }
+
+    @include md {
+      margin-top: 0;
+    }
+    @include sm {
+      padding: 0px;
+    }
+    .ourTaxi-card {
+      img {
+        width: 100%;
+        height: 400px;
+        object-fit: contain;
+      }
+    }
+  }
 }

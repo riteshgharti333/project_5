@@ -70,8 +70,6 @@ const Rental = () => {
           {ourTaxies.map((item, index) => (
             <SwiperSlide
               key={index}
-              data-aos="fade-up"
-              data-aos-delay={index * 200}
             >
               <div className="ourTaxi-card">
                 <img src={item.img} alt="" />

@@ -38,6 +38,10 @@
     @include md {
       margin-top: 0;
     }
+
+    @include sm {
+      padding: 0px;
+    }
     .ourTaxi-card {
       img {
         width: 100%;
