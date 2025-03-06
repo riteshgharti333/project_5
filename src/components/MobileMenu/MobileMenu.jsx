@@ -42,17 +42,6 @@ const MobileMenu = () => {
         <Link className="menu-item" to="/" onClick={handleCloseMenu}>
           Home
         </Link>
-        <Link className="menu-item" to="/blogs" onClick={handleCloseMenu}>
-          Blogs
-        </Link>
-        <Link className="menu-item" to="/about-us" onClick={handleCloseMenu}>
-          About Us
-        </Link>
-
-        <Link className="menu-item" to="/contact-us" onClick={handleCloseMenu}>
-          Contact Us
-        </Link>
-
         <div className="services-dropdown">
           <div
             className="services-dropdown-item"
@@ -98,6 +87,18 @@ const MobileMenu = () => {
             </motion.div>
           </div>
         </div>
+        <Link className="menu-item" to="/blogs" onClick={handleCloseMenu}>
+          Blogs
+        </Link>
+        <Link className="menu-item" to="/about-us" onClick={handleCloseMenu}>
+          About Us
+        </Link>
+
+        <Link className="menu-item" to="/contact-us" onClick={handleCloseMenu}>
+          Contact Us
+        </Link>
+
+        
       </Menu>
     </div>
   );

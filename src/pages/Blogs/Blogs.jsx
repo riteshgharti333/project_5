@@ -53,9 +53,11 @@ const Blogs = () => {
                 Voluptatem aspernatur praesentium minima placeat perspiciatis
                 dignissimos tempore rerum beatae, quis adipisci.
               </p>
-              <span className="reading">
-                Continue Reading <FaArrowRightLong className="right-arrow" />
-              </span>
+              <Link to={"/blog1"}>
+                <span className="reading">
+                  Continue Reading <FaArrowRightLong className="right-arrow" />
+                </span>
+              </Link>
 
               <div className="tags">
                 <p>
@@ -98,13 +100,14 @@ const Blogs = () => {
                 Voluptatem aspernatur praesentium minima placeat perspiciatis
                 dignissimos tempore rerum beatae, quis adipisci.
               </p>
-              <span className="reading">
-                Continue Reading <FaArrowRightLong className="right-arrow" />
-              </span>
+              <Link to={"/blog1"}>
+                <span className="reading">
+                  Continue Reading <FaArrowRightLong className="right-arrow" />
+                </span>
+              </Link>
 
               <div className="tags">
                 <p>
-                  {" "}
                   <IoPricetagsOutline className="tag-icon" /> Kumarakom,
                   Backwaters of Alleppey, Best Time to Visit the South of India,
                   best travel agency in delhi, best travel agency in india, best
@@ -188,9 +191,11 @@ const Blogs = () => {
                 Voluptatem aspernatur praesentium minima placeat perspiciatis
                 dignissimos tempore rerum beatae, quis adipisci.
               </p>
-              <span className="reading">
-                Continue Reading <FaArrowRightLong className="right-arrow" />
-              </span>
+              <Link to={"/blog1"}>
+                <span className="reading">
+                  Continue Reading <FaArrowRightLong className="right-arrow" />
+                </span>
+              </Link>
 
               <div className="tags">
                 <p>
@@ -233,9 +238,11 @@ const Blogs = () => {
                 Voluptatem aspernatur praesentium minima placeat perspiciatis
                 dignissimos tempore rerum beatae, quis adipisci.
               </p>
-              <span className="reading">
-                Continue Reading <FaArrowRightLong className="right-arrow" />
-              </span>
+              <Link to={"/blog1"}>
+                <span className="reading">
+                  Continue Reading <FaArrowRightLong className="right-arrow" />
+                </span>
+              </Link>
 
               <div className="tags">
                 <p>
@@ -290,9 +297,11 @@ const Blogs = () => {
                 Voluptatem aspernatur praesentium minima placeat perspiciatis
                 dignissimos tempore rerum beatae, quis adipisci.
               </p>
-              <span className="reading">
-                Continue Reading <FaArrowRightLong className="right-arrow" />
-              </span>
+              <Link to={"/blog1"}>
+                <span className="reading">
+                  Continue Reading <FaArrowRightLong className="right-arrow" />
+                </span>
+              </Link>
 
               <div className="tags">
                 <p>

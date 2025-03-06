@@ -48,7 +48,7 @@
       @include md {
         column-count: 1;
         display: grid;
-        grid-template-columns: repeat(1,1fr);
+        grid-template-columns: repeat(1, 1fr);
         padding: 30px 10px;
       }
 
@@ -90,9 +90,9 @@
             display: flex;
             gap: 30px;
             color: $p-color;
-            @include sm{
-                gap: 10px;
-                font-size: 13px;
+            @include sm {
+              gap: 10px;
+              font-size: 13px;
             }
             span {
               display: flex;

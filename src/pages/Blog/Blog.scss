@@ -1,0 +1,210 @@
+@use "../../styles/responsive.scss" as *;
+
+.blog {
+  padding: 100px 0px 40px 0px;
+  height: 100%;
+  background: #f1f1f1;
+
+  .blog-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    @include lg {
+      max-width: 800px;
+    }
+    .blog-top {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 40px;
+      img {
+        width: 150px;
+      }
+      .blog-top-links {
+        ul {
+          list-style: none;
+          display: flex;
+          gap: 30px;
+          flex-wrap: wrap;
+          justify-content: center;
+
+          li {
+            text-transform: uppercase;
+            font-size: 18px;
+            font-weight: 500;
+            color: $primary-color;
+            transition: all 0.3s ease-in-out;
+
+            &:hover {
+              transform: translateY(-4px);
+            }
+          }
+        }
+      }
+    }
+
+    .blog-content {
+      display: flex;
+      background: #fff;
+      
+
+      @include lg {
+        flex-direction: column;
+      }
+
+      .blog-content-left {
+        flex: 7;
+        border-right: 1px solid #dddddd;
+        img {
+          width: 100%;
+        }
+
+        .blog-content1 {
+          padding: 20px;
+          .blog-content-tags {
+            display: flex;
+            gap: 10px;
+            font-size: 20px;
+            color: $primary-color;
+
+            @include sm {
+              font-size: 14px;
+            }
+          }
+
+          h1 {
+            color: $text-color;
+            margin-top: 10px;
+
+            @include sm {
+              font-size: 22px;
+            }
+          }
+
+          .user {
+            display: flex;
+            font-size: 18px;
+            gap: 20px;
+            color: $p-color;
+            margin: 20px 0px;
+            p {
+              display: flex;
+              align-items: center;
+              transition: all 0.3s ease-in-out;
+              font-size: 18px;
+
+              @include sm {
+                font-size: 14px;
+              }
+
+              &:hover {
+                color: $btn-bg;
+
+                .date-icon {
+                  color: $p-color;
+                }
+              }
+
+              .user-icon {
+                background: $p-color;
+                color: #fff;
+                padding: 5px;
+                font-size: 25px;
+                border-radius: 50%;
+                margin-right: 5px;
+              }
+
+              .date-icon {
+                margin-right: 5px;
+              }
+            }
+          }
+
+          p {
+            font-size: 20px;
+            color: $p-color;
+          }
+        }
+      }
+      .blog-content-sidebar {
+        flex: 3;
+        @include lg {
+          margin-top: 30px;
+        }
+      }
+    }
+
+    .from-border {
+      margin: 30px 20px;
+    }
+
+    .blog-form {
+      padding: 20px;
+      font-family: Arial, sans-serif;
+      border-radius: 8px;
+      margin-left: 20px;
+      margin-bottom: 20px;
+
+      @include lg {
+        margin: 0px 10px;
+      }
+
+      h1 {
+        font-size: 24px;
+        margin-bottom: 10px;
+        color: #333;
+      }
+
+      p {
+        font-size: 14px;
+        color: #666;
+        margin-bottom: 20px;
+      }
+
+      .required {
+        color: #ff0000;
+      }
+
+      .form-group {
+        margin-bottom: 20px;
+
+        label {
+          display: block;
+          font-size: 14px;
+          color: #333;
+          margin-bottom: 5px;
+        }
+
+        input,
+        textarea {
+          width: 100%;
+          padding: 10px;
+          font-size: 14px;
+          border: 1px solid #ddd;
+          border-radius: 4px;
+          box-sizing: border-box;
+
+          &:focus {
+            border-color: $primary-color;
+            outline: none;
+            box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+          }
+        }
+      }
+
+      .submit-btn {
+        background-color: $btn-bg;
+        color: #fff;
+        padding: 10px 20px;
+        font-size: 16px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+
+        &:hover {
+          transform: translateY(-4px);
+        }
+      }
+    }
+  }
+}
