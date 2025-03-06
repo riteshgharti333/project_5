@@ -36,7 +36,7 @@ const Popular = () => {
           className="popular-swiper"
         >
           {popularDestinations.map((item, index) => (
-            <SwiperSlide key={index} data-aos="fade-up">
+            <SwiperSlide key={index}>
               <div className="popular-card">
                 <img src={item.img} alt="" />
                 <div className="bg-overlay"></div>
