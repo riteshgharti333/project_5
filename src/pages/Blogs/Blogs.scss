@@ -1,0 +1,149 @@
+@use "../../styles/responsive.scss" as *;
+
+.blogs {
+  padding: 100px 0px 40px 0px;
+
+  background: #f1f1f1;
+
+  .blogs-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    .blogs-top {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 40px;
+      img {
+        width: 150px;
+      }
+      .blogs-top-links {
+        ul {
+          list-style: none;
+          display: flex;
+          gap: 30px;
+          flex-wrap: wrap;
+          justify-content: center;
+
+          li {
+            text-transform: uppercase;
+            font-size: 18px;
+            font-weight: 500;
+            color: $primary-color;
+            transition: all 0.3s ease-in-out;
+
+            &:hover {
+              transform: translateY(-4px);
+            }
+          }
+        }
+      }
+    }
+    .blogs-cards {
+      column-count: 2;
+      gap: 20px;
+      background: #ffff;
+      padding: 30px;
+      border-radius: 10px;
+
+      @include md {
+        column-count: 1;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        padding: 30px 10px;
+      }
+
+      .blogs-card {
+        max-width: 600px;
+        border: 1px solid #dddddd;
+        padding: 20px;
+        border-radius: 10px;
+        break-inside: avoid;
+        position: relative;
+        margin-bottom: 20px;
+
+        @include md {
+          margin: auto;
+        }
+
+        img {
+          width: 100%;
+        }
+        .blogs-card-desc {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          h1 {
+            font-size: 28px;
+            color: $text-color;
+            transition: all 0.3s ease-in-out;
+            margin-top: 10px;
+
+            @include sm {
+              font-size: 22px;
+            }
+
+            &:hover {
+              color: $btn-bg;
+            }
+          }
+          .blogs-card-date {
+            display: flex;
+            gap: 30px;
+            color: $p-color;
+            @include sm{
+                gap: 10px;
+                font-size: 13px;
+            }
+            span {
+              display: flex;
+              align-items: center;
+              cursor: pointer;
+              transition: all 0.3s ease-in-out;
+
+              &:hover {
+                color: $btn-bg;
+              }
+
+              .blog-icon {
+                margin-right: 10px;
+              }
+            }
+          }
+
+          p {
+            font-size: 18px;
+            color: $p-color;
+          }
+
+          .reading {
+            display: flex;
+            align-items: center;
+            color: #000;
+            font-size: 16px;
+            text-transform: uppercase;
+            font-weight: 500;
+            transition: all 0.3s ease-in-out;
+            cursor: pointer;
+            margin-top: 10px;
+
+            &:hover {
+              color: $btn-bg;
+            }
+            .right-arrow {
+              margin-left: 10px;
+            }
+          }
+          .tags {
+            p {
+              font-size: 16px;
+            }
+            .tag-icon {
+              color: $p-color;
+              margin-right: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

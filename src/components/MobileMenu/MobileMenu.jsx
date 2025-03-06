@@ -42,7 +42,9 @@ const MobileMenu = () => {
         <Link className="menu-item" to="/" onClick={handleCloseMenu}>
           Home
         </Link>
-
+        <Link className="menu-item" to="/blogs" onClick={handleCloseMenu}>
+          Blogs
+        </Link>
         <Link className="menu-item" to="/about-us" onClick={handleCloseMenu}>
           About Us
         </Link>

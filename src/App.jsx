@@ -13,6 +13,7 @@ import Service5 from "./pages/Services/Service5/Service5";
 import Service6 from "./pages/Services/Service6/Service6";
 import Service7 from "./pages/Services/Service7/Service7";
 import Service8 from "./pages/Services/Service8/Service8";
+import Blogs from "./pages/Blogs/Blogs";
 
 function App() {
   return (
@@ -22,6 +23,8 @@ function App() {
         <Routes>
           <Route path="/" element={<Homepage />} />
           <Route path="/about-us" element={<About />} />
+          <Route path="/blogs" element={<Blogs />} />
+
 
           {/* Services */}
 

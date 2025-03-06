@@ -42,7 +42,9 @@ const Navbar = () => {
       className={`navbar ${navbarVisible ? "navbar-visible" : "navbar-hidden"}`}
     >
       <div className="navbar-left">
-        <img src={logo} alt="" />
+        <Link to={"/"}>
+          <img src={logo} alt="" />
+        </Link>
       </div>
 
       <div className="navbar-center">
@@ -70,6 +72,11 @@ const Navbar = () => {
                   ))}
                 </div>
               )}
+            </li>
+          </Link>
+          <Link to={"/blogs"}>
+            <li>
+              <span>Blogs</span>
             </li>
           </Link>
           <Link to={"/about-us"}>
