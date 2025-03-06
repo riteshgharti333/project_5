@@ -3,7 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
-import "./serviceBanner.scss";
+import "./ServiceBanner.scss";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
 const ServiceBanner = () => {
