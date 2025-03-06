@@ -129,11 +129,11 @@
               }
 
               button {
-                background: #fff;
+                background: $btn-bg;
                 border: none;
                 padding: 15px 17px;
                 font-size: 16px;
-                color: #000;
+                color: #fff;
                 cursor: pointer;
                 display: flex;
                 align-items: center;
@@ -146,9 +146,13 @@
 
                 &:hover {
                   border: 1px solid #fff;
-                  color: #fff;
-                  background: $primary-color;
+                  color: #000;
+                  background: #fff;
                   transform: translateY(-2px);
+
+                  .call-icon {
+                    color: $btn-bg;
+                  }
                 }
 
                 .call-icon {

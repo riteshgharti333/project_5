@@ -10,6 +10,17 @@
   z-index: 999;
   width: 100%;
   background: #fff;
+  overflow: visible;
+  transition: all 0.5s ease-in-out;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  &.navbar-visible {
+    transform: translateY(0);
+  }
+
+  &.navbar-hidden {
+    transform: translateY(-100%);
+  }
+
   .navbar-left {
     img {
       width: 100px;
@@ -26,7 +37,7 @@
       padding: 0;
       gap: 20px;
       align-items: center;
-      
+
       li {
         span {
           font-size: 18px;
@@ -50,7 +61,7 @@
         flex-direction: column;
         top: 80%;
         left: 0;
-        width: 200px;
+        width: 250px;
         background: #fff;
         opacity: 0;
         visibility: hidden;
@@ -63,7 +74,6 @@
       &:hover .services-link {
         opacity: 1;
         visibility: visible;
-      
       }
 
       li {
@@ -106,14 +116,14 @@
     align-items: center;
     gap: 30px;
 
-    .navbar-right-button{
-      @include sm{
+    .navbar-right-button {
+      @include sm {
         display: none;
       }
     }
 
-    button {
-      background: $primary-color;
+    .call-btn {
+      background: $btn-bg;
       border: none;
       padding: 15px 17px;
       font-size: 16px;
@@ -127,21 +137,21 @@
       border-radius: 5px;
       box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 
-    
-      
-
-     
-
       &:hover {
-        border: 1px solid $primary-color;
+        border: 1px solid #ffd700;
         color: #000;
         background: #fff;
         transform: translateY(-2px);
+
+        .call-icon {
+          color: $btn-bg;
+        }
       }
 
       .call-icon {
         margin-right: 10px;
         font-size: 16px;
+        transition: all 0.3s ease-in-out;
       }
     }
   }

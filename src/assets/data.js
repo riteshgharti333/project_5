@@ -41,7 +41,6 @@ import service_img3 from "../assets/images/servicesimg/service3.jpeg";
 import service_img4 from "../assets/images/servicesimg/service4.jpeg";
 import service_img5 from "../assets/images/servicesimg/service5.jpeg";
 
-
 export const smBanner = [
   {
     img: smBanner1,
@@ -206,7 +205,6 @@ export const ourTaxies = [
   { img: service_img3 },
   { img: service_img4 },
   { img: service_img5 },
-
 ];
 
 export const popularDestinations = [
@@ -223,25 +221,65 @@ export const popularDestinations = [
   { img: popular_img, title: "Himalya Tour Package" },
 ];
 
-
 export const tourImgs = [
   {
-    img : "https://www.ghumindiaghum.com/images/State/jgS3NH4y9R/udaipur2.jpg",
+    img: "https://www.ghumindiaghum.com/images/State/jgS3NH4y9R/udaipur2.jpg",
   },
 
   {
-    img : "https://www.ghumindiaghum.com/images/State/jgS3NH4y9R/udaipur2.jpg",
-  }, {
-    img : "https://www.ghumindiaghum.com/images/State/jgS3NH4y9R/udaipur2.jpg",
-  }, {
-    img : "https://www.ghumindiaghum.com/images/State/jgS3NH4y9R/udaipur2.jpg",
-  }, {
-    img : "https://www.ghumindiaghum.com/images/State/jgS3NH4y9R/udaipur2.jpg",
-  }, {
-    img : "https://www.ghumindiaghum.com/images/State/jgS3NH4y9R/udaipur2.jpg",
-  }, {
-    img : "https://www.ghumindiaghum.com/images/State/jgS3NH4y9R/udaipur2.jpg",
-  }, {
-    img : "https://www.ghumindiaghum.com/images/State/jgS3NH4y9R/udaipur2.jpg",
+    img: "https://www.ghumindiaghum.com/images/State/jgS3NH4y9R/udaipur2.jpg",
   },
-]
+  {
+    img: "https://www.ghumindiaghum.com/images/State/jgS3NH4y9R/udaipur2.jpg",
+  },
+  {
+    img: "https://www.ghumindiaghum.com/images/State/jgS3NH4y9R/udaipur2.jpg",
+  },
+  {
+    img: "https://www.ghumindiaghum.com/images/State/jgS3NH4y9R/udaipur2.jpg",
+  },
+  {
+    img: "https://www.ghumindiaghum.com/images/State/jgS3NH4y9R/udaipur2.jpg",
+  },
+  {
+    img: "https://www.ghumindiaghum.com/images/State/jgS3NH4y9R/udaipur2.jpg",
+  },
+  {
+    img: "https://www.ghumindiaghum.com/images/State/jgS3NH4y9R/udaipur2.jpg",
+  },
+];
+
+export const taxiServices = [
+  {
+    name: "Delhi Taxi",
+    link: "delhi-taxi-service",
+  },
+  {
+    name: "Uttarakhand Taxi",
+    link: "uttarakhand-taxi-service",
+  },
+  {
+    name: "Himachal Taxi",
+    link: "himachal-taxi-service",
+  },
+  {
+    name: "Rajasthan Taxi",
+    link: "rajasthan-taxi-service",
+  },
+  {
+    name: "Uttar Pradesh Taxi",
+    link: "uttar-pradesh-taxi-service",
+  },
+  {
+    name: "Punjab Taxi",
+    link: "punjab-taxi-service",
+  },
+  {
+    name: "Haryana Taxi",
+    link: "haryana-taxi-service",
+  },
+  {
+    name: "Jammu & Kashmir Taxi",
+    link: "jammu-kashmir-taxi-service",
+  },
+];

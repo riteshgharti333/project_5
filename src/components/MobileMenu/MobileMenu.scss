@@ -1,3 +1,5 @@
+@use "../../styles/responsive.scss" as *;
+
 .bm-burger-button {
   position: relative;
   width: 30px;
@@ -11,10 +13,6 @@
 
 .bm-burger-bars {
   background: #000;
-}
-
-.bm-burger-bars-hover {
-  background: #a90000;
 }
 
 .bm-cross-button {
@@ -64,13 +62,32 @@
 .menu-item {
   margin-bottom: 10px;
   font-weight: 600;
-  color: #333;
+  color: $primary-color;
 }
 
-.mobile-links {
-  font-size: 16px;
-  font-weight: 500;
-  margin-left: 20px;
-  margin-bottom: 10px;
-  color: #333;
+.services-dropdown {
+  .services-dropdown-item {
+    display: flex;
+    justify-content: space-between;
+
+    span {
+      margin-bottom: 10px;
+      font-weight: 600;
+      color: $primary-color;
+    }
+
+    .menu-icon {
+      color: $primary-color;
+    }
+  }
+
+  .service-links {
+    transition: max-height 0.5s ease-in-out, opacity 0.3s ease-in-out;
+    .service-link {
+      display: flex;
+      flex-direction: column;
+      color: $p-color;
+      gap: 5px;
+    }
+  }
 }

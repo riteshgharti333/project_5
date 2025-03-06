@@ -1,10 +1,17 @@
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import { services } from "../../assets/data";
 import "./Tour.scss";
 
 const Tour = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1000, easing: "ease-in-out", once: true });
+  }, []);
+
   return (
     <div className="tour">
-      <div className="tour-top">
+      <div className="tour-top" data-aos="fade-up">
         <h1>
           Explore India with Global India Tour – Your Gateway to Unforgettable
           Journeys
@@ -24,10 +31,11 @@ const Tour = () => {
 
       <div className="tour-cards">
         {services.map((item, index) => (
-          <div className="tour-card" key={index}>
+          <div className="tour-card" key={index} data-aos="fade-right">
             <div className="tour-card-top">
               {item.icon && <item.icon className="tour-card-icon" />}
             </div>
+
             <div className="tour-card-bottom">
               <h2>{item.title}</h2>
               <div className="tour-card-bottom-desc">
@@ -37,7 +45,9 @@ const Tour = () => {
 
               <div className="tour-card-bottom-option">
                 {item.servicesOption.map((option, index) => (
-                  <span key={index}>{option}</span>
+                  <span key={index} data-aos="zoom-in">
+                    {option}
+                  </span>
                 ))}
               </div>
             </div>

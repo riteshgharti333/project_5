@@ -1,18 +1,26 @@
+import { useEffect } from "react";
 import { popularDestinations } from "../../assets/data";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "./Popular.scss";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Popular = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1000, once: true });
+  }, []);
+
   return (
     <div className="popular">
-      <div className="popular-top">
+      <div className="popular-top" data-aos="fade-up">
         <h1>Popular Destinations</h1>
         <p>These popular destinations have a lot to offer</p>
       </div>
-      <div className="popular-cards">
+
+      <div className="popular-cards" data-aos="fade-up">
         <Swiper
           modules={[Navigation]}
           slidesPerView={3.5}
@@ -28,10 +36,9 @@ const Popular = () => {
           className="popular-swiper"
         >
           {popularDestinations.map((item, index) => (
-            <SwiperSlide key={index}>
+            <SwiperSlide key={index} data-aos="fade-up">
               <div className="popular-card">
                 <img src={item.img} alt="" />
-
                 <div className="bg-overlay"></div>
                 <div className="popular-card-dsc">
                   <h2>{item.title}</h2>

@@ -3,14 +3,44 @@ import logo from "../../assets/images/logo.png";
 import { Link } from "react-router-dom";
 import { IoCall } from "react-icons/io5";
 import { IoIosArrowDown } from "react-icons/io";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import MobileMenu from "../MobileMenu/MobileMenu";
+import { taxiServices } from "../../assets/data";
 
 const Navbar = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
 
+  const [lastScrollY, setLastScrollY] = useState(0);
+  const [navbarVisible, setNavbarVisible] = useState(true);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+      const midPoint = window.innerHeight / 1;
+
+      if (currentScrollY > midPoint) {
+        // Scrolling down past mid-point
+        if (currentScrollY > lastScrollY) {
+          setNavbarVisible(false); // Hide navbar
+        } else {
+          setNavbarVisible(true); // Show navbar when scrolling up
+        }
+      } else {
+        setNavbarVisible(true); // Always show navbar above mid-point
+      }
+
+      setLastScrollY(currentScrollY); // Update last scroll position
+      setScroll(currentScrollY > 50); // For scrolled class (optional)
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [lastScrollY]);
+
   return (
-    <div className="navbar">
+    <div
+      className={`navbar ${navbarVisible ? "navbar-visible" : "navbar-hidden"}`}
+    >
       <div className="navbar-left">
         <img src={logo} alt="" />
       </div>
@@ -33,12 +63,11 @@ const Navbar = () => {
 
               {dropdownOpen && (
                 <div className="services-link">
-                  <Link to={"/delhi-taxi-service"} className="service-link">
-                    Delhi Taxi
-                  </Link>
-                  <Link className="service-link">Hotels Rooms</Link>
-                  <Link className="service-link">Tour Guide</Link>
-                  <Link className="service-link">Bike Rent</Link>
+                  {taxiServices.map((item, index) => (
+                    <Link to={item.link} className="service-link" key={index}>
+                      {item.name}
+                    </Link>
+                  ))}
                 </div>
               )}
             </li>
@@ -57,7 +86,7 @@ const Navbar = () => {
       </div>
       <div className="navbar-right">
         <div className="navbar-right-button">
-          <button>
+          <button className="call-btn">
             <IoCall className="call-icon" />
             +91 123456789
           </button>

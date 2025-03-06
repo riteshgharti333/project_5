@@ -1,19 +1,19 @@
 import ServiceBanner from "../../../components/ServiceBanner/ServiceBanner";
 import ServiceSidebar from "../../../components/ServiceSidebar/ServiceSidebar";
-import "./Service1.scss";
+import "./Service7.scss";
 
 import ServiceContent from "../../../components/ServiceContent/ServiceContent";
 
 import {
   gatewayServices,
-  delhiTaxi,
+  hrTaxi,
   taxiFees,
 } from "../../../assets/serviceData";
 import ServiceCard from "../../../components/ServiceCard/ServiceCard";
 
-const Service1 = () => {
+const Service7 = () => {
   return (
-    <div className="service1">
+    <div className="service7">
       <div className="service-banner">
         <ServiceBanner />
       </div>
@@ -22,7 +22,7 @@ const Service1 = () => {
         <div className="service-container-top">
           <div className="service-left">
             <ServiceContent
-              taxicontent={delhiTaxi}
+              taxicontent={hrTaxi}
               gatewayServices={gatewayServices}
             />
           </div>
@@ -33,14 +33,13 @@ const Service1 = () => {
       </div>
 
       <div className="service-content-bottom">
-        <h1>Delhi Local/Outstation Taxi Fare</h1>
+        <h1>Haryana Local/Outstation Taxi Fare</h1>
         <div className="service-cards">
           {taxiFees.map((item, index) => (
             <ServiceCard item={item} key={index} />
           ))}
         </div>
       </div>
-
       <div className="service-lg-sidebar">
         <ServiceSidebar />
       </div>
@@ -48,4 +47,4 @@ const Service1 = () => {
   );
 };
 
-export default Service1;
+export default Service7;

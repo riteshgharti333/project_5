@@ -1,5 +1,7 @@
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import "./OurTaxi.scss";
-
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation } from "swiper/modules";
@@ -8,21 +10,29 @@ import "swiper/css/navigation";
 import { ourTaxies } from "../../assets/data";
 
 const OurTaxi = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, 
+      easing: "ease-in-out",
+      once: true, 
+    });
+  }, []);
+
   return (
     <div className="ourTaxi">
-      <div className="ourTaxi-top">
+      <div className="ourTaxi-top" data-aos="fade-up">
         <h1>Our taxi service : Trust the Wheel, Enjoy the Ride</h1>
         <p>
           Traveling across North India is a dream for many, and having a
           reliable car rental service can make this dream a reality. *Global
-          india tour*is your go-to solution for all your travel needs, providing
-          comfort, safety, and affordability. Let’s dive into why Global india
-          tour should be your top choice for exploring the rich cultural
+          India Tour* is your go-to solution for all your travel needs, providing
+          comfort, safety, and affordability. Let’s dive into why Global India
+          Tour should be your top choice for exploring the rich cultural
           heritage and breathtaking landscapes of North India.
         </p>
       </div>
 
-      <div className="ourTaxi-cards">
+      <div className="ourTaxi-cards" data-aos="fade-up">
         <Swiper
           slidesPerView={2}
           centeredSlides={false}
@@ -52,7 +62,7 @@ const OurTaxi = () => {
           }}
         >
           {ourTaxies.map((item, index) => (
-            <SwiperSlide key={index}>
+            <SwiperSlide key={index} data-aos="fade-up" data-aos-delay={index * 200}>
               <div className="ourTaxi-card">
                 <img src={item.img} alt="" />
               </div>

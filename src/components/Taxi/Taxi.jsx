@@ -6,30 +6,22 @@ import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Taxi = () => {
-  useEffect(() => {
-    const checkSwiper = setInterval(() => {
-      if (
-        document.querySelector(".taxi-swiper-prev") &&
-        document.querySelector(".taxi-swiper-next")
-      ) {
-        clearInterval(checkSwiper);
-        new Swiper(".taxi-swiper", {
-          modules: [Navigation, Pagination],
-          navigation: {
-            nextEl: ".taxi-swiper-next",
-            prevEl: ".taxi-swiper-prev",
-          },
-          loop: true,
-        });
-      }
-    }, 100);
-  }, []);
+ 
+    useEffect(() => {
+      AOS.init({
+        duration: 1000, 
+        easing: "ease-in-out",
+        once: true, 
+      });
+    }, []);
 
   return (
     <div className="taxi">
-      <div className="taxi-top">
+      <div className="taxi-top" data-aos="fade-up">
         <h1>India Taxi Packages</h1>
         <p>
           Planning to visit India? You're at the right place! Plan and book your
@@ -38,7 +30,7 @@ const Taxi = () => {
         </p>
       </div>
 
-      <div className="taxi-cards">
+      <div className="taxi-cards" data-aos="fade-up">
         <Swiper
           modules={[Navigation, Pagination, Autoplay]}
           spaceBetween={10}
@@ -63,7 +55,7 @@ const Taxi = () => {
           className="taxi-swiper"
         >
           {taxies.map((item, index) => (
-            <SwiperSlide key={index}>
+            <SwiperSlide key={index} data-aos="fade-up">
               <div className="taxi-card">
                 <img src={item.img} alt={item.vehicle} />
                 <div className="taxi-card-desc">

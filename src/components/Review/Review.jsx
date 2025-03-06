@@ -1,20 +1,30 @@
+import { useEffect } from "react";
 import { reviews } from "../../assets/data";
 import "./Review.scss";
 import { FaStar } from "react-icons/fa";
-
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Navigation, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Review = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      easing: "ease-in-out",
+      once: true,
+    });
+  }, []);
+
   return (
     <div className="review">
       <div className="review-container">
-        <div className="review-left">
+        <div className="review-left" data-aos="fade-up">
           <div className="review-left-top">
-            <h1>What our customers are saying us?</h1>
+            <h1>What our customers are saying?</h1>
             <p>
               Don't take our word, see what our clients have to say about us...
             </p>
@@ -41,23 +51,22 @@ const Review = () => {
           </div>
         </div>
 
-        <div className="review-right">
+        <div className="review-right" data-aos="fade-up">
           <Swiper
             modules={[Pagination, Navigation, Autoplay]}
             slidesPerView={1}
             spaceBetween={20}
             loop={true}
-            pagination={true}
+            pagination={{ clickable: true }}
             autoplay={{
               delay: 5000,
-
               disableOnInteraction: false,
             }}
             speed={1200}
             className="review-swiper"
           >
             {reviews.map((item, index) => (
-              <SwiperSlide key={index}>
+              <SwiperSlide key={index} data-aos="fade-up">
                 <div className="review-right-card">
                   <div className="review-right-top">
                     <img

@@ -1,10 +1,21 @@
 import "./ServiceCard.scss";
 
-const ServiceCard = ({ item }) => {
-  return (
-    <div className="service-card">
-      <img src={item.img} alt="" />
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
+const ServiceCard = ({ item }) => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      easing: "ease-in-out",
+      once: true,
+    });
+  }, []);
+
+  return (
+    <div className="service-card" data-aos="fade-up">
+      <img src={item.img} alt="" />
       <div className="service-card-items">
         <div className="service-card-item">
           <p>Vehicle</p>

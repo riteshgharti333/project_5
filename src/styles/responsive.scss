@@ -7,13 +7,11 @@ $xl: 1200px;
 $xxl: 1400px;
 $xxxl: 1600px;
 
+$primary-color: #106ab5;
 
-$primary-color :#106ab5;
-
-$text-color :#A3d5ff;
-$p-color :#666666;
-
-
+$text-color: #a3d5ff;
+$p-color: #666666;
+$btn-bg: #4caf50;
 
 @mixin EEsm {
   @media screen and (max-width: ($sm)) {

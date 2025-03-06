@@ -1,3 +1,6 @@
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import "./Rental.scss";
 
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -7,10 +10,18 @@ import "swiper/css/navigation";
 import { ourTaxies } from "../../assets/data";
 
 const Rental = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, 
+      easing: "ease-in-out",
+      once: true, 
+    });
+  }, []);
+
   return (
     <div className="rental">
-      <div className="rental-top">
-        <h1>Car Rental Service: Hassle-Free Rides, Every Mile Smiles </h1>
+      <div className="rental-top" data-aos="fade-up">
+        <h1>Car Rental Service: Hassle-Free Rides, Every Mile Smiles</h1>
         <p>
           Exploring North India is an adventure filled with rich history,
           stunning landscapes, and vibrant cultures. To make your journey smooth
@@ -27,7 +38,7 @@ const Rental = () => {
         </p>
       </div>
 
-      <div className="ourTaxi-cards">
+      <div className="ourTaxi-cards" data-aos="fade-up">
         <Swiper
           slidesPerView={2}
           centeredSlides={false}
@@ -57,7 +68,11 @@ const Rental = () => {
           }}
         >
           {ourTaxies.map((item, index) => (
-            <SwiperSlide key={index}>
+            <SwiperSlide
+              key={index}
+              data-aos="fade-up"
+              data-aos-delay={index * 200}
+            >
               <div className="ourTaxi-card">
                 <img src={item.img} alt="" />
               </div>

@@ -6,10 +6,21 @@ import "swiper/css";
 import "swiper/css/effect-fade";
 import { banners, smBanner } from "../../assets/data";
 
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 const HomeBanner = () => {
   const [isMobile, setIsMobile] = useState(
     window.matchMedia("(max-width: 1199px)").matches
   );
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      easing: "ease-in-out",
+      once: true,
+    });
+  }, []);
 
   useEffect(() => {
     const mediaQuery = window.matchMedia("(max-width: 1199px)");
@@ -22,7 +33,7 @@ const HomeBanner = () => {
   }, []);
 
   return (
-    <div className="homeBanner">
+    <div className="homeBanner" data-aos="fade-up">
       <div className="homeBanner-imgs">
         <Swiper
           modules={[EffectFade, Autoplay]}

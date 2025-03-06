@@ -6,10 +6,16 @@ import { useState } from "react";
 import CountUp from "react-countup";
 import { useRef } from "react";
 
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 const About = () => {
   const [startCount, setStartCount] = useState(false);
   const aboutContentRef = useRef(null);
+
   useEffect(() => {
+    AOS.init({ duration: 1000, once: true });
+
     const observer = new IntersectionObserver(
       (entries) => {
         if (entries[0].isIntersecting) {
@@ -29,9 +35,10 @@ const About = () => {
       }
     };
   }, []);
+
   return (
     <div className="about">
-      <div className="about-banner">
+      <div className="about-banner" data-aos="fade-up">
         <img
           src="https://images.unsplash.com/photo-1612438214708-f428a707dd4e?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
           alt=""
@@ -43,58 +50,33 @@ const About = () => {
         </div>
       </div>
 
-      <div className="about-content1">
+      <div className="about-content1" data-aos="fade-up">
         <div className="about-content1-top">
           <h1>Why Choose Us</h1>
           <p>These popular destinations have a lot to offer</p>
         </div>
 
-        <div className="about-content1-cards">
-          <div className="about-content1-card">
-            <div class="content">
-              <img src={like} alt="" />
-
-              <div className="content-desc">
-                <h1>Easy & Quick Booking</h1>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Asperiores, eos.
-                </p>
+        <div className="about-content1-cards" data-aos="fade-up">
+          {[...Array(3)].map((_, i) => (
+            <div className="about-content1-card" key={i}>
+              <div className="content">
+                <img src={like} alt="" />
+                <div className="content-desc">
+                  <h1>Easy & Quick Booking</h1>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Asperiores, eos.
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
-          <div className="about-content1-card">
-            <div class="content">
-              <img src={like} alt="" />
-
-              <div className="content-desc">
-                <h1>Easy & Quick Booking</h1>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Asperiores, eos.
-                </p>
-              </div>
-            </div>
-          </div>{" "}
-          <div className="about-content1-card">
-            <div class="content">
-              <img src={like} alt="" />
-
-              <div className="content-desc">
-                <h1>Easy & Quick Booking</h1>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Asperiores, eos.
-                </p>
-              </div>
-            </div>
-          </div>
+          ))}
         </div>
       </div>
 
       <div className="about-content2">
         <div className="about-content2-top">
-          <div className="about-content2-top-left">
+          <div className="about-content2-top-left" data-aos="fade-right">
             <h1>About Global India Traval</h1>
 
             <p>
@@ -126,7 +108,7 @@ const About = () => {
             </p>
           </div>
 
-          <div className="about-content2-top-right">
+          <div className="about-content2-top-right" data-aos="fade-left">
             <img
               src="https://www.ghumindiaghum.com/img/about/about-2.png"
               alt=""
@@ -134,7 +116,7 @@ const About = () => {
           </div>
         </div>
 
-        <div className="about-content2-bottom">
+        <div className="about-content2-bottom" data-aos="fade-up">
           <p>
             Our team is made up of dynamic individuals who are thoroughly
             experienced in the travel and tourism industry, full of new ideas,
@@ -160,34 +142,15 @@ const About = () => {
         </div>
       </div>
 
-      <div className="about-content3" ref={aboutContentRef}>
-        <div className="about-content3-item">
-          <h1>
-            <CountUp start={startCount ? 0 : null} end={1500} duration={2.5} />
-          </h1>
-          <p>AMAZING PLACES TO VISIT</p>
-        </div>
-
-        <div className="about-content3-item">
-          <h1>
-            <CountUp start={startCount ? 0 : null} end={100} duration={2.5} /> +
-          </h1>
-          <p>AMAZING PLACES TO VISIT</p>
-        </div>
-
-        <div className="about-content3-item">
-          <h1>
-            <CountUp start={startCount ? 0 : null} end={999} duration={2.5} />
-          </h1>
-          <p>AMAZING PLACES TO VISIT</p>
-        </div>
-
-        <div className="about-content3-item">
-          <h1>
-            <CountUp start={startCount ? 0 : null} end={200} duration={2.5} />
-          </h1>
-          <p>AMAZING PLACES TO VISIT</p>
-        </div>
+      <div className="about-content3" ref={aboutContentRef} data-aos="fade-up">
+        {[1500, 100, 999, 200].map((num, index) => (
+          <div className="about-content3-item" key={index} data-aos="zoom-in">
+            <h1>
+              <CountUp start={startCount ? 0 : null} end={num} duration={2.5} />
+            </h1>
+            <p>AMAZING PLACES TO VISIT</p>
+          </div>
+        ))}
       </div>
     </div>
   );

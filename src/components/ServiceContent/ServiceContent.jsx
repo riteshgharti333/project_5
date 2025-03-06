@@ -1,9 +1,21 @@
 import "./ServiceContent.scss";
 
-const ServiceContent = ({ delhiTaxi }) => {
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
+
+const ServiceContent = ({ taxicontent, gatewayServices }) => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      easing: "ease-in-out",
+      once: true,
+    });
+  }, []);
+
   return (
-    <>
-      {delhiTaxi.map((item, index) => (
+    <div className="service-content" data-aos="fade-right">
+      {taxicontent.map((item, index) => (
         <div className="service-comp-content" key={index}>
           {/* Title & Description */}
           <h1>{item.taxiContent1.title}</h1>
@@ -23,16 +35,16 @@ const ServiceContent = ({ delhiTaxi }) => {
 
           {/* Getway Services */}
           <div className="service-content2-list">
-            <h3>{item.taxiContent3.getway}</h3>
+            <h3>{item.getway}</h3>
             <ul>
-              {item.taxiContent3.gatewayServices.map((service, idy) => (
-                <li key={idy}>{service}</li>
+              {gatewayServices.map((service, index) => (
+                <li key={index}>{service}</li>
               ))}
             </ul>
           </div>
         </div>
       ))}
-    </>
+    </div>
   );
 };
 
