@@ -1,17 +1,17 @@
-import "./MainDestination1.scss";
+import "./MainDestination3.scss";
 import ServiceBanner from "../../../components/ServiceBanner/ServiceBanner";
 import ServiceSidebar from "../../../components/ServiceSidebar/ServiceSidebar";
 import { MdArrowRightAlt } from "react-icons/md";
 import ServiceCard from "../../../components/ServiceCard/ServiceCard";
 import { taxiFees } from "../../../assets/serviceData";
 import { Link } from "react-router-dom";
-import { rjDestinations } from "../../../assets/mainDestination";
+import { pbDestinations } from "../../../assets/mainDestination";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 
-const MainDestination1 = () => {
+const MainDestination3 = () => {
   useEffect(() => {
     AOS.init({
       duration: 1000,
@@ -28,13 +28,13 @@ const MainDestination1 = () => {
       <div className="mainDestination-container">
         <div className="mainDestination-container-top">
           <div className="mainDestination-container-left" data-aos="fade-up">
-            <h1>{rjDestinations.title} </h1>
-            <p className="sm-desc">{rjDestinations.desc} </p>
+            <h1>{pbDestinations.title} </h1>
+            <p className="sm-desc">{pbDestinations.desc} </p>
 
             <div className="mainDestination-cards">
-              <h2 className="card-desc">{rjDestinations.sm}</h2>
+              <h2 className="card-desc">{pbDestinations.sm}</h2>
 
-              {rjDestinations.destinationsCards.map((item, index) => (
+              {pbDestinations.destinationsCards.map((item, index) => (
                 <div className="mainDestination-card" key={index}>
                   <div className="mainDestination-card-left">
                     <img src={item.img} alt={item.title} />
@@ -55,10 +55,10 @@ const MainDestination1 = () => {
             </div>
 
             <div className="tips">
-              <h3>{rjDestinations.cabTip}</h3>
+              <h3>{pbDestinations.cabTip}</h3>
 
               <ul>
-                {rjDestinations.tips.map((item, index) => (
+                {pbDestinations.tips.map((item, index) => (
                   <li key={index}>{item}</li>
                 ))}
               </ul>
@@ -84,4 +84,4 @@ const MainDestination1 = () => {
   );
 };
 
-export default MainDestination1;
+export default MainDestination3;

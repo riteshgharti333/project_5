@@ -209,11 +209,12 @@ export const ourTaxies = [
 
 export const popularDestinations = [
   { img: popular_img, title: "Rajasthan", link: "rajasthan-destinations" },
-  { img: popular_img, title: "Panjab", link: "punjab-destinations" },
+  { img: popular_img, title: "Uttar Pradesh", link: "uttar-pradesh-destinations" },
+  { img: popular_img, title: "Punjab", link: "punjab-destinations" },
   {
     img: popular_img,
     title: "Himachal Pradesh",
-    link: "himachal-destinations",
+    link: "himachal-pradesh-destinations",
   },
   { img: popular_img, title: "Uttrakhand", link: "uttrakhand-destinations" },
 ];

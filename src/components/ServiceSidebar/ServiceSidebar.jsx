@@ -1,21 +1,23 @@
-import './ServiceSidebar.scss';
+import "./ServiceSidebar.scss";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 
-const ServiceSidebar = () => {
-
+const ServiceSidebar = ({ fade }) => {
   useEffect(() => {
-          AOS.init({
-            duration: 1000, 
-            easing: "ease-in-out",
-            once: true, 
-          });
-        }, []);
+    AOS.init({
+      duration: 1000,
+      easing: "ease-in-out",
+      once: true,
+    });
+  }, []);
 
   return (
-    <div className='ServiceSidebar' data-aos="fade-left">
+    <div
+      className="ServiceSidebar"
+      data-aos={fade === "fade-up" ? "fade-up" : "fade-left"}
+    >
       <form action="#" method="POST">
         <h1>Enquiry Now</h1>
 

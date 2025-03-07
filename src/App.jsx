@@ -16,8 +16,36 @@ import Service8 from "./pages/Services/Service8/Service8";
 import Blogs from "./pages/Blogs/Blogs";
 import Blog from "./pages/Blog/Blog";
 import { useEffect } from "react";
+
 import MainDestination1 from "./pages/MainDestinations/MainDestination1/MainDestination1";
-import Destination1 from "./pages/Destinations/Destination1/Destination1";
+import MainDestination2 from "./pages/MainDestinations/MainDestination2/MainDestination2";
+import MainDestination3 from "./pages/MainDestinations/MainDestination3/MainDestination3";
+import MainDestination4 from "./pages/MainDestinations/MainDestination4/MainDestination4";
+import MainDestination5 from "./pages/MainDestinations/MainDestination5/MainDestination5";
+
+import RajasthanDestination1 from "./pages/Destinations/RajasthanDestinations/RajasthanDestination1/RajasthanDestination1";
+import RajasthanDestination2 from "./pages/Destinations/RajasthanDestinations/RajasthanDestination2/RajasthanDestination2";
+import RajasthanDestination3 from "./pages/Destinations/RajasthanDestinations/RajasthanDestination3/RajasthanDestination3";
+import RajasthanDestination4 from "./pages/Destinations/RajasthanDestinations/RajasthanDestination4/RajasthanDestination4";
+import RajasthanDestination5 from "./pages/Destinations/RajasthanDestinations/RajasthanDestination5/RajasthanDestination5";
+
+
+import UpDestination1 from "./pages/Destinations/UpDestinations/UpDestination1/UpDestination1";
+import UpDestination2 from "./pages/Destinations/UpDestinations/UpDestination2/UpDestination2";
+import UpDestination3 from "./pages/Destinations/UpDestinations/UpDestination3/UpDestination3";
+import UpDestination4 from "./pages/Destinations/UpDestinations/UpDestination4/UpDestination4";
+
+import PbDestination1 from "./pages/Destinations/PunjabDestinations/PbDestination1/PbDestination1";
+import PbDestination2 from "./pages/Destinations/PunjabDestinations/PbDestination2/PbDestination2";
+
+
+import HpDestination1 from "./pages/Destinations/HpDestinations/HpDestination1/HpDestination1";
+import HpDestination2 from "./pages/Destinations/HpDestinations/HpDestination2/HpDestination2";
+import HpDestination3 from "./pages/Destinations/HpDestinations/HpDestination3/HpDestination3";
+
+import UkDestination1 from "./pages/Destinations/UkDestinations/UkDestination1/UkDestination1";
+import UkDestination2 from "./pages/Destinations/UkDestinations/UkDestination2/UkDestination2";
+import UkDestination3 from "./pages/Destinations/UkDestinations/UkDestination3/UkDestination3";
 
 function App() {
   const ScrollToTop = () => {
@@ -58,8 +86,66 @@ function App() {
             element={<MainDestination1 />}
           />
 
+          <Route
+            path="/uttar-pradesh-destinations"
+            element={<MainDestination2 />}
+          />
+
+          <Route path="/punjab-destinations" element={<MainDestination3 />} />
+          <Route
+            path="/himachal-pradesh-destinations"
+            element={<MainDestination4 />}
+          />
+
+          <Route
+            path="/uttrakhand-destinations"
+            element={<MainDestination5 />}
+          />
+
           {/* Destinations */}
-          <Route path="/jaipur-destination" element={<Destination1 />} />
+
+          {/* RJ Destination */}
+          <Route
+            path="/jaipur-destination"
+            element={<RajasthanDestination1 />}
+          />
+          <Route
+            path="/ranthambore-destination"
+            element={<RajasthanDestination2 />}
+          />
+          <Route
+            path="/udaipur-destination"
+            element={<RajasthanDestination3 />}
+          />
+          <Route
+            path="/jaisalmer-destination"
+            element={<RajasthanDestination4 />}
+          />
+          <Route
+            path="/pushkar-destination"
+            element={<RajasthanDestination5 />}
+          />
+
+          {/* UP Destination */}
+          <Route path="/agra-destination" element={<UpDestination1 />} />
+          <Route path="/varanasi-destination" element={<UpDestination2 />} />
+          <Route path="/ayodhya-destination" element={<UpDestination3 />} />
+          <Route path="/bodh-gaya-destination" element={<UpDestination4 />} />
+
+          {/* Punjab Destination */}
+          <Route path="/amritsar-destination" element={<PbDestination1 />} />
+          <Route path="/chandigarh-destination" element={<PbDestination2 />} />
+
+          {/* Himachal Destination */}
+          <Route path="/shimla-destination" element={<HpDestination1 />} />
+          <Route path="/manali-destination" element={<HpDestination2 />} />
+          <Route path="/dharamshala-destination" element={<HpDestination3 />} />
+
+          {/* Uttrakhand Destination */}
+          <Route path="/nainital-destination" element={<UkDestination1 />} />
+          <Route path="/rishikesh-haridwar-destination" element={<UkDestination2 />} />
+          <Route path="/kedarnath-badrinath-destination" element={<UkDestination3 />} />
+
         </Routes>
         <Footer />
       </BrowserRouter>
