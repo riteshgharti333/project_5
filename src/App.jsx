@@ -16,6 +16,8 @@ import Service8 from "./pages/Services/Service8/Service8";
 import Blogs from "./pages/Blogs/Blogs";
 import Blog from "./pages/Blog/Blog";
 import { useEffect } from "react";
+import MainDestination1 from "./pages/MainDestinations/MainDestination1/MainDestination1";
+import Destination1 from "./pages/Destinations/Destination1/Destination1";
 
 function App() {
   const ScrollToTop = () => {
@@ -49,6 +51,15 @@ function App() {
           <Route path="/punjab-taxi-service" element={<Service6 />} />
           <Route path="/haryana-taxi-service" element={<Service7 />} />
           <Route path="/jammu-kashmir-taxi-service" element={<Service8 />} />
+
+          {/* Main Destinations */}
+          <Route
+            path="/rajasthan-destinations"
+            element={<MainDestination1 />}
+          />
+
+          {/* Destinations */}
+          <Route path="/jaipur-destination" element={<Destination1 />} />
         </Routes>
         <Footer />
       </BrowserRouter>

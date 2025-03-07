@@ -1,0 +1,149 @@
+@use "../../../styles/responsive.scss" as *;
+
+.mainDestination1 {
+  overflow: hidden;
+
+  .mainDestination-banner {
+  }
+  .mainDestination-container {
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 50px;
+    .mainDestination-container-top {
+      display: flex;
+      gap: 30px;
+
+      .mainDestination-container-left {
+        flex: 7;
+
+        h1 {
+          font-size: 30px;
+          color: $text-color;
+        }
+        .sm-desc {
+          font-size: 20px;
+          color: $p-color;
+          margin-top: 10px;
+        }
+
+        .tips {
+          margin-top: 30px;
+          ul {
+            margin-left: 30px;
+            margin-top: 10px;
+            li {
+              color: $p-color;
+              font-size: 18px;
+
+              &::marker {
+                color: $text-color;
+              }
+            }
+          }
+        }
+
+        .mainDestination-cards {
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+
+          hr {
+            background: #dddddd;
+            border: none;
+            height: 1px;
+            margin: 10px 0px;
+          }
+          .card-desc {
+            margin-top: 40px;
+            color: $text-color;
+          }
+          .mainDestination-card {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            border-radius: 10px;
+            .mainDestination-card-left {
+              flex: 5;
+              img {
+                width: 100%;
+                border-radius: 10px;
+              }
+            }
+            .mainDestination-card-right {
+              flex: 5;
+              display: flex;
+              flex-direction: column;
+              gap: 20px;
+              h2 {
+                font-size: 30px;
+                color: $text-color;
+              }
+              p {
+                color: $p-color;
+                font-size: 18px;
+              }
+
+              .read-more-btn {
+                align-self: flex-end;
+                button {
+                  padding: 10px 15px;
+                  font-size: 16px;
+                  border: none;
+                  background: $btn-bg;
+                  border-radius: 5px;
+                  color: #fff;
+                  cursor: pointer;
+                  display: flex;
+                  align-items: center;
+                  gap: 10px;
+
+                  &:hover {
+                    .right-arrow {
+                      transform: translateX(5px);
+                    }
+                  }
+                  .right-arrow {
+                    font-size: 25px;
+                    transition: all 0.3s ease-in-out;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .mainDestination-container-right {
+        flex: 3;
+      }
+    }
+    .cab-services {
+      max-width: 1200px;
+      margin: 0 auto;
+      margin-top: 50px;
+      margin-bottom: 50px;
+
+      @include xl {
+        padding: 0px 10px;
+      }
+
+      h1 {
+        color: $text-color;
+        margin-bottom: 20px;
+        font-size: 30px;
+        @include sm {
+          font-size: 25px;
+        }
+      }
+      .cab-services-cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+
+        @include md {
+          grid-template-columns: repeat(1, 1fr);
+        }
+      }
+    }
+  }
+}

@@ -7,6 +7,7 @@ import "swiper/css/navigation";
 import "./Popular.scss";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { Link } from "react-router-dom";
 
 const Popular = () => {
   useEffect(() => {
@@ -42,7 +43,9 @@ const Popular = () => {
                 <div className="bg-overlay"></div>
                 <div className="popular-card-dsc">
                   <h2>{item.title}</h2>
-                  <button>Explore Now</button>
+                  <Link to={`/${item.link}`}>
+                    <button>Explore Now</button>
+                  </Link>
                 </div>
               </div>
             </SwiperSlide>

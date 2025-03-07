@@ -1,0 +1,68 @@
+@use "../../../styles/responsive.scss" as *;
+
+.destination1 {
+  .destination-banner {
+  }
+
+  .destination-container {
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 50px;
+    .destination-container-top {
+        display: flex;
+        gap: 30px;
+  
+      .destination-container-top-left {
+        flex: 7;
+
+        .destination-content{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            h1 {
+                font-size: 30px;
+                color: $text-color;
+              }
+            p{
+                color: $p-color;
+                color: $p-color;
+                text-align: justify;
+            }
+        }
+       
+      }
+      .destination-container-top-right {
+        flex: 3;
+      }
+    }
+    .destination-container-bottom {
+            max-width: 1200px;
+            margin: 0 auto;
+            margin-top: 50px;
+            margin-bottom: 50px;
+        
+            @include xl {
+              padding: 0px 10px;
+            }
+        
+            h1 {
+              color: $text-color;
+              margin-bottom: 20px;
+              font-size: 30px;
+              @include sm {
+                font-size: 25px;
+              }
+            }
+            .destination-cards {
+              display: grid;
+              grid-template-columns: repeat(2, 1fr);
+              gap: 20px;
+        
+              @include md {
+                grid-template-columns: repeat(1, 1fr);
+              }
+            }
+          }
+    }
+  }
+
