@@ -5,6 +5,8 @@ import ServiceCard from "../../../../components/ServiceCard/ServiceCard";
 import { taxiFees } from "../../../../assets/serviceData";
 
 import { udaipurContent } from "../../../../assets/destinationData";
+import { rjImgs } from "../../../../assets/ImgsData/mainDestinationImgs";
+
 
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -20,9 +22,9 @@ const RajasthanDestination3 = () => {
   }, []);
 
   return (
-    <div className="destination3">
+    <div className="destination">
       <div className="destination-banner">
-        <ServiceBanner />
+        <ServiceBanner destinationImg={rjImgs} />
       </div>
 
       <div className="destination-container">

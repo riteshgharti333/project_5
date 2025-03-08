@@ -6,6 +6,7 @@ import ServiceCard from "../../../components/ServiceCard/ServiceCard";
 import { taxiFees } from "../../../assets/serviceData";
 import { Link } from "react-router-dom";
 import { ukDestinations } from "../../../assets/mainDestination";
+import { ukImgs } from "../../../assets/ImgsData/mainDestinationImgs";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -23,7 +24,7 @@ const MainDestination5 = () => {
   return (
     <div className="mainDestination">
       <div className="mainDestination-banner">
-        <ServiceBanner />
+        <ServiceBanner destinationImg={ukImgs} />
       </div>
       <div className="mainDestination-container">
         <div className="mainDestination-container-top">

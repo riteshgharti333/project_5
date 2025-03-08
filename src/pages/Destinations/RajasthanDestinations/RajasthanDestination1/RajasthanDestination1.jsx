@@ -6,6 +6,8 @@ import { taxiFees } from "../../../../assets/serviceData";
 
 import { jaipurContent } from "../../../../assets/destinationData";
 
+import { rjImgs } from "../../../../assets/ImgsData/mainDestinationImgs";
+
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
@@ -20,9 +22,9 @@ const RajasthanDestination1 = () => {
   }, []);
 
   return (
-    <div className="destination1">
+    <div className="destination">
       <div className="destination-banner">
-        <ServiceBanner />
+        <ServiceBanner  destinationImg={rjImgs}/>
       </div>
 
       <div className="destination-container">

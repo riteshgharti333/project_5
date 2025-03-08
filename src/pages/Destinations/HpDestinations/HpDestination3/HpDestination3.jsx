@@ -4,6 +4,8 @@ import ServiceSidebar from "../../../../components/ServiceSidebar/ServiceSidebar
 import ServiceCard from "../../../../components/ServiceCard/ServiceCard";
 import { taxiFees } from "../../../../assets/serviceData";
 import { dharamshalaContent } from "../../../../assets/destinationData4";
+import { hpImgs } from "../../../../assets/ImgsData/mainDestinationImgs";
+
 
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -21,7 +23,7 @@ const HpDestination3 = () => {
   return (
     <div className="destination">
       <div className="destination-banner">
-        <ServiceBanner />
+        <ServiceBanner  destinationImg={hpImgs}/>
       </div>
 
       <div className="destination-container">

@@ -54,14 +54,20 @@
   transition: color 0.2s;
 }
 
-.bm-item:hover {
-  // color: #ffffff;
+.bm-item-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
+.mb-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
 /////////////////////////////
 
 .menu-item {
-  margin-bottom: 10px;
   font-weight: 600;
   color: $primary-color;
 }
@@ -70,9 +76,9 @@
   .services-dropdown-item {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 
     span {
-      margin-bottom: 10px;
       font-weight: 600;
       color: $primary-color;
     }
@@ -84,11 +90,31 @@
 
   .service-links {
     transition: max-height 0.5s ease-in-out, opacity 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    gap: 10px;
     .service-link {
       display: flex;
       flex-direction: column;
       color: $p-color;
       gap: 5px;
+    }
+
+    .service-item {
+      .service-title {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .smServiceLinks {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 10px;
+        margin-top: 10px;
+        color: $primary-color;
+        margin-left: 20px;
+      }
     }
   }
 }

@@ -54,6 +54,63 @@
     }
     .services {
       position: relative;
+      &.nav-popular {
+        .services-link {
+          .service-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: relative;
+
+            .nav-right-icon {
+              transition: all 0.3s ease-in-out;
+              padding: 10px;
+              font-size: 40px;
+
+              &:hover {
+                color: $primary-color;
+                background: rgba(128, 128, 128, 0.151);
+                border-radius: 5px;
+              }
+            }
+
+            &:first-child .smServiceLinks {
+              top: 250%;
+            }
+
+            &:nth-child(2) .smServiceLinks {
+              top: 250%;
+            }
+            .smServiceLinks {
+              position: absolute;
+              top: 100%;
+              left: 111%;
+              transform: translateY(-50%);
+              width: 250px;
+              background: #fff;
+              transition: opacity 0.3s ease, visibility 0.3s ease;
+              border: 1px solid $primary-color;
+              border-radius: 5px;
+              padding: 10px 20px;
+              z-index: 100;
+
+              .smServiceLink {
+                display: flex;
+                flex-direction: column;
+                padding: 10px;
+                transition: all 0.3s ease-in-out;
+                font-weight: 500;
+
+                &:hover {
+                  color: $primary-color;
+                  background: rgba(128, 128, 128, 0.151);
+                  border-radius: 5px;
+                }
+              }
+            }
+          }
+        }
+      }
 
       .services-link {
         position: absolute;

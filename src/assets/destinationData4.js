@@ -1,3 +1,8 @@
+import shimla1 from "../assets/images/smDestination4/hpDestination1/jakhu-temple.jpg";
+import shimla2 from "../assets/images/smDestination4/hpDestination1/Kufri.avif";
+import shimla3 from "../assets/images/smDestination4/hpDestination1/the-ridge.png";
+import shimla4 from "../assets/images/smDestination4/hpDestination1/the-toy-train-ride.jpg";
+
 export const shimlaContent = {
   contentItem1: {
     title: "Shimla",
@@ -11,7 +16,7 @@ export const shimlaContent = {
     title: "Top Experiences in Shimla",
     contentCards: [
       {
-        img: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/The_Ridge_Shimla.jpg/800px-The_Ridge_Shimla.jpg",
+        img: shimla3,
         title: "The Ridge – The Heart of Shimla",
         desc: [
           "A vibrant open space in the city center, perfect for evening strolls and shopping.",
@@ -19,15 +24,7 @@ export const shimlaContent = {
         ],
       },
       {
-        img: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Mall_Road_Shimla.jpg/800px-Mall_Road_Shimla.jpg",
-        title: "Mall Road – The Colonial Charmer",
-        desc: [
-          "The busiest and most famous shopping street in Shimla, lined with cafes, boutiques, and bookstores.",
-          "Best For: Handicrafts, souvenirs, and evening coffee with a view.",
-        ],
-      },
-      {
-        img: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Jakhu_Temple_Shimla.jpg/800px-Jakhu_Temple_Shimla.jpg",
+        img: shimla1,
         title: "Jakhu Temple – The Spiritual Peak",
         desc: [
           "Home to a 108-ft Hanuman statue, located at Shimla’s highest point.",
@@ -35,7 +32,7 @@ export const shimlaContent = {
         ],
       },
       {
-        img: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Kufri_Himalayan_Nature_Park.jpg/800px-Kufri_Himalayan_Nature_Park.jpg",
+        img: shimla2,
         title: "Kufri – Shimla’s Snow Paradise",
         desc: [
           "Located 16 km from Shimla, Kufri is famous for snow sports and scenic trails.",
@@ -43,7 +40,7 @@ export const shimlaContent = {
         ],
       },
       {
-        img: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Toy_Train_Shimla.jpg/800px-Toy_Train_Shimla.jpg",
+        img: shimla4,
         title: "The Toy Train Ride – A Journey Through the Hills",
         desc: [
           "The Kalka-Shimla Toy Train is a UNESCO heritage railway with 102 tunnels and breathtaking views.",
@@ -164,6 +161,12 @@ export const shimlaContent = {
 
 ///////////////////
 
+import manali1 from "../assets/images/smDestination4/hpDestination2/hidimba-devi-temple.jpg";
+import manali2 from "../assets/images/smDestination4/hpDestination2/old-manali.jpeg";
+import manali3 from "../assets/images/smDestination4/hpDestination2/rohtang-pass.jpg";
+import manali4 from "../assets/images/smDestination4/hpDestination2/solang-valley.webp";
+import manali5 from "../assets/images/smDestination4/hpDestination2/vashisht-hot-springs.jpg";
+
 export const manaliContent = {
   contentItem1: {
     title: "Manali",
@@ -177,7 +180,7 @@ export const manaliContent = {
     title: "Must - Visit Attractions in Manali",
     contentCards: [
       {
-        img: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Hidimba_Devi_Temple_Manali.jpg/800px-Hidimba_Devi_Temple_Manali.jpg",
+        img: manali1,
         title: "Hidimba Devi Temple – A Mythical Escape",
         desc: [
           "An ancient wooden temple dedicated to Hidimba Devi, surrounded by tall cedar trees.",
@@ -185,7 +188,7 @@ export const manaliContent = {
         ],
       },
       {
-        img: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Solang_Valley_Manali.jpg/800px-Solang_Valley_Manali.jpg",
+        img: manali4,
         title: "Solang Valley – The Ultimate Adventure Hub",
         desc: [
           "Skiing, paragliding, snowboarding, and zorbing—Solang Valley is an adventure seeker’s paradise.",
@@ -193,7 +196,7 @@ export const manaliContent = {
         ],
       },
       {
-        img: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Rohtang_Pass_Manali.jpg/800px-Rohtang_Pass_Manali.jpg",
+        img: manali3,
         title: "Rohtang Pass – The Gateway to Lahaul & Spiti",
         desc: [
           "A high-altitude mountain pass with breathtaking landscapes and snow-covered peaks.",
@@ -201,7 +204,7 @@ export const manaliContent = {
         ],
       },
       {
-        img: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Old_Manali_River.jpg/800px-Old_Manali_River.jpg",
+        img: manali2,
         title: "Old Manali – A Bohemian Retreat",
         desc: [
           "Famous for its quaint cafes, live music, and artistic vibe.",
@@ -209,7 +212,7 @@ export const manaliContent = {
         ],
       },
       {
-        img: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Vashisht_Temple_Hot_Springs.jpg/800px-Vashisht_Temple_Hot_Springs.jpg",
+        img: manali5,
         title: "Vashisht Hot Springs – Natural Therapy",
         desc: [
           "A natural hot water spring with healing properties.",
@@ -334,6 +337,12 @@ export const manaliContent = {
 
 ////////////
 
+import dharamshala1 from "../assets/images/smDestination4/hpDestination3/bhagsu-waterfall.jpg";
+import dharamshala2 from "../assets/images/smDestination4/hpDestination3/mcLeod-ganj.jpg";
+import dharamshala3 from "../assets/images/smDestination4/hpDestination3/namgyal-monastery.jpg";
+import dharamshala4 from "../assets/images/smDestination4/hpDestination3/St.-John-in-the-wilderness-church.jpg";
+import dharamshala5 from "../assets/images/smDestination4/hpDestination3/triund-trek.jpg";
+
 export const dharamshalaContent = {
   contentItem1: {
     title: "Dharamshala",
@@ -347,43 +356,43 @@ export const dharamshalaContent = {
     title: "Top Attractions in Dharamshala",
     contentCards: [
       {
-        img: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Namgyal_Monastery_Dharamsala.jpg/800px-Namgyal_Monastery_Dharamsala.jpg",
+        img: dharamshala3,
         title: "Namgyal Monastery – Home of the Dalai Lama",
         desc: [
           "The personal monastery of His Holiness the Dalai Lama.",
-          "Experience: Peaceful chants, Tibetan rituals, and stunning views of the Himalayas.",
+          "Experience : Peaceful chants, Tibetan rituals, and stunning views of the Himalayas.",
         ],
       },
       {
-        img: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Bhagsu_Waterfall.jpg/800px-Bhagsu_Waterfall.jpg",
+        img: dharamshala1,
         title: "Bhagsu Waterfall – A Refreshing Escape",
         desc: [
           "A serene and picturesque waterfall surrounded by lush greenery.",
-          "Tip: Visit the nearby Bhagsunath Temple and enjoy a dip in the cool waters.",
+          "Tip : Visit the nearby Bhagsunath Temple and enjoy a dip in the cool waters.",
         ],
       },
       {
-        img: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Triund_Hill_Dharamshala.jpg/800px-Triund_Hill_Dharamshala.jpg",
+        img: dharamshala5,
         title: "Triund Trek – A Trekker’s Paradise",
         desc: [
           "One of the most famous treks offering panoramic views of the Dhauladhar mountains.",
-          "Best Time: March to June & September to November for the best experience.",
+          "Best Time : March to June & September to November for the best experience.",
         ],
       },
       {
-        img: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/St._John_in_the_Wilderness_Dharamsala.jpg/800px-St._John_in_the_Wilderness_Dharamsala.jpg",
+        img: dharamshala4,
         title: "St. John in the Wilderness Church",
         desc: [
           "A historical British-era church with gothic architecture, nestled amidst deodar forests.",
-          "Must-See: The Belgian stained-glass windows and peaceful surroundings.",
+          "Must-See : The Belgian stained-glass windows and peaceful surroundings.",
         ],
       },
       {
-        img: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Tibetan_Market_Dharamshala.jpg/800px-Tibetan_Market_Dharamshala.jpg",
+        img: dharamshala2,
         title: "McLeod Ganj – The Little Tibet of India",
         desc: [
           "A vibrant town known for Tibetan culture, monasteries, and cafes.",
-          "Don’t Miss: Tibetan food, shopping for handmade crafts, and peaceful meditation spots.",
+          "Don’t Miss : Tibetan food, shopping for handmade crafts, and peaceful meditation spots.",
         ],
       },
     ],
@@ -501,4 +510,3 @@ export const dharamshalaContent = {
     ],
   },
 };
-

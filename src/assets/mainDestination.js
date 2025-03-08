@@ -1,4 +1,9 @@
-///////////// Destination
+///////////// RJ Destinations
+import rjDestination_img1 from "../assets/images/DestinationImg/rjDestination/jaipur.jpg";
+import rjDestination_img2 from "../assets/images/DestinationImg/rjDestination/Jaisalmer.jpg";
+import rjDestination_img3 from "../assets/images/DestinationImg/rjDestination/pushkar.jpg";
+import rjDestination_img4 from "../assets/images/DestinationImg/rjDestination/ranthambore.jpg";
+import rjDestination_img5 from "../assets/images/DestinationImg/rjDestination/udaipur.jpg";
 
 export const rjDestinations = {
   title: "Rajasthan",
@@ -7,35 +12,35 @@ export const rjDestinations = {
 
   destinationsCards: [
     {
-      img: "https://s7ap1.scene7.com/is/image/incredibleindia/1-sam-sand-dunes-jaisalmer-rajasthan-hero?qlt=82&ts=1726659973648",
+      img: rjDestination_img1,
       title: "Jaipur",
       desc: "Discover forts like Amber and Nahargarh, markets, and palaces.",
       link: "/jaipur-destination",
     },
 
     {
-      img: "https://s7ap1.scene7.com/is/image/incredibleindia/1-sam-sand-dunes-jaisalmer-rajasthan-hero?qlt=82&ts=1726659973648",
+      img: rjDestination_img4,
       title: "Ranthambore",
       desc: "Safari adventures in the iconic tiger reserve.",
       link: "/ranthambore-destination",
     },
 
     {
-      img: "https://s7ap1.scene7.com/is/image/incredibleindia/1-sam-sand-dunes-jaisalmer-rajasthan-hero?qlt=82&ts=1726659973648",
+      img: rjDestination_img5,
       title: "Udaipur",
       desc: "Romantic boat rides on Lake Pichola and City Palace tours.",
       link: "/udaipur-destination",
     },
 
     {
-      img: "https://s7ap1.scene7.com/is/image/incredibleindia/1-sam-sand-dunes-jaisalmer-rajasthan-hero?qlt=82&ts=1726659973648",
+      img: rjDestination_img2,
       title: "Jaisalmer",
       desc: "Golden dunes, desert camps, and the majestic Jaisalmer Fort.",
       link: "/jaisalmer-destination",
     },
 
     {
-      img: "https://s7ap1.scene7.com/is/image/incredibleindia/1-sam-sand-dunes-jaisalmer-rajasthan-hero?qlt=82&ts=1726659973648",
+      img: rjDestination_img3,
       title: "Pushkar",
       desc: "Sacred lake, camel fair, and spiritual vibes.",
       link: "/pushkar-destination",
@@ -49,7 +54,12 @@ export const rjDestinations = {
   ],
 };
 
-///////////////
+/////////////// UP Destinations
+
+import upDestination_img1 from "../assets/images/DestinationImg/upDestination/agra.jpg";
+import upDestination_img2 from "../assets/images/DestinationImg/upDestination/ayodhya.jpg";
+import upDestination_img3 from "../assets/images/DestinationImg/upDestination/bodhGya.jpg";
+import upDestination_img4 from "../assets/images/DestinationImg/upDestination/varanasi.jpg";
 
 export const upDestinations = {
   title: "Uttar Pradesh",
@@ -58,28 +68,28 @@ export const upDestinations = {
 
   destinationsCards: [
     {
-      img: "https://s7ap1.scene7.com/is/image/incredibleindia/taj-mahal-agra-hero?qlt=82&ts=1726659973648",
+      img: upDestination_img1,
       title: "Agra",
       desc: "Witness the Taj Mahal, Agra Fort, and Mughal history.",
       link: "/agra-destination",
     },
 
     {
-      img: "https://s7ap1.scene7.com/is/image/incredibleindia/varanasi-ghats-hero?qlt=82&ts=1726659973648",
+      img: upDestination_img4,
       title: "Varanasi",
       desc: "Spiritual boat rides on the Ganges and ancient temples.",
       link: "/varanasi-destination",
     },
 
     {
-      img: "https://s7ap1.scene7.com/is/image/incredibleindia/ayodhya-ram-mandir-hero?qlt=82&ts=1726659973648",
+      img: upDestination_img2,
       title: "Ayodhya",
       desc: "Ram Mandir and cultural heritage.",
       link: "/ayodhya-destination",
     },
 
     {
-      img: "https://s7ap1.scene7.com/is/image/incredibleindia/mahabodhi-temple-bodhgaya-hero?qlt=82&ts=1726659973648",
+      img: upDestination_img3,
       title: "Bodh Gaya",
       desc: "Mahabodhi Temple, a UNESCO site.",
       link: "/bodh-gaya-destination",
@@ -93,7 +103,10 @@ export const upDestinations = {
   ],
 };
 
-////////////////
+//////////////// PB Destinations
+
+import pbDestination_img1 from "../assets/images/DestinationImg/pbDestination/chandigarh.jpg";
+import pbDestination_img2 from "../assets/images/DestinationImg/pbDestination/amritsar.jpg";
 
 export const pbDestinations = {
   title: "Punjab",
@@ -102,14 +115,14 @@ export const pbDestinations = {
 
   destinationsCards: [
     {
-      img: "https://s7ap1.scene7.com/is/image/incredibleindia/golden-temple-amritsar-hero?qlt=82&ts=1726659973648",
+      img: pbDestination_img2,
       title: "Amritsar",
       desc: "Golden Temple, Wagah Border ceremony, and Punjabi cuisine.",
       link: "/amritsar-destination",
     },
 
     {
-      img: "https://s7ap1.scene7.com/is/image/incredibleindia/rock-garden-chandigarh-hero?qlt=82&ts=1726659973648",
+      img: pbDestination_img1,
       title: "Chandigarh",
       desc: "Rock Garden, Sukhna Lake, and modern architecture.",
       link: "/chandigarh-destination",
@@ -123,7 +136,11 @@ export const pbDestinations = {
   ],
 };
 
-/////////////////
+///////////////// HP Destinations
+
+import hpDestination_img1 from "../assets/images/DestinationImg/hpDestination/shimla.jpg";
+import hpDestination_img2 from "../assets/images/DestinationImg/hpDestination/manali.jpg";
+import hpDestination_img3 from "../assets/images/DestinationImg/hpDestination/dharamshala.jpg";
 
 export const hpDestinations = {
   title: "Himachal Pradesh",
@@ -132,21 +149,21 @@ export const hpDestinations = {
 
   destinationsCards: [
     {
-      img: "https://s7ap1.scene7.com/is/image/incredibleindia/shimla-mall-road-hero?qlt=82&ts=1726659973648",
+      img: hpDestination_img1,
       title: "Shimla",
       desc: "Mall Road, toy train rides, and colonial charm.",
       link: "/shimla-destination",
     },
 
     {
-      img: "https://s7ap1.scene7.com/is/image/incredibleindia/manali-solang-valley-hero?qlt=82&ts=1726659973648",
+      img: hpDestination_img2,
       title: "Manali",
       desc: "Solang Valley, Rohtang Pass, and adventure sports.",
       link: "/manali-destination",
     },
 
     {
-      img: "https://s7ap1.scene7.com/is/image/incredibleindia/dharamshala-mcleodganj-hero?qlt=82&ts=1726659973648",
+      img: hpDestination_img3,
       title: "Dharamshala",
       desc: "Tibetan culture, McLeod Ganj, and Triund Trek.",
       link: "/dharamshala-destination",
@@ -160,7 +177,11 @@ export const hpDestinations = {
   ],
 };
 
-/////////////
+///////////// UK Destination
+
+import ukDestination_img1 from "../assets/images/DestinationImg/ukDestination/kedarnath.jpg";
+import ukDestination_img2 from "../assets/images/DestinationImg/ukDestination/rishikesh.jpg";
+import ukDestination_img3 from "../assets/images/DestinationImg/ukDestination/nainital.jpg";
 
 export const ukDestinations = {
   title: "Uttarakhand",
@@ -169,21 +190,21 @@ export const ukDestinations = {
 
   destinationsCards: [
     {
-      img: "https://s7ap1.scene7.com/is/image/incredibleindia/nainital-naini-lake-hero?qlt=82&ts=1726659973648",
+      img: ukDestination_img3,
       title: "Nainital",
       desc: "Boating on Naini Lake and scenic views.",
       link: "/nainital-destination",
     },
 
     {
-      img: "https://s7ap1.scene7.com/is/image/incredibleindia/rishikesh-ganga-aarti-hero?qlt=82&ts=1726659973648",
+      img: ukDestination_img2,
       title: "Rishikesh / Haridwar",
       desc: "Ganga Aarti, yoga retreats, and rafting adventures.",
       link: "/rishikesh-haridwar-destination",
     },
 
     {
-      img: "https://s7ap1.scene7.com/is/image/incredibleindia/kedarnath-temple-hero?qlt=82&ts=1726659973648",
+      img: ukDestination_img1,
       title: "Kedarnath / Badrinath",
       desc: "Sacred Char Dham yatra sites.",
       link: "/kedarnath-badrinath-destination",

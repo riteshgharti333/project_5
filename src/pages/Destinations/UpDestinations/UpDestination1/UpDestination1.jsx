@@ -6,6 +6,10 @@ import { taxiFees } from "../../../../assets/serviceData";
 
 import { agraContent } from "../../../../assets/destinationData2";
 
+import { upImgs } from "../../../../assets/ImgsData/mainDestinationImgs";
+
+
+
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
@@ -22,7 +26,7 @@ const UpDestination1 = () => {
   return (
     <div className="destination1">
       <div className="destination-banner">
-        <ServiceBanner />
+        <ServiceBanner destinationImg={upImgs} />
       </div>
 
       <div className="destination-container">

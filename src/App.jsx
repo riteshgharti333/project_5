@@ -98,7 +98,7 @@ function App() {
           />
 
           <Route
-            path="/uttrakhand-destinations"
+            path="/uttarakhand-destinations"
             element={<MainDestination5 />}
           />
 

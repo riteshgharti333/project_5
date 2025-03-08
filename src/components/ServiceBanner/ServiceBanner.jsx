@@ -1,4 +1,3 @@
-import { tourImgs } from "../../assets/data";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import "swiper/css";
@@ -9,7 +8,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 
-const ServiceBanner = () => {
+const ServiceBanner = ({ destinationImg }) => {
   useEffect(() => {
     AOS.init({
       duration: 1000,
@@ -41,11 +40,11 @@ const ServiceBanner = () => {
             1400: { slidesPerView: 2.1 },
           }}
         >
-          {tourImgs.map((item, index) => (
+          {destinationImg.map((item, index) => (
             <SwiperSlide key={index}>
               <img
                 src={item.img}
-                alt={`Tour ${index}`}
+                alt={item.title}
                 className="serviceBanner-img"
               />
             </SwiperSlide>

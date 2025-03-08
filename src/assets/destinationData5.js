@@ -1,3 +1,11 @@
+import nainital1 from "../assets/images/smDestination5/ukDestination1/naina-devi-temple.jpg"
+import nainital2 from "../assets/images/smDestination5/ukDestination1/naini-lake.jpg"
+import nainital3 from "../assets/images/smDestination5/ukDestination1/raj-bhavan.jpg"
+import nainital4 from "../assets/images/smDestination5/ukDestination1/snow-view-point.jpg"
+import nainital5 from "../assets/images/smDestination5/ukDestination1/tiffin-top.jpg"
+
+
+
 export const nainitalContent = {
   contentItem1: {
     title: "Nainital",
@@ -11,7 +19,7 @@ export const nainitalContent = {
     title: "Top Attractions in Nainital",
     contentCards: [
       {
-        img: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nainital_Lake.jpg/800px-Nainital_Lake.jpg",
+        img: nainital2,
         title: "Naini Lake – The Heart of Nainital",
         desc: [
           "A stunning, crescent-shaped lake surrounded by mountains.",
@@ -19,7 +27,7 @@ export const nainitalContent = {
         ],
       },
       {
-        img: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Naini_Devi_Temple_Nainital.jpg/800px-Naini_Devi_Temple_Nainital.jpg",
+        img: nainital1,
         title: "Naina Devi Temple – A Sacred Pilgrimage",
         desc: [
           "An ancient temple dedicated to Goddess Naina Devi, offering spiritual peace.",
@@ -27,7 +35,7 @@ export const nainitalContent = {
         ],
       },
       {
-        img: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Snow_View_Nainital.jpg/800px-Snow_View_Nainital.jpg",
+        img: nainital4,
         title: "Snow View Point – Majestic Himalayan Views",
         desc: [
           "A breathtaking viewpoint offering panoramic views of the snow-covered Himalayas.",
@@ -35,7 +43,7 @@ export const nainitalContent = {
         ],
       },
       {
-        img: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Tiffin_Top_Nainital.jpg/800px-Tiffin_Top_Nainital.jpg",
+        img: nainital5,
         title: "Tiffin Top (Dorothy’s Seat) – A Photographer’s Paradise",
         desc: [
           "A stunning hilltop offering mesmerizing views of Nainital town.",
@@ -43,7 +51,7 @@ export const nainitalContent = {
         ],
       },
       {
-        img: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/The_Governor%27s_House_Nainital.jpg/800px-The_Governor%27s_House_Nainital.jpg",
+        img: nainital3,
         title: "Raj Bhavan (Governor’s House) – A Colonial Marvel",
         desc: [
           "A British-era mansion inspired by Buckingham Palace.",
@@ -166,6 +174,13 @@ export const nainitalContent = {
 };
 
 /////////////////
+import rishikeshHaridwar1 from "../assets/images/smDestination5/ukDestination2/har-ki-pauri.jpg"
+import rishikeshHaridwar2 from "../assets/images/smDestination5/ukDestination2/laxman-Jhula-&-ram-Jhula.png"
+import rishikeshHaridwar3 from "../assets/images/smDestination5/ukDestination2/neelkanth-mahadev-temple.jpg"
+import rishikeshHaridwar4 from "../assets/images/smDestination5/ukDestination2/parmarth-niketan.webp"
+import rishikeshHaridwar5 from "../assets/images/smDestination5/ukDestination2/river-rafting-rishikesh.jpg"
+
+
 
 export const rishikeshHaridwarContent = {
   contentItem1: {
@@ -180,43 +195,43 @@ export const rishikeshHaridwarContent = {
     title: "Top Attractions & Experiences",
     contentCards: [
       {
-        img: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Ganga_Aarti_Haridwar.jpg/800px-Ganga_Aarti_Haridwar.jpg",
+        img: rishikeshHaridwar1,
         title: "Har Ki Pauri – The Divine Ghat of Haridwar",
         desc: [
           "The most sacred ghat in Haridwar, where thousands gather for the famous Ganga Aarti every evening.",
-          "Must Do: Dip in the holy river & witness the mesmerizing aarti.",
+          "Must Do : Dip in the holy river & witness the mesmerizing aarti.",
         ],
       },
       {
-        img: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Laxman_Jhula_Rishikesh.jpg/800px-Laxman_Jhula_Rishikesh.jpg",
+        img: rishikeshHaridwar2,
         title: "Laxman Jhula & Ram Jhula – Iconic Suspension Bridges",
         desc: [
           "Historic bridges offering breathtaking views of the Ganges.",
-          "Best For: Walking across the river, scenic photography, and exploring nearby temples.",
+          "Best For : Walking across the river, scenic photography, and exploring nearby temples.",
         ],
       },
       {
-        img: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Parmarth_Niketan_Ashram.jpg/800px-Parmarth_Niketan_Ashram.jpg",
+        img: rishikeshHaridwar4,
         title: "Parmarth Niketan – The Spiritual Retreat",
         desc: [
           "One of the largest ashrams in Rishikesh, offering yoga, meditation, and spiritual teachings.",
-          "Special: Attend the evening Ganga Aarti here for a peaceful experience.",
+          "Special : Attend the evening Ganga Aarti here for a peaceful experience.",
         ],
       },
       {
-        img: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Rafting_in_Rishikesh.jpg/800px-Rafting_in_Rishikesh.jpg",
+        img: rishikeshHaridwar5,
         title: "River Rafting in Rishikesh – Adventure Awaits!",
         desc: [
           "Experience adrenaline-pumping white-water rafting on the Ganges.",
-          "Difficulty: Suitable for beginners & experts, with Grade I to IV rapids.",
+          "Difficulty : Suitable for beginners & experts, with Grade I to IV rapids.",
         ],
       },
       {
-        img: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Neelkanth_Mahadev_Temple.jpg/800px-Neelkanth_Mahadev_Temple.jpg",
+        img: rishikeshHaridwar3,
         title: "Neelkanth Mahadev Temple – A Sacred Pilgrimage",
         desc: [
           "A famous Shiva temple located amidst dense forests.",
-          "Best Time to Visit: During the Kanwar Yatra & Shivratri festival.",
+          "Best Time to Visit : During the Kanwar Yatra & Shivratri festival.",
         ],
       },
     ],
@@ -334,6 +349,14 @@ export const rishikeshHaridwarContent = {
   },
 };
 ////////////////
+
+import kedarnathBadrinath1 from "../assets/images/smDestination5/ukDestination3/badrinath-temple.webp"
+import kedarnathBadrinath2 from "../assets/images/smDestination5/ukDestination3/kedarnath-temple.webp"
+import kedarnathBadrinath3 from "../assets/images/smDestination5/ukDestination3/nilkantha-peak.jpg"
+import kedarnathBadrinath4 from "../assets/images/smDestination5/ukDestination3/tungnath-temple.webp"
+import kedarnathBadrinath5 from "../assets/images/smDestination5/ukDestination3/vasuki-tal.jpg"
+
+
 export const kedarnathBadrinathContent = {
   contentItem1: {
     title: "Kedarnath & Badrinath",
@@ -347,7 +370,7 @@ export const kedarnathBadrinathContent = {
     title: "Top Attractions & Sacred Sites",
     contentCards: [
       {
-        img: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Kedarnath_Temple.jpg/800px-Kedarnath_Temple.jpg",
+        img: kedarnathBadrinath2,
         title: "Kedarnath Temple – A Sacred Jyotirlinga",
         desc: [
           "One of the holiest shrines of Lord Shiva, located at 3,583m above sea level.",
@@ -355,7 +378,7 @@ export const kedarnathBadrinathContent = {
         ],
       },
       {
-        img: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Badrinath_Temple%2C_Uttarakhand.jpg/800px-Badrinath_Temple%2C_Uttarakhand.jpg",
+        img: kedarnathBadrinath1,
         title: "Badrinath Temple – The Divine Vishnu Shrine",
         desc: [
           "A revered Char Dham temple dedicated to Lord Vishnu, surrounded by the Neelkanth Peak.",
@@ -363,7 +386,7 @@ export const kedarnathBadrinathContent = {
         ],
       },
       {
-        img: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Tungnath_Temple.jpg/800px-Tungnath_Temple.jpg",
+        img: kedarnathBadrinath4,
         title: "Tungnath – The Highest Shiva Temple",
         desc: [
           "The world's highest Shiva temple, located near Chopta at 3,680m.",
@@ -371,7 +394,7 @@ export const kedarnathBadrinathContent = {
         ],
       },
       {
-        img: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Vasuki_Tal_Lake.jpg/800px-Vasuki_Tal_Lake.jpg",
+        img: kedarnathBadrinath5,
         title: "Vasuki Tal – A Glacial Wonder",
         desc: [
           "A serene high-altitude lake near Kedarnath, believed to be the bathing spot of Lord Vishnu.",
@@ -379,7 +402,7 @@ export const kedarnathBadrinathContent = {
         ],
       },
       {
-        img: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Neelkanth_Parbat%2C_Badrinath.jpg/800px-Neelkanth_Parbat%2C_Badrinath.jpg",
+        img: kedarnathBadrinath3,
         title: "Neelkanth Peak – The ‘Garhwal Queen’",
         desc: [
           "A towering Himalayan peak visible from Badrinath, offering a divine backdrop.",

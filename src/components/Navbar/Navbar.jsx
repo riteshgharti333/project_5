@@ -3,12 +3,20 @@ import logo from "../../assets/images/logo.png";
 import { Link } from "react-router-dom";
 import { IoCall } from "react-icons/io5";
 import { IoIosArrowDown } from "react-icons/io";
+import { MdOutlineKeyboardArrowRight } from "react-icons/md";
+
 import { useEffect, useState } from "react";
 import MobileMenu from "../MobileMenu/MobileMenu";
-import { taxiServices } from "../../assets/data";
+import { navPopularDestination, taxiServices } from "../../assets/data";
 
 const Navbar = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
+
+  const [openIndex, setOpenIndex] = useState(null);
+
+  const handleToggle = (index) => {
+    setOpenIndex((prevIndex) => (prevIndex === index ? null : index)); // Toggle submenu
+  };
 
   const [lastScrollY, setLastScrollY] = useState(0);
   const [navbarVisible, setNavbarVisible] = useState(true);
@@ -74,6 +82,48 @@ const Navbar = () => {
               )}
             </li>
           </Link>
+
+          <Link className="services nav-popular">
+            <li
+              onMouseEnter={() => setDropdownOpen(true)}
+              onMouseLeave={() => setDropdownOpen(false)}
+            >
+              <span>
+                Popular Destination <IoIosArrowDown className="down-icon" />
+              </span>
+
+              {dropdownOpen && (
+                <div className="services-link">
+                  {navPopularDestination.map((item, index) => (
+                    <div key={index} className="service-item">
+                      <Link to={`/${item.link}`} className="service-link">
+                        {item.title}
+                      </Link>
+                      <MdOutlineKeyboardArrowRight
+                        className="nav-right-icon"
+                        onClick={() => handleToggle(index)} 
+                      />
+
+                      {openIndex === index && ( // Show only for clicked item
+                        <div className="smServiceLinks">
+                          {item.smDestination.map((subItem, subIndex) => (
+                            <Link
+                              key={subIndex}
+                              to={`/${subItem.link}`}
+                              className="smServiceLink"
+                            >
+                              {subItem.title}
+                            </Link>
+                          ))}
+                        </div>
+                      )}
+                    </div>
+                  ))}
+                </div>
+              )}
+            </li>
+          </Link>
+
           <Link to={"/blogs"}>
             <li>
               <span>Blogs</span>

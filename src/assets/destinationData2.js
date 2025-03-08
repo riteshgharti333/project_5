@@ -1,3 +1,9 @@
+import agra1 from "../assets/images/smDestination2/upDestination1/agra-fort.jpg";
+import agra2 from "../assets/images/smDestination2/upDestination1/jama-masjid.jpg";
+import agra3 from "../assets/images/smDestination2/upDestination1/kachhpura-village.jpg";
+import agra4 from "../assets/images/smDestination2/upDestination1/sadar-bazaar.webp";
+import agra5 from "../assets/images/smDestination2/upDestination1/taj-mahal.jpg";
+
 export const agraContent = {
   contentItem1: {
     title: "Agra",
@@ -11,7 +17,7 @@ export const agraContent = {
     title: "Top Attractions in Agra",
     contentCards: [
       {
-        img: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/d3/a8/57/taj-mahal.jpg?w=700&h=400&s=1",
+        img: agra5,
         title: "Taj Mahal – The Epitome of Love",
         desc: [
           "A UNESCO World Heritage Site and one of the Seven Wonders of the World.",
@@ -19,7 +25,7 @@ export const agraContent = {
         ],
       },
       {
-        img: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/d3/a8/57/agra-fort.jpg?w=700&h=400&s=1",
+        img: agra1,
         title: "Agra Fort – The Mighty Red Sandstone Fortress",
         desc: [
           "A UNESCO-listed fort with palaces, gardens, and stunning views of the Taj Mahal.",
@@ -27,7 +33,7 @@ export const agraContent = {
         ],
       },
       {
-        img: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/d3/a8/57/kachhpura-village.jpg?w=700&h=400&s=1",
+        img: agra3,
         title: "Kachhpura Village – The Mughal Rural Experience",
         desc: [
           "Step into the Mughal era with a heritage walk through this historic village.",
@@ -35,7 +41,7 @@ export const agraContent = {
         ],
       },
       {
-        img: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/d3/a8/57/jama-masjid.jpg?w=700&h=400&s=1",
+        img: agra2,
         title: "Jama Masjid – Agra’s Grand Mosque",
         desc: [
           "Built in 1648 by Shah Jahan’s daughter, this mosque is an architectural masterpiece.",
@@ -43,19 +49,11 @@ export const agraContent = {
         ],
       },
       {
-        img: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/d3/a8/57/sadar-bazaar.jpg?w=700&h=400&s=1",
+        img: agra4,
         title: "Sadar Bazaar – Shop Like a Local",
         desc: [
           "A lively marketplace known for leather goods, handicrafts, and Mughlai spices.",
           "Must Buy: Handmade Jutti footwear, brass souvenirs, and embroidered fabrics.",
-        ],
-      },
-      {
-        img: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/d3/a8/57/kalakriti-cultural.jpg?w=700&h=400&s=1",
-        title: "Kalakriti Cultural & Convention Center",
-        desc: [
-          "A live theatrical show that narrates the love story of Shah Jahan & Mumtaz Mahal.",
-          "Experience Tip: The ‘Mohabbat-e-Taj’ show is a must-watch for history lovers.",
         ],
       },
     ],
@@ -126,6 +124,13 @@ export const agraContent = {
 
 //////////////////
 
+import varanasi1 from "../assets/images/smDestination2/upDestination2/banaras-Hindu-university.jpg";
+import varanasi2 from "../assets/images/smDestination2/upDestination2/dashashwamedh-ghat.jpeg";
+import varanasi3 from "../assets/images/smDestination2/upDestination2/kashi-viswanath.jpg";
+import varanasi4 from "../assets/images/smDestination2/upDestination2/manikarnika-ghat.jpg";
+import varanasi5 from "../assets/images/smDestination2/upDestination2/ramnagar-fort.jpg";
+import varanasi6 from "../assets/images/smDestination2/upDestination2/sarnath.jpg";
+
 export const varanasiContent = {
   contentItem1: {
     title: "Varanasi",
@@ -139,51 +144,51 @@ export const varanasiContent = {
     title: "Top Attractions in Varanasi",
     contentCards: [
       {
-        img: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/d3/a8/57/dashashwamedh-ghat.jpg?w=700&h=400&s=1",
+        img: varanasi2,
         title: "Dashashwamedh Ghat – The Heart of Varanasi",
         desc: [
           "The most famous ghat, known for the magnificent Ganga Aarti every evening.",
-          "Experience: Witness priests performing synchronized fire rituals to the chants of holy hymns.",
+          "Experience : Witness priests performing synchronized fire rituals to the chants of holy hymns.",
         ],
       },
       {
-        img: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/d3/a8/57/kashi-vishwanath-temple.jpg?w=700&h=400&s=1",
+        img: varanasi3,
         title: "Kashi Vishwanath Temple – The Golden Temple of Shiva",
         desc: [
           "One of the twelve Jyotirlingas and the most revered temple of Lord Shiva.",
-          "Must-Do: Early morning darshan for a peaceful spiritual experience.",
+          "Must-Do : Early morning darshan for a peaceful spiritual experience.",
         ],
       },
       {
-        img: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/d3/a8/57/sarnath.jpg?w=700&h=400&s=1",
+        img: varanasi6,
         title: "Sarnath – The Land of Buddha’s First Sermon",
         desc: [
           "An ancient Buddhist site where Lord Buddha delivered his first sermon after enlightenment.",
-          "Highlight: Visit Dhamek Stupa, Mulagandha Kuti Vihar & the Archaeological Museum.",
+          "Highlight : Visit Dhamek Stupa, Mulagandha Kuti Vihar & the Archaeological Museum.",
         ],
       },
       {
-        img: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/d3/a8/57/manikarnika-ghat.jpg?w=700&h=400&s=1",
+        img: varanasi4,
         title: "Manikarnika Ghat – The Gateway to Liberation",
         desc: [
           "The sacred cremation ground where Hindus believe they attain moksha (liberation).",
-          "Experience: Learn about the spiritual significance of life & death in Hinduism.",
+          "Experience : Learn about the spiritual significance of life & death in Hinduism.",
         ],
       },
       {
-        img: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/d3/a8/57/banaras-hindu-university.jpg?w=700&h=400&s=1",
+        img: varanasi1,
         title: "Banaras Hindu University (BHU) – The Knowledge Hub",
         desc: [
           "One of India’s oldest and most prestigious universities, spread over 1,300 acres.",
-          "Must-Visit: Bharat Kala Bhavan Museum, housing rare paintings & sculptures.",
+          "Must-Visit : Bharat Kala Bhavan Museum, housing rare paintings & sculptures.",
         ],
       },
       {
-        img: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/d3/a8/57/ramnagar-fort.jpg?w=700&h=400&s=1",
+        img: varanasi5,
         title: "Ramnagar Fort – The Legacy of Varanasi’s Kings",
         desc: [
           "A 17th-century fort offering a glimpse into the life of Varanasi’s royal Maharajas.",
-          "Visit Tip: Check out the vintage car collection & the museum filled with royal artifacts.",
+          "Visit Tip : Check out the vintage car collection & the museum filled with royal artifacts.",
         ],
       },
     ],
@@ -257,7 +262,14 @@ export const varanasiContent = {
   },
 };
 
-////////
+/////////////////////////
+import ayodhya1 from "../assets/images/smDestination2/upDestination3/haunmangadhi.jpg";
+import ayodhya2 from "../assets/images/smDestination2/upDestination3/kanak-bhawan.webp";
+import ayodhya3 from "../assets/images/smDestination2/upDestination3/nageshwarnath-temple.jpg";
+import ayodhya4 from "../assets/images/smDestination2/upDestination3/saryu-ghat.jpg";
+import ayodhya5 from "../assets/images/smDestination2/upDestination3/shri-ram-janmabhoomi-temple.webp";
+import ayodhya6 from "../assets/images/smDestination2/upDestination3/treta-ke-thakur.webp";
+
 export const ayodhyaContent = {
   contentItem1: {
     title: "Ayodhya",
@@ -271,47 +283,47 @@ export const ayodhyaContent = {
     title: "Top Attractions in Ayodhya",
     contentCards: [
       {
-        img: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/d3/a8/57/shri-ram-janmabhoomi.jpg?w=700&h=400&s=1",
+        img: ayodhya5,
         title: "Shri Ram Janmabhoomi Temple",
         desc: [
           "The holiest temple of Ayodhya, marking the birthplace of Lord Ram.",
-          "Experience: Witness the grandeur of the newly built temple, intricate carvings, and divine atmosphere.",
+          "Experience : Witness the grandeur of the newly built temple, intricate carvings, and divine atmosphere.",
         ],
       },
       {
-        img: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/d3/a8/57/hanuman-garhi.jpg?w=700&h=400&s=1",
+        img: ayodhya1,
         title: "Hanuman Garhi – The Protector of Ayodhya",
         desc: [
           "A revered hilltop temple dedicated to Lord Hanuman.",
-          "Must-Do: Climb the 76 steps to the shrine for blessings & a panoramic city view.",
+          "Must-Do : Climb the 76 steps to the shrine for blessings & a panoramic city view.",
         ],
       },
       {
-        img: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/d3/a8/57/kanak-bhawan.jpg?w=700&h=400&s=1",
+        img: ayodhya2,
         title: "Kanak Bhawan – The Royal Palace of Sita-Ram",
         desc: [
           "A temple gifted to Goddess Sita by Queen Kaikeyi after her marriage to Lord Ram.",
-          "Highlight: Golden idols of Lord Ram & Sita in their royal attire.",
+          "Highlight : Golden idols of Lord Ram & Sita in their royal attire.",
         ],
       },
       {
-        img: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/d3/a8/57/saryu-ghat.jpg?w=700&h=400&s=1",
+        img: ayodhya4,
         title: "Saryu Ghat – The Sacred Riverfront",
         desc: [
           "A divine ghat along the holy Saryu River, perfect for spiritual dips.",
-          "Experience: Attend the evening Aarti, where diyas float across the water in a mesmerizing spectacle.",
+          "Experience : Attend the evening Aarti, where diyas float across the water in a mesmerizing spectacle.",
         ],
       },
       {
-        img: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/d3/a8/57/nageshwarnath-temple.jpg?w=700&h=400&s=1",
+        img: ayodhya3,
         title: "Nageshwarnath Temple – The Oldest Shiva Temple",
         desc: [
           "Believed to be established by Lord Ram’s son, Kush, this ancient temple is dedicated to Lord Shiva.",
-          "Best Time to Visit: Mahashivratri festival, when the temple is beautifully decorated.",
+          "Best Time to Visit : Mahashivratri festival, when the temple is beautifully decorated.",
         ],
       },
       {
-        img: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/d3/a8/57/treta-ke-thakur.jpg?w=700&h=400&s=1",
+        img: ayodhya6,
         title: "Treta Ke Thakur – The Ram Rajya Memorial",
         desc: [
           "An important temple where Lord Ram performed the Ashwamedha Yajna.",
@@ -390,6 +402,12 @@ export const ayodhyaContent = {
 };
 
 /////////////////
+
+import bodhGaya1 from "../assets/images/smDestination2/upDestination4/great-buddha-statue.jpg";
+import bodhGaya2 from "../assets/images/smDestination2/upDestination4/mahabodhi-temple.webp";
+import bodhGaya3 from "../assets/images/smDestination2/upDestination4/muchalinda-lake.jpg";
+import bodhGaya4 from "../assets/images/smDestination2/upDestination4/thai-monastery.webp";
+
 export const bodhGayaContent = {
   contentItem1: {
     title: "Bodh Gaya",
@@ -403,7 +421,7 @@ export const bodhGayaContent = {
     title: "Top Attractions in Bodh Gaya",
     contentCards: [
       {
-        img: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Mahabodhi_Temple%2C_Bodh_Gaya.jpg/800px-Mahabodhi_Temple%2C_Bodh_Gaya.jpg",
+        img: bodhGaya2,
         title: "Mahabodhi Temple – The Enlightenment Shrine",
         desc: [
           "A UNESCO World Heritage Site, marking the spot where Buddha attained enlightenment.",
@@ -411,7 +429,7 @@ export const bodhGayaContent = {
         ],
       },
       {
-        img: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Great_Buddha_Statue%2C_Bodh_Gaya%2C_India.jpg/800px-Great_Buddha_Statue%2C_Bodh_Gaya%2C_India.jpg",
+        img: bodhGaya1,
         title: "Great Buddha Statue – The Towering Icon of Peace",
         desc: [
           "A 25-meter tall statue of Lord Buddha in a meditative posture.",
@@ -419,7 +437,7 @@ export const bodhGayaContent = {
         ],
       },
       {
-        img: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Thai_Monastery_Bodh_Gaya.jpg/800px-Thai_Monastery_Bodh_Gaya.jpg",
+        img: bodhGaya4,
         title: "Thai Monastery – A Blend of Thai & Indian Architecture",
         desc: [
           "An elegant golden-roofed monastery built by Thailand’s King.",
@@ -427,27 +445,11 @@ export const bodhGayaContent = {
         ],
       },
       {
-        img: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Muchalinda_Sarovar_Bodh_Gaya.jpg/800px-Muchalinda_Sarovar_Bodh_Gaya.jpg",
+        img: bodhGaya3,
         title: "Muchalinda Lake – The Sacred Naga Pond",
         desc: [
           "A peaceful pond where the serpent king Muchalinda protected Buddha during meditation.",
           "Spiritual Essence: A serene place for reflection and peaceful walks.",
-        ],
-      },
-      {
-        img: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Vietnamese_Monastery%2C_Bodh_Gaya.jpg/800px-Vietnamese_Monastery%2C_Bodh_Gaya.jpg",
-        title: "Vietnamese Monastery – A Glimpse of Vietnamese Buddhism",
-        desc: [
-          "An exquisite monastery built in Vietnamese style, showcasing unique Buddhist architecture.",
-          "Highlight: Peaceful meditation halls & a stunning golden Buddha statue.",
-        ],
-      },
-      {
-        img: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Japanese_Temple%2C_Bodh_Gaya.jpg/800px-Japanese_Temple%2C_Bodh_Gaya.jpg",
-        title: "Japanese Temple & The 80-ft Buddha",
-        desc: [
-          "A Japanese-funded monastery housing a grand 80-ft Buddha statue.",
-          "Experience: Recite Buddhist chants alongside Japanese monks for a unique spiritual journey.",
         ],
       },
     ],

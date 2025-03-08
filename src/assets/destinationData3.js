@@ -1,3 +1,9 @@
+import amritsar1 from "../assets/images/smDestination3/pbDestination1/akal-takht.jpg";
+import amritsar2 from "../assets/images/smDestination3/pbDestination1/durgiana-temple.webp";
+import amritsar3 from "../assets/images/smDestination3/pbDestination1/golden-temple.jpg";
+import amritsar4 from "../assets/images/smDestination3/pbDestination1/jallianwala-bagh.jpg";
+import amritsar5 from "../assets/images/smDestination3/pbDestination1/wagah-border.avif";
+
 export const amritsarContent = {
   contentItem1: {
     title: "Amritsar",
@@ -11,7 +17,7 @@ export const amritsarContent = {
     title: "Top Attractions in Amritsar",
     contentCards: [
       {
-        img: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Harmandir_Sahib_%28Golden_Temple%29.jpg/800px-Harmandir_Sahib_%28Golden_Temple%29.jpg",
+        img: amritsar3,
         title: "Golden Temple – The Divine Abode",
         desc: [
           "The holiest shrine of Sikhism, offering divine peace and spiritual healing.",
@@ -19,7 +25,7 @@ export const amritsarContent = {
         ],
       },
       {
-        img: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Jallianwala_Bagh.jpg/800px-Jallianwala_Bagh.jpg",
+        img: amritsar4,
         title: "Jallianwala Bagh – The Martyrs' Memorial",
         desc: [
           "A historic garden marking the tragic massacre of 1919, a pivotal event in India’s freedom struggle.",
@@ -27,7 +33,7 @@ export const amritsarContent = {
         ],
       },
       {
-        img: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Wagah_Border_Ceremony.jpg/800px-Wagah_Border_Ceremony.jpg",
+        img: amritsar5,
         title: "Wagah Border – The Patriotic Beating Retreat",
         desc: [
           "Witness the high-energy flag-lowering ceremony between India and Pakistan.",
@@ -35,7 +41,7 @@ export const amritsarContent = {
         ],
       },
       {
-        img: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Akal_Takht.JPG/800px-Akal_Takht.JPG",
+        img: amritsar1,
         title: "Akal Takht – The Seat of Sikh Authority",
         desc: [
           "One of the five Takhts of Sikhism, symbolizing political and spiritual leadership.",
@@ -43,19 +49,11 @@ export const amritsarContent = {
         ],
       },
       {
-        img: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Durgiana_Temple_Amritsar.jpg/800px-Durgiana_Temple_Amritsar.jpg",
+        img: amritsar2,
         title: "Durgiana Temple – The Hindu Golden Temple",
         desc: [
           "A beautiful Hindu temple resembling the Golden Temple, dedicated to Goddess Durga.",
           "Highlight: Magnificent silver doors and spiritual tranquility.",
-        ],
-      },
-      {
-        img: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Gobindgarh_Fort_Amritsar.jpg/800px-Gobindgarh_Fort_Amritsar.jpg",
-        title: "Gobindgarh Fort – The Legacy of Maharaja Ranjit Singh",
-        desc: [
-          "A historic fort showcasing Punjab’s rich heritage and Sikh warrior spirit.",
-          "Experience: Light and sound shows, cultural performances, and ancient artifacts.",
         ],
       },
     ],
@@ -176,6 +174,13 @@ export const amritsarContent = {
 };
 
 /////////////////
+import chandigarh1 from "../assets/images/smDestination3/pbDestination2/capitol-complex.jpg";
+import chandigarh2 from "../assets/images/smDestination3/pbDestination2/rock-garden.jpg";
+import chandigarh3 from "../assets/images/smDestination3/pbDestination2/sukhna-lake.jpg";
+import chandigarh4 from "../assets/images/smDestination3/pbDestination2/zakir-hussain-rose-garden.jpg";
+
+
+
 export const chandigarhContent = {
   contentItem1: {
     title: "Chandigarh",
@@ -189,7 +194,7 @@ export const chandigarhContent = {
     title: "Top Attractions in Chandigarh",
     contentCards: [
       {
-        img: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Rock_Garden_Chandigarh.jpg/800px-Rock_Garden_Chandigarh.jpg",
+        img: chandigarh2,
         title: "Rock Garden – The Artistic Marvel",
         desc: [
           "A spectacular garden of sculptures made from industrial and home waste.",
@@ -197,7 +202,7 @@ export const chandigarhContent = {
         ],
       },
       {
-        img: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Sukhna_Lake_Chandigarh.jpg/800px-Sukhna_Lake_Chandigarh.jpg",
+        img: chandigarh3,
         title: "Sukhna Lake – The Heart of Chandigarh",
         desc: [
           "A serene man-made lake perfect for boating, morning walks, and sunset views.",
@@ -205,7 +210,7 @@ export const chandigarhContent = {
         ],
       },
       {
-        img: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Rose_Garden_Chandigarh.jpg/800px-Rose_Garden_Chandigarh.jpg",
+        img: chandigarh4,
         title: "Zakir Hussain Rose Garden – A Floral Paradise",
         desc: [
           "Asia’s largest rose garden with 1,600+ varieties of roses and medicinal plants.",
@@ -213,27 +218,11 @@ export const chandigarhContent = {
         ],
       },
       {
-        img: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Capitol_Complex_Chandigarh.jpg/800px-Capitol_Complex_Chandigarh.jpg",
+        img: chandigarh1,
         title: "Capitol Complex – The Architectural Icon",
         desc: [
           "A UNESCO World Heritage Site, featuring modernist structures by Le Corbusier.",
           "Must-See: Open Hand Monument, High Court, Legislative Assembly.",
-        ],
-      },
-      {
-        img: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Elante_Mall_Chandigarh.jpg/800px-Elante_Mall_Chandigarh.jpg",
-        title: "Elante Mall – The Ultimate Shopping Destination",
-        desc: [
-          "One of North India’s largest malls, featuring international brands, food courts, and entertainment.",
-          "Best For: Shopping, movie nights, and gourmet dining experiences.",
-        ],
-      },
-      {
-        img: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Leisure_Valley_Chandigarh.jpg/800px-Leisure_Valley_Chandigarh.jpg",
-        title: "Leisure Valley – The Lungs of Chandigarh",
-        desc: [
-          "A scenic 8-km-long stretch of gardens and parks for morning walks and relaxation.",
-          "Highlight: Perfect for jogging, cycling, and yoga amidst greenery.",
         ],
       },
     ],
@@ -343,8 +332,7 @@ export const chandigarhContent = {
           "24/7 Service – Available for late-night airport transfers and early morning trips.",
       },
       {
-        title:
-          "Affordable Pricing – Transparent rates with no hidden charges.",
+        title: "Affordable Pricing – Transparent rates with no hidden charges.",
       },
       {
         title:

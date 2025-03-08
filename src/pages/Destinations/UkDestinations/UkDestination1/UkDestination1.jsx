@@ -5,6 +5,8 @@ import ServiceCard from "../../../../components/ServiceCard/ServiceCard";
 import { taxiFees } from "../../../../assets/serviceData";
 
 import { nainitalContent } from "../../../../assets/destinationData5";
+import { ukImgs } from "../../../../assets/ImgsData/mainDestinationImgs";
+
 
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -22,7 +24,7 @@ const UkDestination1 = () => {
   return (
     <div className="destination">
       <div className="destination-banner">
-        <ServiceBanner />
+        <ServiceBanner destinationImg={ukImgs} />
       </div>
 
       <div className="destination-container">

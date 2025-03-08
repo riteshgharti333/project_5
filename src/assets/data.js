@@ -4,9 +4,6 @@ import banner2 from "../assets/images/bannerimg/banner2.jpeg";
 import banner3 from "../assets/images/bannerimg/banner3.jpeg";
 import banner4 from "../assets/images/bannerimg/banner4.jpeg";
 
-// popluar
-import popular_img from "../assets/images/popular1.jpg";
-
 //sm banner
 import smBanner1 from "../assets/images/smBanner/smbanner1.jpeg";
 import smBanner2 from "../assets/images/smBanner/smbanner2.jpeg";
@@ -40,6 +37,13 @@ import service_img2 from "../assets/images/servicesimg/service2.jpeg";
 import service_img3 from "../assets/images/servicesimg/service3.jpeg";
 import service_img4 from "../assets/images/servicesimg/service4.jpeg";
 import service_img5 from "../assets/images/servicesimg/service5.jpeg";
+
+// home Destination Img
+import hd1_img from "../assets/images/HomeDestinationImg/hd1.jpg";
+import hd2_img from "../assets/images/HomeDestinationImg/hd2.jpg";
+import hd3_img from "../assets/images/HomeDestinationImg/hd3.jpg";
+import hd4_img from "../assets/images/HomeDestinationImg/hd4.jpg";
+import hd5_img from "../assets/images/HomeDestinationImg/hd5.jpg";
 
 export const smBanner = [
   {
@@ -208,15 +212,15 @@ export const ourTaxies = [
 ];
 
 export const popularDestinations = [
-  { img: popular_img, title: "Rajasthan", link: "rajasthan-destinations" },
-  { img: popular_img, title: "Uttar Pradesh", link: "uttar-pradesh-destinations" },
-  { img: popular_img, title: "Punjab", link: "punjab-destinations" },
+  { img: hd5_img, title: "Rajasthan", link: "rajasthan-destinations" },
+  { img: hd1_img, title: "Uttar Pradesh", link: "uttar-pradesh-destinations" },
+  { img: hd3_img, title: "Punjab", link: "punjab-destinations" },
   {
-    img: popular_img,
+    img: hd4_img,
     title: "Himachal Pradesh",
     link: "himachal-pradesh-destinations",
   },
-  { img: popular_img, title: "Uttrakhand", link: "uttrakhand-destinations" },
+  { img: hd2_img, title: "Uttrakhand", link: "uttarakhand-destinations" },
 ];
 
 export const tourImgs = [
@@ -279,5 +283,62 @@ export const taxiServices = [
   {
     name: "Jammu & Kashmir Taxi",
     link: "jammu-kashmir-taxi-service",
+  },
+];
+
+export const navPopularDestination = [
+  {
+    title: "Rajasthan",
+    link: "rajasthan-destinations",
+
+    smDestination: [
+      { title: "Jaipur", link: "jaipur-destination" },
+      
+      { title: "Ranthambore", link: "ranthambore-destination" },
+
+
+      { title: "Udaipur", link: "udaipur-destination" },
+      
+      { title: "Jaisalmer", link: "jaisalmer-destination" },
+
+      { title: "Pushkar", link: "pushkar-destination" },
+    ],
+  },
+
+  {
+    title: "Uttar Pradesh",
+    link: "uttar-pradesh-destinations",
+    smDestination: [
+      { title: "Agra", link: "agra-destination" },
+      { title: "Varanasi", link: "varanasi-destination" },
+      { title: "Ayodhya", link: "ayodhya-destination" },
+      { title: "Bodh Gaya", link: "bodh-gaya-destination" },
+    ],
+  },
+  {
+    title: "Punjab",
+    link: "punjab-destinations",
+    smDestination: [
+      { title: "Amritsar", link: "amritsar-destination" },
+      { title: "Chandigarh", link: "chandigarh-destination" },
+    ],
+  },
+  {
+    title: "Himachal Pradesh",
+    link: "himachal-pradesh-destinations",
+    smDestination: [
+      { title: "Shimla", link: "shimla-destination" },
+      { title: "Manali", link: "manali-destination" },
+      { title: "Dharamshala", link: "dharamshala-destination" },
+    ],
+  },
+  {
+    title: "Uttarakhand",
+    link: "uttarakhand-destinations",
+    smDestination: [
+      { title: "Nainital", link: "nainital-destination" },
+      { title: "Rishikesh / Haridwar", link: "rishikesh-haridwar-destination" },
+      { title: "Kedarnath / Badrinath", link: "kedarnath-badrinath-destination" },
+    ],
   },
 ];
