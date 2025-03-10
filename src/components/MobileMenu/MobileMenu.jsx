@@ -3,7 +3,11 @@ import "./MobileMenu.scss";
 import { Link } from "react-router-dom";
 import { slide as Menu } from "react-burger-menu";
 import { FaChevronRight } from "react-icons/fa";
-import { navPopularDestination, taxiServices } from "../../assets/data";
+import {
+  navPopularDestination,
+  outstationServices,
+  taxiServices,
+} from "../../assets/data";
 import { motion, AnimatePresence } from "framer-motion";
 
 const MobileMenu = () => {
@@ -12,6 +16,7 @@ const MobileMenu = () => {
   const [openPopularDestination, setOpenPopularDestination] = useState(false);
   const [openServices, setOpenServices] = useState(false);
 
+  const [openOutStation, setOpenOutStation] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState(null); // Track active submenu
 
   const handleCloseMenu = () => {
@@ -59,6 +64,41 @@ const MobileMenu = () => {
                 transition={{ duration: 0.4, ease: "easeInOut" }}
               >
                 {taxiServices.map((item) => (
+                  <Link
+                    key={item.link}
+                    to={`/${item.link}`}
+                    onClick={handleCloseMenu}
+                  >
+                    {item.name}
+                  </Link>
+                ))}
+              </motion.div>
+            )}
+          </AnimatePresence>
+        </div>
+
+        {/* OutStation */}
+        <div className="services-dropdown">
+          <div
+            className="services-dropdown-item"
+            onClick={() => setOpenOutStation(!openOutStation)}
+          >
+            <span> Taxi Outstation Services</span>
+            <FaChevronRight
+              className={`menu-icon ${openTaxiServices ? "open" : ""}`}
+            />
+          </div>
+
+          <AnimatePresence>
+            {openOutStation && (
+              <motion.div
+                className="service-links"
+                initial={{ height: 0, opacity: 0 }}
+                animate={{ height: "auto", opacity: 1 }}
+                exit={{ height: 0, opacity: 0, transition: { duration: 0.4 } }}
+                transition={{ duration: 0.4, ease: "easeInOut" }}
+              >
+                {outstationServices.map((item) => (
                   <Link
                     key={item.link}
                     to={`/${item.link}`}
@@ -170,7 +210,15 @@ const MobileMenu = () => {
           </AnimatePresence>
         </div>
 
-        <Link className="menu-item" to="/gallery" onClick={handleCloseMenu}>
+        <Link
+          className="menu-item"
+          to={"/tempo-service"}
+          onClick={handleCloseMenu}
+        >
+          Tempo/Bus Service
+        </Link>
+
+        <Link className="menu-item" to="/our-gallery" onClick={handleCloseMenu}>
           Gallery
         </Link>
 

@@ -49,6 +49,14 @@ import TourGuide from "./pages/OurServices/TourGuide/TourGuide";
 import TaxiService from "./pages/OurServices/TaxiService/TaxiService";
 import Contact from "./pages/Contact/Contact";
 
+import OutstationService1 from "./pages/TaxiOutstationServices/OutstationService1/OutstationService1";
+import OutstationService2 from "./pages/TaxiOutstationServices/OutstationService2/OutstationService2";
+import OutstationService3 from "./pages/TaxiOutstationServices/OutstationService3/OutstationService3";
+import OutstationService4 from "./pages/TaxiOutstationServices/OutstationService4/OutstationService4";
+import OutstationService5 from "./pages/TaxiOutstationServices/OutstationService5/OutstationService5";
+import OutstationService6 from "./pages/TaxiOutstationServices/OutstationService6/OutstationService6";
+import Tempo from "./pages/Tempo/Tempo";
+
 function App() {
   const ScrollToTop = () => {
     const { pathname } = useLocation();
@@ -72,7 +80,6 @@ function App() {
           <Route path="/blog1" element={<Blog />} />
           <Route path="/our-gallery" element={<Gallery />} />
           <Route path="/contact-us" element={<Contact />} />
-
 
           {/* Our Services */}
           <Route path="/india-taxi-service" element={<TaxiService />} />
@@ -160,6 +167,34 @@ function App() {
             path="/kedarnath-badrinath-destination"
             element={<UkDestination3 />}
           />
+
+          {/* OutStation Services */}
+          <Route
+            path="/delhi-to-rajasthan-taxi-service"
+            element={<OutstationService1 />}
+          />
+          <Route
+            path="/delhi-to-himachal-pradesh-taxi-service"
+            element={<OutstationService2 />}
+          />
+          <Route
+            path="/delhi-to-uttarakhand-taxi-service"
+            element={<OutstationService3 />}
+          />
+          <Route
+            path="/delhi-to-punjab-taxi-service"
+            element={<OutstationService4 />}
+          />
+          <Route
+            path="/delhi-to-jammu-kashmir-taxi-service"
+            element={<OutstationService5 />}
+          />
+          <Route
+            path="/delhi-to-uttar-pradesh-taxi-service"
+            element={<OutstationService6 />}
+          />
+
+          <Route path="/tempo-service" element={<Tempo />} />
         </Routes>
         <Footer />
       </BrowserRouter>

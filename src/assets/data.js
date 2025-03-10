@@ -389,3 +389,32 @@ export const blogcards = [
     link: "",
   },
 ];
+
+
+
+export const outstationServices = [
+  {
+    name: "Delhi To Rajasthan Taxi Service",
+    link: "delhi-to-rajasthan-taxi-service"
+  },
+  {
+    name: "Delhi To Himachal Pradesh Taxi Service",
+    link: "delhi-to-himachal-pradesh-taxi-service"
+  },
+  {
+    name: "Delhi To Uttarakhand Taxi Service",
+    link: "delhi-to-uttarakhand-taxi-service"
+  },
+  {
+    name: "Delhi To Punjab Taxi Service",
+    link: "delhi-to-punjab-taxi-service"
+  },
+  {
+    name: "Delhi To Jammu & Kashmir Taxi Service",
+    link: "delhi-to-jammu-kashmir-taxi-service"
+  },
+  {
+    name: "Delhi To Uttar Pradesh Taxi Service",
+    link: "delhi-to-uttar-pradesh-taxi-service"
+  }
+];

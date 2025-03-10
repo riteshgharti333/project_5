@@ -7,7 +7,11 @@ import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 
 import { useEffect, useState } from "react";
 import MobileMenu from "../MobileMenu/MobileMenu";
-import { navPopularDestination, taxiServices } from "../../assets/data";
+import {
+  navPopularDestination,
+  outstationServices,
+  taxiServices,
+} from "../../assets/data";
 
 const Navbar = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
@@ -20,7 +24,6 @@ const Navbar = () => {
   const [scroll, setScroll] = useState(false);
   const [lastScrollY, setLastScrollY] = useState(0);
   const [navbarVisible, setNavbarVisible] = useState(true);
-
 
   useEffect(() => {
     const handleNavScroll = () => {
@@ -62,7 +65,9 @@ const Navbar = () => {
 
   return (
     <div
-      className={`navbar ${navbarVisible ? "navbar-visible" : "navbar-hidden"} ${scroll ? "scrolled" : ""} `}
+      className={`navbar ${
+        navbarVisible ? "navbar-visible" : "navbar-hidden"
+      } ${scroll ? "scrolled" : ""} `}
     >
       <div className="navbar-left">
         <Link to={"/"}>
@@ -83,8 +88,6 @@ const Navbar = () => {
             </li>
           </Link>
 
-       
-
           <Link className="services">
             <li
               onMouseEnter={() => setDropdownOpen(true)}
@@ -97,6 +100,28 @@ const Navbar = () => {
               {dropdownOpen && (
                 <div className="services-link">
                   {taxiServices.map((item, index) => (
+                    <Link to={item.link} className="service-link" key={index}>
+                      {item.name}
+                    </Link>
+                  ))}
+                </div>
+              )}
+            </li>
+          </Link>
+
+          <Link className="services">
+            <li
+              onMouseEnter={() => setDropdownOpen(true)}
+              onMouseLeave={() => setDropdownOpen(false)}
+            >
+              <span>
+                Taxi Outstation Services
+                <IoIosArrowDown className="down-icon" />
+              </span>
+
+              {dropdownOpen && (
+                <div className="services-link">
+                  {outstationServices.map((item, index) => (
                     <Link to={item.link} className="service-link" key={index}>
                       {item.name}
                     </Link>
@@ -158,9 +183,12 @@ const Navbar = () => {
 
               {dropdownOpen && (
                 <div className="services-link">
-                 
-                  <Link to={"/india-taxi-service"} className="service-link">India Taxi Service</Link>
-                  <Link to={"/tour-guide"} className="service-link">Tour Guide</Link>
+                  <Link to={"/india-taxi-service"} className="service-link">
+                    India Taxi Service
+                  </Link>
+                  <Link to={"/tour-guide"} className="service-link">
+                    Tour Guide
+                  </Link>
                 </div>
               )}
             </li>
@@ -172,11 +200,17 @@ const Navbar = () => {
             </li>
           </Link>
 
-          <Link to={"/blogs"}>
+          <Link to={"/tempo-service"}>
+            <li>
+              <span>Tempo/Bus Service </span>
+            </li>
+          </Link>
+
+          {/* <Link to={"/blogs"}>
             <li>
               <span>Blogs</span>
             </li>
-          </Link>
+          </Link> */}
 
           <Link to={"/contact-us"}>
             <li>

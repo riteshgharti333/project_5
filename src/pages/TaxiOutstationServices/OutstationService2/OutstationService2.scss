@@ -1,0 +1,130 @@
+@use "../../../styles/responsive.scss" as *;
+
+.outstationService {
+  overflow: hidden;
+
+  .outstationService-lg-sidebar {
+    margin-bottom: 50px;
+    padding: 0px 10px;
+
+    @media (min-width: 1025px) {
+      display: none;
+    }
+  }
+
+  .outstationService-container {
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 50px;
+
+    @include lg {
+      max-width: 750px;
+    }
+  }
+  .outstationService-container-top {
+    display: flex;
+    gap: 30px;
+
+    @include xl {
+      padding: 0px 10px;
+    }
+
+    @include lg {
+      flex-direction: column;
+    }
+
+    .outstationService-left {
+      flex: 7;
+
+      .outstationService-content {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+
+        h1 {
+          font-size: 36px;
+          color: $text-color;
+          font-weight: 700;
+          margin-bottom: 20px;
+
+          @include sm {
+            font-size: 28px;
+          }
+        }
+
+        p {
+          color: $p-color;
+          font-size: 18px;
+          line-height: 1.6;
+          margin-bottom: 20px;
+          text-align: justify;
+        }
+
+        h3 {
+          font-size: 24px;
+          color: $text-color;
+          font-weight: 600;
+          margin-bottom: 10px;
+        }
+
+        .outstationService-content-item {
+          ul {
+            margin-top: 10px;
+            color: $p-color;
+            margin-left: 30px;
+
+            li {
+              font-size: 18px;
+              margin-bottom: 10px;
+
+              span {
+                font-weight: 500;
+              }
+
+              &::marker {
+                color: $text-color;
+              }
+            }
+          }
+        }
+      }
+    }
+    .outstationService-right {
+      flex: 3;
+
+      @include lg {
+        display: none;
+      }
+    }
+  }
+  .outstationService-container-bottom {
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+    @include xl {
+      padding: 0 10px;
+    }
+
+    h1 {
+      font-size: 30px;
+      color: $text-color;
+      margin-bottom: 20px;
+
+      @include sm {
+        font-size: 25px;
+      }
+    }
+
+    .outstationService-cards {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+
+      @include md {
+        grid-template-columns: repeat(1, 1fr);
+      }
+    }
+  }
+}
