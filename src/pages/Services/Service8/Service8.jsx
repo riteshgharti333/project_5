@@ -6,12 +6,13 @@ import ServiceContent from "../../../components/ServiceContent/ServiceContent";
 
 import { gatewayServices, jkTaxi, taxiFees } from "../../../assets/serviceData";
 import ServiceCard from "../../../components/ServiceCard/ServiceCard";
+import { ourTaxies } from "../../../assets/data";
 
 const Service8 = () => {
   return (
     <div className="service8">
       <div className="service-banner">
-        <ServiceBanner />
+      <ServiceBanner destinationImg={ourTaxies}/>
       </div>
 
       <div className="service-container">

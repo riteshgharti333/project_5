@@ -17,9 +17,25 @@ const Navbar = () => {
   const handleToggle = (index) => {
     setOpenIndex((prevIndex) => (prevIndex === index ? null : index)); // Toggle submenu
   };
-
+  const [scroll, setScroll] = useState(false);
   const [lastScrollY, setLastScrollY] = useState(0);
   const [navbarVisible, setNavbarVisible] = useState(true);
+
+
+  useEffect(() => {
+    const handleNavScroll = () => {
+      if (window.scrollY > 0) {
+        setScroll(true);
+      } else {
+        setScroll(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleNavScroll);
+    return () => {
+      window.removeEventListener("scroll", handleNavScroll);
+    };
+  }, []);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -38,7 +54,6 @@ const Navbar = () => {
       }
 
       setLastScrollY(currentScrollY); // Update last scroll position
-      setScroll(currentScrollY > 50); // For scrolled class (optional)
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -47,7 +62,7 @@ const Navbar = () => {
 
   return (
     <div
-      className={`navbar ${navbarVisible ? "navbar-visible" : "navbar-hidden"}`}
+      className={`navbar ${navbarVisible ? "navbar-visible" : "navbar-hidden"} ${scroll ? "scrolled" : ""} `}
     >
       <div className="navbar-left">
         <Link to={"/"}>
@@ -62,6 +77,14 @@ const Navbar = () => {
               <span>Home</span>
             </li>
           </Link>
+          <Link to={"/about-us"}>
+            <li>
+              <span>About Us</span>
+            </li>
+          </Link>
+
+       
+
           <Link className="services">
             <li
               onMouseEnter={() => setDropdownOpen(true)}
@@ -101,7 +124,7 @@ const Navbar = () => {
                       </Link>
                       <MdOutlineKeyboardArrowRight
                         className="nav-right-icon"
-                        onClick={() => handleToggle(index)} 
+                        onClick={() => handleToggle(index)}
                       />
 
                       {openIndex === index && ( // Show only for clicked item
@@ -124,17 +147,38 @@ const Navbar = () => {
             </li>
           </Link>
 
+          <Link className="services">
+            <li
+              onMouseEnter={() => setDropdownOpen(true)}
+              onMouseLeave={() => setDropdownOpen(false)}
+            >
+              <span>
+                Our Services <IoIosArrowDown className="down-icon" />
+              </span>
+
+              {dropdownOpen && (
+                <div className="services-link">
+                 
+                  <Link to={"/india-taxi-service"} className="service-link">India Taxi Service</Link>
+                  <Link to={"/tour-guide"} className="service-link">Tour Guide</Link>
+                </div>
+              )}
+            </li>
+          </Link>
+
+          <Link to={"/our-gallery"}>
+            <li>
+              <span>Gallery</span>
+            </li>
+          </Link>
+
           <Link to={"/blogs"}>
             <li>
               <span>Blogs</span>
             </li>
           </Link>
-          <Link to={"/about-us"}>
-            <li>
-              <span>About Us</span>
-            </li>
-          </Link>
-          <Link>
+
+          <Link to={"/contact-us"}>
             <li>
               <span>Contact Us</span>
             </li>

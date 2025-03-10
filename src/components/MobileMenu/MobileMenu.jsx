@@ -10,6 +10,8 @@ const MobileMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [openTaxiServices, setOpenTaxiServices] = useState(false);
   const [openPopularDestination, setOpenPopularDestination] = useState(false);
+  const [openServices, setOpenServices] = useState(false);
+
   const [activeDropdown, setActiveDropdown] = useState(null); // Track active submenu
 
   const handleCloseMenu = () => {
@@ -29,6 +31,10 @@ const MobileMenu = () => {
       >
         <Link className="menu-item" to="/" onClick={handleCloseMenu}>
           Home
+        </Link>
+
+        <Link className="menu-item" to="/about-us" onClick={handleCloseMenu}>
+          About Us
         </Link>
 
         {/* India Taxi Service Dropdown */}
@@ -89,15 +95,13 @@ const MobileMenu = () => {
               >
                 {navPopularDestination.map((item, index) => (
                   <div key={index} className="service-item">
-                    <div
-                      className="service-title"
-                
-                    >
+                    <div className="service-title">
                       <Link to={`/${item.link}`} onClick={handleCloseMenu}>
                         {item.title}
                       </Link>
                       {item.smDestination.length > 0 && (
-                        <FaChevronRight    onClick={() => toggleSubmenu(index)}
+                        <FaChevronRight
+                          onClick={() => toggleSubmenu(index)}
                           className={`submenu-icon ${
                             activeDropdown === index ? "active" : ""
                           }`}
@@ -134,12 +138,46 @@ const MobileMenu = () => {
           </AnimatePresence>
         </div>
 
+        {/* Services */}
+        <div className="services-dropdown">
+          <div
+            className="services-dropdown-item"
+            onClick={() => setOpenServices(!openServices)}
+          >
+            <span>Our Services</span>
+            <FaChevronRight
+              className={`menu-icon ${openTaxiServices ? "open" : ""}`}
+            />
+          </div>
+
+          <AnimatePresence>
+            {openServices && (
+              <motion.div
+                className="service-links"
+                initial={{ height: 0, opacity: 0 }}
+                animate={{ height: "auto", opacity: 1 }}
+                exit={{ height: 0, opacity: 0, transition: { duration: 0.4 } }}
+                transition={{ duration: 0.4, ease: "easeInOut" }}
+              >
+                <Link to={`/india-taxi-service`} onClick={handleCloseMenu}>
+                  India Taxi Service
+                </Link>
+                <Link to={`/tour-guide`} onClick={handleCloseMenu}>
+                  Tour Guide
+                </Link>
+              </motion.div>
+            )}
+          </AnimatePresence>
+        </div>
+
+        <Link className="menu-item" to="/gallery" onClick={handleCloseMenu}>
+          Gallery
+        </Link>
+
         <Link className="menu-item" to="/blogs" onClick={handleCloseMenu}>
           Blogs
         </Link>
-        <Link className="menu-item" to="/about-us" onClick={handleCloseMenu}>
-          About Us
-        </Link>
+
         <Link className="menu-item" to="/contact-us" onClick={handleCloseMenu}>
           Contact Us
         </Link>

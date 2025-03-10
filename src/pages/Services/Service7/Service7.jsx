@@ -3,7 +3,7 @@ import ServiceSidebar from "../../../components/ServiceSidebar/ServiceSidebar";
 import "./Service7.scss";
 
 import ServiceContent from "../../../components/ServiceContent/ServiceContent";
-
+import { ourTaxies } from "../../../assets/data";
 import {
   gatewayServices,
   hrTaxi,
@@ -15,7 +15,7 @@ const Service7 = () => {
   return (
     <div className="service7">
       <div className="service-banner">
-        <ServiceBanner />
+      <ServiceBanner destinationImg={ourTaxies}/>
       </div>
 
       <div className="service-container">

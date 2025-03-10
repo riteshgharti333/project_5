@@ -43,9 +43,18 @@
       padding: 0px;
     }
     .ourTaxi-card {
+      margin-top: 20px;
+
+      @include lg{
+        margin-top: 0;
+      }
+
+      @include md{
+      margin-top: 20px;
+      }
       img {
         width: 100%;
-        height: 400px;
+        height: 100%px;
         object-fit: contain;
       }
     }

@@ -29,7 +29,6 @@ import RajasthanDestination3 from "./pages/Destinations/RajasthanDestinations/Ra
 import RajasthanDestination4 from "./pages/Destinations/RajasthanDestinations/RajasthanDestination4/RajasthanDestination4";
 import RajasthanDestination5 from "./pages/Destinations/RajasthanDestinations/RajasthanDestination5/RajasthanDestination5";
 
-
 import UpDestination1 from "./pages/Destinations/UpDestinations/UpDestination1/UpDestination1";
 import UpDestination2 from "./pages/Destinations/UpDestinations/UpDestination2/UpDestination2";
 import UpDestination3 from "./pages/Destinations/UpDestinations/UpDestination3/UpDestination3";
@@ -38,7 +37,6 @@ import UpDestination4 from "./pages/Destinations/UpDestinations/UpDestination4/U
 import PbDestination1 from "./pages/Destinations/PunjabDestinations/PbDestination1/PbDestination1";
 import PbDestination2 from "./pages/Destinations/PunjabDestinations/PbDestination2/PbDestination2";
 
-
 import HpDestination1 from "./pages/Destinations/HpDestinations/HpDestination1/HpDestination1";
 import HpDestination2 from "./pages/Destinations/HpDestinations/HpDestination2/HpDestination2";
 import HpDestination3 from "./pages/Destinations/HpDestinations/HpDestination3/HpDestination3";
@@ -46,6 +44,10 @@ import HpDestination3 from "./pages/Destinations/HpDestinations/HpDestination3/H
 import UkDestination1 from "./pages/Destinations/UkDestinations/UkDestination1/UkDestination1";
 import UkDestination2 from "./pages/Destinations/UkDestinations/UkDestination2/UkDestination2";
 import UkDestination3 from "./pages/Destinations/UkDestinations/UkDestination3/UkDestination3";
+import Gallery from "./pages/Gallery/Gallery";
+import TourGuide from "./pages/OurServices/TourGuide/TourGuide";
+import TaxiService from "./pages/OurServices/TaxiService/TaxiService";
+import Contact from "./pages/Contact/Contact";
 
 function App() {
   const ScrollToTop = () => {
@@ -68,6 +70,13 @@ function App() {
           <Route path="/about-us" element={<About />} />
           <Route path="/blogs" element={<Blogs />} />
           <Route path="/blog1" element={<Blog />} />
+          <Route path="/our-gallery" element={<Gallery />} />
+          <Route path="/contact-us" element={<Contact />} />
+
+
+          {/* Our Services */}
+          <Route path="/india-taxi-service" element={<TaxiService />} />
+          <Route path="/tour-guide" element={<TourGuide />} />
 
           {/* Services */}
 
@@ -143,9 +152,14 @@ function App() {
 
           {/* Uttrakhand Destination */}
           <Route path="/nainital-destination" element={<UkDestination1 />} />
-          <Route path="/rishikesh-haridwar-destination" element={<UkDestination2 />} />
-          <Route path="/kedarnath-badrinath-destination" element={<UkDestination3 />} />
-
+          <Route
+            path="/rishikesh-haridwar-destination"
+            element={<UkDestination2 />}
+          />
+          <Route
+            path="/kedarnath-badrinath-destination"
+            element={<UkDestination3 />}
+          />
         </Routes>
         <Footer />
       </BrowserRouter>

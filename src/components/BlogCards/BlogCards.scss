@@ -1,0 +1,85 @@
+@use "../../styles/responsive.scss" as *;
+
+.blogCards {
+  h1 {
+    text-align: center;
+    color: $text-color;
+    font-size: 30px;
+  }
+
+  .blogCards-content {
+    margin-top: 30px;
+    .blog-content-card {
+      img {
+        width: 100%;
+      }
+
+      .blog-content-card-desc {
+        h3 {
+          color: $text-color;
+          margin-top: 10px;
+        }
+
+        p {
+          color: $p-color;
+          margin: 10px 0px;
+        }
+
+        span {
+          color: $text-color;
+          cursor: pointer;
+          transition: all 0.3s ease-in-out;
+
+          &:hover {
+            color: $btn-bg;
+          }
+        }
+      }
+    }
+  }
+}
+
+.blog-swiper {
+  overflow: hidden;
+  .swiper-slide {
+    padding-bottom: 60px;
+  }
+}
+
+.blog-swiper-prev,
+.blog-swiper-next {
+  position: absolute;
+  bottom: -35px;
+  transform: translateY(-50%);
+  z-index: 1000;
+  cursor: pointer;
+  font-size: 24px;
+  color: $primary-color;
+  padding: 10px;
+  border-radius: 50%;
+  transition: background 0.3s ease;
+}
+
+.blog-swiper-prev {
+  left: 38%;
+
+  @include lg {
+    left: 35%;
+  }
+
+  @include md {
+    display: none;
+  }
+}
+
+.blog-swiper-next {
+  right: 38%;
+
+  @include lg {
+    right: 35%;
+  }
+
+  @include md {
+    display: none;
+  }
+}

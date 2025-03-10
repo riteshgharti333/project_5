@@ -4,6 +4,8 @@ import "./Service5.scss";
 
 import ServiceContent from "../../../components/ServiceContent/ServiceContent";
 
+import { ourTaxies } from "../../../assets/data";
+
 import { gatewayServices, upTaxi, taxiFees } from "../../../assets/serviceData";
 import ServiceCard from "../../../components/ServiceCard/ServiceCard";
 
@@ -11,7 +13,7 @@ const Service5 = () => {
   return (
     <div className="service5">
       <div className="service-banner">
-        <ServiceBanner />
+      <ServiceBanner destinationImg={ourTaxies}/>
       </div>
 
       <div className="service-container">

@@ -1,8 +1,6 @@
 @use "../../styles/responsive.scss" as *;
 
 .popular {
-  // max-width: 1200px;
-  // margin: 0 auto;
   padding: 0px 10px;
 
   .popular-top {
@@ -65,7 +63,7 @@
         transition: all 0.3s ease-in-out;
 
         h2 {
-          font-size: 28px;
+          font-size: 30px;
           color: #fff;
         }
 
@@ -92,33 +90,36 @@
   }
 }
 
-.popular-cards {
-  .swiper-button-next,
-  .swiper-button-prev {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    color: $primary-color;
-    padding: 10px 20px;
-    border-radius: 50%;
-    transition: all 0.3s ease-in-out;
+.popular-prev,
+.popular-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #fff;
+  color: $primary-color;
+  border: none;
+  padding: 5px 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 10;
+  font-size: 20px;
+  transition: background 0.3s ease-in-out;
 
-    &:hover {
-      background: $primary-color;
-      color: #fff;
-    }
+  @include sm {
+    display: none;
   }
+}
 
-  .swiper-button-next {
-    right: 0;
-  }
+.popular-prev {
+  left: -20px;
+}
 
-  .swiper-button-prev {
-    left: 0;
-  }
+.popular-next {
+  right: -20px;
+}
 
-  .swiper-button-next::after,
-  .swiper-button-prev::after {
-    font-size: 20px;
-  }
+.popular-prev:hover,
+.popular-next:hover {
+  background: $primary-color;
+  color: #fff;
 }

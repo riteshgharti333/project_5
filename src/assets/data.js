@@ -204,11 +204,11 @@ export const reviews = [
 ];
 
 export const ourTaxies = [
-  { img: service_img1 },
-  { img: service_img2 },
-  { img: service_img3 },
-  { img: service_img4 },
-  { img: service_img5 },
+  { img: service_img1, title: "taxi service" },
+  { img: service_img2, title: "taxi service" },
+  { img: service_img3, title: "taxi service" },
+  { img: service_img4, title: "taxi service" },
+  { img: service_img5, title: "taxi service" },
 ];
 
 export const popularDestinations = [
@@ -293,12 +293,11 @@ export const navPopularDestination = [
 
     smDestination: [
       { title: "Jaipur", link: "jaipur-destination" },
-      
+
       { title: "Ranthambore", link: "ranthambore-destination" },
 
-
       { title: "Udaipur", link: "udaipur-destination" },
-      
+
       { title: "Jaisalmer", link: "jaisalmer-destination" },
 
       { title: "Pushkar", link: "pushkar-destination" },
@@ -338,7 +337,55 @@ export const navPopularDestination = [
     smDestination: [
       { title: "Nainital", link: "nainital-destination" },
       { title: "Rishikesh / Haridwar", link: "rishikesh-haridwar-destination" },
-      { title: "Kedarnath / Badrinath", link: "kedarnath-badrinath-destination" },
+      {
+        title: "Kedarnath / Badrinath",
+        link: "kedarnath-badrinath-destination",
+      },
     ],
+  },
+];
+
+export const blogcards = [
+  {
+    img: "https://www.ghumindiaghum.com/blog/wp-content/uploads/2025/02/Travel-Guide-Ranthambore-National-Park-Safari.jpg",
+    title: "Travel Guide - Ranthambore National Park Safari",
+    date: "Febuary 20,2025",
+    link: "",
+  },
+  {
+    img: "https://www.ghumindiaghum.com/blog/wp-content/uploads/2025/02/Travel-Guide-Ranthambore-National-Park-Safari.jpg",
+    title: "Travel Guide - Ranthambore National Park Safari",
+    date: "Febuary 20,2025",
+    link: "",
+  },
+  {
+    img: "https://www.ghumindiaghum.com/blog/wp-content/uploads/2025/02/Travel-Guide-Ranthambore-National-Park-Safari.jpg",
+    title: "Travel Guide - Ranthambore National Park Safari",
+    date: "Febuary 20,2025",
+    link: "",
+  },
+  {
+    img: "https://www.ghumindiaghum.com/blog/wp-content/uploads/2025/02/Travel-Guide-Ranthambore-National-Park-Safari.jpg",
+    title: "Travel Guide - Ranthambore National Park Safari",
+    date: "Febuary 20,2025",
+    link: "",
+  },
+  {
+    img: "https://www.ghumindiaghum.com/blog/wp-content/uploads/2025/02/Travel-Guide-Ranthambore-National-Park-Safari.jpg",
+    title: "Travel Guide - Ranthambore National Park Safari",
+    date: "Febuary 20,2025",
+    link: "",
+  },
+  {
+    img: "https://www.ghumindiaghum.com/blog/wp-content/uploads/2025/02/Travel-Guide-Ranthambore-National-Park-Safari.jpg",
+    title: "Travel Guide - Ranthambore National Park Safari",
+    date: "Febuary 20,2025",
+    link: "",
+  },
+  {
+    img: "https://www.ghumindiaghum.com/blog/wp-content/uploads/2025/02/Travel-Guide-Ranthambore-National-Park-Safari.jpg",
+    title: "Travel Guide - Ranthambore National Park Safari",
+    date: "Febuary 20,2025",
+    link: "",
   },
 ];

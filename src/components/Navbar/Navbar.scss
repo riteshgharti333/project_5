@@ -10,16 +10,19 @@
   z-index: 999;
   width: 100%;
   background: #fff;
-  overflow: visible;
+  overflow: visible !important;
   transition: all 0.5s ease-in-out;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  &.scrolled {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
   // &.navbar-visible {
   //   transform: translateY(0);
   // }
 
-  // &.navbar-hidden {
-  //   transform: translateY(-100%);
-  // }
+  &.navbar-hidden {
+    transform: translateY(-100%);
+  }
 
   .navbar-left {
     img {
@@ -27,7 +30,7 @@
     }
   }
   .navbar-center {
-    @include md {
+    @include lg {
       display: none;
     }
     ul {

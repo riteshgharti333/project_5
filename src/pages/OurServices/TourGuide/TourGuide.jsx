@@ -1,0 +1,84 @@
+import { taxiFees } from "../../../assets/serviceData";
+import ServiceCard from "../../../components/ServiceCard/ServiceCard";
+import ServiceSidebar from "../../../components/ServiceSidebar/ServiceSidebar";
+import "./TourGuide.scss";
+
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
+
+const TourGuide = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      easing: "ease-in-out",
+      once: true,
+    });
+  }, []);
+
+  return (
+    <div className="tourGuide">
+      <div className="tourGuide-banner" data-aos="fade-up">
+        <img
+          src="https://images.unsplash.com/photo-1612438214708-f428a707dd4e?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt=""
+        />
+
+        <div className="tourGuide-banner-desc">
+          <h1>Tour Operator Service</h1>
+        </div>
+      </div>
+
+      <div className="tourGuide-content">
+        <div className="tourGuide-contet-left" data-aos="fade-right">
+          <h1>Tour Operator Service</h1>
+          <p>
+            Getway Cab Service, based in the bustling area of Karol Bagh in
+            Delhi, stands out as a leading tour operator for North India. Our
+            mission is to provide travelers with an unforgettable journey
+            through this culturally rich and diverse region. North India is home
+            to a myriad of attractions, from the snow-capped peaks of the
+            Himalayas to the golden sands of the Thar Desert, and from the
+            serene banks of the Ganges to the vibrant hustle and bustle of
+            Delhi, Jaipur, and Agra. We understand that each traveler has unique
+            interests and preferences, which is why we offer a wide range of
+            tour packages tailored to various needs.
+          </p>
+          <p>
+            Our tour packages include cultural tours, adventure tours, religious
+            tours, and wildlife tours, among others. Cultural tours take you
+            through the historical lanes of Delhi, the royal palaces of Jaipur,
+            and the timeless beauty of the Taj Mahal in Agra. Adventure
+            enthusiasts can embark on treks in the Himalayas or safaris in the
+            deserts of Rajasthan. For those seeking spiritual solace, our
+            religious tours cover significant pilgrimage sites like Varanasi,
+            Haridwar, and Amritsar.
+          </p>
+          <p>
+            Every tour is led by experienced and knowledgeable guides who are
+            passionate about the region's history, culture, and traditions. They
+            ensure that each journey is not just a trip, but an enriching
+            experience. From arranging transportation and accommodations to
+            planning daily itineraries, our team takes care of every detail,
+            allowing you to immerse yourself fully in the beauty and wonder of
+            North India.
+          </p>
+        </div>
+        <div className="tourGuide-contet-right">
+          <ServiceSidebar />
+        </div>
+      </div>
+
+      <div className="tourGuide-bottom">
+        <h1>Our Taxi Services</h1>
+        <div className="tourGuide-cards">
+          {taxiFees.map((item, index) => (
+            <ServiceCard item={item} key={index} />
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default TourGuide;

@@ -23,4 +23,15 @@
       }
     }
   }
+
+  .home-blogs-cards {
+    max-width: 1200px;
+    margin: auto;
+    margin-bottom: 70px;
+    width: 100%;
+
+    @include xl {
+      padding: 0px 10px;
+    }
+  }
 }

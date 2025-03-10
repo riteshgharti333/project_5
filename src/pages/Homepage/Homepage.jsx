@@ -1,3 +1,4 @@
+import BlogCards from "../../components/BlogCards/BlogCards";
 import HomeBanner from "../../components/HomeBanner/HomeBanner";
 import OurTaxi from "../../components/OurTaxi/OurTaxi";
 import Popular from "../../components/Popular/Popular";
@@ -13,19 +14,19 @@ const Homepage = () => {
       <HomeBanner />
       <div className="homepage-content">
         <div className="child">
+          <Tour />
+          <OurTaxi />
+          <Rental />
 
-      <Tour />
-      <OurTaxi />
-      <Rental />
+          <Taxi />
 
-      <Taxi />
-
-      <Popular />
-      </div>
+          <Popular />
+        </div>
       </div>
       <Review />
-    
-
+      <div className="home-blogs-cards">
+      <BlogCards />
+      </div>
     </div>
   );
 };

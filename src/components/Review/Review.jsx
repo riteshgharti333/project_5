@@ -66,7 +66,7 @@ const Review = () => {
             className="review-swiper"
           >
             {reviews.map((item, index) => (
-              <SwiperSlide key={index} data-aos="fade-up">
+              <SwiperSlide key={index}>
                 <div className="review-right-card">
                   <div className="review-right-top">
                     <img

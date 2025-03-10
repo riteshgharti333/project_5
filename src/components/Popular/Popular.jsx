@@ -26,13 +26,16 @@ const Popular = () => {
           modules={[Navigation]}
           slidesPerView={3.5}
           spaceBetween={20}
-          navigation={true}
           speed={1200}
           breakpoints={{
             0: { slidesPerView: 1 },
             480: { slidesPerView: 1.5 },
             768: { slidesPerView: 2.5 },
             1024: { slidesPerView: 3.5 },
+          }}
+          navigation={{
+            prevEl: ".popular-prev",
+            nextEl: ".popular-next",
           }}
           className="popular-swiper"
         >
@@ -51,6 +54,8 @@ const Popular = () => {
             </SwiperSlide>
           ))}
         </Swiper>
+        <div className="popular-prev">❮</div>
+        <div className="popular-next">❯</div>
       </div>
     </div>
   );

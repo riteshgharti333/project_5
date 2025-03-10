@@ -8,6 +8,7 @@ import { useRef } from "react";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
+import BlogCards from "../../components/BlogCards/BlogCards";
 
 const About = () => {
   const [startCount, setStartCount] = useState(false);
@@ -151,6 +152,10 @@ const About = () => {
             <p>AMAZING PLACES TO VISIT</p>
           </div>
         ))}
+      </div>
+
+      <div className="about-content4">
+        <BlogCards />
       </div>
     </div>
   );

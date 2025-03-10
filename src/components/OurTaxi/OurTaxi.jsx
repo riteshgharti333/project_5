@@ -4,7 +4,7 @@ import "aos/dist/aos.css";
 import "./OurTaxi.scss";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Navigation } from "swiper/modules";
+import { Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import { ourTaxies } from "../../assets/data";
@@ -21,7 +21,7 @@ const OurTaxi = () => {
   return (
     <div className="ourTaxi">
       <div className="ourTaxi-top" data-aos="fade-up">
-        <h1>Our taxi service : Trust the Wheel, Enjoy the Ride</h1>
+        <h1>Our Taxi service : Trust the Wheel, Enjoy the Ride</h1>
         <p>
           Traveling across North India is a dream for many, and having a
           reliable car rental service can make this dream a reality. *Global
@@ -44,7 +44,6 @@ const OurTaxi = () => {
             disableOnInteraction: false,
           }}
           modules={[Autoplay]}
-          className="photoAlbums-slider album-swiper"
           initialSlide={1}
           breakpoints={{
             0: {
@@ -52,7 +51,7 @@ const OurTaxi = () => {
               spaceBetween: 10,
             },
             768: {
-              slidesPerView: 1,
+              slidesPerView: 2,
               spaceBetween: 15,
             },
             1024: {

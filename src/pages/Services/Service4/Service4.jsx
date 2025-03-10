@@ -3,6 +3,7 @@ import ServiceSidebar from "../../../components/ServiceSidebar/ServiceSidebar";
 import "./Service4.scss";
 
 import ServiceContent from "../../../components/ServiceContent/ServiceContent";
+import { ourTaxies } from "../../../assets/data";
 
 import {
   gatewayServices,
@@ -15,7 +16,7 @@ const Service4 = () => {
   return (
     <div className="service4">
       <div className="service-banner">
-        <ServiceBanner />
+      <ServiceBanner destinationImg={ourTaxies}/>
       </div>
 
       <div className="service-container">

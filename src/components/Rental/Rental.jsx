@@ -58,7 +58,7 @@ const Rental = () => {
               spaceBetween: 10,
             },
             768: {
-              slidesPerView: 1,
+              slidesPerView: 2,
               spaceBetween: 15,
             },
             1024: {
