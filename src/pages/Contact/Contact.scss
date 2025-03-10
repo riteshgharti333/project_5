@@ -42,6 +42,9 @@
 
   .contact-form {
     padding: 40px 0px;
+    @include md {
+      padding: 40px 10px;
+    }
     .form-container {
       padding: 40px;
       width: 100%;
@@ -49,6 +52,10 @@
       border: 1px solid #dddddd;
       border-radius: 5px;
       margin: auto;
+
+      @include md {
+        padding: 20px 10px;
+      }
     }
 
     h2 {
@@ -148,7 +155,7 @@
         margin-top: 30px;
         gap: 30px;
 
-        @include md{
+        @include md {
           flex-direction: column;
         }
         .address-item {
