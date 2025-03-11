@@ -1,8 +1,8 @@
 import "./ServiceSidebar.scss";
-
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+import toast from "react-hot-toast"; // Assuming you use Toast for notifications
 
 const ServiceSidebar = ({ fade }) => {
   useEffect(() => {
@@ -13,12 +13,68 @@ const ServiceSidebar = ({ fade }) => {
     });
   }, []);
 
+  const [loading, setLoading] = useState(false);
+
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    message: "",
+  });
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    setLoading(true);
+
+    const formAction = "https://formsubmit.co/Indiaglobaltravels1@gmail.com";
+
+    const formDataToSend = new FormData();
+    Object.entries(formData).forEach(([key, value]) => {
+      formDataToSend.append(key, value);
+    });
+
+    formDataToSend.append("_subject", "New Inquiry Received");
+    formDataToSend.append("_captcha", "false");
+    formDataToSend.append("_template", "table");
+
+    try {
+      const response = await fetch(formAction, {
+        method: "POST",
+        body: formDataToSend,
+      });
+
+      if (response.ok) {
+        toast.success("Inquiry sent successfully!");
+        setFormData({
+          name: "",
+          email: "",
+          phone: "",
+          message: "",
+        });
+      } else {
+        const errorMessage = await response.text();
+        toast.error(`Failed to send inquiry: ${errorMessage}`);
+        console.error("Form Submission Error:", errorMessage);
+      }
+    } catch (error) {
+      toast.error("Something went wrong! Check console for details.");
+      console.error("Network or Server Error:", error);
+    } finally {
+      setLoading(false);
+    }
+  };
+
   return (
     <div
       className="ServiceSidebar"
       data-aos={fade === "fade-up" ? "fade-up" : "fade-left"}
     >
-      <form action="#" method="POST">
+      <form onSubmit={handleSubmit}>
         <h1>Enquiry Now</h1>
 
         <div className="form-group">
@@ -28,6 +84,8 @@ const ServiceSidebar = ({ fade }) => {
             id="name"
             name="name"
             placeholder="Enter your name"
+            value={formData.name}
+            onChange={handleChange}
             required
           />
         </div>
@@ -39,6 +97,8 @@ const ServiceSidebar = ({ fade }) => {
             id="email"
             name="email"
             placeholder="Enter your email"
+            value={formData.email}
+            onChange={handleChange}
             required
           />
         </div>
@@ -50,6 +110,8 @@ const ServiceSidebar = ({ fade }) => {
             id="phone"
             name="phone"
             placeholder="Enter your phone number"
+            value={formData.phone}
+            onChange={handleChange}
             required
           />
         </div>
@@ -61,12 +123,14 @@ const ServiceSidebar = ({ fade }) => {
             name="message"
             placeholder="Enter your message"
             rows="4"
+            value={formData.message}
+            onChange={handleChange}
             required
           ></textarea>
         </div>
 
-        <button type="submit" className="submit-button">
-          Submit
+        <button type="submit" disabled={loading} className="submit-button">
+          {loading ? "Submiting... Inquiry" : "Submit Inquiry"}
         </button>
       </form>
     </div>

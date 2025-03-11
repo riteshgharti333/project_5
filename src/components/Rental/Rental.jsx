@@ -8,13 +8,14 @@ import { Autoplay, Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import { ourTaxies } from "../../assets/data";
+import { Link } from "react-router-dom";
 
 const Rental = () => {
   useEffect(() => {
     AOS.init({
-      duration: 1000, 
+      duration: 1000,
       easing: "ease-in-out",
-      once: true, 
+      once: true,
     });
   }, []);
 
@@ -68,12 +69,12 @@ const Rental = () => {
           }}
         >
           {ourTaxies.map((item, index) => (
-            <SwiperSlide
-              key={index}
-            >
-              <div className="ourTaxi-card">
-                <img src={item.img} alt="" />
-              </div>
+            <SwiperSlide key={index}>
+              <Link to={item.link}>
+                <div className="ourTaxi-card">
+                  <img src={item.img} alt="" />
+                </div>
+              </Link>
             </SwiperSlide>
           ))}
         </Swiper>

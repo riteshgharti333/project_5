@@ -1,5 +1,7 @@
 import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
 
+import { Toaster } from "react-hot-toast";
+
 import Homepage from "./pages/Homepage/Homepage";
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
@@ -224,6 +226,15 @@ function App() {
           />
         </Routes>
         <Footer />
+        <Toaster
+          toastOptions={{
+            style: {
+              fontFamily: "Jost, sans-serif",
+              fontSize: "18px",
+              fontWeight: "600",
+            },
+          }}
+        />
       </BrowserRouter>
     </div>
   );

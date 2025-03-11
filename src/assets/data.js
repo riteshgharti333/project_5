@@ -179,11 +179,19 @@ export const taxies = [
 ];
 
 export const ourTaxies = [
-  { img: service_img1, title: "taxi service" },
-  { img: service_img2, title: "taxi service" },
-  { img: service_img3, title: "taxi service" },
-  { img: service_img4, title: "taxi service" },
-  { img: service_img5, title: "taxi service" },
+  {
+    img: service_img1,
+    title: "taxi service",
+    link: "uttarakhand-taxi-service",
+  },
+  { img: service_img2, title: "taxi service", link: "punjab-taxi-service" },
+  { img: service_img3, title: "taxi service", link: "rajasthan-taxi-service" },
+  { img: service_img4, title: "taxi service", link: "punjab-taxi-service" },
+  {
+    img: service_img5,
+    title: "taxi service",
+    link: "uttar-pradesh-taxi-service",
+  },
 ];
 
 export const popularDestinations = [

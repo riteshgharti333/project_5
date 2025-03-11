@@ -8,13 +8,14 @@ import { Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import { ourTaxies } from "../../assets/data";
+import { Link } from "react-router-dom";
 
 const OurTaxi = () => {
   useEffect(() => {
     AOS.init({
-      duration: 1000, 
+      duration: 1000,
       easing: "ease-in-out",
-      once: true, 
+      once: true,
     });
   }, []);
 
@@ -25,10 +26,10 @@ const OurTaxi = () => {
         <p>
           Traveling across North India is a dream for many, and having a
           reliable car rental service can make this dream a reality. *Global
-          India Tour* is your go-to solution for all your travel needs, providing
-          comfort, safety, and affordability. Let’s dive into why Global India
-          Tour should be your top choice for exploring the rich cultural
-          heritage and breathtaking landscapes of North India.
+          India Tour* is your go-to solution for all your travel needs,
+          providing comfort, safety, and affordability. Let’s dive into why
+          Global India Tour should be your top choice for exploring the rich
+          cultural heritage and breathtaking landscapes of North India.
         </p>
       </div>
 
@@ -62,9 +63,11 @@ const OurTaxi = () => {
         >
           {ourTaxies.map((item, index) => (
             <SwiperSlide key={index}>
-              <div className="ourTaxi-card">
-                <img src={item.img} alt="" />
-              </div>
+              <Link to={item.link}>
+                <div className="ourTaxi-card">
+                  <img src={item.img} alt="" />
+                </div>
+              </Link>
             </SwiperSlide>
           ))}
         </Swiper>
