@@ -210,7 +210,7 @@ const Navbar = () => {
             </li>
           </Link>
 
-          <Link to={"/blogs"}>
+          <Link to={"/blog"}>
             <li>
               <span>Blogs</span>
             </li>

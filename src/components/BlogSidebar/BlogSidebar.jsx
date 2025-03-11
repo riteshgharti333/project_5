@@ -7,7 +7,7 @@ const blogSidebar = () => {
       <div className="blogSidebar-item">
         <h3>Recent Posts</h3>
         <div className="posts">
-          <p>
+          {/* <p>
             <MdOutlineKeyboardArrowRight className="post-icon" /> Char Dham
             Yatra 2025 Begins April 30: Find More Details
           </p>
@@ -22,7 +22,7 @@ const blogSidebar = () => {
           <p>
             <MdOutlineKeyboardArrowRight className="post-icon" /> Char Dham
             Yatra 2025 Begins April 30: Find More Details
-          </p>
+          </p> */}
         </div>
       </div>
 
@@ -31,7 +31,7 @@ const blogSidebar = () => {
       <div className="blogSidebar-item">
         <h3>Categories</h3>
         <div className="posts">
-          <p>
+          {/* <p>
             <MdOutlineKeyboardArrowRight className="post-icon" />
             Explore Dubai
           </p>
@@ -54,7 +54,7 @@ const blogSidebar = () => {
           <p>
             <MdOutlineKeyboardArrowRight className="post-icon" />
             Explore Dubai
-          </p>
+          </p> */}
         </div>
       </div>
     </div>

@@ -6,9 +6,9 @@ import { Link } from "react-router-dom";
 
 import BlogSidebar from "../../components/BlogSidebar/BlogSidebar";
 
-import { blog1 } from "../../assets/blogData";
+import { blog2 } from "../../assets/blogData";
 
-const Blog = () => {
+const Blog2 = () => {
   return (
     <div className="blog">
       <div className="blog-container">
@@ -33,9 +33,9 @@ const Blog = () => {
         </div>
         <div className="blog-content">
           <div className="blog-content-left">
-            <img src={blog1.blogContent1.img} alt="" />
+            <img src={blog2.blogContent1.img} alt="" />
             <div className="blog-content-item">
-              <h1>{blog1.blogContent1.title}</h1>
+              <h1>{blog2.blogContent1.title}</h1>
 
               <div className="user">
                 <p>
@@ -48,15 +48,17 @@ const Blog = () => {
                 </p>
               </div>
 
-              <p className="desc">{blog1.blogContent1.desc}</p>
+              <p className="desc">{blog2.blogContent1.desc}</p>
             </div>
 
             <div className="blog-content-item">
-              {blog1.blogContent2.map((item, index) => (
+              {blog2.blogContent2.map((item, index) => (
                 <>
                   <h3>{item.title}</h3>
                   <img src={item.img} alt="" />
-                  <p>{item.desc}</p>
+                  {item.desc.map((item, index) => (
+                    <p key={index}>{item}</p>
+                  ))}
                 </>
               ))}
             </div>
@@ -135,4 +137,4 @@ const Blog = () => {
   );
 };
 
-export default Blog;
+export default Blog2;

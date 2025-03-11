@@ -1,4 +1,3 @@
-import { blogcards } from "../../assets/data";
 import "./BlogCards.scss";
 
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -9,6 +8,8 @@ import "swiper/css/pagination";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import { blogs } from "../../assets/blogData";
+import { Link } from "react-router-dom";
 
 const BlogCards = () => {
   useEffect(() => {
@@ -47,14 +48,18 @@ const BlogCards = () => {
           }}
           className="blog-swiper"
         >
-          {blogcards.map((item, index) => (
+          {blogs.map((item, index) => (
             <SwiperSlide key={index}>
               <div className="blog-content-card">
                 <img src={item.img} />
                 <div className="blog-content-card-desc">
-                  <h3>{item.title}</h3>
-                  <p>{item.date}</p>
-                  <span>Read More.....</span>
+                  <Link to={`/blog/${item.link}`}>
+                    <h3>{item.title}</h3>
+                  </Link>
+                  <p>Febuary 20,2025</p>
+                  <Link to={`/blog/${item.link}`}>
+                    <span>Read More.....</span>
+                  </Link>
                 </div>
               </div>
             </SwiperSlide>

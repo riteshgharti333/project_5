@@ -9,6 +9,7 @@ import { useRef } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import BlogCards from "../../components/BlogCards/BlogCards";
+import { services } from "../../assets/data";
 
 const About = () => {
   const [startCount, setStartCount] = useState(false);
@@ -54,20 +55,28 @@ const About = () => {
       <div className="about-content1" data-aos="fade-up">
         <div className="about-content1-top">
           <h1>Why Choose Us</h1>
-          <p>These popular destinations have a lot to offer</p>
         </div>
 
         <div className="about-content1-cards" data-aos="fade-up">
-          {[...Array(3)].map((_, i) => (
-            <div className="about-content1-card" key={i}>
-              <div className="content">
-                <img src={like} alt="" />
-                <div className="content-desc">
-                  <h1>Easy & Quick Booking</h1>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Asperiores, eos.
-                  </p>
+          {services.slice(0, 3).map((item, index) => (
+            <div className="about-card" key={index} data-aos="fade-right">
+              <div className="about-card-top">
+                {item.icon && <item.icon className="about-card-icon" />}
+              </div>
+
+              <div className="about-card-bottom">
+                <h2>{item.title}</h2>
+                <div className="about-card-bottom-desc">
+                  <h3>{item.smTitle}</h3>
+                  <p>{item.desc}</p>
+                </div>
+
+                <div className="about-card-bottom-option">
+                  {item.servicesOption.map((option, index) => (
+                    <span key={index} data-aos="zoom-in">
+                      {option}
+                    </span>
+                  ))}
                 </div>
               </div>
             </div>
@@ -78,34 +87,34 @@ const About = () => {
       <div className="about-content2">
         <div className="about-content2-top">
           <div className="about-content2-top-left" data-aos="fade-right">
-            <h1>About Global India Traval</h1>
+            <h1>
+              Welcome To Getway Cab Service ! No.1 Cab Service Operator In Delhi
+            </h1>
 
             <p>
-              Bringing you a modern, comfortable, and connected travel
-              experience is one of our highest priorities and that's why we
-              continuously try to improve your experience when you book anything
-              with us.
+              Getway Cab Service, located in the bustling heart of Karol Bagh,
+              New Delhi, offers exceptional car rental services tailored to meet
+              your travel needs. Whether you're planning a local trip or an
+              outstation journey, our fleet of well-maintained vehicles ensures
+              a comfortable and safe ride. Our extensive range of vehicles
+              includes sedans, SUVs, and luxury cars, catering to diverse
+              customer preferences. Each car in our fleet is equipped with
+              modern amenities, ensuring a pleasant experience. Whether you're
+              traveling solo or with family, Getway Cab Service has the perfect
+              vehicle for you. We are dedicated to offering exceptional car
+              rental, hotel booking, air ticketing, and comprehensive tour
+              packages, ensuring a seamless and unforgettable travel experience.
+              With our extensive range of services and customer-centric
+              approach, we cater to all your travel needs with the utmost
+              professionalism and care.
             </p>
 
             <p>
-              We really appreciate and welcome any of suggstions you might have
-              for us, so feel free drop us line anytime.
-            </p>
-
-            <p>
-              Ghum India Ghum is a leading tour operator come travel agent in
-              Delhi and We deals in tour packages for throughout India, Starting
-              from Golden Triangle tour (Delhi,Agra & Jaipur) to Royal Rajasthan
-              tour to Taj Mahal Day tour to Kashi Spiritual tour to Buddhists
-              Circuit tour to Kerala and Goa tour in Short we are one stop tour
-              operator for all India tour packages. Apart from India we are also
-              taking care of International tour packages of Nepal, Bhutan, Sri
-              Lanka, Dubai, Malaysia, Singapore, Europe, USA, etc packages. Ghum
-              India Ghum started its journey from 2014 and within 3-4 yrs, it
-              established itself as one of the best travel agents of North
-              India. Book your tour with us and experience the excellence
-              because we truly follow our tag line which is "Committed to
-              Excellence".
+              We are dedicated to offering exceptional car rental, hotel
+              booking, air ticketing, and comprehensive tour packages, ensuring
+              a seamless and unforgettable travel experience. With our extensive
+              range of services and customer-centric approach, we cater to all
+              your travel needs with the utmost professionalism and care.
             </p>
           </div>
 
@@ -119,26 +128,32 @@ const About = () => {
 
         <div className="about-content2-bottom" data-aos="fade-up">
           <p>
-            Our team is made up of dynamic individuals who are thoroughly
-            experienced in the travel and tourism industry, full of new ideas,
-            enthusiasm and deep love for the countries we represent : India. We
-            are uniquely positioned to provide first class service to our
-            clients around the India & Abroad. Our teams provide a high level of
-            trust, agility and expertise to every engagements. We are specialize
-            in adding value to our clients by partnering with them through our
-            personalized supports. We are uniquely positioned to provide first
-            class service to our clients around the world.
+            At Getway Cab Service, we provide a fleet of well-maintained
+            vehicles, including sedans, SUVs, and luxury cars, ensuring a
+            comfortable and reliable ride. Finding the perfect accommodation is
+            crucial for a memorable trip. We offer hotel booking services that
+            cater to all budgets and preferences, from luxurious five-star
+            hotels to cozy budget accommodations.
           </p>
           <p>
-            The Best part about our company is we believe in quality of service
-            and guest positive feedback is only our real saving and strength.
-            Our team works round the clock to make each and every tour
-            successful. We don't believe in keeping huge margin on a tour
-            package, we believe in keeping low margin and providing good
-            services, So that guest can recommend our company to their near and
-            dear one. Our main strength is our guest positive review due which
-            we are having almost 5 out of 5 ratings on all major coustomer based
-            review websites.
+            Planning your travel has never been easier with our air ticketing
+            services. We provide hassle-free booking for both domestic and
+            international flights, ensuring that you get the best prices and
+            convenient flight schedules.
+          </p>
+          <p>
+            Discover the beauty and diversity of North India with our
+            meticulously crafted tour packages. From the majestic Himalayas and
+            serene hill stations to vibrant cities and historical landmarks, our
+            tour packages are designed to offer a comprehensive and enriching
+            travel experience.
+          </p>
+          <p>
+            At Getway Cab Service, we are passionate about making your travel
+            dreams come true. Explore the wonders of North India with us and
+            create unforgettable memories. Let us be your trusted travel partner
+            and guide you through the enchanting landscapes and vibrant cultures
+            of this incredible region.
           </p>
         </div>
       </div>

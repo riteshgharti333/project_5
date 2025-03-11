@@ -12,12 +12,20 @@
     .blog-content-card {
       img {
         width: 100%;
+        height: 200px;
+        object-fit: cover;
       }
 
       .blog-content-card-desc {
         h3 {
           color: $text-color;
           margin-top: 10px;
+
+          transition: all 0.3s ease-in-out;
+
+          &:hover {
+            color: $btn-bg;
+          }
         }
 
         p {

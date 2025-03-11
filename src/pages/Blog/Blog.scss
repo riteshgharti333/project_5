@@ -45,7 +45,6 @@
     .blog-content {
       display: flex;
       background: #fff;
-      
 
       @include lg {
         flex-direction: column;
@@ -58,8 +57,41 @@
           width: 100%;
         }
 
-        .blog-content1 {
+        .blog-content-item {
           padding: 20px;
+
+          ul ,ol {
+            margin-top: 10px;
+            color: $p-color;
+            margin-left: 30px;
+
+            li {
+              font-size: 18px;
+              margin-bottom: 10px;
+
+              span {
+                font-weight: 500;
+              }
+
+              &::marker {
+                color: $text-color;
+              }
+            }
+          }
+
+          h3 {
+            color: $text-color;
+            margin-bottom: 10px;
+            font-size: 25px;
+          }
+          p {
+            margin: 20px 0px;
+
+            @include md{
+              text-align: justify;
+            }
+          }
+
           .blog-content-tags {
             display: flex;
             gap: 10px;

@@ -6,9 +6,9 @@ import { Link } from "react-router-dom";
 
 import BlogSidebar from "../../components/BlogSidebar/BlogSidebar";
 
-import { blog1 } from "../../assets/blogData";
+import { blog4 } from "../../assets/blogData";
 
-const Blog = () => {
+const Blog4 = () => {
   return (
     <div className="blog">
       <div className="blog-container">
@@ -33,9 +33,9 @@ const Blog = () => {
         </div>
         <div className="blog-content">
           <div className="blog-content-left">
-            <img src={blog1.blogContent1.img} alt="" />
+            <img src={blog4.blogContent1.img} alt="" />
             <div className="blog-content-item">
-              <h1>{blog1.blogContent1.title}</h1>
+              <h1>{blog4.blogContent1.title}</h1>
 
               <div className="user">
                 <p>
@@ -48,16 +48,44 @@ const Blog = () => {
                 </p>
               </div>
 
-              <p className="desc">{blog1.blogContent1.desc}</p>
+              <p className="desc">{blog4.blogContent1.desc}</p>
             </div>
 
             <div className="blog-content-item">
-              {blog1.blogContent2.map((item, index) => (
-                <>
-                  <h3>{item.title}</h3>
-                  <img src={item.img} alt="" />
-                  <p>{item.desc}</p>
-                </>
+              <h3> {blog4.blogContent2.title}</h3>
+
+              {blog4.blogContent2.desc.map((item, index) => (
+                <p key={index}>{item}</p>
+              ))}
+
+              {blog4.blogContent2.smdesc.map((item, index) => (
+                <p key={index}>{item}</p>
+              ))}
+            </div>
+
+            <div className="blog-content-item">
+              <h3>{blog4.blogContent3.title}</h3>
+              <p>{blog4.blogContent3.desc}</p>
+            </div>
+
+            <div className="blog-content-item">
+              <h3>{blog4.blogContent4.title}</h3>
+              <p>{blog4.blogContent4.desc}</p>
+            </div>
+
+            <div className="blog-content-item">
+              <h3>{blog4.blogContent5.title}</h3>
+              <ol>
+                {blog4.blogContent5.desc.map((item, index) => (
+                  <li key={index}>{item}</li>
+                ))}
+              </ol>
+            </div>
+
+            <div className="blog-content-item">
+              <h3>{blog4.blogContent6.title}</h3>
+              {blog4.blogContent6.desc.map((item, index) => (
+                <p key={index}>{item}</p>
               ))}
             </div>
 
@@ -135,4 +163,4 @@ const Blog = () => {
   );
 };
 
-export default Blog;
+export default Blog4;

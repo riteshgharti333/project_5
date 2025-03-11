@@ -6,9 +6,9 @@ import { Link } from "react-router-dom";
 
 import BlogSidebar from "../../components/BlogSidebar/BlogSidebar";
 
-import { blog1 } from "../../assets/blogData";
+import { blog3 } from "../../assets/blogData";
 
-const Blog = () => {
+const Blog3 = () => {
   return (
     <div className="blog">
       <div className="blog-container">
@@ -33,9 +33,9 @@ const Blog = () => {
         </div>
         <div className="blog-content">
           <div className="blog-content-left">
-            <img src={blog1.blogContent1.img} alt="" />
+            <img src={blog3.blogContent1.img} alt="" />
             <div className="blog-content-item">
-              <h1>{blog1.blogContent1.title}</h1>
+              <h1>{blog3.blogContent1.title}</h1>
 
               <div className="user">
                 <p>
@@ -48,17 +48,35 @@ const Blog = () => {
                 </p>
               </div>
 
-              <p className="desc">{blog1.blogContent1.desc}</p>
+              <p className="desc">{blog3.blogContent1.desc}</p>
             </div>
 
             <div className="blog-content-item">
-              {blog1.blogContent2.map((item, index) => (
-                <>
-                  <h3>{item.title}</h3>
-                  <img src={item.img} alt="" />
-                  <p>{item.desc}</p>
-                </>
-              ))}
+              <ul>
+                {blog3.blogContent2.desc.map((item, index) => (
+                  <li key={index}>
+                    {" "}
+                    <span>{item.title}</span> {item.desc}
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            <div className="blog-content-item">
+              <h3>{blog3.blogContent3.title}</h3>
+              <ul>
+                {blog3.blogContent3.desc.map((item, index) => (
+                  <li key={index}>
+                    {" "}
+                    <span>{item.title}</span> {item.desc}
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            <div className="blog-content-item">
+              <h3>{blog3.blogContent4.title}</h3>
+              <p>{blog3.blogContent4.desc}</p>
             </div>
 
             <hr className="from-border" />
@@ -135,4 +153,4 @@ const Blog = () => {
   );
 };
 
-export default Blog;
+export default Blog3;

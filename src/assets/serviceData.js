@@ -30,14 +30,14 @@ export const taxiFees = [
     DriverTA: "300/- Per Night",
   },
   {
-    img: crysta,
+    img: tempo,
     carType: "Crysta",
     local: "20 Per/KM (8/80)",
     Outstation: "21 Per/KM (250KM/Day)",
     DriverTA: "	400/- Per Night",
   },
   {
-    img: tempo,
+    img: crysta,
     carType: "Tempo Traveler",
     local: "27 Per/KM (8/80)",
     Outstation: "28 Per/KM (250KM/Day)",

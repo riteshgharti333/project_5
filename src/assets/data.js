@@ -156,8 +156,6 @@ export const banners = [
 ];
 
 export const taxies = [
-  { img: taxi4, vehicle: "Santro/Wagon-R (AC)", rate: "9.5", charges: "300" },
-
   {
     img: taxi5,
     vehicle: "Maruti Swift Dzire (AC)",
@@ -177,10 +175,8 @@ export const taxies = [
     charges: "300",
   },
   { img: taxi1, vehicle: "Innnova Crysta (AC)", rate: "18", charges: "300" },
-  { img: taxi3, vehicle: "Tempo Travaller", rate: "25", charges: "400" },
+  { img: taxi3, vehicle: "Tempo Travaller", rate: "25", charges: "500" },
 ];
-
-
 
 export const ourTaxies = [
   { img: service_img1, title: "taxi service" },
@@ -369,31 +365,29 @@ export const blogcards = [
   },
 ];
 
-
-
 export const outstationServices = [
   {
     name: "Delhi To Rajasthan Taxi Service",
-    link: "delhi-to-rajasthan-taxi-service"
+    link: "delhi-to-rajasthan-taxi-service",
   },
   {
     name: "Delhi To Himachal Pradesh Taxi Service",
-    link: "delhi-to-himachal-pradesh-taxi-service"
+    link: "delhi-to-himachal-pradesh-taxi-service",
   },
   {
     name: "Delhi To Uttarakhand Taxi Service",
-    link: "delhi-to-uttarakhand-taxi-service"
+    link: "delhi-to-uttarakhand-taxi-service",
   },
   {
     name: "Delhi To Punjab Taxi Service",
-    link: "delhi-to-punjab-taxi-service"
+    link: "delhi-to-punjab-taxi-service",
   },
   {
     name: "Delhi To Jammu & Kashmir Taxi Service",
-    link: "delhi-to-jammu-kashmir-taxi-service"
+    link: "delhi-to-jammu-kashmir-taxi-service",
   },
   {
     name: "Delhi To Uttar Pradesh Taxi Service",
-    link: "delhi-to-uttar-pradesh-taxi-service"
-  }
+    link: "delhi-to-uttar-pradesh-taxi-service",
+  },
 ];

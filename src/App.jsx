@@ -56,6 +56,10 @@ import OutstationService4 from "./pages/TaxiOutstationServices/OutstationService
 import OutstationService5 from "./pages/TaxiOutstationServices/OutstationService5/OutstationService5";
 import OutstationService6 from "./pages/TaxiOutstationServices/OutstationService6/OutstationService6";
 import Tempo from "./pages/Tempo/Tempo";
+import Blog2 from "./pages/Blog/Blog2";
+import Blog3 from "./pages/Blog/Blog3";
+import Blog4 from "./pages/Blog/Blog4";
+import Blog5 from "./pages/Blog/Blog5";
 
 function App() {
   const ScrollToTop = () => {
@@ -76,8 +80,8 @@ function App() {
         <Routes>
           <Route path="/" element={<Homepage />} />
           <Route path="/about-us" element={<About />} />
-          <Route path="/blogs" element={<Blogs />} />
-          <Route path="/blog1" element={<Blog />} />
+          <Route path="/blog" element={<Blogs />} />
+
           <Route path="/our-gallery" element={<Gallery />} />
           <Route path="/contact-us" element={<Contact />} />
 
@@ -195,6 +199,29 @@ function App() {
           />
 
           <Route path="/tempo-service" element={<Tempo />} />
+
+          {/* blog */}
+          <Route
+            path="/blog/best-places-to-celebrate-holi-festival-in-india"
+            element={<Blog />}
+          />
+          <Route
+            path="/blog/amazing-experiences-awaiting-you-on-the-golden-triangle-tour"
+            element={<Blog2 />}
+          />
+          <Route
+            path="/blog/best-way-to-spend-luxury-vacation-in-india"
+            element={<Blog3 />}
+          />
+          <Route
+            path="/blog/best-road-trips-to-experience-rajasthan"
+            element={<Blog4 />}
+          />
+
+          <Route
+            path="/blog/best-things-to-do-in-udaipur"
+            element={<Blog5 />}
+          />
         </Routes>
         <Footer />
       </BrowserRouter>

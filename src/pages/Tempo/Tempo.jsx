@@ -12,7 +12,6 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 
-import tempo_img from "../../assets/images/tempo_img.jpg";
 
 const Tempo = () => {
   useEffect(() => {

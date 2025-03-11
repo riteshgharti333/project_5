@@ -1,7 +1,6 @@
 import tempo_img from "../assets/images/tempo_img.jpg";
 import bus_img from "../assets/images/bus.jpeg";
 
-
 export const delhitorj = {
   contentItem1: {
     title: "Delhi to Rajasthan Taxi Service",
@@ -700,6 +699,12 @@ export const delhitoup = {
 
 ////////////////////////
 
+import tempo1 from "../assets/images/tempoimg/tempo1.jpeg";
+import tempo2 from "../assets/images/tempoimg/tempo2.jpeg";
+import tempo3 from "../assets/images/tempoimg/tempo3.jpeg";
+import tempo4 from "../assets/images/tempoimg/tempo4.jpeg";
+import tempo5 from "../assets/images/tempoimg/tempo5.jpeg";
+
 export const tempo = {
   contentItem1: {
     title: "Tempo Traveller On Rent Service in Delhi Start @ 27/- Per KM",
@@ -741,7 +746,7 @@ export const tempo = {
       },
 
       {
-        img: tempo_img,
+        img: tempo1,
         desc: "16 Seater Tempo Traveller",
         list: [
           "Seating Capacity :- 16+1",
@@ -752,7 +757,7 @@ export const tempo = {
         fare: "Fare @ ₹30/-Per KM",
       },
       {
-        img: tempo_img,
+        img: tempo2,
         desc: "20 Seater Tempo Traveller",
         list: [
           "Seating Capacity :- 20+1",
@@ -762,60 +767,49 @@ export const tempo = {
         ],
         fare: "Fare @ ₹33/-Per KM",
       },
+    ],
+  },
+
+  contentItem4: {
+    title: "Bus Fare in Delhi",
+    list: [
       {
-        img: tempo_img,
-        desc: "26 Seater Tempo Traveller",
-        list: [
-          "Seating Capacity :- 26+1",
+        img: tempo3,
+        desc: "27 Seater Minibus",
+
+        details: [
+          "Seating Capacity :- 27+1",
           "Available For Local/Outstation",
           "Driver Night Charge :- 500/- Per Day",
           "Extra :- Tolls, Parking and State Permits",
         ],
-        fare: "Fare @ ₹35/-Per KM",
+        fare: "Fare @ ₹50/-Per KM",
+      },
+      {
+        img: tempo4,
+        desc: "45 Seater Bus",
+
+        details: [
+          "Seating Capacity :- 45+1",
+          "Available For Local/Outstation",
+          "Driver Night Charge :- 500/- Per Day",
+          "Extra :- Tolls, Parking and State Permits",
+        ],
+        fare: "Fare @ ₹55/-Per KM",
+      },
+      {
+        img: tempo5,
+        desc: "54 Seater bus",
+
+        details: [
+          "Seating Capacity :- 54+1",
+          "Available For Local/Outstation",
+          "Driver Night Charge :- 500/- Per Day",
+          "Extra :- Tolls, Parking and State Permits",
+        ],
+        fare: "Fare @ ₹60/-Per KM",
       },
     ],
-  },
-
-  contentItem4 : {
-  title : "Bus Fare in Delhi",
-  list : [
-    {
-      img : bus_img,
-      desc : "27 Seater Minibus",
-
-      details : [
-        "Seating Capacity :- 27+1",
-        "Available For Local/Outstation",
-        "Driver Night Charge :- 500/- Per Day",
-        "Extra :- Tolls, Parking and State Permits",
-      ],
-     fare : "Fare @ ₹50/-Per KM"
-    },
-    {
-      img : bus_img,
-      desc : "45 Seater Bus",
-
-      details : [
-        "Seating Capacity :- 45+1",
-        "Available For Local/Outstation",
-        "Driver Night Charge :- 500/- Per Day",
-        "Extra :- Tolls, Parking and State Permits",
-      ],
-     fare : "Fare @ ₹55/-Per KM"
-    },
-    {
-      img : bus_img,
-      desc : "54 Seater bus",
-
-      details : [
-        "Seating Capacity :- 54+1",
-        "Available For Local/Outstation",
-        "Driver Night Charge :- 500/- Per Day",
-        "Extra :- Tolls, Parking and State Permits",
-      ],
-     fare : "Fare @ ₹60/-Per KM"
-    }
-  ]
   },
 
   contentItem5: {
@@ -902,7 +896,7 @@ export const tempo = {
     title:
       "How to Book a Tempo Traveller On Rent in Delhi with Global India Travel Cab",
     desc: [
-      "Booking a Tempo Traveller on Rent in Delhi with Global India Travel Cab is quick and easy. Visit our official website, enter your travel details, and submit the form. Alternatively, you can instantly call us at  +91 9792000555 to book your Tempo Traveller on Rent in Delhi. Choose Global India Travel Cab for your next group trip and enjoy a comfortable, spacious, and affordable journey. Book your Tempo Traveller on Rent in Delhi today and travel in comfort with skilled drivers and well-maintained vehicles!",
+      "Booking a Tempo Traveller on Rent in Delhi with Global India Travel Cab is quick and easy. Visit our official website, enter your travel details, and submit the form. Alternatively, you can instantly call us at  +91 70118 90082 to book your Tempo Traveller on Rent in Delhi. Choose Global India Travel Cab for your next group trip and enjoy a comfortable, spacious, and affordable journey. Book your Tempo Traveller on Rent in Delhi today and travel in comfort with skilled drivers and well-maintained vehicles!",
     ],
   },
 };
