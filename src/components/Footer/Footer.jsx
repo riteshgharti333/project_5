@@ -2,13 +2,9 @@ import { Link } from "react-router-dom";
 import "./Footer.scss";
 
 import logo from "../../assets/images/logo.png";
-import { BsArrowUpRight } from "react-icons/bs";
 
 import { FaFacebook } from "react-icons/fa";
-import { FaYoutube } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
-import { FaTiktok } from "react-icons/fa";
-import { IoCall } from "react-icons/io5";
 
 import { IoCallSharp } from "react-icons/io5";
 import { FaLocationDot } from "react-icons/fa6";
@@ -103,29 +99,22 @@ const Footer = () => {
 
           <div className="footer-icons">
             <a
-              href="https://www.facebook.com/tkproductionfilm?mibextid=wwXIfr&rdid=shqDkdh9xtXyGSgN&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F163hvW8GX9%2F%3Fmibextid%3DwwXIfr#"
+              href="https://www.facebook.com/share/p/1FSwuHsTm8/?mibextid=WC7FNe"
               target="_blank"
             >
               <FaFacebook className="footer-icon facebook" />
             </a>
 
             <a
-              href="https://www.instagram.com/tk_production_film/?igsh=dmg3cm5tdXBxN3R1&utm_source=qr#"
+              href="https://www.instagram.com/p/DGmowV8TTPv/?igsh=bzFnaW1xdG9zdW81"
               target="_blank"
             >
               <FaInstagram className="footer-icon insta" />
             </a>
 
-            <a href="https://www.youtube.com/@tkproductionfilm" target="_blank">
-              <FaYoutube className="footer-icon youtube" />
-            </a>
+            
 
-            <a
-              href="https://www.tiktok.com/@takproductionsltd?_t=ZN-8uBFBGxMNMc&_r=1"
-              target="_blank"
-            >
-              <FaTiktok className="footer-icon tiktok" />
-            </a>
+           
           </div>
         </div>
       </div>
