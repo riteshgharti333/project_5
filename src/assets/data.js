@@ -180,28 +180,7 @@ export const taxies = [
   { img: taxi3, vehicle: "Tempo Travaller", rate: "25", charges: "400" },
 ];
 
-export const reviews = [
-  {
-    name: "Nakul Sajdeva",
-    desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid dolorem magnam voluptatibus vel maiores, hic accusantium nisi soluta expedita ea! Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, possimus!",
-  },
-  {
-    name: "Nakul Sajdeva",
-    desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid dolorem magnam voluptatibus vel maiores, hic accusantium nisi soluta expedita ea! Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, possimus!",
-  },
-  {
-    name: "Nakul Sajdeva",
-    desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid dolorem magnam voluptatibus vel maiores, hic accusantium nisi soluta expedita ea! Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, possimus!",
-  },
-  {
-    name: "Nakul Sajdeva",
-    desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid dolorem magnam voluptatibus vel maiores, hic accusantium nisi soluta expedita ea! Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, possimus!",
-  },
-  {
-    name: "Nakul Sajdeva",
-    desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid dolorem magnam voluptatibus vel maiores, hic accusantium nisi soluta expedita ea! Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, possimus!",
-  },
-];
+
 
 export const ourTaxies = [
   { img: service_img1, title: "taxi service" },

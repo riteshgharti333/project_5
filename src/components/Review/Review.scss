@@ -9,12 +9,12 @@
     padding: 60px 10px;
     gap: 90px;
 
-    @include lg{
+    @include lg {
       flex-direction: column;
       padding: 60px;
     }
 
-    @include sm{
+    @include sm {
       padding: 40px 10px;
     }
 
@@ -34,7 +34,7 @@
           margin-top: 40px;
           font-size: 18px;
           font-weight: 500;
-                color: $p-color;
+          color: $p-color;
         }
       }
 
@@ -50,13 +50,6 @@
           p {
             font-weight: 500;
           }
-
-          .review-left-desc-item-stars {
-            color: $primary-color;
-            display: flex;
-            gap: 5px;
-            margin-top: 10px;
-          }
         }
       }
     }
@@ -71,20 +64,32 @@
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        
+
         overflow: hidden;
         .review-right-top {
           display: flex;
           align-items: center;
           gap: 20px;
-          img {
-            width: 90px;
-            height: 90px;
+
+          .user-icon {
+            background: #fff;
+            color: $text-color;
+            padding: 10px;
+            font-size: 60px;
             border-radius: 50%;
           }
-          p {
-            font-size: 18px;
-            font-weight: 500;
+          .review-right-top-item {
+            p {
+              font-size: 18px;
+              font-weight: 500;
+            }
+
+            .review-left-desc-item-stars {
+              color: #ffa500;
+              margin-top: 10px;
+              display: flex;
+              gap: 5px;
+            }
           }
         }
 
@@ -101,6 +106,47 @@
 
 .review-swiper {
   .swiper-slide {
-    padding-bottom: 50px;
+    padding-bottom: 90px;
+
+    @include md{
+      padding-bottom: 60px;
+    }
+  }
+}
+
+
+.review-swiper-prev,
+.review-swiper-next {
+  position: absolute;
+  bottom: -20px;
+  transform: translateY(-50%);
+  z-index: 1000;
+  cursor: pointer;
+  font-size: 24px;
+  color: $primary-color;
+  padding: 10px 20px;
+  border-radius: 50%;
+  transition: background 0.3s ease;
+
+  &:hover{
+    background: #fff;
+     
+  }
+}
+
+.review-swiper-prev {
+  left: 38%;
+  
+@include md{
+  left: 20%;
+}
+  
+}
+
+.review-swiper-next {
+  right: 38%;
+
+  @include md{
+    right: 20%;
   }
 }

@@ -75,6 +75,10 @@ const Navbar = () => {
         </Link>
       </div>
 
+      <div className="mobile-menu">
+          <MobileMenu />
+        </div>
+
       <div className="navbar-center">
         <ul>
           <Link to={"/"}>
@@ -206,11 +210,11 @@ const Navbar = () => {
             </li>
           </Link>
 
-          {/* <Link to={"/blogs"}>
+          <Link to={"/blogs"}>
             <li>
               <span>Blogs</span>
             </li>
-          </Link> */}
+          </Link>
 
           <Link to={"/contact-us"}>
             <li>
@@ -219,19 +223,8 @@ const Navbar = () => {
           </Link>
         </ul>
       </div>
-      <div className="navbar-right">
-        <div className="navbar-right-button">
-          <button className="call-btn">
-            <IoCall className="call-icon" />
-            +91 123456789
-          </button>
-        </div>
-
-        <div className="mobile-menu">
-          <MobileMenu />
-        </div>
+        
       </div>
-    </div>
   );
 };
 

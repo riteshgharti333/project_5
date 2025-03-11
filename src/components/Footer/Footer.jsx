@@ -10,68 +10,79 @@ import { FaInstagram } from "react-icons/fa";
 import { FaTiktok } from "react-icons/fa";
 import { IoCall } from "react-icons/io5";
 
+import { IoCallSharp } from "react-icons/io5";
+import { FaLocationDot } from "react-icons/fa6";
+import { MdEmail } from "react-icons/md";
+import {
+  navPopularDestination,
+  outstationServices,
+  taxiServices,
+} from "../../assets/data";
+
 const Footer = () => {
   return (
     <div className="footer">
       <div className="footer-top">
-        <div className="container">
-          <div className="footer-inner">
-            <div className="row">
-              <div className="row1">
-                <div className="footer-widget">
-                  <ul>
-                    <li>
-                      <Link>About Us</Link>
-                    </li>
-                    <li>
-                      <Link>Contact Us</Link>
-                    </li>
-                  </ul>
-                </div>
-              </div>
+        <img src={logo} alt="" />
+        <div className="footer-top-items">
+          <div className="footer-top-item">
+            <IoCallSharp className="footer-top-icon" />
+            <p> +91 70118 90082, +91 9718509639</p>
+          </div>
+          <div className="footer-top-item">
+            <MdEmail className="footer-top-icon" />
+            <p> Indiaglobaltravels1@gmail.com</p>
+          </div>
+          <div className="footer-top-item">
+            <FaLocationDot className="footer-top-icon" />
+            <p> wz95/ Dharmpal Niwas,Thodapur Indar Puri New Delhi - 110012</p>
+          </div>
+        </div>
+      </div>
 
-              <div className="row2">
-                <div className="row2-widget">
-                  <div className="footer-logo">
-                    <img src={logo} alt="" />
-                  </div>
-                  <h6 className="row2-title">
-                    Contact Us for Explore incredible <br /> destinations and
-                    create unforgettable travel memories!
-                  </h6>
-                  <div className="row2-input">
-                    <Link to={"/contact-us"}>
-                      <button>
-                        <IoCall className="call-icon" />
-                        +91 123456789
-                      </button>
-                    </Link>
-                  </div>
-                </div>
-              </div>
+      <div className="footer-center">
+        <div className="footer-center-items">
+          <div className="footer-center-item">
+            <h3>India Taxi Service</h3>
+            <ul>
+              {taxiServices.map((item, index) => (
+                <Link to={item.link} key={index}>
+                  <li>{item.name}</li>
+                </Link>
+              ))}
+            </ul>
+          </div>
+          <div className="footer-center-item">
+            <h3> Taxi Outstation Services</h3>
+            <ul>
+              {outstationServices.map((item, index) => (
+                <Link to={item.link} key={index}>
+                  <li>{item.name}</li>
+                </Link>
+              ))}
+            </ul>
+          </div>
+          <div className="footer-center-item">
+            <h3> Popular Destination </h3>
+            <ul>
+              {navPopularDestination.map((item, index) => (
+                <Link to={item.link} key={index}>
+                  <li>{item.title}</li>
+                </Link>
+              ))}
+            </ul>
+          </div>
 
-              <div className="row3">
-                <div className="footer-widget">
-                  <ul>
-                    <li>
-                      <Link>Service 1</Link>
-                    </li>
-                    <li>
-                      <Link>Service 1</Link>
-                    </li>{" "}
-                    <li>
-                      <Link>Service 1</Link>
-                    </li>{" "}
-                    <li>
-                      <Link>Service 1</Link>
-                    </li>{" "}
-                    <li>
-                      <Link>Service 1</Link>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
+          <div className="footer-center-item">
+            <h3> Our Services </h3>
+            <ul>
+              <Link to={"/india-taxi-service"} className="service-link">
+                <li>India Taxi Service</li>
+              </Link>
+              <Link to={"/tour-guide"} className="service-link">
+                <li>Tour Guide</li>
+              </Link>
+            </ul>
           </div>
         </div>
       </div>

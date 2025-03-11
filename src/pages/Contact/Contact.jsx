@@ -26,7 +26,7 @@ const Contact = () => {
         </div>
       </div>
 
-      <div className="contact-form"   data-aos="fade-up">
+      <div className="contact-form" data-aos="fade-up">
         <form action="#" method="POST" className="form-container">
           <h2>Send a Message</h2>
           <div className="form-group">
@@ -59,34 +59,22 @@ const Contact = () => {
         <div className="contact-address-container">
           <h1>Contact Us</h1>
           <p>
-            We're very approachable and would love to speak to you. Feel free to
-            call, send us an email, Tweet us or simply complete the enquiry
-            form.
+            We’d love to hear from you! Whether it’s inquiries, feedback, or
+            support, our team is ready to help. Get in touch through our contact
+            form or call us directly.
           </p>
 
-          <div className="address"  data-aos="fade-up">
+          <div className="address" data-aos="fade-up">
             <div className="address-item">
               <h3>Head Office - New Delhi</h3>
-              <span>609, 6th Floor, Sethi Bhawan, Rajender Place,</span>
-              <span>New Delhi- 110008</span>
-              <span>Need live support? : +918860139194, 011-45637975</span>
-              <span>
-                Email : info@ghumindiaghum.com, ghumindiaghum@gmail.com
-              </span>
-            </div>
-
-            <div className="address-item">
-              <h3>Head Office - New Delhi</h3>
-              <span>609, 6th Floor, Sethi Bhawan, Rajender Place,</span>
-              <span>New Delhi- 110008</span>
-              <span>Need live support? : +918860139194, 011-45637975</span>
-              <span>
-                Email : info@ghumindiaghum.com, ghumindiaghum@gmail.com
-              </span>
+              <span>wz95/ Dharmpal Niwas,Thodapur Indar Puri</span>
+              <span>New Delhi - 110012</span>
+              <span>Need live support? : +91 70118 90082, +91 9718509639</span>
+              <span>Email : Indiaglobaltravels1@gmail.com</span>
             </div>
           </div>
 
-          <div className="contact-map"  data-aos="fade-up">
+          <div className="contact-map" data-aos="fade-up">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3731.805801551631!2d70.98298267524812!3d20.71810908085459!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjDCsDQzJzA1LjIiTiA3MMKwNTknMDguMCJF!5e0!3m2!1sen!2sin!4v1740658269472!5m2!1sen!2sin"
               width="100%"

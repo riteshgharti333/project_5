@@ -12,6 +12,8 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 
+import tempo_img from "../../assets/images/tempo_img.jpg";
+
 const Tempo = () => {
   useEffect(() => {
     AOS.init({
@@ -22,98 +24,143 @@ const Tempo = () => {
   }, []);
 
   return (
-    <div className="outstationService">
-      <div className="outstationService-banner">
+    <div className="tempo">
+      <div className="tempo-banner">
         <ServiceBanner destinationImg={upImgs} />
       </div>
-      <div className="outstationService-container">
-        <div className="outstationService-container-top">
-          <div className="outstationService-left" data-aos="fade-right">
-            <div className="outstationService-content">
-              <div className="outstationService-content-item">
+      <div className="tempo-container">
+        <div className="tempo-container-top">
+          <div className="tempo-left" data-aos="fade-right">
+            <div className="tempo-content">
+              <div className="tempo-content-item">
                 <h1>{tempo.contentItem1.title}</h1>
                 {tempo.contentItem1.desc.map((item, index) => (
                   <p key={index}>{item}</p>
                 ))}
               </div>
 
-              <div className="outstationService-content-item">
+              <div className="tempo-content-item">
                 <h3>{tempo.contentItem2.title}</h3>
                 {tempo.contentItem2.desc.map((item, index) => (
                   <p key={index}>{item}</p>
                 ))}
               </div>
 
-              <div className="outstationService-content-item">
+              <div className="tempo-content-item">
                 <h3>{tempo.contentItem3.title}</h3>
 
                 {tempo.contentItem3.desc.map((item, index) => (
                   <p key={index}>{item}</p>
                 ))}
+                <div className="tempo-content-item-cards">
+                  {tempo.contentItem3.contentItem3Cards.map((item, index) => (
+                    <div className="tempo-content-item-card" key={index}>
+                      <img src={item.img} alt={item.desc} />
+                      <h3>{item.desc}</h3>
+
+                      <div className="tempo-content-item-card-desc">
+                        <div className="card-content">
+                          <ul>
+                            {item.list.map((item, index) => (
+                              <li key={index}>{item}</li>
+                            ))}
+                          </ul>
+                          <p>{item.fare}</p>
+                        </div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
               </div>
 
-              <div className="outstationService-content-item">
+              {/*  */}
+
+              <div className="tempo-content-item">
                 <h3>{tempo.contentItem4.title}</h3>
 
-                {tempo.contentItem4.desc.map((item, index) => (
-                  <p key={index}>{item}</p>
-                ))}
-
-                <ul>
+                <div className="tempo-content-item-cards">
                   {tempo.contentItem4.list.map((item, index) => (
-                    <li key={index}>
-                      <span>{item.title} : </span>
-                      {item.desc}
-                    </li>
+                    <div className="tempo-content-item-card" key={index}>
+                      <img src={item.img} alt={item.desc} />
+                      <h3>{item.desc}</h3>
+
+                      <div className="tempo-content-item-card-desc">
+                        <div className="card-content">
+                          <ul>
+                            {item.details.map((item, index) => (
+                              <li key={index}>{item}</li>
+                            ))}
+                          </ul>
+                          <p>{item.fare}</p>
+                        </div>
+                      </div>
+                    </div>
                   ))}
-                </ul>
+                </div>
               </div>
+              {/*  */}
+              <div className="tempo-content-item">
+                <h3>{tempo.contentItem4.title}</h3>
 
-              <div className="outstationService-content-item">
-                <h3>{tempo.contentItem5.title}</h3>
-                <p>{tempo.contentItem5.smdesc}</p>
-
-                <ul>
-                  {tempo.contentItem5.desc.map((item, index) => (
-                    <li key={index}>
-                      <span>{item.title} : </span>
-                      {item.desc}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-
-              <div className="outstationService-content-item">
-                <h3>{tempo.contentItem6.title}</h3>
-
-                {tempo.contentItem6.desc.map((item, index) => (
+                {tempo.contentItem5.desc.map((item, index) => (
                   <p key={index}>{item}</p>
                 ))}
+
+                <ul>
+                  {tempo.contentItem5.list.map((item, index) => (
+                    <li key={index}>
+                      <span>{item.title} : </span>
+                      {item.desc}
+                    </li>
+                  ))}
+                </ul>
               </div>
 
-              <div className="outstationService-content-item">
+              <div className="tempo-content-item">
+                <h3>{tempo.contentItem6.title}</h3>
+                <p>{tempo.contentItem6.smdesc}</p>
+
+                <ul>
+                  {tempo.contentItem6.desc.map((item, index) => (
+                    <li key={index}>
+                      <span>{item.title} : </span>
+                      {item.desc}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              <div className="tempo-content-item">
                 <h3>{tempo.contentItem7.title}</h3>
 
                 {tempo.contentItem7.desc.map((item, index) => (
                   <p key={index}>{item}</p>
                 ))}
               </div>
+
+              <div className="tempo-content-item">
+                <h3>{tempo.contentItem8.title}</h3>
+
+                {tempo.contentItem8.desc.map((item, index) => (
+                  <p key={index}>{item}</p>
+                ))}
+              </div>
             </div>
           </div>
-          <div className="outstationService-right">
+          <div className="tempo-right">
             <ServiceSidebar />
           </div>
         </div>
-        <div className="outstationService-container-bottom">
+        <div className="tempo-container-bottom">
           <h1>{tempo.taxiFare}</h1>
-          <div className="outstationService-cards">
+          <div className="tempo-cards">
             {taxiFees.map((item, index) => (
               <ServiceCard item={item} key={index} />
             ))}
           </div>
         </div>
       </div>
-      <div className="outstationService-lg-sidebar">
+      <div className="tempo-lg-sidebar">
         <ServiceSidebar fade="fade-up" />
       </div>
     </div>

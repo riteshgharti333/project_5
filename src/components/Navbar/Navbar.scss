@@ -4,7 +4,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0px 10px;
+  padding: 0px 20px;
   position: fixed;
   top: 0;
   z-index: 999;
@@ -38,12 +38,12 @@
       list-style: none;
       margin: 0;
       padding: 0;
-      gap: 10px;
+      gap: 20px;
       align-items: center;
 
       li {
         span {
-          font-size: 15px;
+          font-size: 16px;
           font-weight: 500;
           color: $primary-color;
           padding: 30px 0px;
@@ -171,48 +171,5 @@
     }
   }
 
-  .navbar-right {
-    display: flex;
-    align-items: center;
-    gap: 30px;
-
-    .navbar-right-button {
-      @include sm {
-        display: none;
-      }
-    }
-
-    .call-btn {
-      background: $btn-bg;
-      border: none;
-      padding: 15px 17px;
-      font-size: 16px;
-      color: #fff;
-      cursor: pointer;
-      display: flex;
-      align-items: center;
-      border: 1px solid transparent;
-      transition: all 0.3s ease-in-out;
-      font-weight: 500;
-      border-radius: 5px;
-      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-
-      &:hover {
-        border: 1px solid #ffd700;
-        color: #000;
-        background: #fff;
-        transform: translateY(-2px);
-
-        .call-icon {
-          color: $btn-bg;
-        }
-      }
-
-      .call-icon {
-        margin-right: 10px;
-        font-size: 16px;
-        transition: all 0.3s ease-in-out;
-      }
-    }
-  }
+  
 }

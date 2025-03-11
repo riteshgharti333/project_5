@@ -147,6 +147,11 @@
       p {
         color: $p-color;
         margin: 15px 0px;
+        width: 70%;
+
+        @include md{
+          width: 95%;
+        }
       }
 
       .address {

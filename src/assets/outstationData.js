@@ -1,3 +1,7 @@
+import tempo_img from "../assets/images/tempo_img.jpg";
+import bus_img from "../assets/images/bus.jpeg";
+
+
 export const delhitorj = {
   contentItem1: {
     title: "Delhi to Rajasthan Taxi Service",
@@ -722,9 +726,99 @@ export const tempo = {
       "The cost of booking a Tempo Traveller on Rent in Delhi with Global India Travel Cab depends on factors such as the number of passengers, travel destination, and the level of luxury required. We offer competitive Tempo Traveller fare per km with a transparent pricing model.",
       "Our fleet includes various seating capacities to accommodate different group sizes. For instance, the 12-seater Tempo Traveller is available at ₹27 per km, while the 16-seater option is priced at ₹ 30 per km. These rates are designed to provide affordable solutions for both local and outstation travel needs. The total rental cost comprises several factors, including fuel charges, toll taxes, state tax charges, and driver allowance. To book a Tempo Traveller, select the appropriate vehicle size, complete the booking form, and receive instant confirmation. Choose Global India Travel Cab for a reliable, comfortable, and budget-friendly Tempo Traveller rental in Delhi.",
     ],
+
+    contentItem3Cards: [
+      {
+        img: tempo_img,
+        desc: "12 Seater Tempo Traveller",
+        list: [
+          "Seating Capacity :- 12+1",
+          "Available For Local/Outstation",
+          "Driver Night Charge :- 500/- Per Day",
+          "Extra :- Tolls, Parking and State Permits",
+        ],
+        fare: "Fare @ ₹27/-Per KM",
+      },
+
+      {
+        img: tempo_img,
+        desc: "16 Seater Tempo Traveller",
+        list: [
+          "Seating Capacity :- 16+1",
+          "Available For Local/Outstation",
+          "Driver Night Charge :- 500/- Per Day",
+          "Extra :- Tolls, Parking and State Permits",
+        ],
+        fare: "Fare @ ₹30/-Per KM",
+      },
+      {
+        img: tempo_img,
+        desc: "20 Seater Tempo Traveller",
+        list: [
+          "Seating Capacity :- 20+1",
+          "Available For Local/Outstation",
+          "Driver Night Charge :- 500/- Per Day",
+          "Extra :- Tolls, Parking and State Permits",
+        ],
+        fare: "Fare @ ₹33/-Per KM",
+      },
+      {
+        img: tempo_img,
+        desc: "26 Seater Tempo Traveller",
+        list: [
+          "Seating Capacity :- 26+1",
+          "Available For Local/Outstation",
+          "Driver Night Charge :- 500/- Per Day",
+          "Extra :- Tolls, Parking and State Permits",
+        ],
+        fare: "Fare @ ₹35/-Per KM",
+      },
+    ],
   },
 
-  contentItem4: {
+  contentItem4 : {
+  title : "Bus Fare in Delhi",
+  list : [
+    {
+      img : bus_img,
+      desc : "27 Seater Minibus",
+
+      details : [
+        "Seating Capacity :- 27+1",
+        "Available For Local/Outstation",
+        "Driver Night Charge :- 500/- Per Day",
+        "Extra :- Tolls, Parking and State Permits",
+      ],
+     fare : "Fare @ ₹50/-Per KM"
+    },
+    {
+      img : bus_img,
+      desc : "45 Seater Bus",
+
+      details : [
+        "Seating Capacity :- 45+1",
+        "Available For Local/Outstation",
+        "Driver Night Charge :- 500/- Per Day",
+        "Extra :- Tolls, Parking and State Permits",
+      ],
+     fare : "Fare @ ₹55/-Per KM"
+    },
+    {
+      img : bus_img,
+      desc : "54 Seater bus",
+
+      details : [
+        "Seating Capacity :- 54+1",
+        "Available For Local/Outstation",
+        "Driver Night Charge :- 500/- Per Day",
+        "Extra :- Tolls, Parking and State Permits",
+      ],
+     fare : "Fare @ ₹60/-Per KM"
+    }
+  ]
+  },
+
+  contentItem5: {
     title: "Book Tempo Traveller on Rent in Delhi for Every Occasion",
     desc: [
       "With 10 years of experience, Global India Travel Cab offers the best Luxury Tempo Traveller on Rent in Delhi for all your travel needs. Whether you’re planning a family holiday, corporate tour, wedding, or outstation trip, we provide customized services to match your requirements. Our skilled and experienced drivers ensure a safe and hassle-free journey. You can book your Tempo Traveller rental in Delhi online by filling out an inquiry form or contacting us via email, WhatsApp, or text message.",
@@ -754,7 +848,7 @@ export const tempo = {
       },
     ],
   },
-  contentItem5: {
+  contentItem6: {
     title: "Benefits of Booking a Tempo Traveller on Rent in Delhi from Us",
 
     smdesc:
@@ -796,7 +890,7 @@ export const tempo = {
     ],
   },
 
-  contentItem6: {
+  contentItem7: {
     title: "Why Choose Us for Tempo Traveller On Rent in Delhi",
     desc: [
       "For a hassle-free and memorable journey in and around Delhi, Global India Travel Cab offers Tempo Traveller on Rent in Delhi, ensuring comfort, convenience, and affordability. Whether you need a Tempo Traveller, cab, or bus rental service, we provide well-maintained vehicles for local and outstation trips. With over a decade of trusted service, we are known for our reliable and cost-effective travel solutions. Our fleet includes GPS-enabled vehicles, allowing real-time tracking for enhanced safety. Our experienced and professional drivers ensure a smooth and enjoyable journey while also serving as friendly travel guides. We maintain full transparency in pricing, ensuring all kilometers traveled are accurately recorded. ",
@@ -804,8 +898,9 @@ export const tempo = {
     ],
   },
 
-  contentItem7: {
-    title: "How to Book a Tempo Traveller On Rent in Delhi with Global India Travel Cab",
+  contentItem8: {
+    title:
+      "How to Book a Tempo Traveller On Rent in Delhi with Global India Travel Cab",
     desc: [
       "Booking a Tempo Traveller on Rent in Delhi with Global India Travel Cab is quick and easy. Visit our official website, enter your travel details, and submit the form. Alternatively, you can instantly call us at  +91 9792000555 to book your Tempo Traveller on Rent in Delhi. Choose Global India Travel Cab for your next group trip and enjoy a comfortable, spacious, and affordable journey. Book your Tempo Traveller on Rent in Delhi today and travel in comfort with skilled drivers and well-maintained vehicles!",
     ],

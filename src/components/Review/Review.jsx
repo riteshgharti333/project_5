@@ -1,5 +1,4 @@
 import { useEffect } from "react";
-import { reviews } from "../../assets/data";
 import "./Review.scss";
 import { FaStar } from "react-icons/fa";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -8,7 +7,9 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import AOS from "aos";
+import { FaUser } from "react-icons/fa";
 import "aos/dist/aos.css";
+import { reviews } from "../../assets/reviewData";
 
 const Review = () => {
   useEffect(() => {
@@ -39,25 +40,20 @@ const Review = () => {
             <div className="review-left-desc-item">
               <h1>4.88</h1>
               <p>Overall rating</p>
-
-              <div className="review-left-desc-item-stars">
-                <FaStar className="star-icon" />
-                <FaStar className="star-icon" />
-                <FaStar className="star-icon" />
-                <FaStar className="star-icon" />
-                <FaStar className="star-icon" />
-              </div>
             </div>
           </div>
         </div>
 
         <div className="review-right" data-aos="fade-up">
           <Swiper
-            modules={[Pagination, Navigation, Autoplay]}
+            modules={[Navigation, Autoplay]}
             slidesPerView={1}
             spaceBetween={20}
             loop={true}
-            pagination={{ clickable: true }}
+            navigation={{
+              nextEl: ".review-swiper-next",
+              prevEl: ".review-swiper-prev",
+            }}
             autoplay={{
               delay: 5000,
               disableOnInteraction: false,
@@ -69,17 +65,26 @@ const Review = () => {
               <SwiperSlide key={index}>
                 <div className="review-right-card">
                   <div className="review-right-top">
-                    <img
-                      src="https://images.pexels.com/photos/1563356/pexels-photo-1563356.jpeg?auto=compress&cs=tinysrgb&w=600"
-                      alt=""
-                    />
-                    <p>{item.name}</p>
+                    <FaUser className="user-icon" />
+                    <div className="review-right-top-item">
+                      <p>{item.name}</p>
+
+                      <div className="review-left-desc-item-stars">
+                        <FaStar className="star-icon" />
+                        <FaStar className="star-icon" />
+                        <FaStar className="star-icon" />
+                        <FaStar className="star-icon" />
+                        <FaStar className="star-icon" />
+                      </div>
+                    </div>
                   </div>
-                  <h4>{item.desc}</h4>
+                  <h4>{item.review}</h4>
                 </div>
               </SwiperSlide>
             ))}
           </Swiper>
+          <div className="review-swiper-prev">❮</div>
+          <div className="review-swiper-next">❯</div>
         </div>
       </div>
     </div>
