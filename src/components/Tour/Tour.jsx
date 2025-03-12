@@ -17,15 +17,28 @@ const Tour = () => {
           Journeys
         </h1>
         <p>
-          For over a decade, Global India Tour has been a trusted name in
-          crafting immersive travel experiences across India’s vibrant
-          landscapes, rich heritage, and cultural treasures. Whether you’re a
-          solo traveler, a family seeking adventure, or a corporate group
-          planning a retreat, we specialize in curating personalized tours that
-          cater to every travel dream. From the snow-capped peaks of the
-          Himalayas to the sun-kissed beaches of Goa, and from the royal palaces
-          of Rajasthan to the serene backwaters of Kerala, our expertly designed
-          itineraries ensure seamless, safe, and unforgettable journeys.
+          Embark on an extraordinary adventure across India with{" "}
+          <strong>Global India Tour</strong>, your trusted travel partner for
+          unforgettable experiences. Discover the iconic{" "}
+          <strong>Taj Mahal</strong> in Agra, the royal{" "}
+          <strong>palaces of Rajasthan</strong>, and the breathtaking{" "}
+          <strong>Himalayan landscapes</strong>.
+        </p>
+
+        <p>
+          Whether you're seeking a cultural escape, a spiritual retreat in{" "}
+          <strong>Varanasi</strong>, or a beachside paradise in Goa, we offer
+          customized tour packages that cater to every traveler. Enjoy seamless
+          itineraries, expert guides, and top-notch accommodations, ensuring a
+          hassle-free and enriching journey.
+        </p>
+
+        <p>
+          Let Global India Tour take you on an extraordinary exploration of
+          India’s most iconic and hidden gems.{" "}
+          <strong>Book your dream vacation today </strong>
+          and immerse yourself in the magic, history, and beauty of India like
+          never before!
         </p>
       </div>
 

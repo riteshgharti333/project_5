@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import "./Review.scss";
 import { FaStar } from "react-icons/fa";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination, Navigation, Autoplay } from "swiper/modules";
+import { Navigation, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
@@ -10,6 +10,8 @@ import AOS from "aos";
 import { FaUser } from "react-icons/fa";
 import "aos/dist/aos.css";
 import { reviews } from "../../assets/reviewData";
+
+import google_img from "../../assets/images/reviews.png";
 
 const Review = () => {
   useEffect(() => {
@@ -29,6 +31,12 @@ const Review = () => {
             <p>
               Don't take our word, see what our clients have to say about us...
             </p>
+            <a
+              href="https://www.google.com/maps/place/Getway+Cab+Service/@28.6452237,77.1813131,17z/data=!4m8!3m7!1s0x390d033a0762b977:0x7df7e628feb2912f!8m2!3d28.645219!4d77.183888!9m1!1b1!16s%2Fg%2F11vb2vsxf7?hl=en-GB&entry=ttu&g_ep=EgoyMDI1MDMwOC4wIKXMDSoASAFQAw%3D%3D"
+              target="_blank"
+            >
+              <img src={google_img} alt="" />
+            </a>
           </div>
 
           <div className="review-left-desc">

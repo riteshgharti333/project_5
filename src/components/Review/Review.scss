@@ -36,6 +36,14 @@
           font-weight: 500;
           color: $p-color;
         }
+        img{
+          width: 150px;
+          margin-top: 40px;
+          cursor: pointer;
+          background: #fff;
+          padding: 10px;
+          border-radius: 10px;
+        }
       }
 
       .review-left-desc {

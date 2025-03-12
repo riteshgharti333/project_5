@@ -16,6 +16,7 @@
     h1 {
       font-size: 30px;
       color: $text-color;
+      margin-bottom: 30px;
 
       @include sm {
         font-size: 25px;
@@ -23,8 +24,9 @@
     }
     p {
       margin-top: 10px;
-      line-height: 1.3;
+      line-height: 1.5;
       font-weight: 500;
+      font-size: 18px;
       color: $p-color;
     }
   }
@@ -32,7 +34,7 @@
   .tour-cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    margin-top: 30px;
+    margin-top: 40px;
     gap: 40px;
     padding: 0px 10px;
 
@@ -55,21 +57,20 @@
     }
 
     .tour-card {
-      width: 340px;
-      height: 400px;
+      max-width: 330px;
       padding: 40px 20px;
-      border-radius: 10px;
+      border-radius: 20px;
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
       border: 1px solid #dddddd;
       transition: all 0.5s ease-in-out;
       position: relative;
       overflow: hidden;
-      background: #f5f5f5;
+      background: linear-gradient(145deg, #0d3c61, #106ab5);
       margin: 0 auto;
       align-items: center;
       cursor: pointer;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 
       @include md {
         width: 100%;
@@ -80,6 +81,7 @@
         .tour-card-icon {
           font-size: 60px;
           transition: all 0.5s ease-in-out;
+          color: #ffffff;
         }
       }
 
@@ -88,15 +90,22 @@
         display: flex;
         flex-direction: column;
         gap: 20px;
+
         h2 {
           margin-top: 20px;
           transition: all 0.5s ease-in-out;
-          color: $primary-color;
+          color: #ffffff;
+          font-size: 23px;
+          font-weight: 700;
         }
+
         .tour-card-bottom-desc {
           h3 {
             transition: all 0.5s ease-in-out;
             text-align: center;
+            color: #ffffff;
+            font-size: 18px;
+            font-weight: 600;
           }
 
           p {
@@ -104,6 +113,7 @@
             transition: all 0.5s ease-in-out;
             text-align: center;
             margin-top: 10px;
+            color: rgba(255, 255, 255, 0.8);
           }
         }
 
@@ -112,71 +122,90 @@
           gap: 10px;
           flex-wrap: wrap;
           justify-content: center;
+
           span {
             font-size: 13px;
             font-weight: 600;
             transition: all 0.5s ease-in-out;
-            color: $primary-color;
+            color: #ffffff;
+            padding: 5px;
+            border-radius: 25px;
+            background: #106ab5;
+            border: 1px solid rgba(255, 255, 255, 0.3);
           }
         }
       }
 
       &:hover {
-        border: 1px solid #989898;
-        background: $primary-color;
-        box-shadow: 0px 35px 40px 10px rgba(16, 106, 181, 0.25);
+        transform: translateY(-10px);
+        box-shadow: 0 20px 40px rgba(16, 106, 181, 0.4);
+        background: linear-gradient(145deg, #106ab5, #0d3c61);
 
         .tour-card-top {
           .tour-card-icon {
             animation: bounce 0.8s ease-in-out infinite;
-            color: #fff;
+            color: #ffffff;
           }
         }
 
         .tour-card-bottom {
-          color: #fff;
-
           h2 {
-            color: #fff;
+            color: #ffffff;
           }
 
           h3 {
-            color: #000;
+            color: #ffffff;
           }
 
           .tour-card-bottom-option {
             span {
-              color: #fff;
+              background: rgba(16, 106, 181, 0.2);
+              border: 1px solid rgba(16, 106, 181, 0.5);
+              color: #ffffff;
             }
           }
         }
-      }
-    }
 
-    // Bounce Animation
-    @keyframes bounce {
-      0%,
-      100% {
-        transform: translateY(0);
+        &::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: radial-gradient(
+            circle,
+            rgba(16, 106, 181, 0.2),
+            transparent
+          );
+          animation: glow 2s ease-in-out infinite;
+        }
       }
-      50% {
-        transform: translateY(-10px);
-      }
-    }
 
-    // Border Glow Animation
-    @keyframes border-glow {
-      0% {
-        opacity: 0.5;
-        transform: scale(1);
+      @keyframes bounce {
+        0%,
+        100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-10px);
+        }
       }
-      50% {
-        opacity: 1;
-        transform: scale(1.05);
-      }
-      100% {
-        opacity: 0.5;
-        transform: scale(1);
+
+      // Border Glow Animation
+      @keyframes border-glow {
+        0% {
+          opacity: 0.5;
+          transform: scale(1);
+        }
+        50% {
+          opacity: 1;
+          transform: scale(1.05);
+        }
+        100% {
+          opacity: 0.5;
+          transform: scale(1);
+        }
       }
     }
   }

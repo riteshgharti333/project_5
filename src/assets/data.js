@@ -27,7 +27,6 @@ import { RiSecurePaymentLine } from "react-icons/ri";
 import taxi1 from "../assets/images/taxiimg/taxi1.jpeg";
 import taxi2 from "../assets/images/taxiimg/taxi2.jpeg";
 import taxi3 from "../assets/images/taxiimg/taxi3.jpeg";
-import taxi4 from "../assets/images/taxiimg/taxi4.jpeg";
 import taxi5 from "../assets/images/taxiimg/taxi5.jpeg";
 import taxi6 from "../assets/images/taxiimg/taxi6.jpeg";
 

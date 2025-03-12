@@ -44,7 +44,7 @@ const HomeBanner = () => {
           pagination={{ clickable: true }}
           className="services-slide"
         >
-          {(isMobile ? smBanner : banners).map((item, index) => (
+          { banners.map((item, index) => (
             <SwiperSlide key={index} className="service_slide">
               <img src={item.img} alt="services" loading="lazy" />
             </SwiperSlide>

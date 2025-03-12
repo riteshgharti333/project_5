@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
 
-
 * {
   margin: 0;
   padding: 0;
@@ -22,6 +21,10 @@ a {
     font-family: "Jost", sans-serif;
   }
 
+  strong {
+    color: #a3d5ff;
+  }
+
   input,
   textarea {
     font-family: "Jost", sans-serif;
@@ -34,11 +37,10 @@ a {
       .mainDestination-card-left {
         img {
           height: 280px !important;
-    
-            @media (max-width : 480px) {
-              height: 100% !important;
-            }
-         
+
+          @media (max-width: 480px) {
+            height: 100% !important;
+          }
         }
       }
     }

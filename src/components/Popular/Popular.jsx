@@ -44,7 +44,7 @@ const Popular = () => {
               <div className="popular-card">
                 <img src={item.img} alt="" />
                 <div className="bg-overlay"></div>
-                <div className="popular-card-dsc">
+                <div className="popular-card-desc">
                   <h2>{item.title}</h2>
                   <Link to={`/${item.link}`}>
                     <button>Explore Now</button>

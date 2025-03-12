@@ -50,7 +50,7 @@ const Taxi = () => {
             480: { slidesPerView: 1 },
             768: { slidesPerView: 2 },
             1024: { slidesPerView: 3 },
-            1400: { slidesPerView: 4 },
+            1400: { slidesPerView: 3 },
           }}
           className="taxi-swiper"
         >
