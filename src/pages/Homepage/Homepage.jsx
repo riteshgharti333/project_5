@@ -1,5 +1,6 @@
-import SEO from "../../components/SEO";
 import "./Homepage.scss";
+
+import SEO from "../../components/SEO";
 
 import BlogCards from "../../components/BlogCards/BlogCards";
 import HomeBanner from "../../components/HomeBanner/HomeBanner";

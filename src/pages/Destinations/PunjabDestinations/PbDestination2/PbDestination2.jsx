@@ -10,6 +10,7 @@ import { pbImgs } from "../../../../assets/ImgsData/mainDestinationImgs";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import SEO from "../../../../components/SEO";
 
 const PbDestination2 = () => {
   useEffect(() => {
@@ -22,6 +23,13 @@ const PbDestination2 = () => {
 
   return (
     <div className="destination">
+      <SEO
+        title="Explore Chandigarh – The City Beautiful | Rock Garden, Sukhna Lake & More"
+        description="Discover Chandigarh, India's first planned city, known for its stunning architecture, Rock Garden, serene Sukhna Lake, and vibrant culture. A must-visit destination in Punjab."
+        url={window.location.href}
+        keywords="Chandigarh tourism, Rock Garden, Sukhna Lake, Chandigarh sightseeing, Punjab travel, best places in Chandigarh, things to do in Chandigarh"
+      />
+
       <div className="destination-banner">
         <ServiceBanner destinationImg={pbImgs} />
       </div>

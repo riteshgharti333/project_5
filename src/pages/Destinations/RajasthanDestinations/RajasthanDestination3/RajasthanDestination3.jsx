@@ -7,10 +7,10 @@ import { taxiFees } from "../../../../assets/serviceData";
 import { udaipurContent } from "../../../../assets/destinationData";
 import { rjImgs } from "../../../../assets/ImgsData/mainDestinationImgs";
 
-
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import SEO from "../../../../components/SEO";
 
 const RajasthanDestination3 = () => {
   useEffect(() => {
@@ -23,6 +23,13 @@ const RajasthanDestination3 = () => {
 
   return (
     <div className="destination">
+      <SEO
+        title="Explore Udaipur – The City of Lakes & Royal Heritage"
+        description="Discover Udaipur, the City of Lakes, known for its stunning palaces, boat rides, and rich Rajasthani culture. Plan your royal getaway today!"
+        url={window.location.href}
+        keywords="Udaipur tourism, City of Lakes, Udaipur palaces, best places in Udaipur, Rajasthan travel, Udaipur boat ride, royal heritage"
+      />
+
       <div className="destination-banner">
         <ServiceBanner destinationImg={rjImgs} />
       </div>

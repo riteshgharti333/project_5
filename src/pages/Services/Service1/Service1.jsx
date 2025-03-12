@@ -13,9 +13,18 @@ import {
 } from "../../../assets/serviceData";
 import ServiceCard from "../../../components/ServiceCard/ServiceCard";
 
+import SEO from "../../../components/SEO";
+
 const Service1 = () => {
   return (
     <div className="service1">
+      <SEO
+        title="Delhi Taxi Service | Local & Outstation Cabs at Best Prices"
+        description="Book a taxi in Delhi for local and outstation travel. Affordable rates, professional drivers, and 24/7 service. Choose from sedans, SUVs, and tempo travelers."
+        url={window.location.href}
+        keywords="Delhi taxi service, local cabs in Delhi, outstation taxi from Delhi, best taxi service in Delhi, airport taxi Delhi"
+      />
+
       <div className="service-banner">
         <ServiceBanner destinationImg={ourTaxies} />
       </div>

@@ -8,6 +8,8 @@ import { Link } from "react-router-dom";
 import { upDestinations } from "../../../assets/mainDestination";
 import { upImgs } from "../../../assets/ImgsData/mainDestinationImgs";
 
+import SEO from "../../../components/SEO"
+
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
@@ -23,8 +25,15 @@ const MainDestination2 = () => {
 
   return (
     <div className="mainDestination">
+      <SEO
+        title="Explore Uttar Pradesh – Land of Heritage & Spirituality"
+        description="Discover Uttar Pradesh, home to the Taj Mahal, Varanasi’s ghats, Ayodhya’s sacred temples, and Bodh Gaya’s spiritual essence. Experience history and divinity!"
+        url={window.location.href}
+        keywords="Uttar Pradesh tourism, Taj Mahal, Varanasi ghats, Ayodhya temples, Bodh Gaya, Indian heritage, spiritual travel"
+      />
+
       <div className="mainDestination-banner">
-        <ServiceBanner  destinationImg={upImgs} />
+        <ServiceBanner destinationImg={upImgs} />
       </div>
       <div className="mainDestination-container">
         <div className="mainDestination-container-top">

@@ -7,10 +7,10 @@ import { taxiFees } from "../../../../assets/serviceData";
 import { amritsarContent } from "../../../../assets/destinationData3";
 import { pbImgs } from "../../../../assets/ImgsData/mainDestinationImgs";
 
-
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import SEO from "../../../../components/SEO";
 
 const PbDestination1 = () => {
   useEffect(() => {
@@ -23,8 +23,15 @@ const PbDestination1 = () => {
 
   return (
     <div className="destination">
+      <SEO
+        title="Explore Amritsar – Golden Temple, Wagah Border & Heritage Sites"
+        description="Visit Amritsar, home to the iconic Golden Temple, the patriotic Wagah Border ceremony, and the historic Jallianwala Bagh. Experience rich Sikh heritage and vibrant Punjabi culture."
+        url={window.location.href}
+        keywords="Amritsar tourism, Golden Temple, Wagah Border, Jallianwala Bagh, Punjab travel, best places in Amritsar, Amritsar sightseeing"
+      />
+
       <div className="destination-banner">
-        <ServiceBanner  destinationImg={pbImgs} />
+        <ServiceBanner destinationImg={pbImgs} />
       </div>
 
       <div className="destination-container">

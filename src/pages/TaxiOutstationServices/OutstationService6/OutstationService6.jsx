@@ -11,6 +11,7 @@ import { delhitoup } from "../../../assets/outstationData";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import SEO from "../../../components/SEO";
 
 const OutstationService6 = () => {
   useEffect(() => {
@@ -23,6 +24,13 @@ const OutstationService6 = () => {
 
   return (
     <div className="outstationService">
+      <SEO
+        title="Delhi to Uttar Pradesh Taxi Service | One-Way & Round Trip Cabs"
+        description="Book a taxi from Delhi to Uttar Pradesh for a hassle-free and affordable journey. Reliable one-way & round-trip cab services with professional drivers."
+        url={window.location.href}
+        keywords="Delhi to UP taxi, Delhi to Agra cab, one-way taxi Delhi to Varanasi, round-trip cab Delhi to Ayodhya, best taxi Delhi to Uttar Pradesh"
+      />
+
       <div className="outstationService-banner">
         <ServiceBanner destinationImg={upImgs} />
       </div>

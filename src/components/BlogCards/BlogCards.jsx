@@ -51,7 +51,7 @@ const BlogCards = () => {
           {blogs.map((item, index) => (
             <SwiperSlide key={index}>
               <div className="blog-content-card">
-                <img src={item.img} />
+                <img src={item.img} alt={item.title} />
                 <div className="blog-content-card-desc">
                   <Link to={`/blog/${item.link}`}>
                     <h3>{item.title}</h3>

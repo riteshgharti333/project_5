@@ -4,18 +4,22 @@ import "./Service7.scss";
 
 import ServiceContent from "../../../components/ServiceContent/ServiceContent";
 import { ourTaxies } from "../../../assets/data";
-import {
-  gatewayServices,
-  hrTaxi,
-  taxiFees,
-} from "../../../assets/serviceData";
+import { gatewayServices, hrTaxi, taxiFees } from "../../../assets/serviceData";
 import ServiceCard from "../../../components/ServiceCard/ServiceCard";
+import SEO from "../../../components/SEO";
 
 const Service7 = () => {
   return (
     <div className="service7">
+      <SEO
+        title="Haryana Taxi Service | Best Cabs for Local & Outstation Travel"
+        description="Book a taxi in Haryana for city rides, airport transfers, and outstation trips. Affordable fares, professional drivers, and 24/7 service across Haryana."
+        url={window.location.href}
+        keywords="Haryana taxi service, Gurgaon cabs, Faridabad taxi, Chandigarh to Delhi cab, outstation taxi Haryana, best taxi service in Haryana"
+      />
+
       <div className="service-banner">
-      <ServiceBanner destinationImg={ourTaxies}/>
+        <ServiceBanner destinationImg={ourTaxies} />
       </div>
 
       <div className="service-container">

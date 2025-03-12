@@ -6,12 +6,12 @@ import { taxiFees } from "../../../../assets/serviceData";
 
 import { pushkarContent } from "../../../../assets/destinationData";
 
-
 import { rjImgs } from "../../../../assets/ImgsData/mainDestinationImgs";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import SEO from "../../../../components/SEO";
 
 const RajasthanDestination5 = () => {
   useEffect(() => {
@@ -24,6 +24,13 @@ const RajasthanDestination5 = () => {
 
   return (
     <div className="destination">
+      <SEO
+        title="Explore Pushkar – The Sacred City of Rajasthan"
+        description="Visit Pushkar, the sacred city of Rajasthan, known for its holy Pushkar Lake, Brahma Temple, and vibrant camel fair. Experience spirituality and culture!"
+        url={window.location.href}
+        keywords="Pushkar tourism, Pushkar Lake, Brahma Temple, Pushkar Camel Fair, Rajasthan spiritual places, best places in Pushkar"
+      />
+
       <div className="destination-banner">
         <ServiceBanner destinationImg={rjImgs} />
       </div>

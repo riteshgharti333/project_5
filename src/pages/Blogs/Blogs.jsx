@@ -7,10 +7,18 @@ import { Link } from "react-router-dom";
 import logo from "../../assets/images/logo.png";
 
 import { blogs } from "../../assets/blogData";
+import SEO from "../../components/SEO";
 
 const Blogs = () => {
   return (
     <div className="blogs">
+      <SEO
+        title="Latest Travel & Taxi Blogs | Tips, Guides & Updates"
+        description="Explore expert travel tips, taxi service updates, and car rental guides. Stay informed with our latest blog posts on destinations, safety tips, and travel hacks!"
+        url={window.location.href}
+        keywords="travel blog, taxi service tips, car rental guides, travel updates, destination guides, best travel blogs, taxi industry news, travel hacks"
+      />
+
       <div className="blogs-container">
         <div className="blogs-top">
           <img src={logo} alt="" />

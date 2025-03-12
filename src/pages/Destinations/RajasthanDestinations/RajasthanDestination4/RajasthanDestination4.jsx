@@ -10,6 +10,7 @@ import { rjImgs } from "../../../../assets/ImgsData/mainDestinationImgs";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import SEO from "../../../../components/SEO";
 
 const RajasthanDestination4 = () => {
   useEffect(() => {
@@ -22,6 +23,13 @@ const RajasthanDestination4 = () => {
 
   return (
     <div className="destination">
+      <SEO
+        title="Discover Jaisalmer – The Golden City of Rajasthan"
+        description="Explore Jaisalmer, the Golden City of Rajasthan, famous for its majestic forts, desert safaris, and stunning Havelis. Plan your desert adventure now!"
+        url={window.location.href}
+        keywords="Jaisalmer tourism, Golden City Rajasthan, Jaisalmer fort, desert safari, best places in Jaisalmer, Rajasthan travel, Thar Desert"
+      />
+
       <div className="destination-banner">
         <ServiceBanner destinationImg={rjImgs} />
       </div>

@@ -11,6 +11,7 @@ import { upImgs } from "../../../../assets/ImgsData/mainDestinationImgs";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import SEO from "../../../../components/SEO";
 
 const UpDestination2 = () => {
   useEffect(() => {
@@ -23,8 +24,15 @@ const UpDestination2 = () => {
 
   return (
     <div className="destination">
+      <SEO
+        title="Varanasi Tourism – Explore the Spiritual Capital of India"
+        description="Discover Varanasi, the spiritual heart of India. Visit the sacred Ganges River, Kashi Vishwanath Temple, Dashashwamedh Ghat, and experience mesmerizing Ganga Aarti."
+        url={window.location.href}
+        keywords="Varanasi tourism, Ganga Aarti, Kashi Vishwanath Temple, spiritual places in India, Varanasi ghats, pilgrimage destinations"
+      />
+
       <div className="destination-banner">
-        <ServiceBanner  destinationImg={upImgs}/>
+        <ServiceBanner destinationImg={upImgs} />
       </div>
 
       <div className="destination-container">

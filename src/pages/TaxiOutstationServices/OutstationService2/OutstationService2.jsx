@@ -11,6 +11,7 @@ import { delhitohp } from "../../../assets/outstationData";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import SEO from "../../../components/SEO";
 
 const OutstationService2 = () => {
   useEffect(() => {
@@ -23,6 +24,13 @@ const OutstationService2 = () => {
 
   return (
     <div className="outstationService">
+      <SEO
+        title="Delhi to Himachal Pradesh Taxi Service | One-Way & Round Trip Cabs"
+        description="Book a hassle-free taxi from Delhi to Himachal Pradesh for a comfortable and safe journey. Enjoy one-way, round-trip, and luxury car rentals at the best prices."
+        url={window.location.href}
+        keywords="Delhi to Himachal taxi, one-way cab to Himachal, round-trip taxi Delhi, car rental Delhi to Shimla, best taxi service, Delhi Manali cab, Himachal road trip"
+      />
+
       <div className="outstationService-banner">
         <ServiceBanner destinationImg={hpImgs} />
       </div>

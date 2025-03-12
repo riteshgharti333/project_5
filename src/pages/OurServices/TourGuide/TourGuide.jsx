@@ -7,6 +7,9 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 
+import banner_img from "../../../assets/images/banner_img.jpg";
+import SEO from "../../../components/SEO";
+
 const TourGuide = () => {
   useEffect(() => {
     AOS.init({
@@ -18,11 +21,15 @@ const TourGuide = () => {
 
   return (
     <div className="tourGuide">
+      <SEO
+        title="Best Tour Operator Service | Plan Your Perfect Trip Today"
+        description="Explore top destinations with our professional tour operator service. Customized travel packages, guided tours, and seamless experiences. Book your dream trip now!"
+        url={window.location.href}
+        keywords="tour operator service, best travel agency, guided tours, holiday packages, customized travel plans, India tour services, sightseeing tours"
+      />
+
       <div className="tourGuide-banner" data-aos="fade-up">
-        <img
-          src="https://images.unsplash.com/photo-1612438214708-f428a707dd4e?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-          alt=""
-        />
+        <img src={banner_img} alt={banner_img} />
 
         <div className="tourGuide-banner-desc">
           <h1>Tour Operator Service</h1>

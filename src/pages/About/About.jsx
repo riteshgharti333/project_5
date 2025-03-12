@@ -1,6 +1,5 @@
 import "./About.scss";
 
-import like from "../../assets/images/like.svg";
 import { useEffect } from "react";
 import { useState } from "react";
 import CountUp from "react-countup";
@@ -10,6 +9,11 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import BlogCards from "../../components/BlogCards/BlogCards";
 import { services } from "../../assets/data";
+
+import banner_img from "../../assets/images/banner_img.jpg";
+import SEO from "../../components/SEO";
+
+import vecation_img from "../../assets/images/vecation.jpg";
 
 const About = () => {
   const [startCount, setStartCount] = useState(false);
@@ -40,11 +44,15 @@ const About = () => {
 
   return (
     <div className="about">
+      <SEO
+        title="About Us | Reliable Taxi & Car Rental Services You Can Trust"
+        description="Learn about our trusted taxi and car rental services. We provide safe, affordable, and comfortable travel experiences with 24/7 customer support. Your journey, our priority!"
+        url={window.location.href}
+        keywords="about us, taxi service, car rental, best transportation, trusted travel, affordable rides, professional drivers, 24/7 taxi service, reliable taxi company"
+      />
+
       <div className="about-banner" data-aos="fade-up">
-        <img
-          src="https://images.unsplash.com/photo-1612438214708-f428a707dd4e?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-          alt=""
-        />
+        <img src={banner_img} alt={banner_img} />
 
         <div className="about-banner-desc">
           <h1>Looking for Joy</h1>
@@ -119,10 +127,7 @@ const About = () => {
           </div>
 
           <div className="about-content2-top-right" data-aos="fade-left">
-            <img
-              src="https://www.ghumindiaghum.com/img/about/about-2.png"
-              alt=""
-            />
+            <img src={vecation_img} alt={vecation_img} />
           </div>
         </div>
 

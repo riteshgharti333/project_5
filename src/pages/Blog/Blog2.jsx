@@ -7,13 +7,21 @@ import { Link } from "react-router-dom";
 import BlogSidebar from "../../components/BlogSidebar/BlogSidebar";
 
 import { blog2 } from "../../assets/blogData";
+import SEO from "../../components/SEO";
 
 const Blog2 = () => {
   return (
     <div className="blog">
+      <SEO
+        title="Amazing Experiences Awaiting You on the Golden Triangle Tour"
+        description="Explore the iconic Golden Triangle Tour of India covering Delhi, Agra, and Jaipur. Discover historical landmarks, cultural heritage, and unforgettable experiences!"
+        url={window.location.href}
+        keywords="Golden Triangle Tour, Delhi Agra Jaipur tour, India travel, Taj Mahal tour, best Golden Triangle itinerary"
+      />
+
       <div className="blog-container">
         <div className="blog-top">
-          <img src={logo} alt="" />
+          <img src={logo} alt={logo} />
           <div className="blog-top-links">
             <ul>
               <Link>
@@ -33,7 +41,7 @@ const Blog2 = () => {
         </div>
         <div className="blog-content">
           <div className="blog-content-left">
-            <img src={blog2.blogContent1.img} alt="" />
+            <img src={blog2.blogContent1.img} alt={blog2.blogContent1.title}/>
             <div className="blog-content-item">
               <h1>{blog2.blogContent1.title}</h1>
 
@@ -53,13 +61,13 @@ const Blog2 = () => {
 
             <div className="blog-content-item">
               {blog2.blogContent2.map((item, index) => (
-                <>
+                <div key={index}>
                   <h3>{item.title}</h3>
-                  <img src={item.img} alt="" />
+                  <img src={item.img} alt={item.img} />
                   {item.desc.map((item, index) => (
                     <p key={index}>{item}</p>
                   ))}
-                </>
+                </div>
               ))}
             </div>
 

@@ -11,6 +11,7 @@ import { ukImgs } from "../../../assets/ImgsData/mainDestinationImgs";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import SEO from "../../../components/SEO";
 
 const MainDestination5 = () => {
   useEffect(() => {
@@ -23,6 +24,13 @@ const MainDestination5 = () => {
 
   return (
     <div className="mainDestination">
+      <SEO
+        title="Explore Uttarakhand – Nainital, Rishikesh, Haridwar, Kedarnath & Badrinath"
+        description="Discover the beauty of Uttarakhand! Visit Nainital's lakes, experience yoga in Rishikesh, explore spirituality in Haridwar, and seek blessings at Kedarnath & Badrinath temples."
+        url={window.location.href}
+        keywords="Uttarakhand tourism, best places in Uttarakhand, Nainital travel guide, Rishikesh yoga, Haridwar Ganga Aarti, Kedarnath temple, Badrinath temple, Char Dham Yatra, pilgrimage in India"
+      />
+
       <div className="mainDestination-banner">
         <ServiceBanner destinationImg={ukImgs} />
       </div>

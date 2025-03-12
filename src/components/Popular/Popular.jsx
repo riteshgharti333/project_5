@@ -42,7 +42,7 @@ const Popular = () => {
           {popularDestinations.map((item, index) => (
             <SwiperSlide key={index}>
               <div className="popular-card">
-                <img src={item.img} alt="" />
+                <img src={item.img} alt={item.title} />
                 <div className="bg-overlay"></div>
                 <div className="popular-card-desc">
                   <h2>{item.title}</h2>

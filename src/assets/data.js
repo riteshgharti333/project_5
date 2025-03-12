@@ -182,14 +182,31 @@ export const ourTaxies = [
     img: service_img1,
     title: "taxi service",
     link: "uttarakhand-taxi-service",
+    name: "Uttarakhand Taxi Service",
   },
-  { img: service_img2, title: "taxi service", link: "punjab-taxi-service" },
-  { img: service_img3, title: "taxi service", link: "rajasthan-taxi-service" },
-  { img: service_img4, title: "taxi service", link: "punjab-taxi-service" },
+  {
+    img: service_img2,
+    title: "taxi service",
+    link: "punjab-taxi-service",
+    name: "Punjab Taxi Service",
+  },
+  {
+    img: service_img3,
+    title: "taxi service",
+    link: "rajasthan-taxi-service",
+    name: "Rajasthan Taxi Service",
+  },
+  {
+    img: service_img4,
+    title: "taxi service",
+    link: "punjab-taxi-service",
+    name: "Punjab Taxi Service",
+  },
   {
     img: service_img5,
     title: "taxi service",
     link: "uttar-pradesh-taxi-service",
+    name: "Uttar Pradesh Taxi Service",
   },
 ];
 
@@ -235,35 +252,36 @@ export const tourImgs = [
 
 export const taxiServices = [
   {
-    name: "Delhi Taxi",
+    name: "Delhi Taxi Service",
     link: "delhi-taxi-service",
   },
   {
-    name: "Uttarakhand Taxi",
-    link: "uttarakhand-taxi-service",
-  },
-  {
-    name: "Himachal Taxi",
-    link: "himachal-taxi-service",
-  },
-  {
-    name: "Rajasthan Taxi",
+    name: "Rajasthan Taxi Service",
     link: "rajasthan-taxi-service",
   },
   {
-    name: "Uttar Pradesh Taxi",
+    name: "Uttarakhand Taxi Service",
+    link: "uttarakhand-taxi-service",
+  },
+  {
+    name: "Himachal Taxi Service",
+    link: "himachal-taxi-service",
+  },
+
+  {
+    name: "Uttar Pradesh Taxi Service",
     link: "uttar-pradesh-taxi-service",
   },
   {
-    name: "Punjab Taxi",
+    name: "Punjab Taxi Service",
     link: "punjab-taxi-service",
   },
   {
-    name: "Haryana Taxi",
+    name: "Haryana Taxi Service",
     link: "haryana-taxi-service",
   },
   {
-    name: "Jammu & Kashmir Taxi",
+    name: "Jammu & Kashmir Taxi Service",
     link: "jammu-kashmir-taxi-service",
   },
 ];

@@ -7,13 +7,21 @@ import { Link } from "react-router-dom";
 import BlogSidebar from "../../components/BlogSidebar/BlogSidebar";
 
 import { blog3 } from "../../assets/blogData";
+import SEO from "../../components/SEO";
 
 const Blog3 = () => {
   return (
     <div className="blog">
+      <SEO
+        title="Best Way to Spend a Luxury Vacation in India"
+        description="Discover the ultimate luxury vacation in India with royal palaces, heritage hotels, luxury trains, and premium experiences in Rajasthan, Kerala, Goa, and more."
+        url={window.location.href}
+        keywords="Luxury travel India, best luxury hotels India, royal vacation, luxury train tours, high-end resorts India"
+      />
+
       <div className="blog-container">
         <div className="blog-top">
-          <img src={logo} alt="" />
+          <img src={logo} alt={logo} />
           <div className="blog-top-links">
             <ul>
               <Link>
@@ -33,7 +41,7 @@ const Blog3 = () => {
         </div>
         <div className="blog-content">
           <div className="blog-content-left">
-            <img src={blog3.blogContent1.img} alt="" />
+            <img src={blog3.blogContent1.img} alt={blog3.blogContent1.img} />
             <div className="blog-content-item">
               <h1>{blog3.blogContent1.title}</h1>
 

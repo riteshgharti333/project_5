@@ -11,6 +11,7 @@ import { hpImgs } from "../../../assets/ImgsData/mainDestinationImgs";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import SEO from "../../../components/SEO";
 
 const MainDestination4 = () => {
   useEffect(() => {
@@ -23,6 +24,13 @@ const MainDestination4 = () => {
 
   return (
     <div className="mainDestination">
+      <SEO
+        title="Explore Himachal Pradesh – Shimla, Manali & Dharamshala | Ultimate Travel Guide"
+        description="Plan your trip to Himachal Pradesh! Discover the scenic beauty of Shimla, the adventure hub of Manali, and the spiritual retreat of Dharamshala. Perfect for nature lovers and adventure seekers."
+        url={window.location.href}
+        keywords="Himachal Pradesh tourism, Shimla travel, Manali adventure, Dharamshala spiritual, best places in Himachal, Himachal Pradesh sightseeing, things to do in Himachal"
+      />
+
       <div className="mainDestination-banner">
         <ServiceBanner destinationImg={hpImgs} />
       </div>

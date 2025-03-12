@@ -10,6 +10,7 @@ import { ukImgs } from "../../../../assets/ImgsData/mainDestinationImgs";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import SEO from "../../../../components/SEO";
 
 const UkDestination3 = () => {
   useEffect(() => {
@@ -22,6 +23,13 @@ const UkDestination3 = () => {
 
   return (
     <div className="destination">
+      <SEO
+        title="Kedarnath & Badrinath Tourism – Sacred Pilgrimage in Uttarakhand"
+        description="Plan your pilgrimage to Kedarnath & Badrinath, two of the most sacred Char Dham sites in Uttarakhand. Experience divine blessings, breathtaking Himalayan views, and spiritual peace."
+        url={window.location.href}
+        keywords="Kedarnath temple, Badrinath yatra, Char Dham pilgrimage, Uttarakhand spiritual tourism, best time to visit Kedarnath, how to reach Badrinath, trekking to Kedarnath, Hindu pilgrimage sites"
+      />
+
       <div className="destination-banner">
         <ServiceBanner destinationImg={ukImgs} />
       </div>

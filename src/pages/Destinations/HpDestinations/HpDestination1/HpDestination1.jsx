@@ -7,10 +7,10 @@ import { taxiFees } from "../../../../assets/serviceData";
 import { shimlaContent } from "../../../../assets/destinationData4";
 import { hpImgs } from "../../../../assets/ImgsData/mainDestinationImgs";
 
-
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import SEO from "../../../../components/SEO";
 
 const HpDestination1 = () => {
   useEffect(() => {
@@ -23,6 +23,13 @@ const HpDestination1 = () => {
 
   return (
     <div className="destination">
+      <SEO
+        title="Discover Shimla – The Queen of Hills | Best Travel Guide"
+        description="Explore Shimla, the Queen of Hills! Enjoy scenic landscapes, colonial charm, adventure activities, and the famous Mall Road. Plan your perfect Shimla trip today!"
+        url={window.location.href}
+        keywords="Shimla tourism, best places in Shimla, Shimla travel guide, things to do in Shimla, Shimla sightseeing, Mall Road Shimla, Kufri, Shimla adventure activities"
+      />
+
       <div className="destination-banner">
         <ServiceBanner destinationImg={hpImgs} />
       </div>

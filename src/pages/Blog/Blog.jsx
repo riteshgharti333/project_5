@@ -7,13 +7,21 @@ import { Link } from "react-router-dom";
 import BlogSidebar from "../../components/BlogSidebar/BlogSidebar";
 
 import { blog1 } from "../../assets/blogData";
+import SEO from "../../components/SEO";
 
 const Blog = () => {
   return (
     <div className="blog">
+      <SEO
+        title="Best Places to Celebrate Holi Festival in India | Top Holi Destinations"
+        description="Experience the vibrant Holi festival in India at the best destinations like Mathura, Vrindavan, Barsana, Jaipur, and more. Plan your colorful Holi celebration today!"
+        url={window.location.href}
+        keywords="Holi festival India, best Holi destinations, celebrate Holi in India, Mathura Holi, Vrindavan Holi, Barsana Lathmar Holi, Jaipur Holi"
+      />
+
       <div className="blog-container">
         <div className="blog-top">
-          <img src={logo} alt="" />
+          <img src={logo} alt={logo} />
           <div className="blog-top-links">
             <ul>
               <Link>
@@ -33,7 +41,7 @@ const Blog = () => {
         </div>
         <div className="blog-content">
           <div className="blog-content-left">
-            <img src={blog1.blogContent1.img} alt="" />
+            <img src={blog1.blogContent1.img} alt={blog1.blogContent1.title} />
             <div className="blog-content-item">
               <h1>{blog1.blogContent1.title}</h1>
 
@@ -53,11 +61,11 @@ const Blog = () => {
 
             <div className="blog-content-item">
               {blog1.blogContent2.map((item, index) => (
-                <>
+                <div key={index}>
                   <h3>{item.title}</h3>
-                  <img src={item.img} alt="" />
+                  <img src={item.img} alt={item.img} />
                   <p>{item.desc}</p>
-                </>
+                </div>
               ))}
             </div>
 

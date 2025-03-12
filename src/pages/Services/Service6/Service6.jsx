@@ -5,18 +5,22 @@ import "./Service6.scss";
 import ServiceContent from "../../../components/ServiceContent/ServiceContent";
 import { ourTaxies } from "../../../assets/data";
 
-import {
-  gatewayServices,
-  taxiFees,
-  pbTaxi,
-} from "../../../assets/serviceData";
+import { gatewayServices, taxiFees, pbTaxi } from "../../../assets/serviceData";
 import ServiceCard from "../../../components/ServiceCard/ServiceCard";
+import SEO from "../../../components/SEO";
 
 const Service6 = () => {
   return (
     <div className="service6">
+      <SEO
+        title="Punjab Taxi Service | Affordable & Reliable Cabs in Punjab"
+        description="Book a taxi in Punjab for local travel, airport transfers, and outstation trips. Safe rides, professional drivers, and best fares for Amritsar, Chandigarh, Ludhiana, and more."
+        url={window.location.href}
+        keywords="Punjab taxi service, Chandigarh cabs, Amritsar car rental, Ludhiana taxi, Jalandhar cab booking, outstation taxi Punjab, best cab service Punjab"
+      />
+
       <div className="service-banner">
-      <ServiceBanner destinationImg={ourTaxies}/>
+        <ServiceBanner destinationImg={ourTaxies} />
       </div>
 
       <div className="service-container">

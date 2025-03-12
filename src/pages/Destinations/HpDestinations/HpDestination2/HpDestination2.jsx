@@ -9,6 +9,7 @@ import { hpImgs } from "../../../../assets/ImgsData/mainDestinationImgs";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import SEO from "../../../../components/SEO";
 
 const HpDestination2 = () => {
   useEffect(() => {
@@ -21,8 +22,15 @@ const HpDestination2 = () => {
 
   return (
     <div className="destination">
+      <SEO
+        title="Explore Manali – Adventure, Snow, and Scenic Beauty | Travel Guide"
+        description="Plan your trip to Manali! Experience breathtaking mountains, adventure sports, Solang Valley, Rohtang Pass, and serene landscapes. Book your Manali getaway now!"
+        url={window.location.href}
+        keywords="Manali tourism, best places in Manali, adventure in Manali, Manali travel guide, Rohtang Pass, Solang Valley, skiing in Manali, things to do in Manali"
+      />
+
       <div className="destination-banner">
-        <ServiceBanner  destinationImg={hpImgs} />
+        <ServiceBanner destinationImg={hpImgs} />
       </div>
 
       <div className="destination-container">

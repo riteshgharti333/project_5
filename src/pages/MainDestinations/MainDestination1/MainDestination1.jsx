@@ -11,6 +11,7 @@ import { rjImgs } from "../../../assets/ImgsData/mainDestinationImgs";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import SEO from "../../../components/SEO";
 
 const MainDestination1 = () => {
   useEffect(() => {
@@ -23,6 +24,13 @@ const MainDestination1 = () => {
 
   return (
     <div className="mainDestination1">
+      <SEO
+        title="Explore Rajasthan: Jaipur, Udaipur, Jaisalmer & Pushkar Tours"
+        description="Discover Rajasthan's top destinations - Jaipur, Ranthambore, Udaipur, Jaisalmer & Pushkar. Explore royal palaces, forts, lakes, and cultural heritage. Plan your trip today!"
+        url={window.location.href}
+        keywords="Rajasthan tourism, Jaipur tour, Udaipur sightseeing, Jaisalmer desert safari, Pushkar travel, best places in Rajasthan, heritage tours Rajasthan"
+      />
+
       <div className="mainDestination-banner">
         <ServiceBanner destinationImg={rjImgs} />
       </div>

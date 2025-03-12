@@ -1,5 +1,7 @@
 import "./Tempo.scss";
 
+import SEO from "../../components/SEO";
+
 import ServiceBanner from "../../components/ServiceBanner/ServiceBanner";
 
 import { upImgs } from "../../assets/ImgsData/mainDestinationImgs";
@@ -12,7 +14,6 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 
-
 const Tempo = () => {
   useEffect(() => {
     AOS.init({
@@ -24,6 +25,13 @@ const Tempo = () => {
 
   return (
     <div className="tempo">
+      <SEO
+        title="Tempo & Bus Rental Services | Affordable Group Travel Solutions"
+        description="Hire tempo travelers and buses for group travel, corporate trips, weddings, and tours. Affordable pricing, comfortable rides, and professional drivers. Book now!"
+        url={window.location.href}
+        keywords="tempo rental, bus hire, group travel service, tempo traveler booking, luxury bus rental, wedding bus hire, corporate travel, affordable tempo service"
+      />
+
       <div className="tempo-banner">
         <ServiceBanner destinationImg={upImgs} />
       </div>

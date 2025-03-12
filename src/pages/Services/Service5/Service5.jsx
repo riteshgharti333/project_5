@@ -8,12 +8,20 @@ import { ourTaxies } from "../../../assets/data";
 
 import { gatewayServices, upTaxi, taxiFees } from "../../../assets/serviceData";
 import ServiceCard from "../../../components/ServiceCard/ServiceCard";
+import SEO from "../../../components/SEO";
 
 const Service5 = () => {
   return (
     <div className="service5">
+      <SEO
+        title="Uttar Pradesh Taxi Service | Best Cabs for Local & Outstation Rides"
+        description="Book a taxi in Uttar Pradesh for local sightseeing, religious tours, and outstation travel. Affordable fares, professional drivers, and 24/7 service."
+        url={window.location.href}
+        keywords="Uttar Pradesh taxi service, Agra cab, Varanasi taxi, Ayodhya cabs, outstation taxi UP, best taxi service in Uttar Pradesh"
+      />
+
       <div className="service-banner">
-      <ServiceBanner destinationImg={ourTaxies}/>
+        <ServiceBanner destinationImg={ourTaxies} />
       </div>
 
       <div className="service-container">

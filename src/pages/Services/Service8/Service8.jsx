@@ -7,12 +7,20 @@ import ServiceContent from "../../../components/ServiceContent/ServiceContent";
 import { gatewayServices, jkTaxi, taxiFees } from "../../../assets/serviceData";
 import ServiceCard from "../../../components/ServiceCard/ServiceCard";
 import { ourTaxies } from "../../../assets/data";
+import SEO from "../../../components/SEO";
 
 const Service8 = () => {
   return (
     <div className="service8">
+      <SEO
+        title="Jammu & Kashmir Taxi Service | Book Reliable Cabs for Travel"
+        description="Book a taxi in Jammu & Kashmir for local sightseeing, airport transfers, and outstation trips. Affordable fares, experienced drivers, and 24/7 service."
+        url={window.location.href}
+        keywords="Jammu taxi service, Kashmir cabs, Srinagar taxi, Jammu to Vaishno Devi cab, Gulmarg car rental, best taxi in Jammu & Kashmir, outstation cabs Jammu"
+      />
+
       <div className="service-banner">
-      <ServiceBanner destinationImg={ourTaxies}/>
+        <ServiceBanner destinationImg={ourTaxies} />
       </div>
 
       <div className="service-container">

@@ -71,7 +71,7 @@ const Navbar = () => {
     >
       <div className="navbar-left">
         <Link to={"/"}>
-          <img src={logo} alt="" />
+          <img src={logo} alt={logo} />
         </Link>
       </div>
 

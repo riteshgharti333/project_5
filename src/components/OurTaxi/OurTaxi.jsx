@@ -34,17 +34,16 @@ const OurTaxi = () => {
         {ourTaxies.map((item, index) => (
           <Link to={item.link} key={index}>
             <div className="ourTaxi-card">
-              <img src={item.img} alt="" />
+              <img src={item.img} alt={item.name} />
               <button>
-          <div className="btn-wrap">
-            <span>Taxi Service</span>
-            <span>View Detail</span>
-          </div>
-        </button>
+                <div className="btn-wrap">
+                  <span>{item.name}</span>
+                  <span>View Detail</span>
+                </div>
+              </button>
             </div>
           </Link>
         ))}
-        
       </div>
     </div>
   );

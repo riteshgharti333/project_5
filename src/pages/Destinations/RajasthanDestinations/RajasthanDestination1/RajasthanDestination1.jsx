@@ -11,6 +11,7 @@ import { rjImgs } from "../../../../assets/ImgsData/mainDestinationImgs";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import SEO from "../../../../components/SEO";
 
 const RajasthanDestination1 = () => {
   useEffect(() => {
@@ -23,8 +24,15 @@ const RajasthanDestination1 = () => {
 
   return (
     <div className="destination">
+      <SEO
+        title="Jaipur Tour - Explore the Pink City | Best Places to Visit"
+        description="Plan your Jaipur trip with our exclusive travel guide. Explore Amer Fort, Hawa Mahal, City Palace, and more. Book your Jaipur tour today!"
+        url={window.location.href}
+        keywords="Jaipur tour, Jaipur sightseeing, best places in Jaipur, Amer Fort, Hawa Mahal, City Palace, Jaipur travel guide, Pink City tourism"
+      />
+
       <div className="destination-banner">
-        <ServiceBanner  destinationImg={rjImgs}/>
+        <ServiceBanner destinationImg={rjImgs} />
       </div>
 
       <div className="destination-container">

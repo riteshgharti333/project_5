@@ -5,18 +5,22 @@ import "./Service4.scss";
 import ServiceContent from "../../../components/ServiceContent/ServiceContent";
 import { ourTaxies } from "../../../assets/data";
 
-import {
-  gatewayServices,
-  rjTaxi,
-  taxiFees,
-} from "../../../assets/serviceData";
+import { gatewayServices, rjTaxi, taxiFees } from "../../../assets/serviceData";
 import ServiceCard from "../../../components/ServiceCard/ServiceCard";
+import SEO from "../../../components/SEO";
 
 const Service4 = () => {
   return (
     <div className="service4">
+      <SEO
+        title="Rajasthan Taxi Service | Best Cabs for Local & Outstation Travel"
+        description="Book a taxi in Rajasthan for local sightseeing, desert tours, and outstation travel. Affordable fares, professional drivers, and 24/7 service."
+        url={window.location.href}
+        keywords="Rajasthan taxi service, Jaipur taxi, Udaipur cab, Jaisalmer taxi, outstation cabs Rajasthan, best taxi service in Rajasthan"
+      />
+
       <div className="service-banner">
-      <ServiceBanner destinationImg={ourTaxies}/>
+        <ServiceBanner destinationImg={ourTaxies} />
       </div>
 
       <div className="service-container">

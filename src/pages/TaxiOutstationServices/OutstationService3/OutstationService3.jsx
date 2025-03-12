@@ -11,6 +11,7 @@ import { delhitouk } from "../../../assets/outstationData";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import SEO from "../../../components/SEO";
 
 const OutstationService3 = () => {
   useEffect(() => {
@@ -23,6 +24,13 @@ const OutstationService3 = () => {
 
   return (
     <div className="outstationService">
+      <SEO
+        title="Delhi to Uttarakhand Taxi Service | One-Way & Round Trip Cabs"
+        description="Book a reliable taxi from Delhi to Uttarakhand for a hassle-free journey. Enjoy one-way, round-trip, and luxury car rentals at affordable prices with 24/7 service."
+        url={window.location.href}
+        keywords="Delhi to Uttarakhand taxi, one-way cab to Uttarakhand, round-trip taxi Delhi, car rental Delhi to Nainital, Delhi to Haridwar cab, best taxi service"
+      />
+
       <div className="outstationService-banner">
         <ServiceBanner destinationImg={ukImgs} />
       </div>

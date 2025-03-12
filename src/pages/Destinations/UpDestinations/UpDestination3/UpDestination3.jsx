@@ -6,12 +6,12 @@ import { taxiFees } from "../../../../assets/serviceData";
 
 import { ayodhyaContent } from "../../../../assets/destinationData2";
 
-
 import { upImgs } from "../../../../assets/ImgsData/mainDestinationImgs";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import SEO from "../../../../components/SEO";
 
 const UpDestination3 = () => {
   useEffect(() => {
@@ -24,8 +24,15 @@ const UpDestination3 = () => {
 
   return (
     <div className="destination">
+      <SEO
+        title="Ayodhya Tourism – Explore the Birthplace of Lord Rama"
+        description="Visit Ayodhya, the sacred birthplace of Lord Rama. Explore Ram Janmabhoomi, Hanuman Garhi, Kanak Bhawan, and other historical temples in this holy city."
+        url={window.location.href}
+        keywords="Ayodhya tourism, Ram Janmabhoomi, Lord Rama birthplace, Ayodhya temples, Hanuman Garhi, religious places in India"
+      />
+
       <div className="destination-banner">
-      <ServiceBanner  destinationImg={upImgs}/>
+        <ServiceBanner destinationImg={upImgs} />
       </div>
 
       <div className="destination-container">

@@ -6,6 +6,8 @@ import { useState, useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
+import SEO from "../../components/SEO";
+
 const animationEffects = [
   "fade-up",
   "fade-down",
@@ -27,8 +29,15 @@ const Gallery = () => {
 
   return (
     <div className="gallery">
+      <SEO
+        title="Gallery | Explore Our Taxi & Car Rental Services in Pictures"
+        description="Browse our gallery to see our premium taxi and car rental fleet. Explore high-quality images of our vehicles, services, and happy customers."
+        url={window.location.href}
+        keywords="taxi gallery, car rental images, taxi service photos, vehicle fleet, rental car pictures, best taxi service, travel gallery, taxi service showcase"
+      />
+
       <div className="gallery-banner" data-aos="fade-up">
-        <img src={gallery_banner} alt="" />
+        <img src={gallery_banner} alt={gallery_banner} />
         <h1>Gallery</h1>
       </div>
 

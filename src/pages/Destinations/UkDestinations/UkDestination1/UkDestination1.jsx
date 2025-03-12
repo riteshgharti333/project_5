@@ -7,10 +7,10 @@ import { taxiFees } from "../../../../assets/serviceData";
 import { nainitalContent } from "../../../../assets/destinationData5";
 import { ukImgs } from "../../../../assets/ImgsData/mainDestinationImgs";
 
-
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import SEO from "../../../../components/SEO";
 
 const UkDestination1 = () => {
   useEffect(() => {
@@ -23,6 +23,13 @@ const UkDestination1 = () => {
 
   return (
     <div className="destination">
+      <SEO
+        title="Explore Nainital – The City of Lakes | Best Places to Visit"
+        description="Plan your trip to Nainital, the City of Lakes. Enjoy boating at Naini Lake, visit Snow View Point, and explore the beauty of this Himalayan hill station."
+        url={window.location.href}
+        keywords="Nainital tourism, best places in Nainital, Naini Lake boating, Snow View Point, Nainital hill station, Uttarakhand travel, Himalayan destinations, Mall Road shopping, Nainital trip guide"
+      />
+
       <div className="destination-banner">
         <ServiceBanner destinationImg={ukImgs} />
       </div>

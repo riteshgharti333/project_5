@@ -11,6 +11,7 @@ import { delhitopb } from "../../../assets/outstationData";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import SEO from "../../../components/SEO";
 
 const OutstationService4 = () => {
   useEffect(() => {
@@ -23,6 +24,13 @@ const OutstationService4 = () => {
 
   return (
     <div className="outstationService">
+      <SEO
+        title="Delhi to Punjab Taxi Service | One-Way & Round Trip Cabs"
+        description="Book a taxi from Delhi to Punjab for a comfortable journey. Enjoy one-way, round-trip, and luxury car rentals at the best prices with 24/7 service."
+        url={window.location.href}
+        keywords="Delhi to Punjab taxi, one-way cab Delhi to Amritsar, round-trip taxi Delhi to Chandigarh, best taxi Delhi to Ludhiana, Delhi to Punjab car rental"
+      />
+
       <div className="outstationService-banner">
         <ServiceBanner destinationImg={pbImgs} />
       </div>

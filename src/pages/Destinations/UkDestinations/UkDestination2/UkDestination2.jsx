@@ -10,6 +10,7 @@ import { ukImgs } from "../../../../assets/ImgsData/mainDestinationImgs";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import SEO from "../../../../components/SEO";
 
 const UkDestination2 = () => {
   useEffect(() => {
@@ -22,8 +23,15 @@ const UkDestination2 = () => {
 
   return (
     <div className="destination">
+      <SEO
+        title="Rishikesh & Haridwar Tourism – Yoga, Ganga Aarti & Adventure"
+        description="Visit Rishikesh and Haridwar for spiritual peace, yoga retreats, and the famous Ganga Aarti. Explore adventure sports in Rishikesh like river rafting and bungee jumping."
+        url={window.location.href}
+        keywords="Rishikesh tourism, Haridwar travel, Ganga Aarti Haridwar, yoga in Rishikesh, river rafting Rishikesh, adventure sports in Uttarakhand, spiritual places in India, best ashrams in Rishikesh"
+      />
+
       <div className="destination-banner">
-        <ServiceBanner destinationImg={ukImgs}  />
+        <ServiceBanner destinationImg={ukImgs} />
       </div>
 
       <div className="destination-container">

@@ -6,10 +6,10 @@ import { taxiFees } from "../../../../assets/serviceData";
 import { dharamshalaContent } from "../../../../assets/destinationData4";
 import { hpImgs } from "../../../../assets/ImgsData/mainDestinationImgs";
 
-
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import SEO from "../../../../components/SEO";
 
 const HpDestination3 = () => {
   useEffect(() => {
@@ -22,8 +22,15 @@ const HpDestination3 = () => {
 
   return (
     <div className="destination">
+      <SEO
+        title="Visit Dharamshala – The Land of Dalai Lama & Scenic Mountains"
+        description="Explore Dharamshala – A serene hill station with Tibetan culture, monasteries, McLeod Ganj, and breathtaking mountain views. Plan your Dharamshala trip today!"
+        url={window.location.href}
+        keywords="Dharamshala tourism, things to do in Dharamshala, Dharamshala travel guide, McLeod Ganj, Tibetan culture, monasteries in Dharamshala, Himachal Pradesh tourism"
+      />
+
       <div className="destination-banner">
-        <ServiceBanner  destinationImg={hpImgs}/>
+        <ServiceBanner destinationImg={hpImgs} />
       </div>
 
       <div className="destination-container">

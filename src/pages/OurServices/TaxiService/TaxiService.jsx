@@ -4,26 +4,37 @@ import "./TaxiService.scss";
 
 import ServiceSidebar from "../../../components/ServiceSidebar/ServiceSidebar";
 
+import banner_img from "../../../assets/images/banner_img.jpg";
+
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 
-const TaxiService = () => {
+import SEO from "../../../components/SEO";
 
-    useEffect(() => {
-      AOS.init({
-        duration: 1000,
-        easing: "ease-in-out",
-        once: true,
-      });
-    }, []);
+
+const TaxiService = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      easing: "ease-in-out",
+      once: true,
+  });
+  }, []);
 
   return (
     <div className="taxiService">
+      <SEO
+        title="Best Taxi Service in India | Affordable & Reliable Cabs"
+        description="Book a taxi anywhere in India with our affordable and reliable taxi service. 24/7 availability, professional drivers, and comfortable rides. Travel hassle-free today!"
+        url={window.location.href}
+        keywords="India taxi service, book a taxi, best cabs in India, reliable taxi, affordable taxi in India, airport taxi, city taxi service, outstation taxi"
+      />
+
       <div className="taxiService-banner" data-aos="fade-up">
         <img
-          src="https://images.unsplash.com/photo-1612438214708-f428a707dd4e?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-          alt=""
+          src={banner_img}
+          alt={banner_img}
         />
 
         <div className="taxiService-banner-desc">

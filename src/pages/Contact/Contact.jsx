@@ -3,6 +3,8 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect, useState } from "react";
 import { toast } from "react-hot-toast";
+import banner_img from "../../assets/images/banner_img.jpg";
+import SEO from "../../components/SEO";
 
 const Contact = () => {
   useEffect(() => {
@@ -70,11 +72,15 @@ const Contact = () => {
 
   return (
     <div className="contact">
+      <SEO
+        title="Contact Us | Get in Touch for Taxi & Car Rental Services"
+        description="Need a reliable taxi or car rental? Contact us today for 24/7 support, affordable fares, and professional service. Call, email, or visit us for quick assistance!"
+        url={window.location.href}
+        keywords="contact us, taxi service contact, car rental support, book a ride, 24/7 taxi help, customer support, taxi phone number, travel assistance"
+      />
+
       <div className="contact-banner" data-aos="fade-up">
-        <img
-          src="https://images.unsplash.com/photo-1612438214708-f428a707dd4e?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8MHx8fA%3D%3D"
-          alt=""
-        />
+        <img src={banner_img} alt={banner_img} />
         <div className="contact-banner-desc">
           <h1>Contact Us</h1>
         </div>
@@ -165,7 +171,7 @@ const Contact = () => {
 
           <div className="contact-map" data-aos="fade-up">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3731.805801551631!2d70.98298267524812!3d20.71810908085459!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjDCsDQzJzA1LjIiTiA3MMKwNTknMDguMCJF!5e0!3m2!1sen!2sin!4v1740658269472!5m2!1sen!2sin"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.0524128176435!2d77.1493764!3d28.628191199999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d038fe22cbe27%3A0x7b234cd402107ba4!2sGlobal%20India%20Travels!5e0!3m2!1sen!2sin!4v1741773204877!5m2!1sen!2sin" 
               width="100%"
               height="400"
               style={{ border: 0 }}

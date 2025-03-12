@@ -7,13 +7,21 @@ import { Link } from "react-router-dom";
 import BlogSidebar from "../../components/BlogSidebar/BlogSidebar";
 
 import { blog4 } from "../../assets/blogData";
+import SEO from "../../components/SEO";
 
 const Blog4 = () => {
   return (
     <div className="blog">
+      <SEO
+        title="Best Road Trips to Experience Rajasthan – A Journey Through Royal Landscapes"
+        description="Explore Rajasthan’s breathtaking road trips! Drive through Jaipur, Udaipur, Jaisalmer, and Pushkar for a royal adventure filled with history, culture, and stunning landscapes."
+        url={window.location.href}
+        keywords="Rajasthan road trips, best road trips India, Jaipur to Jaisalmer road trip, Udaipur scenic drives, travel Rajasthan by car"
+      />
+
       <div className="blog-container">
         <div className="blog-top">
-          <img src={logo} alt="" />
+          <img src={logo} alt={logo} />
           <div className="blog-top-links">
             <ul>
               <Link>
@@ -33,7 +41,7 @@ const Blog4 = () => {
         </div>
         <div className="blog-content">
           <div className="blog-content-left">
-            <img src={blog4.blogContent1.img} alt="" />
+            <img src={blog4.blogContent1.img} alt={blog4.blogContent1.img} />
             <div className="blog-content-item">
               <h1>{blog4.blogContent1.title}</h1>
 

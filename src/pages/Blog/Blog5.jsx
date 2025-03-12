@@ -7,13 +7,21 @@ import { Link } from "react-router-dom";
 import BlogSidebar from "../../components/BlogSidebar/BlogSidebar";
 
 import { blog5 } from "../../assets/blogData";
+import SEO from "../../components/SEO";
 
 const Blog5 = () => {
   return (
     <div className="blog">
+      <SEO
+        title="Best Things to Do in Udaipur – Explore the City of Lakes"
+        description="Discover the top things to do in Udaipur! Visit City Palace, take a boat ride on Lake Pichola, explore Sajjangarh Palace, and enjoy Rajasthani culture in this royal city."
+        url={window.location.href}
+        keywords="best things to do in Udaipur, Udaipur travel guide, City Palace Udaipur, Lake Pichola boat ride, places to visit in Udaipur"
+      />
+
       <div className="blog-container">
         <div className="blog-top">
-          <img src={logo} alt="" />
+          <img src={logo} alt={logo} />
           <div className="blog-top-links">
             <ul>
               <Link>
@@ -33,7 +41,7 @@ const Blog5 = () => {
         </div>
         <div className="blog-content">
           <div className="blog-content-left">
-            <img src={blog5.blogContent1.img} alt="" />
+            <img src={blog5.blogContent1.img} alt={blog5.blogContent1.img} />
             <div className="blog-content-item">
               <h1>{blog5.blogContent1.title}</h1>
 

@@ -8,10 +8,11 @@ import { Link } from "react-router-dom";
 import { pbDestinations } from "../../../assets/mainDestination";
 import { pbImgs } from "../../../assets/ImgsData/mainDestinationImgs";
 
-
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+
+import SEO from "../../../components/SEO";
 
 const MainDestination3 = () => {
   useEffect(() => {
@@ -24,8 +25,15 @@ const MainDestination3 = () => {
 
   return (
     <div className="mainDestination">
+      <SEO
+        title="Punjab Tourism – Explore Chandigarh & Amritsar's Iconic Landmarks"
+        description="Discover Punjab's rich heritage with a visit to Chandigarh, the modern city with serene lakes and gardens, and Amritsar, home to the Golden Temple, Wagah Border, and Jallianwala Bagh."
+        url={window.location.href}
+        keywords="Punjab tourism, Chandigarh attractions, Amritsar Golden Temple, Wagah Border, Jallianwala Bagh, best places in Punjab, Punjab travel guide"
+      />
+
       <div className="mainDestination-banner">
-        <ServiceBanner  destinationImg={pbImgs}  />
+        <ServiceBanner destinationImg={pbImgs} />
       </div>
       <div className="mainDestination-container">
         <div className="mainDestination-container-top">

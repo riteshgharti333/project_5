@@ -8,10 +8,10 @@ import { ranthamboreContent } from "../../../../assets/destinationData";
 
 import { rjImgs } from "../../../../assets/ImgsData/mainDestinationImgs";
 
-
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import SEO from "../../../../components/SEO";
 
 const RajasthanDestination2 = () => {
   useEffect(() => {
@@ -24,6 +24,13 @@ const RajasthanDestination2 = () => {
 
   return (
     <div className="destination">
+      <SEO
+        title="Ranthambore National Park Safari | Best Wildlife Experience"
+        description="Explore Ranthambore National Park, home to Bengal tigers, leopards, and diverse wildlife. Book your jungle safari for an unforgettable adventure!"
+        url={window.location.href}
+        keywords="Ranthambore safari, Ranthambore National Park, tiger safari India, wildlife tour, best jungle safari, Ranthambore travel guide"
+      />
+
       <div className="destination-banner">
         <ServiceBanner destinationImg={rjImgs} />
       </div>
@@ -96,7 +103,6 @@ const RajasthanDestination2 = () => {
                 </ul>
               </div>
 
-
               <div className="destination-content-item" data-aos="fade-up">
                 <h3>{ranthamboreContent.contentItem6.title}</h3>
                 <ul>
@@ -124,7 +130,6 @@ const RajasthanDestination2 = () => {
                   )}
                 </ul>
               </div>
-              
 
               <div className="destination-content-item" data-aos="fade-up">
                 <h3>{ranthamboreContent.contentItem8.title}</h3>

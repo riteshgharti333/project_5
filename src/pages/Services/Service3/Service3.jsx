@@ -7,12 +7,20 @@ import ServiceContent from "../../../components/ServiceContent/ServiceContent";
 import { gatewayServices, hpTaxi, taxiFees } from "../../../assets/serviceData";
 import ServiceCard from "../../../components/ServiceCard/ServiceCard";
 import { ourTaxies } from "../../../assets/data";
+import SEO from "../../../components/SEO";
 
 const Service3 = () => {
   return (
     <div className="service3">
+      <SEO
+        title="Himachal Taxi Service | Reliable Cabs for Local & Outstation Travel"
+        description="Book a taxi in Himachal Pradesh for local sightseeing, adventure trips, and outstation travel. Affordable fares, expert drivers, and 24/7 service."
+        url={window.location.href}
+        keywords="Himachal taxi service, Shimla taxi, Manali cab, Dharamshala taxi, outstation cabs Himachal, best taxi service in Himachal"
+      />
+
       <div className="service-banner">
-      <ServiceBanner destinationImg={ourTaxies}/>
+        <ServiceBanner destinationImg={ourTaxies} />
       </div>
 
       <div className="service-container">
