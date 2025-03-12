@@ -37,7 +37,7 @@ const MainDestination5 = () => {
       <div className="mainDestination-container">
         <div className="mainDestination-container-top">
           <div className="mainDestination-container-left" data-aos="fade-up">
-            <h1>{ukDestinations.title} </h1>
+          <h1>{ukDestinations.title} </h1>
             <p className="sm-desc">{ukDestinations.desc} </p>
 
             <div className="mainDestination-cards">

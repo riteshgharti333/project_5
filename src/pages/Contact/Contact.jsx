@@ -164,7 +164,7 @@ const Contact = () => {
               <h3>Head Office - New Delhi</h3>
               <span>wz95/ Dharmpal Niwas,Thodapur Indar Puri</span>
               <span>New Delhi - 110012</span>
-              <span>Need live support? : +91 70118 90082, +91 9718509639</span>
+              <span>Need live support? : +91 7011890082, +91 9718509639</span>
               <span>Email : Indiaglobaltravels1@gmail.com</span>
             </div>
           </div>

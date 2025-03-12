@@ -1,7 +1,6 @@
 import "./Navbar.scss";
 import logo from "../../assets/images/logo.png";
 import { Link } from "react-router-dom";
-import { IoCall } from "react-icons/io5";
 import { IoIosArrowDown } from "react-icons/io";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 
@@ -13,6 +12,9 @@ import {
   taxiServices,
 } from "../../assets/data";
 
+import { IoLogoWhatsapp } from "react-icons/io5";
+import { IoIosMail } from "react-icons/io";
+
 const Navbar = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
 
@@ -21,210 +23,222 @@ const Navbar = () => {
   const handleToggle = (index) => {
     setOpenIndex((prevIndex) => (prevIndex === index ? null : index)); // Toggle submenu
   };
+
   const [scroll, setScroll] = useState(false);
   const [lastScrollY, setLastScrollY] = useState(0);
-  const [navbarVisible, setNavbarVisible] = useState(true);
+  const [hideTop, setHideTop] = useState(false);
+  const [showNavbarBottom, setShowNavbarBottom] = useState(false);
 
   useEffect(() => {
     const handleNavScroll = () => {
-      if (window.scrollY > 0) {
-        setScroll(true);
+      const currentScrollY = window.scrollY;
+
+      if (currentScrollY > lastScrollY) {
+        setShowNavbarBottom(false); // Hide navbar-bottom when scrolling down
       } else {
-        setScroll(false);
+        setShowNavbarBottom(true); // Show navbar-bottom when scrolling up
       }
+
+      setLastScrollY(currentScrollY);
+      setScroll(currentScrollY > 70);
     };
 
     window.addEventListener("scroll", handleNavScroll);
     return () => {
       window.removeEventListener("scroll", handleNavScroll);
     };
-  }, []);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const currentScrollY = window.scrollY;
-      const midPoint = window.innerHeight / 1;
-
-      if (currentScrollY > midPoint) {
-        // Scrolling down past mid-point
-        if (currentScrollY > lastScrollY) {
-          setNavbarVisible(false); // Hide navbar
-        } else {
-          setNavbarVisible(true); // Show navbar when scrolling up
-        }
-      } else {
-        setNavbarVisible(true); // Always show navbar above mid-point
-      }
-
-      setLastScrollY(currentScrollY); // Update last scroll position
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
   }, [lastScrollY]);
 
   return (
-    <div
-      className={`navbar ${
-        navbarVisible ? "navbar-visible" : "navbar-hidden"
-      } ${scroll ? "scrolled" : ""} `}
-    >
-      <div className="navbar-left">
-        <Link to={"/"}>
-          <img src={logo} alt={logo} />
-        </Link>
-      </div>
-
-      <div className="mobile-menu">
-          <MobileMenu />
+    <div className={`navbar ${scroll ? "scrolled" : ""}`}>
+      <div className="navbar-top">
+        <div className="navbar-top-left">
+          <Link to={"/"}>
+            <img src={logo} alt={logo} />
+          </Link>
         </div>
 
-      <div className="navbar-center">
-        <ul>
-          <Link to={"/"}>
-            <li>
-              <span>Home</span>
-            </li>
-          </Link>
-          <Link to={"/about-us"}>
-            <li>
-              <span>About Us</span>
-            </li>
-          </Link>
-
-          <Link className="services">
-            <li
-              onMouseEnter={() => setDropdownOpen(true)}
-              onMouseLeave={() => setDropdownOpen(false)}
-            >
-              <span>
-                India Taxi Service <IoIosArrowDown className="down-icon" />
-              </span>
-
-              {dropdownOpen && (
-                <div className="services-link">
-                  {taxiServices.map((item, index) => (
-                    <Link to={item.link} className="service-link" key={index}>
-                      {item.name}
-                    </Link>
-                  ))}
-                </div>
-              )}
-            </li>
-          </Link>
-
-          <Link className="services">
-            <li
-              onMouseEnter={() => setDropdownOpen(true)}
-              onMouseLeave={() => setDropdownOpen(false)}
-            >
-              <span>
-                Taxi Outstation Services
-                <IoIosArrowDown className="down-icon" />
-              </span>
-
-              {dropdownOpen && (
-                <div className="services-link">
-                  {outstationServices.map((item, index) => (
-                    <Link to={item.link} className="service-link" key={index}>
-                      {item.name}
-                    </Link>
-                  ))}
-                </div>
-              )}
-            </li>
-          </Link>
-
-          <Link className="services nav-popular">
-            <li
-              onMouseEnter={() => setDropdownOpen(true)}
-              onMouseLeave={() => setDropdownOpen(false)}
-            >
-              <span>
-                Popular Destination <IoIosArrowDown className="down-icon" />
-              </span>
-
-              {dropdownOpen && (
-                <div className="services-link">
-                  {navPopularDestination.map((item, index) => (
-                    <div key={index} className="service-item">
-                      <Link to={`/${item.link}`} className="service-link">
-                        {item.title}
-                      </Link>
-                      <MdOutlineKeyboardArrowRight
-                        className="nav-right-icon"
-                        onClick={() => handleToggle(index)}
-                      />
-
-                      {openIndex === index && ( // Show only for clicked item
-                        <div className="smServiceLinks">
-                          {item.smDestination.map((subItem, subIndex) => (
-                            <Link
-                              key={subIndex}
-                              to={`/${subItem.link}`}
-                              className="smServiceLink"
-                            >
-                              {subItem.title}
-                            </Link>
-                          ))}
-                        </div>
-                      )}
-                    </div>
-                  ))}
-                </div>
-              )}
-            </li>
-          </Link>
-
-          <Link className="services">
-            <li
-              onMouseEnter={() => setDropdownOpen(true)}
-              onMouseLeave={() => setDropdownOpen(false)}
-            >
-              <span>
-                Our Services <IoIosArrowDown className="down-icon" />
-              </span>
-
-              {dropdownOpen && (
-                <div className="services-link">
-                  <Link to={"/india-taxi-service"} className="service-link">
-                    India Taxi Service
-                  </Link>
-                  <Link to={"/tour-guide"} className="service-link">
-                    Tour Guide
-                  </Link>
-                </div>
-              )}
-            </li>
-          </Link>
-
-          <Link to={"/our-gallery"}>
-            <li>
-              <span>Gallery</span>
-            </li>
-          </Link>
-
-          <Link to={"/tempo-service"}>
-            <li>
-              <span>Tempo/Bus Service </span>
-            </li>
-          </Link>
-
-          <Link to={"/blog"}>
-            <li>
-              <span>Blogs</span>
-            </li>
-          </Link>
+        <div className={`navbar-top-right ${hideTop ? "hidden" : ""}`}>
+          <a
+            href="https://wa.me/+919718509639"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="whatsapp-btn"
+            title="Chat on WhatsApp"
+          >
+            <div className="navbar-top-right-item">
+              <IoLogoWhatsapp className="navbar-top-icon" />
+              <div className="navbar-top-right-desc">
+                <p>+91 7011890082</p>
+                <p> Message Us</p>
+              </div>
+            </div>
+          </a>
+          <hr className="nav-hr" />
 
           <Link to={"/contact-us"}>
-            <li>
-              <span>Contact Us</span>
-            </li>
+            <div className="navbar-top-right-item">
+              <IoIosMail className="navbar-top-icon" />
+              <div className="navbar-top-right-desc">
+                <p>Indiaglobaltravels1@gmail.com</p>
+                <p> Contact Us</p>
+              </div>
+            </div>
           </Link>
-        </ul>
+        </div>
+
+        <div className="mobile-menu">
+          <MobileMenu />
+        </div>
       </div>
-        
+
+      <div className={`navbar-bottom ${showNavbarBottom ? "show" : ""}`}>
+        <div className="navbar-center">
+          <ul>
+            <Link to={"/"}>
+              <li>
+                <span>Home</span>
+              </li>
+            </Link>
+            <Link to={"/about-us"}>
+              <li>
+                <span>About Us</span>
+              </li>
+            </Link>
+
+            <Link className="services">
+              <li
+                onMouseEnter={() => setDropdownOpen(true)}
+                onMouseLeave={() => setDropdownOpen(false)}
+              >
+                <span>
+                  India Taxi Service <IoIosArrowDown className="down-icon" />
+                </span>
+
+                {dropdownOpen && (
+                  <div className="services-link">
+                    {taxiServices.map((item, index) => (
+                      <Link to={item.link} className="service-link" key={index}>
+                        {item.name}
+                      </Link>
+                    ))}
+                  </div>
+                )}
+              </li>
+            </Link>
+
+            <Link className="services">
+              <li
+                onMouseEnter={() => setDropdownOpen(true)}
+                onMouseLeave={() => setDropdownOpen(false)}
+              >
+                <span>
+                  Taxi Outstation Services
+                  <IoIosArrowDown className="down-icon" />
+                </span>
+
+                {dropdownOpen && (
+                  <div className="services-link">
+                    {outstationServices.map((item, index) => (
+                      <Link to={item.link} className="service-link" key={index}>
+                        {item.name}
+                      </Link>
+                    ))}
+                  </div>
+                )}
+              </li>
+            </Link>
+
+            <Link className="services nav-popular">
+              <li
+                onMouseEnter={() => setDropdownOpen(true)}
+                onMouseLeave={() => setDropdownOpen(false)}
+              >
+                <span>
+                  Popular Destination <IoIosArrowDown className="down-icon" />
+                </span>
+
+                {dropdownOpen && (
+                  <div className="services-link">
+                    {navPopularDestination.map((item, index) => (
+                      <div key={index} className="service-item">
+                        <Link to={`/${item.link}`} className="service-link">
+                          {item.title}
+                        </Link>
+                        <MdOutlineKeyboardArrowRight
+                          className="nav-right-icon"
+                          onClick={() => handleToggle(index)}
+                        />
+
+                        {openIndex === index && ( // Show only for clicked item
+                          <div className="smServiceLinks">
+                            {item.smDestination.map((subItem, subIndex) => (
+                              <Link
+                                key={subIndex}
+                                to={`/${subItem.link}`}
+                                className="smServiceLink"
+                              >
+                                {subItem.title}
+                              </Link>
+                            ))}
+                          </div>
+                        )}
+                      </div>
+                    ))}
+                  </div>
+                )}
+              </li>
+            </Link>
+
+            <Link className="services">
+              <li
+                onMouseEnter={() => setDropdownOpen(true)}
+                onMouseLeave={() => setDropdownOpen(false)}
+              >
+                <span>
+                  Our Services <IoIosArrowDown className="down-icon" />
+                </span>
+
+                {dropdownOpen && (
+                  <div className="services-link">
+                    <Link to={"/india-taxi-service"} className="service-link">
+                      India Taxi Service
+                    </Link>
+                    <Link to={"/tour-guide"} className="service-link">
+                      Tour Guide
+                    </Link>
+                  </div>
+                )}
+              </li>
+            </Link>
+
+            <Link to={"/our-gallery"}>
+              <li>
+                <span>Gallery</span>
+              </li>
+            </Link>
+
+            <Link to={"/tempo-service"}>
+              <li>
+                <span>Tempo/Bus Service </span>
+              </li>
+            </Link>
+
+            <Link to={"/blog"}>
+              <li>
+                <span>Blogs</span>
+              </li>
+            </Link>
+
+            <Link to={"/contact-us"}>
+              <li>
+                <span>Contact Us</span>
+              </li>
+            </Link>
+          </ul>
+        </div>
       </div>
+    </div>
   );
 };
 

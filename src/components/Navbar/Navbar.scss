@@ -1,108 +1,156 @@
 @use "../../styles/responsive.scss" as *;
 
 .navbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0px 20px;
-  position: fixed;
-  top: 0;
-  z-index: 999;
-  width: 100%;
-  background: #fff;
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
   overflow: visible !important;
-  transition: all 0.5s ease-in-out;
-  &.scrolled {
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-  }
-
-  // &.navbar-visible {
-  //   transform: translateY(0);
-  // }
 
   &.navbar-hidden {
+    opacity: 0;
     transform: translateY(-100%);
   }
 
-  .navbar-left {
-    img {
-      width: 100px;
+  &.navbar-show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  &.scrolled {
+    .navbar-bottom {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      opacity: 0;
+      transform: translateY(-100%);
+      transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+
+      &.show {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
   }
-  .navbar-center {
-    @include lg {
-      display: none;
-    }
-    ul {
-      display: flex;
-      list-style: none;
-      margin: 0;
-      padding: 0;
-      gap: 20px;
-      align-items: center;
 
-      li {
-        span {
-          font-size: 16px;
-          font-weight: 500;
-          color: $primary-color;
-          padding: 30px 0px;
+  .navbar-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px;
+    transition: transform 0.3s ease-in-out;
+    .navbar-top-left {
+      img {
+        width: 100px;
+      }
+    }
+    .navbar-top-right {
+      display: flex;
+      gap: 20px;
+
+      @include lg {
+        display: none;
+      }
+      hr {
+        background: #dddddd;
+        border: none;
+        width: 1px;
+        border-radius: 5px;
+      }
+
+      .navbar-top-right-item {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        p {
+          color: $p-color;
+          &:first-child {
+            font-size: 18px;
+            font-weight: bold;
+            color: $primary-color;
+          }
         }
 
-        transition: all 0.3s ease-in-out;
+        .navbar-top-icon {
+          color: #fff;
+          background: #25d366;
+          padding: 10px;
+          font-size: 40px;
+          border-radius: 10px;
+          transition: all 0.3s ease-in-out;
+        }
+
         &:hover {
-          transform: translateY(-2px);
+          .navbar-top-icon {
+            background: $primary-color;
+            color: #fff;
+            transform: translateY(-2px);
+          }
         }
       }
     }
-    .services {
-      position: relative;
-      &.nav-popular {
-        .services-link {
-          .service-item {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            position: relative;
 
-            .nav-right-icon {
-              transition: all 0.3s ease-in-out;
-              padding: 10px;
-              font-size: 40px;
+    .mobile-menu {
+      @media (min-width: 1025px) {
+        display: none;
+      }
+    }
+  }
 
-              &:hover {
-                color: $primary-color;
-                background: rgba(128, 128, 128, 0.151);
-                border-radius: 5px;
-              }
+  .navbar-bottom {
+    display: flex;
+    justify-content: center;
+    padding: 0px 20px;
+    z-index: 999;
+    width: 100%;
+    background: $primary-color;
+    overflow: visible !important;
+    transition: all 0.3s ease-in-out;
+
+    .navbar-center {
+      z-index: 999;
+      @include lg {
+        display: none;
+      }
+      ul {
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        gap: 20px;
+        align-items: center;
+
+        li {
+          span {
+            font-size: 16px;
+            font-weight: 500;
+            color: #fff;
+            padding: 30px 0px;
+
+            @include xl{
+              font-size: 14px;
             }
+          }
 
-            &:first-child .smServiceLinks {
-              top: 250%;
-            }
+          transition: all 0.3s ease-in-out;
+          &:hover {
+            transform: translateY(-2px);
+          }
+        }
+      }
+      .services {
+        position: relative;
+        &.nav-popular {
+          .services-link {
+            .service-item {
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              position: relative;
 
-            &:nth-child(2) .smServiceLinks {
-              top: 250%;
-            }
-            .smServiceLinks {
-              position: absolute;
-              top: 100%;
-              left: 111%;
-              transform: translateY(-50%);
-              width: 250px;
-              background: #fff;
-              transition: opacity 0.3s ease, visibility 0.3s ease;
-              border: 1px solid $primary-color;
-              border-radius: 5px;
-              padding: 10px 20px;
-              z-index: 100;
-
-              .smServiceLink {
-                display: flex;
-                flex-direction: column;
-                padding: 10px;
+              .nav-right-icon {
                 transition: all 0.3s ease-in-out;
-                font-weight: 500;
+                padding: 10px;
+                font-size: 40px;
 
                 &:hover {
                   color: $primary-color;
@@ -110,66 +158,99 @@
                   border-radius: 5px;
                 }
               }
+
+              &:first-child .smServiceLinks {
+                top: 250%;
+              }
+
+              &:nth-child(2) .smServiceLinks {
+                top: 250%;
+              }
+              .smServiceLinks {
+                position: absolute;
+                top: 100%;
+                left: 111%;
+                transform: translateY(-50%);
+                width: 250px;
+                background: #fff;
+                transition: opacity 0.3s ease, visibility 0.3s ease;
+                border: 1px solid $primary-color;
+                border-radius: 5px;
+                padding: 10px 20px;
+                z-index: 100;
+
+                .smServiceLink {
+                  display: flex;
+                  flex-direction: column;
+                  padding: 10px;
+                  transition: all 0.3s ease-in-out;
+                  font-weight: 500;
+
+                  &:hover {
+                    color: $primary-color;
+                    background: rgba(128, 128, 128, 0.151);
+                    border-radius: 5px;
+                  }
+                }
+              }
             }
           }
         }
-      }
 
-      .services-link {
-        position: absolute;
-        display: flex;
-        flex-direction: column;
-        top: 80%;
-        left: 0;
-        width: 250px;
-        background: #fff;
-        opacity: 0;
-        visibility: hidden;
-        transition: opacity 0.5s ease, visibility 0.3s ease;
-        border: 1px solid $primary-color;
-        border-radius: 5px;
-        padding: 10px 20px;
-      }
-
-      &:hover .services-link {
-        opacity: 1;
-        visibility: visible;
-      }
-
-      li {
-        span {
+        .services-link {
+          position: absolute;
           display: flex;
-          align-items: center;
-          cursor: pointer;
+          flex-direction: column;
+          top: 80%;
+          left: 0;
+          width: 250px;
+          background: #fff;
+          opacity: 0;
+          visibility: hidden;
+          transition: opacity 0.5s ease, visibility 0.3s ease;
+          border: 1px solid $primary-color;
+          border-radius: 5px;
+          padding: 10px 20px;
+        }
 
-          .down-icon {
-            margin-left: 5px;
-            transition: transform 0.5s ease;
+        &:hover .services-link {
+          opacity: 1;
+          visibility: visible;
+        }
+
+        li {
+          span {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+
+            .down-icon {
+              margin-left: 5px;
+              transition: transform 0.5s ease;
+            }
+          }
+
+          &:hover {
+            transform: translateY(-0);
           }
         }
 
-        &:hover {
-          transform: translateY(-0);
+        &:hover .down-icon {
+          transform: rotate(180deg);
         }
-      }
 
-      &:hover .down-icon {
-        transform: rotate(180deg);
-      }
+        .service-link {
+          padding: 10px;
+          transition: all 0.3s ease-in-out;
+          font-weight: 500;
 
-      .service-link {
-        padding: 10px;
-        transition: all 0.3s ease-in-out;
-        font-weight: 500;
-
-        &:hover {
-          color: $primary-color;
-          background: rgba(128, 128, 128, 0.151);
-          border-radius: 5px;
+          &:hover {
+            color: $primary-color;
+            background: rgba(128, 128, 128, 0.151);
+            border-radius: 5px;
+          }
         }
       }
     }
   }
-
-  
 }
