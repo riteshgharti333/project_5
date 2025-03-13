@@ -2,9 +2,7 @@ import "./Blogs.scss";
 import { MdOutlineDateRange } from "react-icons/md";
 import { FaRegCommentDots } from "react-icons/fa";
 import { FaArrowRightLong } from "react-icons/fa6";
-import { IoPricetagsOutline } from "react-icons/io5";
 import { Link } from "react-router-dom";
-import logo from "../../assets/images/logo.png";
 
 import { blogs } from "../../assets/blogData";
 import SEO from "../../components/SEO";
@@ -20,25 +18,6 @@ const Blogs = () => {
       />
 
       <div className="blogs-container">
-        <div className="blogs-top">
-          <img src={logo} alt="" />
-          <div className="blogs-top-links">
-            <ul>
-              <Link>
-                <li>Home</li>
-              </Link>
-              <Link>
-                <li>Taxi Services</li>
-              </Link>{" "}
-              <Link>
-                <li>Blog</li>
-              </Link>
-              <Link>
-                <li>Contact Us</li>
-              </Link>
-            </ul>
-          </div>
-        </div>
         <div className="blogs-cards">
           {blogs.map((item, index) => (
             <div className="blogs-card" key={index}>

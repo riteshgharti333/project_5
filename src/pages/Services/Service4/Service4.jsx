@@ -1,13 +1,13 @@
-import ServiceBanner from "../../../components/ServiceBanner/ServiceBanner";
 import ServiceSidebar from "../../../components/ServiceSidebar/ServiceSidebar";
 import "./Service4.scss";
 
 import ServiceContent from "../../../components/ServiceContent/ServiceContent";
-import { ourTaxies } from "../../../assets/data";
 
 import { gatewayServices, rjTaxi, taxiFees } from "../../../assets/serviceData";
 import ServiceCard from "../../../components/ServiceCard/ServiceCard";
 import SEO from "../../../components/SEO";
+
+import banner_img from "../../../assets/images/banner_img.jpg";
 
 const Service4 = () => {
   return (
@@ -18,9 +18,12 @@ const Service4 = () => {
         url={window.location.href}
         keywords="Rajasthan taxi service, Jaipur taxi, Udaipur cab, Jaisalmer taxi, outstation cabs Rajasthan, best taxi service in Rajasthan"
       />
+      <div className="service-banner" data-aos="fade-up">
+        <img src={banner_img} alt={banner_img} />
 
-      <div className="service-banner">
-        <ServiceBanner destinationImg={ourTaxies} />
+        <div className="service-banner-desc">
+          <h1>Rajasthan Taxi Service</h1>
+        </div>
       </div>
 
       <div className="service-container">

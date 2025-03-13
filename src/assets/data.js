@@ -416,3 +416,22 @@ export const outstationServices = [
     link: "delhi-to-uttar-pradesh-taxi-service",
   },
 ];
+
+export const aboutCount = [
+  {
+    title: "AMAZING PLACES TO VISIT",
+    no: "3000",
+  },
+  {
+    title: "5 STAR HOTELS TO STAY",
+    no: "4708",
+  },
+  {
+    title: "AIRLINES TO TRAVEL THE WORLD",
+    no: "4105",
+  },
+  {
+    title: "VIP TRANSPORT OPTIONS",
+    no: "2250",
+  },
+];

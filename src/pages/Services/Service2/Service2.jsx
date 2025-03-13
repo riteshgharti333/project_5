@@ -1,9 +1,9 @@
-import ServiceBanner from "../../../components/ServiceBanner/ServiceBanner";
 import ServiceSidebar from "../../../components/ServiceSidebar/ServiceSidebar";
 import "./Service2.scss";
 
 import ServiceContent from "../../../components/ServiceContent/ServiceContent";
-import { ourTaxies } from "../../../assets/data";
+
+import banner_img from "../../../assets/images/banner_img.jpg";
 
 import { gatewayServices, ukTaxi, taxiFees } from "../../../assets/serviceData";
 import ServiceCard from "../../../components/ServiceCard/ServiceCard";
@@ -19,8 +19,12 @@ const Service2 = () => {
         keywords="Uttarakhand taxi service, Char Dham Yatra taxi, Haridwar taxi, Rishikesh cab, Kedarnath Badrinath taxi, local cabs in Uttarakhand"
       />
 
-      <div className="service-banner">
-        <ServiceBanner destinationImg={ourTaxies} />
+      <div className="service-banner" data-aos="fade-up">
+        <img src={banner_img} alt={banner_img} />
+
+        <div className="service-banner-desc">
+          <h1>Uttarakhand Taxi Service</h1>
+        </div>
       </div>
 
       <div className="service-container">

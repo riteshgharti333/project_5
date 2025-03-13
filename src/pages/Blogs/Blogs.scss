@@ -1,43 +1,13 @@
 @use "../../styles/responsive.scss" as *;
 
 .blogs {
-  padding: 100px 0px 40px 0px;
 
   background: #f1f1f1;
 
   .blogs-container {
     max-width: 1200px;
     margin: 0 auto;
-    .blogs-top {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin-bottom: 40px;
-      img {
-        width: 150px;
-      }
-      .blogs-top-links {
-        ul {
-          list-style: none;
-          display: flex;
-          gap: 30px;
-          flex-wrap: wrap;
-          justify-content: center;
-
-          li {
-            text-transform: uppercase;
-            font-size: 18px;
-            font-weight: 500;
-            color: $primary-color;
-            transition: all 0.3s ease-in-out;
-
-            &:hover {
-              transform: translateY(-4px);
-            }
-          }
-        }
-      }
-    }
+   
     .blogs-cards {
       column-count: 2;
       gap: 20px;

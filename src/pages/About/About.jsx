@@ -8,7 +8,7 @@ import { useRef } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import BlogCards from "../../components/BlogCards/BlogCards";
-import { services } from "../../assets/data";
+import { aboutCount, services } from "../../assets/data";
 
 import banner_img from "../../assets/images/banner_img.jpg";
 import SEO from "../../components/SEO";
@@ -55,8 +55,7 @@ const About = () => {
         <img src={banner_img} alt={banner_img} />
 
         <div className="about-banner-desc">
-          <h1>Looking for Joy</h1>
-          <p>Your trusted trip companion</p>
+          <h1>About Us</h1>
         </div>
       </div>
 
@@ -164,12 +163,16 @@ const About = () => {
       </div>
 
       <div className="about-content3" ref={aboutContentRef} data-aos="fade-up">
-        {[1500, 100, 999, 200].map((num, index) => (
-          <div className="about-content3-item" key={index} data-aos="zoom-in">
+        {aboutCount.map((item, index) => (
+          <div className="about-content3-item" data-aos="zoom-in" key={index}>
             <h1>
-              <CountUp start={startCount ? 0 : null} end={num} duration={2.5} />
+              <CountUp
+                start={startCount ? 0 : null}
+                end={item.no}
+                duration={2.5}
+              />
             </h1>
-            <p>AMAZING PLACES TO VISIT</p>
+            <p>{item.title}</p>
           </div>
         ))}
       </div>

@@ -56,7 +56,7 @@ const BlogCards = () => {
                   <Link to={`/blog/${item.link}`}>
                     <h3>{item.title}</h3>
                   </Link>
-                  <p>Febuary 20,2025</p>
+                  <p>{item.date}</p>
                   <Link to={`/blog/${item.link}`}>
                     <span>Read More.....</span>
                   </Link>

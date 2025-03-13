@@ -26,7 +26,7 @@ export const upImgs = [
   { img: up1_img, title: "Uttar Pradesh Image" },
   { img: up4_img, title: "Uttar Pradesh Image" },
   { img: up5_img, title: "Uttar Pradesh Image" },
-]
+];
 
 ////////////////////// pb
 
@@ -42,7 +42,7 @@ export const pbImgs = [
   { img: pb3_img, title: "Punjab Image" },
   { img: pb4_img, title: "Punjab Image" },
   { img: pb5_img, title: "Punjab Image" },
-]
+];
 
 //////////// hp
 import hp1_img from "../images/mainDImgs/hpImgs/hp1.jpg";
@@ -57,21 +57,36 @@ export const hpImgs = [
   { img: hp3_img, title: "Himachal Pradesh Image" },
   { img: hp4_img, title: "Himachal Pradesh Image" },
   { img: hp5_img, title: "Himachal Pradesh Image" },
-]
+];
 
 /////////////// uk
 
-import uk1_img  from "../images/mainDImgs/ukimgs/uk1.jpg";
-import uk2_img  from "../images/mainDImgs/ukimgs/uk2.jpg";
-import uk3_img  from "../images/mainDImgs/ukimgs/uk3.jpg";
-import uk4_img  from "../images/mainDImgs/ukimgs/uk4.jpg";
-import uk5_img  from "../images/mainDImgs/ukimgs/uk5.jpg";
-
+import uk1_img from "../images/mainDImgs/ukimgs/uk1.jpg";
+import uk2_img from "../images/mainDImgs/ukimgs/uk2.jpg";
+import uk3_img from "../images/mainDImgs/ukimgs/uk3.jpg";
+import uk4_img from "../images/mainDImgs/ukimgs/uk4.jpg";
+import uk5_img from "../images/mainDImgs/ukimgs/uk5.jpg";
 
 export const ukImgs = [
   { img: uk1_img, title: "Uttrakhand Image" },
-  { img: uk2_img, title: "Himachal Pradesh Image" },
-  { img: uk3_img, title: "Himachal Pradesh Image" },
-  { img: uk4_img, title: "Himachal Pradesh Image" },
-  { img: uk5_img, title: "Himachal Pradesh Image" },
-]
+  { img: uk2_img, title: "Uttrakhand Image" },
+  { img: uk3_img, title: "Uttrakhand Image" },
+  { img: uk4_img, title: "Uttrakhand Image" },
+  { img: uk5_img, title: "Uttrakhand Image" },
+];
+
+///////////////jk
+
+import jk1_img from "../images/mainDImgs/jkImgs/jk1.jpg";
+import jk2_img from "../images/mainDImgs/jkImgs/jk2.jpg";
+import jk3_img from "../images/mainDImgs/jkImgs/jk3.jpg";
+import jk4_img from "../images/mainDImgs/jkImgs/jk4.jpg";
+import jk5_img from "../images/mainDImgs/jkImgs/jk5.jpg";
+
+export const jkImgs = [
+  { img: jk1_img, title: "Jammu Kashmir" },
+  { img: jk2_img, title: "Jammu Kashmir" },
+  { img: jk3_img, title: "Jammu Kashmir" },
+  { img: jk4_img, title: "Jammu Kashmir" },
+  { img: jk5_img, title: "Jammu Kashmir" },
+];

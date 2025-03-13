@@ -1,9 +1,9 @@
-import ServiceBanner from "../../../components/ServiceBanner/ServiceBanner";
 import ServiceSidebar from "../../../components/ServiceSidebar/ServiceSidebar";
 import "./Service7.scss";
 
 import ServiceContent from "../../../components/ServiceContent/ServiceContent";
-import { ourTaxies } from "../../../assets/data";
+import banner_img from "../../../assets/images/banner_img.jpg";
+
 import { gatewayServices, hrTaxi, taxiFees } from "../../../assets/serviceData";
 import ServiceCard from "../../../components/ServiceCard/ServiceCard";
 import SEO from "../../../components/SEO";
@@ -18,8 +18,12 @@ const Service7 = () => {
         keywords="Haryana taxi service, Gurgaon cabs, Faridabad taxi, Chandigarh to Delhi cab, outstation taxi Haryana, best taxi service in Haryana"
       />
 
-      <div className="service-banner">
-        <ServiceBanner destinationImg={ourTaxies} />
+      <div className="service-banner" data-aos="fade-up">
+        <img src={banner_img} alt={banner_img} />
+
+        <div className="service-banner-desc">
+          <h1>Haryana Taxi Service</h1>
+        </div>
       </div>
 
       <div className="service-container">

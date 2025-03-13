@@ -37,9 +37,6 @@
           font-size: 30px;
         }
       }
-      p {
-        font-size: 25px;
-      }
     }
   }
 
@@ -58,132 +55,158 @@
         color: $p-color;
       }
     }
-   
+
     .about-content1-cards {
-        display: grid;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      margin-top: 30px;
+      gap: 40px;
+      padding: 0px 10px;
+
+      @include xl {
         grid-template-columns: repeat(3, 1fr);
-        margin-top: 30px;
-        gap: 40px;
-        padding: 0px 10px;
-    
-        @include xl {
-          grid-template-columns: repeat(3, 1fr);
-        }
-    
-        @include lg {
-          grid-template-columns: repeat(2, 1fr);
-        }
-    
+      }
+
+      @include lg {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      @include md {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+      }
+
+      @include sm {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+      }
+
+      .about-card {
+        max-width: 330px;
+        padding: 40px 20px;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        border: 1px solid #dddddd;
+        transition: all 0.5s ease-in-out;
+        position: relative;
+        overflow: hidden;
+        background: linear-gradient(145deg, #0d3c61, #106ab5);
+        margin: 0 auto;
+        align-items: center;
+        cursor: pointer;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+
         @include md {
-          grid-template-columns: repeat(2, 1fr);
-          gap: 10px;
+          width: 100%;
+          height: 100%;
         }
-    
-        @include sm {
-          grid-template-columns: repeat(1, 1fr);
-          gap: 20px;
+
+        .about-card-top {
+          .about-card-icon {
+            font-size: 60px;
+            transition: all 0.5s ease-in-out;
+            color: #ffffff;
+          }
         }
-    
-        .about-card {
-          width: 340px;
-          height: 400px;
-          padding: 40px 20px;
-          border-radius: 10px;
+
+        .about-card-bottom {
+          text-align: center;
           display: flex;
           flex-direction: column;
-          justify-content: space-between;
-          border: 1px solid #dddddd;
-          transition: all 0.5s ease-in-out;
-          position: relative;
-          overflow: hidden;
-          background: #f5f5f5;
-          margin: 0 auto;
-          align-items: center;
-          cursor: pointer;
-    
-          @include md {
-            width: 100%;
-            height: 100%;
+          gap: 20px;
+
+          h2 {
+            margin-top: 20px;
+            transition: all 0.5s ease-in-out;
+            color: #ffffff;
+            font-size: 23px;
+            font-weight: 700;
           }
-    
-          .about-card-top {
-            .about-card-icon {
-              font-size: 60px;
+
+          .about-card-bottom-desc {
+            h3 {
               transition: all 0.5s ease-in-out;
+              text-align: center;
+              color: #ffffff;
+              font-size: 18px;
+              font-weight: 600;
+            }
+
+            p {
+              font-size: 16px;
+              transition: all 0.5s ease-in-out;
+              text-align: center;
+              margin-top: 10px;
+              color: rgba(255, 255, 255, 0.8);
             }
           }
-    
-          .about-card-bottom {
-            text-align: center;
+
+          .about-card-bottom-option {
             display: flex;
-            flex-direction: column;
-            gap: 20px;
-            h2 {
-              margin-top: 20px;
+            gap: 10px;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            span {
+              font-size: 13px;
+              font-weight: 600;
               transition: all 0.5s ease-in-out;
-              color: $primary-color;
-            }
-            .about-card-bottom-desc {
-              h3 {
-                transition: all 0.5s ease-in-out;
-                text-align: center;
-              }
-    
-              p {
-                font-size: 16px;
-                transition: all 0.5s ease-in-out;
-                text-align: center;
-                margin-top: 10px;
-              }
-            }
-    
-            .about-card-bottom-option {
-              display: flex;
-              gap: 10px;
-              flex-wrap: wrap;
-              justify-content: center;
-              span {
-                font-size: 13px;
-                font-weight: 600;
-                transition: all 0.5s ease-in-out;
-                color: $primary-color;
-              }
-            }
-          }
-    
-          &:hover {
-            border: 1px solid #989898;
-            background: $primary-color;
-            box-shadow: 0px 35px 40px 10px rgba(16, 106, 181, 0.25);
-    
-            .about-card-top {
-              .about-card-icon {
-                animation: bounce 0.8s ease-in-out infinite;
-                color: #fff;
-              }
-            }
-    
-            .about-card-bottom {
-              color: #fff;
-    
-              h2 {
-                color: #fff;
-              }
-    
-              h3 {
-                color: #000;
-              }
-    
-              .about-card-bottom-option {
-                span {
-                  color: #fff;
-                }
-              }
+              color: #ffffff;
+              padding: 5px;
+              border-radius: 25px;
+              background: #106ab5;
+              border: 1px solid rgba(255, 255, 255, 0.3);
             }
           }
         }
-    
-        // Bounce Animation
+
+        &:hover {
+          transform: translateY(-10px);
+          box-shadow: 0 20px 40px rgba(16, 106, 181, 0.4);
+          background: linear-gradient(145deg, #106ab5, #0d3c61);
+
+          .about-card-top {
+            .tour-card-icon {
+              animation: bounce 0.8s ease-in-out infinite;
+              color: #ffffff;
+            }
+          }
+
+          .about-card-bottom {
+            h2 {
+              color: #ffffff;
+            }
+
+            h3 {
+              color: #ffffff;
+            }
+
+            .tour-card-bottom-option {
+              span {
+                background: rgba(16, 106, 181, 0.2);
+                border: 1px solid rgba(16, 106, 181, 0.5);
+                color: #ffffff;
+              }
+            }
+          }
+
+          &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(
+              circle,
+              rgba(16, 106, 181, 0.2),
+              transparent
+            );
+            animation: glow 2s ease-in-out infinite;
+          }
+        }
+
         @keyframes bounce {
           0%,
           100% {
@@ -193,7 +216,7 @@
             transform: translateY(-10px);
           }
         }
-    
+
         // Border Glow Animation
         @keyframes border-glow {
           0% {
@@ -212,103 +235,103 @@
       }
     }
   }
+}
 
-  .about-content2 {
-    max-width: 1200px;
-    margin: auto;
-    padding: 0px 20px;
-    .about-content2-top {
-      display: flex;
-      gap: 40px;
-      align-items: center;
+.about-content2 {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0px 20px;
+  margin-top: 40px;
+  .about-content2-top {
+    display: flex;
+    gap: 40px;
+    align-items: center;
 
-      @include lg {
-        flex-direction: column;
-        padding: 40px;
-      }
-
-      @include md {
-        padding: 20px;
-      }
-
-      @include sm {
-        padding: 0px;
-      }
-
-      .about-content2-top-left {
-        flex: 1;
-        display: flex;
-        flex-direction: column;
-        gap: 50px;
-
-
-        h1 {
-          color: $text-color;
-          font-size: 30px;
-        }
-
-        p {
-          font-size: 18px;
-          color: $p-color;
-        }
-      }
-      .about-content2-top-right {
-        flex: 1;
-
-        img {
-          width: 100%;
-          height: 600px;
-          object-fit: cover;
-        }
-      }
+    @include lg {
+      flex-direction: column;
+      padding: 40px;
     }
-    .about-content2-bottom {
+
+    @include md {
+      padding: 20px;
+    }
+
+    @include sm {
+      padding: 0px;
+    }
+
+    .about-content2-top-left {
+      flex: 1;
       display: flex;
       flex-direction: column;
       gap: 50px;
-      margin-top: 50px;
+
+      h1 {
+        color: $text-color;
+        font-size: 30px;
+      }
+
       p {
         font-size: 18px;
         color: $p-color;
       }
     }
-  }
+    .about-content2-top-right {
+      flex: 1;
 
-  .about-content3 {
+      img {
+        width: 100%;
+        height: 600px;
+        object-fit: cover;
+      }
+    }
+  }
+  .about-content2-bottom {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    max-width: 1200px;
-    margin: auto;
-    gap: 40px;
-    padding: 0px 10px;
-
-    @include sm {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 10px;
-    }
-
-    .about-content3-item {
-      text-align: center;
-
-      h1 {
-        color: $text-color;
-        margin-bottom: 10px;
-        font-size: 35px;
-      }
-
-      p {
-        color: $p-color;
-      }
+    flex-direction: column;
+    gap: 50px;
+    margin-top: 50px;
+    p {
+      font-size: 18px;
+      color: $p-color;
     }
   }
+}
 
-  .about-content4 {
-    max-width: 1200px;
-    margin: auto;
-    margin-bottom: 40px;
-    width: 100%;
-    padding: 0px 20px;
+.about-content3 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: auto;
+  gap: 40px;
+  padding: 0px 10px;
+
+  @include sm {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
   }
 
+  .about-content3-item {
+    text-align: center;
+
+    h1 {
+      color: $text-color;
+      margin-bottom: 10px;
+      font-size: 35px;
+    }
+
+    p {
+      color: $p-color;
+    }
+  }
+}
+
+.about-content4 {
+  max-width: 1200px;
+  margin: auto;
+  margin-bottom: 40px;
+  width: 100%;
+  padding: 0px 20px;
+}

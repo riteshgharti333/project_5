@@ -1,9 +1,5 @@
 import "./Blog.scss";
 import { MdOutlineDateRange } from "react-icons/md";
-import { FaRegUser } from "react-icons/fa";
-import logo from "../../assets/images/logo.png";
-import { Link } from "react-router-dom";
-
 import BlogSidebar from "../../components/BlogSidebar/BlogSidebar";
 
 import { blog4 } from "../../assets/blogData";
@@ -20,25 +16,6 @@ const Blog4 = () => {
       />
 
       <div className="blog-container">
-        <div className="blog-top">
-          <img src={logo} alt={logo} />
-          <div className="blog-top-links">
-            <ul>
-              <Link>
-                <li>Home</li>
-              </Link>
-              <Link>
-                <li>Taxi Services</li>
-              </Link>
-              <Link>
-                <li>Blog</li>
-              </Link>
-              <Link>
-                <li>Contact Us</li>
-              </Link>
-            </ul>
-          </div>
-        </div>
         <div className="blog-content">
           <div className="blog-content-left">
             <img src={blog4.blogContent1.img} alt={blog4.blogContent1.img} />
@@ -47,12 +24,8 @@ const Blog4 = () => {
 
               <div className="user">
                 <p>
-                  <FaRegUser className="user-icon" />
-                  Sarika Chauhan
-                </p>
-                <p>
                   <MdOutlineDateRange className="date-icon" />
-                  February 20, 2025
+                   {blog4.date}
                 </p>
               </div>
 

@@ -1,12 +1,11 @@
-import ServiceBanner from "../../../components/ServiceBanner/ServiceBanner";
 import ServiceSidebar from "../../../components/ServiceSidebar/ServiceSidebar";
 import "./Service8.scss";
 
 import ServiceContent from "../../../components/ServiceContent/ServiceContent";
 
+import banner_img from "../../../assets/images/banner_img.jpg";
 import { gatewayServices, jkTaxi, taxiFees } from "../../../assets/serviceData";
 import ServiceCard from "../../../components/ServiceCard/ServiceCard";
-import { ourTaxies } from "../../../assets/data";
 import SEO from "../../../components/SEO";
 
 const Service8 = () => {
@@ -19,9 +18,13 @@ const Service8 = () => {
         keywords="Jammu taxi service, Kashmir cabs, Srinagar taxi, Jammu to Vaishno Devi cab, Gulmarg car rental, best taxi in Jammu & Kashmir, outstation cabs Jammu"
       />
 
-      <div className="service-banner">
-        <ServiceBanner destinationImg={ourTaxies} />
-      </div>
+      <div className="service-banner" data-aos="fade-up">
+              <img src={banner_img} alt={banner_img} />
+      
+              <div className="service-banner-desc">
+                <h1>Jammu & Kashmir Taxi Service</h1>
+              </div>
+            </div>
 
       <div className="service-container">
         <div className="service-container-top">

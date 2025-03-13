@@ -1,4 +1,3 @@
-import ServiceBanner from "../../../components/ServiceBanner/ServiceBanner";
 import ServiceSidebar from "../../../components/ServiceSidebar/ServiceSidebar";
 import "./Service3.scss";
 
@@ -6,8 +5,9 @@ import ServiceContent from "../../../components/ServiceContent/ServiceContent";
 
 import { gatewayServices, hpTaxi, taxiFees } from "../../../assets/serviceData";
 import ServiceCard from "../../../components/ServiceCard/ServiceCard";
-import { ourTaxies } from "../../../assets/data";
 import SEO from "../../../components/SEO";
+
+import banner_img from "../../../assets/images/banner_img.jpg";
 
 const Service3 = () => {
   return (
@@ -19,8 +19,12 @@ const Service3 = () => {
         keywords="Himachal taxi service, Shimla taxi, Manali cab, Dharamshala taxi, outstation cabs Himachal, best taxi service in Himachal"
       />
 
-      <div className="service-banner">
-        <ServiceBanner destinationImg={ourTaxies} />
+ <div className="service-banner" data-aos="fade-up">
+        <img src={banner_img} alt={banner_img} />
+
+        <div className="service-banner-desc">
+          <h1>Himachal Taxi Service</h1>
+        </div>
       </div>
 
       <div className="service-container">

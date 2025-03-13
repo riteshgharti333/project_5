@@ -8,6 +8,7 @@ import holi from "../assets/images/blogImg/Hindu-Holi-Festival-Mathura-Uttar-Pra
 
 export const blog1 = {
   link: "best-places-to-celebrate-holi-festival-in-india",
+  date: "5 Feb,2025",
   blogContent1: {
     img: holi,
     title: "Best Places to Celebrate Holi Festival in India",
@@ -61,6 +62,8 @@ import delhi from "../assets/images/blogImg/Delhi-Capital-City.webp";
 import jaipur from "../assets/images/blogImg/jaipur-pink-city.webp";
 
 export const blog2 = {
+  date: "8 Feb,2025",
+
   blogContent1: {
     img: taaj_mahal,
     title: "Amazing Experiences Awaiting You on the Golden Triangle Tour",
@@ -104,6 +107,7 @@ export const blog2 = {
 import goa from "../assets/images/blogImg/goa.jpg";
 
 export const blog3 = {
+  date: "10 Feb,2025",
   link: "best-way-to-spend-luxury-vacation-in-india",
   blogContent1: {
     img: goa,
@@ -237,6 +241,7 @@ export const blog3 = {
 import rj_road from "../assets/images/blogImg/rjroad.jpg";
 
 export const blog4 = {
+  date: "14 Nov,2023",
   link: "best-road-trips-to-experience-rajasthan",
   blogContent1: {
     img: rj_road,
@@ -308,6 +313,7 @@ import udaipur from "../assets/images/blogImg/udaipur.jpg";
 
 export const blog5 = {
   link: "best-things-to-do-in-udaipur",
+  date : "1 Nov,2024",
   blogContent1: {
     img: udaipur,
     title: "Best Things to Do in Udaipur",
@@ -374,20 +380,23 @@ export const blog5 = {
 //////////
 export const blogs = [
   {
+    date: "5 Feb,2025",
     link: "best-places-to-celebrate-holi-festival-in-india",
     img: holi,
     title: "Best Places to Celebrate Holi Festival in India",
     desc: "Holi is an important Hindu holiday in India that is filled with colors and joy. Indian holidays are the best because they instill so much optimism in people's lives. Travelers from all over the world visit India to celebrate Holi with zeal and excitement.",
   },
   {
+    date: "8 Feb,2025",
+
     link: "amazing-experiences-awaiting-you-on-the-golden-triangle-tour",
     img: taaj_mahal,
     title: "Amazing Experiences Awaiting You on the Golden Triangle Tour",
     desc: "India is a vast country with a beautiful and rich heritage. The roots of civilization were found in the subcontinent more than 3000 years ago – the history of this country is woven from the beginning of the Indus Valley Civilization. Countless empires have left their mark in the form of stunning monuments and astonishing architecture. An excellent way to see the beauty and experience it for yourself is the Golden Triangle Tour. An off-the-beaten-path route between Delhi, Agra and Jaipur, which allows you to experience many wonders, including the Taj Mahal – widely regarded as one of the 7 Wonders of the World.",
   },
 
-  
   {
+    date: "10 Feb,2025",
     link: "best-way-to-spend-luxury-vacation-in-india",
     img: goa,
     title: "Best way to spend luxury vacation in India",
@@ -395,6 +404,7 @@ export const blogs = [
   },
 
   {
+    date: "14 Feb,2025",
     link: "best-road-trips-to-experience-rajasthan",
     img: rj_road,
     title: "5 Best Road Trips to Experience Rajasthan",
@@ -402,6 +412,7 @@ export const blogs = [
   },
 
   {
+    date: "1 Nov,2023",
     link: "best-things-to-do-in-udaipur",
     img: udaipur,
     title: "Best Things to Do in Udaipur",

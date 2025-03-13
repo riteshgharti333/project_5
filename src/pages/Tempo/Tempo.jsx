@@ -2,9 +2,9 @@ import "./Tempo.scss";
 
 import SEO from "../../components/SEO";
 
-import ServiceBanner from "../../components/ServiceBanner/ServiceBanner";
 
-import { upImgs } from "../../assets/ImgsData/mainDestinationImgs";
+import banner_img from "../../assets/images/banner_img.jpg";
+
 import ServiceSidebar from "../../components/ServiceSidebar/ServiceSidebar";
 import { taxiFees } from "../../assets/serviceData";
 import ServiceCard from "../../components/ServiceCard/ServiceCard";
@@ -32,8 +32,12 @@ const Tempo = () => {
         keywords="tempo rental, bus hire, group travel service, tempo traveler booking, luxury bus rental, wedding bus hire, corporate travel, affordable tempo service"
       />
 
-      <div className="tempo-banner">
-        <ServiceBanner destinationImg={upImgs} />
+      <div className="tempo-banner" data-aos="fade-up">
+        <img src={banner_img} alt={banner_img} />
+
+        <div className="tempo-banner-desc">
+          <h1>Tempo/Bus Service</h1>
+        </div>
       </div>
       <div className="tempo-container">
         <div className="tempo-container-top">
@@ -156,14 +160,6 @@ const Tempo = () => {
           </div>
           <div className="tempo-right">
             <ServiceSidebar />
-          </div>
-        </div>
-        <div className="tempo-container-bottom">
-          <h1>{tempo.taxiFare}</h1>
-          <div className="tempo-cards">
-            {taxiFees.map((item, index) => (
-              <ServiceCard item={item} key={index} />
-            ))}
           </div>
         </div>
       </div>

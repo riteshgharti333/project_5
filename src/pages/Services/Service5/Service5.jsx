@@ -1,10 +1,9 @@
-import ServiceBanner from "../../../components/ServiceBanner/ServiceBanner";
 import ServiceSidebar from "../../../components/ServiceSidebar/ServiceSidebar";
 import "./Service5.scss";
 
 import ServiceContent from "../../../components/ServiceContent/ServiceContent";
 
-import { ourTaxies } from "../../../assets/data";
+import banner_img from "../../../assets/images/banner_img.jpg";
 
 import { gatewayServices, upTaxi, taxiFees } from "../../../assets/serviceData";
 import ServiceCard from "../../../components/ServiceCard/ServiceCard";
@@ -20,8 +19,12 @@ const Service5 = () => {
         keywords="Uttar Pradesh taxi service, Agra cab, Varanasi taxi, Ayodhya cabs, outstation taxi UP, best taxi service in Uttar Pradesh"
       />
 
-      <div className="service-banner">
-        <ServiceBanner destinationImg={ourTaxies} />
+      <div className="service-banner" data-aos="fade-up">
+        <img src={banner_img} alt={banner_img} />
+
+        <div className="service-banner-desc">
+          <h1>Uttar Pradesh Taxi Service</h1>
+        </div>
       </div>
 
       <div className="service-container">

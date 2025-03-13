@@ -1,10 +1,9 @@
-import ServiceBanner from "../../../components/ServiceBanner/ServiceBanner";
 import ServiceSidebar from "../../../components/ServiceSidebar/ServiceSidebar";
 import "./Service1.scss";
 
 import ServiceContent from "../../../components/ServiceContent/ServiceContent";
 
-import { ourTaxies } from "../../../assets/data";
+import banner_img from "../../../assets/images/banner_img.jpg";
 
 import {
   gatewayServices,
@@ -25,8 +24,12 @@ const Service1 = () => {
         keywords="Delhi taxi service, local cabs in Delhi, outstation taxi from Delhi, best taxi service in Delhi, airport taxi Delhi"
       />
 
-      <div className="service-banner">
-        <ServiceBanner destinationImg={ourTaxies} />
+      <div className="service-banner" data-aos="fade-up">
+        <img src={banner_img} alt={banner_img} />
+
+        <div className="service-banner-desc">
+          <h1>Delhi Taxi Service</h1>
+        </div>
       </div>
 
       <div className="service-container">

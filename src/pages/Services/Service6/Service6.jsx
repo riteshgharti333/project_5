@@ -1,13 +1,13 @@
-import ServiceBanner from "../../../components/ServiceBanner/ServiceBanner";
 import ServiceSidebar from "../../../components/ServiceSidebar/ServiceSidebar";
 import "./Service6.scss";
 
 import ServiceContent from "../../../components/ServiceContent/ServiceContent";
-import { ourTaxies } from "../../../assets/data";
 
 import { gatewayServices, taxiFees, pbTaxi } from "../../../assets/serviceData";
 import ServiceCard from "../../../components/ServiceCard/ServiceCard";
 import SEO from "../../../components/SEO";
+
+import banner_img from "../../../assets/images/banner_img.jpg";
 
 const Service6 = () => {
   return (
@@ -19,8 +19,12 @@ const Service6 = () => {
         keywords="Punjab taxi service, Chandigarh cabs, Amritsar car rental, Ludhiana taxi, Jalandhar cab booking, outstation taxi Punjab, best cab service Punjab"
       />
 
-      <div className="service-banner">
-        <ServiceBanner destinationImg={ourTaxies} />
+      <div className="service-banner" data-aos="fade-up">
+        <img src={banner_img} alt={banner_img} />
+
+        <div className="service-banner-desc">
+          <h1>Punjab Taxi Service</h1>
+        </div>
       </div>
 
       <div className="service-container">

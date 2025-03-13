@@ -2,7 +2,7 @@ import "./OutstationService5.scss";
 
 import ServiceBanner from "../../../components/ServiceBanner/ServiceBanner";
 
-import { rjImgs } from "../../../assets/ImgsData/mainDestinationImgs";
+import { jkImgs } from "../../../assets/ImgsData/mainDestinationImgs";
 import ServiceSidebar from "../../../components/ServiceSidebar/ServiceSidebar";
 import { taxiFees } from "../../../assets/serviceData";
 import ServiceCard from "../../../components/ServiceCard/ServiceCard";
@@ -32,7 +32,7 @@ const OutstationService5 = () => {
       />
 
       <div className="outstationService-banner">
-        <ServiceBanner destinationImg={rjImgs} />
+        <ServiceBanner destinationImg={jkImgs} />
       </div>
       <div className="outstationService-container">
         <div className="outstationService-container-top">

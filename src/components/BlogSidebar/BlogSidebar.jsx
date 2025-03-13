@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+import { blogs } from "../../assets/blogData";
 import "./BlogSidebar.scss";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 
@@ -7,22 +9,14 @@ const blogSidebar = () => {
       <div className="blogSidebar-item">
         <h3>Recent Posts</h3>
         <div className="posts">
-          {/* <p>
-            <MdOutlineKeyboardArrowRight className="post-icon" /> Char Dham
-            Yatra 2025 Begins April 30: Find More Details
-          </p>
-          <p>
-            <MdOutlineKeyboardArrowRight className="post-icon" /> Char Dham
-            Yatra 2025 Begins April 30: Find More Details
-          </p>
-          <p>
-            <MdOutlineKeyboardArrowRight className="post-icon" /> Char Dham
-            Yatra 2025 Begins April 30: Find More Details
-          </p>
-          <p>
-            <MdOutlineKeyboardArrowRight className="post-icon" /> Char Dham
-            Yatra 2025 Begins April 30: Find More Details
-          </p> */}
+          {blogs.map((item, index) => (
+            <Link to={`/blog/${item.link}`} key={index}>
+              <p>
+                <MdOutlineKeyboardArrowRight className="post-icon" />
+                {item.title}
+              </p>
+            </Link>
+          ))}
         </div>
       </div>
 

@@ -4,6 +4,10 @@
   transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
   overflow: visible !important;
 
+  @include lg {
+    margin-bottom: 125px;
+  }
+
   &.navbar-hidden {
     opacity: 0;
     transform: translateY(-100%);
@@ -37,6 +41,27 @@
     align-items: center;
     padding: 0px 10px;
     transition: transform 0.3s ease-in-out;
+
+    @include lg {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+      overflow: visible;
+      transition: all 0.5s ease-in-out;
+      background: #fff;
+      // &.navbar-visible {
+      //   transform: translateY(0);
+      // }
+
+      &.navbar-hidden {
+        transform: translateY(-100%);
+      }
+    }
+
     .navbar-top-left {
       img {
         width: 100px;
@@ -120,20 +145,19 @@
         align-items: center;
 
         li {
+          transition: all 0.3s ease-in-out;
+          &:hover {
+            transform: translateY(-2px);
+          }
           span {
             font-size: 16px;
             font-weight: 500;
             color: #fff;
             padding: 30px 0px;
 
-            @include xl{
+            @include xl {
               font-size: 14px;
             }
-          }
-
-          transition: all 0.3s ease-in-out;
-          &:hover {
-            transform: translateY(-2px);
           }
         }
       }

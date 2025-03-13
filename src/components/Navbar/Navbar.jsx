@@ -29,6 +29,8 @@ const Navbar = () => {
   const [hideTop, setHideTop] = useState(false);
   const [showNavbarBottom, setShowNavbarBottom] = useState(false);
 
+  const [navbarVisible, setNavbarVisible] = useState(true);
+
   useEffect(() => {
     const handleNavScroll = () => {
       const currentScrollY = window.scrollY;
@@ -49,9 +51,39 @@ const Navbar = () => {
     };
   }, [lastScrollY]);
 
+  const [navTopLastScrollY, setNavTopLastScrollY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+      const midPoint = window.innerHeight / 1; // Mid-point of the viewport
+
+      if (currentScrollY > midPoint) {
+        // Scrolling down past mid-point
+        if (currentScrollY > lastScrollY) {
+          setNavbarVisible(false); // Hide navbar
+        } else {
+          setNavbarVisible(true); // Show navbar when scrolling up
+        }
+      } else {
+        setNavbarVisible(true); // Always show navbar above mid-point
+      }
+
+      setNavTopLastScrollY(currentScrollY); // Update last scroll position
+      setScroll(currentScrollY > 50); // For scrolled class (optional)
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [navTopLastScrollY]);
+
   return (
-    <div className={`navbar ${scroll ? "scrolled" : ""}`}>
-      <div className="navbar-top">
+    <div className={`navbar ${scroll ? "scrolled" : ""} `}>
+      <div
+        className={`navbar-top ${
+          navbarVisible ? "navbar-visible" : "navbar-hidden"
+        }`}
+      >
         <div className="navbar-top-left">
           <Link to={"/"}>
             <img src={logo} alt={logo} />
