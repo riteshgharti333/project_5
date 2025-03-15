@@ -1,8 +1,8 @@
-import agra1 from "../assets/images/smDestination2/upDestination1/agra-fort.jpg";
-import agra2 from "../assets/images/smDestination2/upDestination1/jama-masjid.jpg";
-import agra3 from "../assets/images/smDestination2/upDestination1/kachhpura-village.jpg";
-import agra4 from "../assets/images/smDestination2/upDestination1/sadar-bazaar.webp";
-import agra5 from "../assets/images/smDestination2/upDestination1/taj-mahal.jpg";
+import agra1 from "../assets/images/smDestination2/upDestination1/agra-fort_result.webp";
+import agra2 from "../assets/images/smDestination2/upDestination1/jama-masjid_result.webp";
+import agra3 from "../assets/images/smDestination2/upDestination1/kachhpura-village_result.webp";
+import agra4 from "../assets/images/smDestination2/upDestination1/sadar-bazaar_result.webp";
+import agra5 from "../assets/images/smDestination2/upDestination1/taj-mahal_result.webp";
 
 export const agraContent = {
   contentItem1: {
@@ -124,12 +124,12 @@ export const agraContent = {
 
 //////////////////
 
-import varanasi1 from "../assets/images/smDestination2/upDestination2/banaras-Hindu-university.jpg";
-import varanasi2 from "../assets/images/smDestination2/upDestination2/dashashwamedh-ghat.jpeg";
-import varanasi3 from "../assets/images/smDestination2/upDestination2/kashi-viswanath.jpg";
-import varanasi4 from "../assets/images/smDestination2/upDestination2/manikarnika-ghat.jpg";
-import varanasi5 from "../assets/images/smDestination2/upDestination2/ramnagar-fort.jpg";
-import varanasi6 from "../assets/images/smDestination2/upDestination2/sarnath.jpg";
+import varanasi1 from "../assets/images/smDestination2/upDestination2/banaras-Hindu-university_result.webp";
+import varanasi2 from "../assets/images/smDestination2/upDestination2/dashashwamedh-ghat_result.webp";
+import varanasi3 from "../assets/images/smDestination2/upDestination2/kashi-viswanath_result.webp";
+import varanasi4 from "../assets/images/smDestination2/upDestination2/manikarnika-ghat_result.webp";
+import varanasi5 from "../assets/images/smDestination2/upDestination2/ramnagar-fort_result.webp";
+import varanasi6 from "../assets/images/smDestination2/upDestination2/sarnath_result.webp";
 
 export const varanasiContent = {
   contentItem1: {
@@ -263,12 +263,12 @@ export const varanasiContent = {
 };
 
 /////////////////////////
-import ayodhya1 from "../assets/images/smDestination2/upDestination3/haunmangadhi.jpg";
-import ayodhya2 from "../assets/images/smDestination2/upDestination3/kanak-bhawan.webp";
-import ayodhya3 from "../assets/images/smDestination2/upDestination3/nageshwarnath-temple.jpg";
-import ayodhya4 from "../assets/images/smDestination2/upDestination3/saryu-ghat.jpg";
-import ayodhya5 from "../assets/images/smDestination2/upDestination3/shri-ram-janmabhoomi-temple.webp";
-import ayodhya6 from "../assets/images/smDestination2/upDestination3/treta-ke-thakur.webp";
+import ayodhya1 from "../assets/images/smDestination2/upDestination3/haunmangadhi_result.webp";
+import ayodhya2 from "../assets/images/smDestination2/upDestination3/kanak-bhawan_result.webp";
+import ayodhya3 from "../assets/images/smDestination2/upDestination3/nageshwarnath-temple_result.webp";
+import ayodhya4 from "../assets/images/smDestination2/upDestination3/saryu-ghat_result.webp";
+import ayodhya5 from "../assets/images/smDestination2/upDestination3/shri-ram-janmabhoomi-temple_result.webp";
+import ayodhya6 from "../assets/images/smDestination2/upDestination3/treta-ke-thakur_result.webp";
 
 export const ayodhyaContent = {
   contentItem1: {
@@ -403,10 +403,10 @@ export const ayodhyaContent = {
 
 /////////////////
 
-import bodhGaya1 from "../assets/images/smDestination2/upDestination4/great-buddha-statue.jpg";
-import bodhGaya2 from "../assets/images/smDestination2/upDestination4/mahabodhi-temple.webp";
-import bodhGaya3 from "../assets/images/smDestination2/upDestination4/muchalinda-lake.jpg";
-import bodhGaya4 from "../assets/images/smDestination2/upDestination4/thai-monastery.webp";
+import bodhGaya1 from "../assets/images/smDestination2/upDestination4/great-buddha-statue_result.webp";
+import bodhGaya2 from "../assets/images/smDestination2/upDestination4/mahabodhi-temple_result.webp";
+import bodhGaya3 from "../assets/images/smDestination2/upDestination4/muchalinda-lake_result.webp";
+import bodhGaya4 from "../assets/images/smDestination2/upDestination4/thai-monastery_result.webp";
 
 export const bodhGayaContent = {
   contentItem1: {

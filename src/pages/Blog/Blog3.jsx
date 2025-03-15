@@ -19,7 +19,7 @@ const Blog3 = () => {
       <div className="blog-container">
         <div className="blog-content">
           <div className="blog-content-left">
-            <img src={blog3.blogContent1.img} alt={blog3.blogContent1.img} />
+            <img src={blog3.blogContent1.img} alt={blog3.blogContent1.img}  loading="lazy"/>
             <div className="blog-content-item">
               <h1>{blog3.blogContent1.title}</h1>
 
@@ -61,9 +61,9 @@ const Blog3 = () => {
               <p>{blog3.blogContent4.desc}</p>
             </div>
 
-            <hr className="from-border" />
+            {/* <hr className="from-border" /> */}
 
-            <div className="blog-form">
+            {/* <div className="blog-form">
               <h1>Leave a Reply</h1>
               <p>
                 Your email address will not be published. Required fields are
@@ -124,7 +124,7 @@ const Blog3 = () => {
                   Post Comment
                 </button>
               </form>
-            </div>
+            </div> */}
           </div>
           <div className="blog-content-sidebar">
             <BlogSidebar />

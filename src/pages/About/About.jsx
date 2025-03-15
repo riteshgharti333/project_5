@@ -13,7 +13,7 @@ import { aboutCount, services } from "../../assets/data";
 import banner_img from "../../assets/images/banner_img.jpg";
 import SEO from "../../components/SEO";
 
-import vecation_img from "../../assets/images/vecation.jpg";
+import vecation_img from "../../assets/images/vecation_result.webp";
 
 const About = () => {
   const [startCount, setStartCount] = useState(false);
@@ -52,7 +52,7 @@ const About = () => {
       />
 
       <div className="about-banner" data-aos="fade-up">
-        <img src={banner_img} alt={banner_img} />
+        <img src={banner_img} alt={banner_img}  loading="lazy"/>
 
         <div className="about-banner-desc">
           <h1>About Us</h1>
@@ -94,22 +94,20 @@ const About = () => {
       <div className="about-content2">
         <div className="about-content2-top">
           <div className="about-content2-top-left" data-aos="fade-right">
-            <h1>
-              Welcome To Getway Cab Service ! No.1 Cab Service Operator In Delhi
-            </h1>
+            <h1>About Global India Travel</h1>
 
             <p>
-              Getway Cab Service, located in the bustling heart of Karol Bagh,
-              New Delhi, offers exceptional car rental services tailored to meet
-              your travel needs. Whether you're planning a local trip or an
-              outstation journey, our fleet of well-maintained vehicles ensures
-              a comfortable and safe ride. Our extensive range of vehicles
-              includes sedans, SUVs, and luxury cars, catering to diverse
-              customer preferences. Each car in our fleet is equipped with
-              modern amenities, ensuring a pleasant experience. Whether you're
-              traveling solo or with family, Getway Cab Service has the perfect
-              vehicle for you. We are dedicated to offering exceptional car
-              rental, hotel booking, air ticketing, and comprehensive tour
+              Global India Travel Cab Service, located in the bustling heart of
+              Karol Bagh, New Delhi, offers exceptional car rental services
+              tailored to meet your travel needs. Whether you're planning a
+              local trip or an outstation journey, our fleet of well-maintained
+              vehicles ensures a comfortable and safe ride. Our extensive range
+              of vehicles includes sedans, SUVs, and luxury cars, catering to
+              diverse customer preferences. Each car in our fleet is equipped
+              with modern amenities, ensuring a pleasant experience. Whether
+              you're traveling solo or with family, Global India Travel Service has the
+              perfect vehicle for you. We are dedicated to offering exceptional
+              car rental, hotel booking, air ticketing, and comprehensive tour
               packages, ensuring a seamless and unforgettable travel experience.
               With our extensive range of services and customer-centric
               approach, we cater to all your travel needs with the utmost
@@ -126,18 +124,18 @@ const About = () => {
           </div>
 
           <div className="about-content2-top-right" data-aos="fade-left">
-            <img src={vecation_img} alt={vecation_img} />
+            <img src={vecation_img} alt={vecation_img}  loading="lazy"/>
           </div>
         </div>
 
         <div className="about-content2-bottom" data-aos="fade-up">
           <p>
-            At Getway Cab Service, we provide a fleet of well-maintained
-            vehicles, including sedans, SUVs, and luxury cars, ensuring a
-            comfortable and reliable ride. Finding the perfect accommodation is
-            crucial for a memorable trip. We offer hotel booking services that
-            cater to all budgets and preferences, from luxurious five-star
-            hotels to cozy budget accommodations.
+            At Global India Travel Taxi Service, we provide a fleet of
+            well-maintained vehicles, including sedans, SUVs, and luxury cars,
+            ensuring a comfortable and reliable ride. Finding the perfect
+            accommodation is crucial for a memorable trip. We offer hotel
+            booking services that cater to all budgets and preferences, from
+            luxurious five-star hotels to cozy budget accommodations.
           </p>
           <p>
             Planning your travel has never been easier with our air ticketing
@@ -153,11 +151,11 @@ const About = () => {
             travel experience.
           </p>
           <p>
-            At Getway Cab Service, we are passionate about making your travel
-            dreams come true. Explore the wonders of North India with us and
-            create unforgettable memories. Let us be your trusted travel partner
-            and guide you through the enchanting landscapes and vibrant cultures
-            of this incredible region.
+            At Global India Travel Taxi Service, we are passionate about making
+            your travel dreams come true. Explore the wonders of North India
+            with us and create unforgettable memories. Let us be your trusted
+            travel partner and guide you through the enchanting landscapes and
+            vibrant cultures of this incredible region.
           </p>
         </div>
       </div>

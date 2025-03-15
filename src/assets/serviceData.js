@@ -1,7 +1,9 @@
-import crysta from "../assets/images/taxiimg/taxi3.jpeg";
-import tempo from "../assets/images/taxiimg/taxi1.jpeg";
-import dezire from "../assets/images/taxiimg/taxi5.jpeg";
-import ertiga from "../assets/images/taxiimg/taxi6.jpeg";
+// taxi img
+import taxi1 from "../assets/images/taxiimg/taxi1_result.webp";
+import taxi2 from "../assets/images/taxiimg/taxi2_result.webp";
+import taxi3 from "../assets/images/taxiimg/taxi3_result.webp";
+import taxi4 from "../assets/images/taxiimg/taxi4_result.webp";
+import taxi5 from "../assets/images/taxiimg/taxi5_result.webp";
 
 export const gatewayServices = [
   "Experienced Drivers",
@@ -15,41 +17,33 @@ export const gatewayServices = [
 
 export const taxiFees = [
   {
-    img: dezire,
-    carType: "Dzire",
-    local: "12 Per/KM (8/80)",
-    Outstation: "12 Per/KM (250KM/Day)",
-    DriverTA: "300/- Per Night",
+    img: taxi1,
+    vehicle: "Ertiga ",
+    rate: "16",
+    charges: "300",
   },
+  {
+    img: taxi2,
+    vehicle: "Sedan",
+    rate: "11",
+    charges: "300",
+  },
+  {
+    img: taxi3,
+    vehicle: "Kia",
+    rate: "17",
+    charges: "300",
+  },
+  { img: taxi4, vehicle: "Innnova Crysta", rate: "19", charges: "300" },
 
-  {
-    img: ertiga,
-    carType: "Ertiga",
-    local: "15 Per/KM (8/80)",
-    Outstation: "16 Per/KM (250KM/Day)",
-    DriverTA: "300/- Per Night",
-  },
-  {
-    img: tempo,
-    carType: "Crysta",
-    local: "20 Per/KM (8/80)",
-    Outstation: "21 Per/KM (250KM/Day)",
-    DriverTA: "	400/- Per Night",
-  },
-  {
-    img: crysta,
-    carType: "Tempo Traveler",
-    local: "27 Per/KM (8/80)",
-    Outstation: "28 Per/KM (250KM/Day)",
-    DriverTA: "500/- Per Night",
-  },
+  { img: taxi5, vehicle: "Tempo Travaller", rate: "25", charges: "500" },
 ];
 
 export const delhiTaxi = [
   {
     taxiContent1: {
       title: "Delhi Taxi Service",
-      desc: "Getway Cab Service, located in the vibrant Karol Bagh area of Delhi, offers exceptional taxi services tailored to explore the bustling capital city of India. Our Delhi taxi service is crafted to provide travelers with a smooth and comfortable journey through the diverse and historical landscape of Delhi. From ancient monuments to modern attractions, Delhi is a city that blends the old and new seamlessly. Our taxi service ensures that you can navigate this sprawling metropolis with ease and convenience.",
+      desc: "Global India Travel Service, located in the vibrant Karol Bagh area of Delhi, offers exceptional taxi services tailored to explore the bustling capital city of India. Our Delhi taxi service is crafted to provide travelers with a smooth and comfortable journey through the diverse and historical landscape of Delhi. From ancient monuments to modern attractions, Delhi is a city that blends the old and new seamlessly. Our taxi service ensures that you can navigate this sprawling metropolis with ease and convenience.",
     },
 
     //////////////////////////////
@@ -101,7 +95,7 @@ export const delhiTaxi = [
 
     ////////////////////////
 
-    getway: "Why Choose Getway Cab Service for Delhi Taxi Service",
+    getway: "Why Choose Global India Travel Service for Delhi Taxi Service",
   },
 ];
 
@@ -110,7 +104,7 @@ export const ukTaxi = [
   {
     taxiContent1: {
       title: "Uttarakhand Taxi Service",
-      desc: "Getway Cab Service, located in the bustling Karol Bagh area of Delhi, offers unparalleled taxi services for exploring the scenic and spiritual landscapes of Uttarakhand. Our Uttarakhand taxi service is tailored to provide travelers with a seamless and comfortable journey through this picturesque state. Known for its majestic mountains, holy rivers, and serene valleys, Uttarakhand is a destination that promises both adventure and tranquility. Our taxi service ensures that you can experience this beautiful region with utmost ease and comfort.",
+      desc: "Global India Travel Service, located in the bustling Karol Bagh area of Delhi, offers unparalleled taxi services for exploring the scenic and spiritual landscapes of Uttarakhand. Our Uttarakhand taxi service is tailored to provide travelers with a seamless and comfortable journey through this picturesque state. Known for its majestic mountains, holy rivers, and serene valleys, Uttarakhand is a destination that promises both adventure and tranquility. Our taxi service ensures that you can experience this beautiful region with utmost ease and comfort.",
     },
 
     //////////////////////////////
@@ -161,7 +155,8 @@ export const ukTaxi = [
     },
 
     ////////////////////////
-    getway: "Why Choose Getway Cab Service for Uttarakhand Taxi Service",
+    getway:
+      "Why Choose Global India Travel Service for Uttarakhand Taxi Service",
   },
 ];
 
@@ -171,7 +166,7 @@ export const hpTaxi = [
   {
     taxiContent1: {
       title: "Himachal Taxi Service",
-      desc: "Getway Cab Service, based in the bustling hub of Karol Bagh, Delhi, proudly offers top-notch taxi services for exploring the stunning landscapes of Himachal Pradesh. Our Himachal taxi service is designed to provide travelers with a seamless and enjoyable journey through one of India’s most beautiful states. Known for its majestic mountains, serene valleys, and picturesque towns, Himachal Pradesh offers a unique blend of natural beauty and cultural richness. Our taxi service ensures that you can explore this magnificent region comfortably and conveniently.",
+      desc: "Global India Travel Service, based in the bustling hub of Karol Bagh, Delhi, proudly offers top-notch taxi services for exploring the stunning landscapes of Himachal Pradesh. Our Himachal taxi service is designed to provide travelers with a seamless and enjoyable journey through one of India’s most beautiful states. Known for its majestic mountains, serene valleys, and picturesque towns, Himachal Pradesh offers a unique blend of natural beauty and cultural richness. Our taxi service ensures that you can explore this magnificent region comfortably and conveniently.",
     },
 
     //////////////////////////////
@@ -217,7 +212,7 @@ export const hpTaxi = [
     },
 
     ////////////////////////
-    getway: "Why Choose Getway Cab Service for Himachal Taxi Service",
+    getway: "Why Choose Global India Travel Service for Himachal Taxi Service",
   },
 ];
 
@@ -227,7 +222,7 @@ export const rjTaxi = [
   {
     taxiContent1: {
       title: "Rajasthan  Taxi Service",
-      desc: "Getway Cab Service, based in the lively Karol Bagh area of Delhi, is your go-to provider for premier taxi services across the stunning landscapes of Rajasthan. Our Rajasthan taxi service is designed to offer travelers a seamless and enjoyable journey through this historically rich and culturally vibrant state. Renowned for its majestic forts, lavish palaces, and expansive deserts, Rajasthan is a destination that promises a royal experience. Our taxi service ensures that you can explore this magnificent state in comfort and style.",
+      desc: "Global India Travel Service, based in the lively Karol Bagh area of Delhi, is your go-to provider for premier taxi services across the stunning landscapes of Rajasthan. Our Rajasthan taxi service is designed to offer travelers a seamless and enjoyable journey through this historically rich and culturally vibrant state. Renowned for its majestic forts, lavish palaces, and expansive deserts, Rajasthan is a destination that promises a royal experience. Our taxi service ensures that you can explore this magnificent state in comfort and style.",
     },
 
     //////////////////////////////
@@ -268,7 +263,7 @@ export const rjTaxi = [
     },
 
     ////////////////////////
-    getway: "Why Choose Getway Cab Service for Rajasthan Taxi Service",
+    getway: "Why Choose Global India Travel Service for Rajasthan Taxi Service",
   },
 ];
 
@@ -278,7 +273,7 @@ export const upTaxi = [
   {
     taxiContent1: {
       title: "Uttar Pradesh Taxi Service",
-      desc: "Getway Cab Service, head office in Karol Bagh area of Delhi, offers an unparalleled taxi service for exploring the culturally rich and historically significant state of Uttar Pradesh. Our Uttar Pradesh taxi service is designed to provide travelers with a seamless and luxurious journey through this diverse region. Renowned for its iconic landmarks, sacred rivers, and vibrant cities, Uttar Pradesh promises an enriching experience. Our taxi service ensures that you can explore this captivating state with comfort and ease.",
+      desc: "Global India Travel Service, head office in Karol Bagh area of Delhi, offers an unparalleled taxi service for exploring the culturally rich and historically significant state of Uttar Pradesh. Our Uttar Pradesh taxi service is designed to provide travelers with a seamless and luxurious journey through this diverse region. Renowned for its iconic landmarks, sacred rivers, and vibrant cities, Uttar Pradesh promises an enriching experience. Our taxi service ensures that you can explore this captivating state with comfort and ease.",
     },
 
     //////////////////////////////
@@ -324,7 +319,8 @@ export const upTaxi = [
     },
 
     ////////////////////////
-    getway: "Why Choose Getway Cab Service for Uttar Pradesh Taxi Service",
+    getway:
+      "Why Choose Global India Travel Service for Uttar Pradesh Taxi Service",
   },
 ];
 
@@ -334,7 +330,7 @@ export const pbTaxi = [
   {
     taxiContent1: {
       title: "Punjab Taxi Service",
-      desc: "Embark on an enriching journey through Punjab with Getway Cab Service, centrally located in Delhi's bustling Karol Bagh area, offering top-tier taxi services to explore Punjab's dynamic culture and rich heritage. Our Punjab taxi service is meticulously tailored to provide travelers with a seamless and delightful journey through this culturally diverse region. From bustling cities to tranquil countryside, Punjab offers a captivating blend of tradition, warm hospitality, and delectable cuisine. Our taxi service ensures that you can explore this vibrant state with utmost convenience and comfort.",
+      desc: "Embark on an enriching journey through Punjab with Global India Travel Service, centrally located in Delhi's bustling Karol Bagh area, offering top-tier taxi services to explore Punjab's dynamic culture and rich heritage. Our Punjab taxi service is meticulously tailored to provide travelers with a seamless and delightful journey through this culturally diverse region. From bustling cities to tranquil countryside, Punjab offers a captivating blend of tradition, warm hospitality, and delectable cuisine. Our taxi service ensures that you can explore this vibrant state with utmost convenience and comfort.",
     },
 
     //////////////////////////////
@@ -375,7 +371,7 @@ export const pbTaxi = [
     },
 
     ////////////////////////
-    getway: "Why Choose Getway Cab Service for Punjab Taxi Service",
+    getway: "Why Choose Global India Travel Service for Punjab Taxi Service",
   },
 ];
 
@@ -384,7 +380,7 @@ export const hrTaxi = [
   {
     taxiContent1: {
       title: "Haryana Taxi Service",
-      desc: "Embark on an unforgettable journey through the vibrant state of Haryana with Getway Cab Service, strategically located in the bustling Karol Bagh area of Delhi, offering top-tier taxi services to explore the rich cultural heritage and scenic beauty of Haryana. Our Haryana taxi service is meticulously tailored to provide travelers with a seamless and comfortable journey through this diverse region. From bustling cities to serene rural landscapes, Haryana offers a unique blend of tradition, modernity, and natural splendor. Our taxi service ensures that you can explore this dynamic state with convenience and ease.",
+      desc: "Embark on an unforgettable journey through the vibrant state of Haryana with Global India Travel Service, strategically located in the bustling Karol Bagh area of Delhi, offering top-tier taxi services to explore the rich cultural heritage and scenic beauty of Haryana. Our Haryana taxi service is meticulously tailored to provide travelers with a seamless and comfortable journey through this diverse region. From bustling cities to serene rural landscapes, Haryana offers a unique blend of tradition, modernity, and natural splendor. Our taxi service ensures that you can explore this dynamic state with convenience and ease.",
     },
 
     //////////////////////////////
@@ -425,7 +421,7 @@ export const hrTaxi = [
     },
 
     ////////////////////////
-    getway: "Why Choose Getway Cab Service for Haryana Taxi Service",
+    getway: "Why Choose Global India Travel Service for Haryana Taxi Service",
   },
 ];
 
@@ -434,7 +430,7 @@ export const jkTaxi = [
   {
     taxiContent1: {
       title: "Jammu Kashmir Taxi Service",
-      desc: "Embark on a journey of discovery with Getway Cab Service, centrally located in Karol Bagh area of Delhi, providing unmatched taxi services to explore the captivating beauty of Jammu and Kashmir. Our Jammu and Kashmir taxi service are meticulously curated to offer travelers a seamless and luxurious experience through this enchanting region. From snow-capped mountains to serene valleys and vibrant cultural heritage, Jammu and Kashmir offer an unforgettable adventure. Our taxi service ensures that you can explore this paradise on earth with comfort and ease.",
+      desc: "Embark on a journey of discovery with Global India Travel Service, centrally located in Karol Bagh area of Delhi, providing unmatched taxi services to explore the captivating beauty of Jammu and Kashmir. Our Jammu and Kashmir taxi service are meticulously curated to offer travelers a seamless and luxurious experience through this enchanting region. From snow-capped mountains to serene valleys and vibrant cultural heritage, Jammu and Kashmir offer an unforgettable adventure. Our taxi service ensures that you can explore this paradise on earth with comfort and ease.",
     },
 
     //////////////////////////////
@@ -485,6 +481,7 @@ export const jkTaxi = [
     },
 
     ////////////////////////
-    getway: "Why Choose Getway Cab Service for Jammu Kashmir Taxi Service",
+    getway:
+      "Why Choose Global India Travel Service for Jammu Kashmir Taxi Service",
   },
 ];

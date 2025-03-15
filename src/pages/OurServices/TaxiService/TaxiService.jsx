@@ -12,14 +12,13 @@ import { useEffect } from "react";
 
 import SEO from "../../../components/SEO";
 
-
 const TaxiService = () => {
   useEffect(() => {
     AOS.init({
       duration: 1000,
       easing: "ease-in-out",
       once: true,
-  });
+    });
   }, []);
 
   return (
@@ -32,10 +31,7 @@ const TaxiService = () => {
       />
 
       <div className="taxiService-banner" data-aos="fade-up">
-        <img
-          src={banner_img}
-          alt={banner_img}
-        />
+        <img src={banner_img} alt={banner_img}  loading="lazy"/>
 
         <div className="taxiService-banner-desc">
           <h1>India Taxi Service</h1>
@@ -47,10 +43,10 @@ const TaxiService = () => {
           <h1>India Taxi Service</h1>
           <p>
             Exploring the vast and varied landscapes of North India is best done
-            at your own pace, and Getway Cab Service provides a convenient car
-            rental service to help you do just that. Whether you need a vehicle
-            for a short city tour or a longer journey across the region, we have
-            a wide range of cars to suit your needs.
+            at your own pace, and Global India Travel Service provides a
+            convenient car rental service to help you do just that. Whether you
+            need a vehicle for a short city tour or a longer journey across the
+            region, we have a wide range of cars to suit your needs.
           </p>
           <p>
             Our fleet includes everything from compact cars for solo travelers

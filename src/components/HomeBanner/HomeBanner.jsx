@@ -4,7 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectFade, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/effect-fade";
-import { banners, smBanner } from "../../assets/data";
+import { banners } from "../../assets/data";
 
 import AOS from "aos";
 import "aos/dist/aos.css";

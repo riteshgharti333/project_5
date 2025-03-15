@@ -1,8 +1,8 @@
-import amritsar1 from "../assets/images/smDestination3/pbDestination1/akal-takht.jpg";
-import amritsar2 from "../assets/images/smDestination3/pbDestination1/durgiana-temple.webp";
-import amritsar3 from "../assets/images/smDestination3/pbDestination1/golden-temple.jpg";
-import amritsar4 from "../assets/images/smDestination3/pbDestination1/jallianwala-bagh.jpg";
-import amritsar5 from "../assets/images/smDestination3/pbDestination1/wagah-border.avif";
+import amritsar1 from "../assets/images/smDestination3/pbDestination1/akal-takht_result.webp";
+import amritsar2 from "../assets/images/smDestination3/pbDestination1/durgiana-temple_result.webp";
+import amritsar3 from "../assets/images/smDestination3/pbDestination1/golden-temple_result.webp";
+import amritsar4 from "../assets/images/smDestination3/pbDestination1/jallianwala-bagh_result.webp";
+import amritsar5 from "../assets/images/smDestination3/pbDestination1/wagah-border_result.webp";
 
 export const amritsarContent = {
   contentItem1: {
@@ -30,7 +30,7 @@ export const amritsarContent = {
         desc: [
           "A historic garden marking the tragic massacre of 1919, a pivotal event in India’s freedom struggle.",
           "Experience: Walk through the bullet-ridden walls and the Flame of Eternal Remembrance.",
-        ],
+      ],
       },
       {
         img: amritsar5,
@@ -174,12 +174,10 @@ export const amritsarContent = {
 };
 
 /////////////////
-import chandigarh1 from "../assets/images/smDestination3/pbDestination2/capitol-complex.jpg";
-import chandigarh2 from "../assets/images/smDestination3/pbDestination2/rock-garden.jpg";
-import chandigarh3 from "../assets/images/smDestination3/pbDestination2/sukhna-lake.jpg";
-import chandigarh4 from "../assets/images/smDestination3/pbDestination2/zakir-hussain-rose-garden.jpg";
-
-
+import chandigarh1 from "../assets/images/smDestination3/pbDestination2/capitol-complex_result.webp";
+import chandigarh2 from "../assets/images/smDestination3/pbDestination2/rock-garden_result.webp";
+import chandigarh3 from "../assets/images/smDestination3/pbDestination2/sukhna-lake_result.webp";
+import chandigarh4 from "../assets/images/smDestination3/pbDestination2/zakir-hussain-rose-garden_result.webp";
 
 export const chandigarhContent = {
   contentItem1: {

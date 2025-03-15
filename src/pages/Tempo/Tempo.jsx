@@ -6,8 +6,6 @@ import SEO from "../../components/SEO";
 import banner_img from "../../assets/images/banner_img.jpg";
 
 import ServiceSidebar from "../../components/ServiceSidebar/ServiceSidebar";
-import { taxiFees } from "../../assets/serviceData";
-import ServiceCard from "../../components/ServiceCard/ServiceCard";
 import { tempo } from "../../assets/outstationData";
 
 import AOS from "aos";
@@ -33,7 +31,7 @@ const Tempo = () => {
       />
 
       <div className="tempo-banner" data-aos="fade-up">
-        <img src={banner_img} alt={banner_img} />
+        <img src={banner_img} alt={banner_img}  loading="lazy"/>
 
         <div className="tempo-banner-desc">
           <h1>Tempo/Bus Service</h1>
@@ -66,7 +64,7 @@ const Tempo = () => {
                 <div className="tempo-content-item-cards">
                   {tempo.contentItem3.contentItem3Cards.map((item, index) => (
                     <div className="tempo-content-item-card" key={index}>
-                      <img src={item.img} alt={item.desc} />
+                      <img src={item.img} alt={item.desc}  loading="lazy"/>
                       <h3>{item.desc}</h3>
 
                       <div className="tempo-content-item-card-desc">
@@ -92,7 +90,7 @@ const Tempo = () => {
                 <div className="tempo-content-item-cards">
                   {tempo.contentItem4.list.map((item, index) => (
                     <div className="tempo-content-item-card" key={index}>
-                      <img src={item.img} alt={item.desc} />
+                      <img src={item.img} alt={item.desc}  loading="lazy"/>
                       <h3>{item.desc}</h3>
 
                       <div className="tempo-content-item-card-desc">

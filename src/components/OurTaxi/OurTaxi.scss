@@ -13,7 +13,7 @@
       text-align: left;
     }
 
-    h1 {
+    h2 {
       font-size: 30px;
       color: $text-color;
 
@@ -27,6 +27,10 @@
       font-weight: 500;
       font-size: 18px;
       color: $p-color;
+
+      @include sm{
+        text-align: justify;
+      }
     }
   }
 

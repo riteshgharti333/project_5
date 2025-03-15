@@ -11,7 +11,7 @@ import { FaUser } from "react-icons/fa";
 import "aos/dist/aos.css";
 import { reviews } from "../../assets/reviewData";
 
-import google_img from "../../assets/images/reviews.png";
+import google_img from "../../assets/images/reviews_result.webp";
 
 const Review = () => {
   useEffect(() => {
@@ -35,7 +35,7 @@ const Review = () => {
               href="https://www.google.com/maps/place/Global+India+Travels/@28.6281912,77.1493764,17z/data=!4m8!3m7!1s0x390d038fe22cbe27:0x7b234cd402107ba4!8m2!3d28.6281912!4d77.1493764!9m1!1b1!16s%2Fg%2F11w_w5858y?entry=ttu&g_ep=EgoyMDI1MDMwOC4wIKXMDSoASAFQAw%3D%3D"
               target="_blank"
             >
-              <img src={google_img} alt={google_img} />
+              <img src={google_img} alt={google_img} loading="lazy" />
             </a>
           </div>
 

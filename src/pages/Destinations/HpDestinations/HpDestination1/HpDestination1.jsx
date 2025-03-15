@@ -61,7 +61,7 @@ const HpDestination1 = () => {
                         className="destination-content-item-card"
                         key={index}
                       >
-                        <img src={item.img} alt={item.title} />
+                        <img src={item.img} alt={item.title}  loading="lazy"/>
 
                         <div className="destination-conten-desc">
                           <h3>{item.title}</h3>

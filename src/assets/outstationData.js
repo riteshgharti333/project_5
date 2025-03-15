@@ -1,5 +1,4 @@
-import tempo_img from "../assets/images/tempo_img.jpg";
-import bus_img from "../assets/images/bus.jpeg";
+import tempo_img from "../assets/images/tempo_img_result.webp";
 
 export const delhitorj = {
   contentItem1: {
@@ -699,11 +698,11 @@ export const delhitoup = {
 
 ////////////////////////
 
-import tempo1 from "../assets/images/tempoimg/tempo1.jpeg";
-import tempo2 from "../assets/images/tempoimg/tempo2.jpeg";
-import tempo3 from "../assets/images/tempoimg/tempo3.jpeg";
-import tempo4 from "../assets/images/tempoimg/tempo4.jpeg";
-import tempo5 from "../assets/images/tempoimg/tempo5.jpeg";
+import tempo1 from "../assets/images/tempoimg/tempo1_result.webp";
+import tempo2 from "../assets/images/tempoimg/tempo2_result.webp";
+import tempo3 from "../assets/images/tempoimg/tempo3_result.webp";
+import tempo4 from "../assets/images/tempoimg/tempo4_result.webp";
+import tempo5 from "../assets/images/tempoimg/tempo5_result.webp";
 
 export const tempo = {
   contentItem1: {

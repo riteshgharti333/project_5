@@ -13,7 +13,7 @@
       text-align: left;
     }
 
-    h1 {
+    h2 {
       font-size: 30px;
       color: $text-color;
       margin-bottom: 30px;
@@ -28,6 +28,17 @@
       font-weight: 500;
       font-size: 18px;
       color: $p-color;
+
+      @include sm {
+        text-align: justify;
+      }
+    }
+
+    .tour-top-desc {
+      h3 {
+        margin-top: 20px;
+        color: $text-color;
+      }
     }
   }
 

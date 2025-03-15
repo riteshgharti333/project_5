@@ -12,34 +12,47 @@ const Tour = () => {
   return (
     <div className="tour">
       <div className="tour-top" data-aos="fade-up">
-        <h1>
-          Explore India with Global India Tour – Your Gateway to Unforgettable
-          Journeys
-        </h1>
+        <h2>
+          Unveil India’s Wonders with Wanderlust India Expeditions – Curated
+          Adventures, Timeless Memories
+        </h2>
         <p>
-          Embark on an extraordinary adventure across India with{" "}
-          <strong>Global India Tour</strong>, your trusted travel partner for
-          unforgettable experiences. Discover the iconic{" "}
-          <strong>Taj Mahal</strong> in Agra, the royal{" "}
-          <strong>palaces of Rajasthan</strong>, and the breathtaking{" "}
-          <strong>Himalayan landscapes</strong>.
+          Ready to see India through new eyes? Wanderlust India Expeditions
+          crafts journeys that blend iconic marvels with untold stories,
+          transforming trips into soul-stirring sagas. Traverse ancient lands
+          where history whispers through <strong>Mughal-era</strong> wonders,
+          lose yourself in
+          <strong> Rajasthan’s </strong>kaleidoscope of vibrant festivals, or
+          unwind on
+          <strong> Uttarakhand</strong> palm-fringed backwaters as the sun
+          paints the sky gold.
         </p>
 
-        <p>
-          Whether you're seeking a cultural escape, a spiritual retreat in{" "}
-          <strong>Varanasi</strong>, or a beachside paradise in Goa, we offer
-          customized tour packages that cater to every traveler. Enjoy seamless
-          itineraries, expert guides, and top-notch accommodations, ensuring a
-          hassle-free and enriching journey.
-        </p>
+        <div className="tour-top-desc">
+          <h3>Your Journey, Your Rhythm</h3>
+          <p>
+            Craving a sunrise yoga session in <strong>Rishikesh</strong> ? A
+            culinary deep-dive into <strong> Kolkata’s </strong>bustling lanes?
+            Or perhaps a private heritage walk through <strong>Jaipur’s</strong>{" "}
+            hidden havelis? We design itineraries that bend to your curiosity.
+            Choose from luxe retreats in <strong>Himalayan</strong> hideaways,
+            spirited road trips along Konkan Coast highways, or immersive
+            homestays in <strong>Tamil Nadu’s</strong> rural heartlands.{" "}
+          </p>
+        </div>
 
-        <p>
-          Let Global India Tour take you on an extraordinary exploration of
-          India’s most iconic and hidden gems.{" "}
-          <strong>Book your dream vacation today </strong>
-          and immerse yourself in the magic, history, and beauty of India like
-          never before!
-        </p>
+        <div className="tour-top-desc">
+          <h3>Beyond the Guidebook</h3>
+          <p>
+            Our travel wizards don’t just plan trips—they ignite passions. Dive
+            into <strong> Varanasi’s</strong> spiritual pulse with a dusk{" "}
+            <strong>Ganga Aarti</strong> ceremony led by a local priest. Trek
+            <strong> Ladakh’s</strong> rugged trails with guides who’ve called
+            these peaks home for generations. Sleep under starry Thar Desert
+            skies in a royal camp, serenaded by folk musicians. Every detail is
+            stitched together for authenticity, comfort, and a dash of magic.
+          </p>
+        </div>
       </div>
 
       <div className="tour-cards">

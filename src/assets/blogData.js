@@ -1,10 +1,10 @@
-import delhi_holi from "../assets/images/blogImg/holi-in-dehli.webp";
-import jaipur_holi from "../assets/images/blogImg/holi-in-jaipur.webp";
-import udaipur_holi from "../assets/images/blogImg/holi-in-udaipur.webp";
-import virdawan_holi from "../assets/images/blogImg/holi-in-mathura-vrindavan.webp";
-import banaras_holi from "../assets/images/blogImg/holi-in-barsana.webp";
-import sahib_holi from "../assets/images/blogImg/holi-in-anandpur-sahib.webp";
-import holi from "../assets/images/blogImg/Hindu-Holi-Festival-Mathura-Uttar-Pradesh-India.webp";
+import delhi_holi from "../assets/images/blogImg/holi-in-dehli_result.webp";
+import jaipur_holi from "../assets/images/blogImg/holi-in-jaipur_result.webp";
+import udaipur_holi from "../assets/images/blogImg/holi-in-udaipur_result.webp";
+import virdawan_holi from "../assets/images/blogImg/holi-in-mathura-vrindavan_result.webp";
+import banaras_holi from "../assets/images/blogImg/holi-in-barsana_result.webp";
+import sahib_holi from "../assets/images/blogImg/holi-in-anandpur-sahib_result.webp";
+import holi from "../assets/images/blogImg/Hindu-Holi-Festival-Mathura-Uttar-Pradesh-India_result.webp";
 
 export const blog1 = {
   link: "best-places-to-celebrate-holi-festival-in-india",
@@ -56,10 +56,10 @@ export const blog1 = {
 
 ///////////////////////
 
-import taaj_mahal from "../assets/images/blogImg/raj-mahal.avif";
-import taaj from "../assets/images/blogImg/Agra-Taj-City.webp";
-import delhi from "../assets/images/blogImg/Delhi-Capital-City.webp";
-import jaipur from "../assets/images/blogImg/jaipur-pink-city.webp";
+import taaj_mahal from "../assets/images/blogImg/raj-mahal_result.webp";
+import taaj from "../assets/images/blogImg/Agra-Taj-City_result.webp";
+import delhi from "../assets/images/blogImg/Delhi-Capital-City_result.webp";
+import jaipur from "../assets/images/blogImg/jaipur-pink-city_result.webp";
 
 export const blog2 = {
   date: "8 Feb,2025",
@@ -104,7 +104,7 @@ export const blog2 = {
 
 /////////////////////
 
-import goa from "../assets/images/blogImg/goa.jpg";
+import goa from "../assets/images/blogImg/goa_result.webp";
 
 export const blog3 = {
   date: "10 Feb,2025",
@@ -238,7 +238,7 @@ export const blog3 = {
 
 ////////////////////
 
-import rj_road from "../assets/images/blogImg/rjroad.jpg";
+import rj_road from "../assets/images/blogImg/rjroad_result.webp";
 
 export const blog4 = {
   date: "14 Nov,2023",
@@ -309,7 +309,7 @@ export const blog4 = {
 
 ////////////////
 
-import udaipur from "../assets/images/blogImg/udaipur.jpg";
+import udaipur from "../assets/images/blogImg/udaipur_result.webp";
 
 export const blog5 = {
   link: "best-things-to-do-in-udaipur",

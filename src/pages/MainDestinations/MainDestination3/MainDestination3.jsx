@@ -47,7 +47,7 @@ const MainDestination3 = () => {
               {pbDestinations.destinationsCards.map((item, index) => (
                 <div className="mainDestination-card" key={index}>
                   <div className="mainDestination-card-left">
-                    <img src={item.img} alt={item.title} />
+                    <img src={item.img} alt={item.title}  loading="lazy"/>
                   </div>
                   <div className="mainDestination-card-right">
                     <h2>{item.title}</h2>

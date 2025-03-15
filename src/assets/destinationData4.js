@@ -1,7 +1,7 @@
-import shimla1 from "../assets/images/smDestination4/hpDestination1/jakhu-temple.jpg";
-import shimla2 from "../assets/images/smDestination4/hpDestination1/Kufri.avif";
-import shimla3 from "../assets/images/smDestination4/hpDestination1/the-ridge.png";
-import shimla4 from "../assets/images/smDestination4/hpDestination1/the-toy-train-ride.jpg";
+import shimla1 from "../assets/images/smDestination4/hpDestination1/jakhu-temple_result.webp";
+import shimla2 from "../assets/images/smDestination4/hpDestination1/Kufri_result.webp";
+import shimla3 from "../assets/images/smDestination4/hpDestination1/the-ridge_result.webp";
+import shimla4 from "../assets/images/smDestination4/hpDestination1/the-toy-train-ride_result.webp";
 
 export const shimlaContent = {
   contentItem1: {
@@ -161,11 +161,11 @@ export const shimlaContent = {
 
 ///////////////////
 
-import manali1 from "../assets/images/smDestination4/hpDestination2/hidimba-devi-temple.jpg";
-import manali2 from "../assets/images/smDestination4/hpDestination2/old-manali.jpeg";
-import manali3 from "../assets/images/smDestination4/hpDestination2/rohtang-pass.jpg";
-import manali4 from "../assets/images/smDestination4/hpDestination2/solang-valley.webp";
-import manali5 from "../assets/images/smDestination4/hpDestination2/vashisht-hot-springs.jpg";
+import manali1 from "../assets/images/smDestination4/hpDestination2/hidimba-devi-temple_result.webp";
+import manali2 from "../assets/images/smDestination4/hpDestination2/old-manali_result.webp";
+import manali3 from "../assets/images/smDestination4/hpDestination2/rohtang-pass_result.webp";
+import manali4 from "../assets/images/smDestination4/hpDestination2/solang-valley_result.webp";
+import manali5 from "../assets/images/smDestination4/hpDestination2/vashisht-hot-springs_result.webp";
 
 export const manaliContent = {
   contentItem1: {
@@ -337,11 +337,11 @@ export const manaliContent = {
 
 ////////////
 
-import dharamshala1 from "../assets/images/smDestination4/hpDestination3/bhagsu-waterfall.jpg";
-import dharamshala2 from "../assets/images/smDestination4/hpDestination3/mcLeod-ganj.jpg";
-import dharamshala3 from "../assets/images/smDestination4/hpDestination3/namgyal-monastery.jpg";
-import dharamshala4 from "../assets/images/smDestination4/hpDestination3/St.-John-in-the-wilderness-church.jpg";
-import dharamshala5 from "../assets/images/smDestination4/hpDestination3/triund-trek.jpg";
+import dharamshala1 from "../assets/images/smDestination4/hpDestination3/bhagsu-waterfall_result.webp";
+import dharamshala2 from "../assets/images/smDestination4/hpDestination3/mcLeod-ganj_result.webp";
+import dharamshala3 from "../assets/images/smDestination4/hpDestination3/namgyal-monastery_result.webp";
+import dharamshala4 from "../assets/images/smDestination4/hpDestination3/St.-John-in-the-wilderness-church_result.webp";
+import dharamshala5 from "../assets/images/smDestination4/hpDestination3/triund-trek_result.webp";
 
 export const dharamshalaContent = {
   contentItem1: {

@@ -1,9 +1,9 @@
 ///////////// RJ Destinations
-import rjDestination_img1 from "../assets/images/DestinationImg/rjDestination/jaipur.jpg";
-import rjDestination_img2 from "../assets/images/DestinationImg/rjDestination/Jaisalmer.jpg";
-import rjDestination_img3 from "../assets/images/DestinationImg/rjDestination/pushkar.jpg";
-import rjDestination_img4 from "../assets/images/DestinationImg/rjDestination/ranthambore.jpg";
-import rjDestination_img5 from "../assets/images/DestinationImg/rjDestination/udaipur.jpg";
+import rjDestination_img1 from "../assets/images/DestinationImg/rjDestination/jaipur.webp";
+import rjDestination_img2 from "../assets/images/DestinationImg/rjDestination/Jaisalmer.webp";
+import rjDestination_img3 from "../assets/images/DestinationImg/rjDestination/pushkar.webp";
+import rjDestination_img4 from "../assets/images/DestinationImg/rjDestination/ranthambore.webp";
+import rjDestination_img5 from "../assets/images/DestinationImg/rjDestination/udaipur.webp";
 
 export const rjDestinations = {
   title: "Rajasthan",
@@ -56,10 +56,10 @@ export const rjDestinations = {
 
 /////////////// UP Destinations
 
-import upDestination_img1 from "../assets/images/DestinationImg/upDestination/agra.jpg";
-import upDestination_img2 from "../assets/images/DestinationImg/upDestination/ayodhya.jpg";
-import upDestination_img3 from "../assets/images/DestinationImg/upDestination/bodhGya.jpg";
-import upDestination_img4 from "../assets/images/DestinationImg/upDestination/varanasi.jpg";
+import upDestination_img1 from "../assets/images/DestinationImg/upDestination/agra.webp";
+import upDestination_img2 from "../assets/images/DestinationImg/upDestination/ayodhya.webp";
+import upDestination_img3 from "../assets/images/DestinationImg/upDestination/bodhGya.webp";
+import upDestination_img4 from "../assets/images/DestinationImg/upDestination/varanasi.webp";
 
 export const upDestinations = {
   title: "Uttar Pradesh",
@@ -105,8 +105,8 @@ export const upDestinations = {
 
 //////////////// PB Destinations
 
-import pbDestination_img1 from "../assets/images/DestinationImg/pbDestination/chandigarh.jpg";
-import pbDestination_img2 from "../assets/images/DestinationImg/pbDestination/amritsar.jpg";
+import pbDestination_img1 from "../assets/images/DestinationImg/pbDestination/chandigarh.webp";
+import pbDestination_img2 from "../assets/images/DestinationImg/pbDestination/amritsar.webp";
 
 export const pbDestinations = {
   title: "Punjab",
@@ -138,9 +138,9 @@ export const pbDestinations = {
 
 ///////////////// HP Destinations
 
-import hpDestination_img1 from "../assets/images/DestinationImg/hpDestination/shimla.jpg";
-import hpDestination_img2 from "../assets/images/DestinationImg/hpDestination/manali.jpg";
-import hpDestination_img3 from "../assets/images/DestinationImg/hpDestination/dharamshala.jpg";
+import hpDestination_img1 from "../assets/images/DestinationImg/hpDestination/shimla.webp";
+import hpDestination_img2 from "../assets/images/DestinationImg/hpDestination/manali.webp";
+import hpDestination_img3 from "../assets/images/DestinationImg/hpDestination/dharamshala.webp";
 
 export const hpDestinations = {
   title: "Himachal Pradesh",
@@ -179,9 +179,9 @@ export const hpDestinations = {
 
 ///////////// UK Destination
 
-import ukDestination_img1 from "../assets/images/DestinationImg/ukDestination/kedarnath.jpg";
-import ukDestination_img2 from "../assets/images/DestinationImg/ukDestination/rishikesh.jpg";
-import ukDestination_img3 from "../assets/images/DestinationImg/ukDestination/nainital.jpg";
+import ukDestination_img1 from "../assets/images/DestinationImg/ukDestination/kedarnath.webp";
+import ukDestination_img2 from "../assets/images/DestinationImg/ukDestination/rishikesh.webp";
+import ukDestination_img3 from "../assets/images/DestinationImg/ukDestination/nainital.webp";
 
 export const ukDestinations = {
   title: "Uttarakhand",

@@ -1,20 +1,8 @@
 // banner img
-import banner1 from "../assets/images/bannerimg/banner1.jpeg";
-import banner2 from "../assets/images/bannerimg/banner2.jpeg";
-import banner3 from "../assets/images/bannerimg/banner3.jpeg";
-import banner4 from "../assets/images/bannerimg/banner4.jpeg";
-
-//sm banner
-import smBanner1 from "../assets/images/smBanner/smbanner1.jpeg";
-import smBanner2 from "../assets/images/smBanner/smbanner2.jpeg";
-import smBanner3 from "../assets/images/smBanner/smbanner3.jpeg";
-import smBanner4 from "../assets/images/smBanner/smbanner4.jpeg";
-import smBanner5 from "../assets/images/smBanner/smbanner5.jpeg";
-import smBanner6 from "../assets/images/smBanner/smbanner6.jpeg";
-import smBanner7 from "../assets/images/smBanner/smbanner7.jpeg";
-import smBanner8 from "../assets/images/smBanner/smbanner8.jpeg";
-import smBanner9 from "../assets/images/smBanner/smbanner9.jpeg";
-import smBanner10 from "../assets/images/smBanner/smbanner10.jpeg";
+import banner1 from "../assets/images/bannerimg/banner1.webp";
+import banner2 from "../assets/images/bannerimg/banner2.webp";
+import banner3 from "../assets/images/bannerimg/banner3.webp";
+import banner4 from "../assets/images/bannerimg/banner4.webp";
 
 // services icon
 import { RiCustomerService2Line } from "react-icons/ri";
@@ -24,58 +12,25 @@ import { IoBusOutline } from "react-icons/io5";
 import { RiSecurePaymentLine } from "react-icons/ri";
 
 // taxi img
-import taxi1 from "../assets/images/taxiimg/taxi1.jpeg";
-import taxi2 from "../assets/images/taxiimg/taxi2.jpeg";
-import taxi3 from "../assets/images/taxiimg/taxi3.jpeg";
-import taxi5 from "../assets/images/taxiimg/taxi5.jpeg";
-import taxi6 from "../assets/images/taxiimg/taxi6.jpeg";
+import taxi1 from "../assets/images/taxiimg/taxi1_result.webp";
+import taxi2 from "../assets/images/taxiimg/taxi2_result.webp";
+import taxi3 from "../assets/images/taxiimg/taxi3_result.webp";
+import taxi4 from "../assets/images/taxiimg/taxi4_result.webp";
+import taxi5 from "../assets/images/taxiimg/taxi5_result.webp";
 
 // ourTaxi
-import service_img1 from "../assets/images/servicesimg/service1.jpeg";
-import service_img2 from "../assets/images/servicesimg/service2.jpeg";
-import service_img3 from "../assets/images/servicesimg/service3.jpeg";
-import service_img4 from "../assets/images/servicesimg/service4.jpeg";
-import service_img5 from "../assets/images/servicesimg/service5.jpeg";
+import service_img1 from "../assets/images/servicesimg/service1_result.webp";
+import service_img2 from "../assets/images/servicesimg/service2_result.webp";
+import service_img3 from "../assets/images/servicesimg/service3_result.webp";
+import service_img4 from "../assets/images/servicesimg/service4_result.webp";
+import service_img5 from "../assets/images/servicesimg/service5_result.webp";
 
 // home Destination Img
-import hd1_img from "../assets/images/HomeDestinationImg/hd1.jpg";
-import hd2_img from "../assets/images/HomeDestinationImg/hd2.jpg";
-import hd3_img from "../assets/images/HomeDestinationImg/hd3.jpg";
-import hd4_img from "../assets/images/HomeDestinationImg/hd4.jpg";
-import hd5_img from "../assets/images/HomeDestinationImg/hd5.jpg";
-
-export const smBanner = [
-  {
-    img: smBanner1,
-  },
-  {
-    img: smBanner2,
-  },
-  {
-    img: smBanner3,
-  },
-  {
-    img: smBanner4,
-  },
-  {
-    img: smBanner5,
-  },
-  {
-    img: smBanner6,
-  },
-  {
-    img: smBanner7,
-  },
-  {
-    img: smBanner8,
-  },
-  {
-    img: smBanner9,
-  },
-  {
-    img: smBanner10,
-  },
-];
+import hd1_img from "../assets/images/HomeDestinationImg/hd1.webp";
+import hd2_img from "../assets/images/HomeDestinationImg/hd2.webp";
+import hd3_img from "../assets/images/HomeDestinationImg/hd3.webp";
+import hd4_img from "../assets/images/HomeDestinationImg/hd4.webp";
+import hd5_img from "../assets/images/HomeDestinationImg/hd5.webp";
 
 export const services = [
   {
@@ -156,25 +111,26 @@ export const banners = [
 
 export const taxies = [
   {
-    img: taxi5,
-    vehicle: "Maruti Swift Dzire (AC)",
-    rate: "10",
-    charges: "300",
-  },
-  {
-    img: taxi2,
-    vehicle: "Tyota Innnova 6+1 (AC)",
+    img: taxi1,
+    vehicle: "Ertiga ",
     rate: "16",
     charges: "300",
   },
   {
-    img: taxi6,
-    vehicle: "Tyota Innnova 7+1 (AC)",
+    img: taxi2,
+    vehicle: "Sedan",
+    rate: "11",
+    charges: "300",
+  },
+  {
+    img: taxi3,
+    vehicle: "Kia",
     rate: "17",
     charges: "300",
   },
-  { img: taxi1, vehicle: "Innnova Crysta (AC)", rate: "18", charges: "300" },
-  { img: taxi3, vehicle: "Tempo Travaller", rate: "25", charges: "500" },
+  { img: taxi4, vehicle: "Innnova Crysta", rate: "19", charges: "300" },
+
+  { img: taxi5, vehicle: "Tempo Travaller", rate: "25", charges: "500" },
 ];
 
 export const ourTaxies = [
@@ -220,34 +176,6 @@ export const popularDestinations = [
     link: "himachal-pradesh-destinations",
   },
   { img: hd2_img, title: "Uttrakhand", link: "uttarakhand-destinations" },
-];
-
-export const tourImgs = [
-  {
-    img: "https://www.ghumindiaghum.com/images/State/jgS3NH4y9R/udaipur2.jpg",
-  },
-
-  {
-    img: "https://www.ghumindiaghum.com/images/State/jgS3NH4y9R/udaipur2.jpg",
-  },
-  {
-    img: "https://www.ghumindiaghum.com/images/State/jgS3NH4y9R/udaipur2.jpg",
-  },
-  {
-    img: "https://www.ghumindiaghum.com/images/State/jgS3NH4y9R/udaipur2.jpg",
-  },
-  {
-    img: "https://www.ghumindiaghum.com/images/State/jgS3NH4y9R/udaipur2.jpg",
-  },
-  {
-    img: "https://www.ghumindiaghum.com/images/State/jgS3NH4y9R/udaipur2.jpg",
-  },
-  {
-    img: "https://www.ghumindiaghum.com/images/State/jgS3NH4y9R/udaipur2.jpg",
-  },
-  {
-    img: "https://www.ghumindiaghum.com/images/State/jgS3NH4y9R/udaipur2.jpg",
-  },
 ];
 
 export const taxiServices = [
@@ -342,51 +270,6 @@ export const navPopularDestination = [
         link: "kedarnath-badrinath-destination",
       },
     ],
-  },
-];
-
-export const blogcards = [
-  {
-    img: "https://www.ghumindiaghum.com/blog/wp-content/uploads/2025/02/Travel-Guide-Ranthambore-National-Park-Safari.jpg",
-    title: "Travel Guide - Ranthambore National Park Safari",
-    date: "Febuary 20,2025",
-    link: "",
-  },
-  {
-    img: "https://www.ghumindiaghum.com/blog/wp-content/uploads/2025/02/Travel-Guide-Ranthambore-National-Park-Safari.jpg",
-    title: "Travel Guide - Ranthambore National Park Safari",
-    date: "Febuary 20,2025",
-    link: "",
-  },
-  {
-    img: "https://www.ghumindiaghum.com/blog/wp-content/uploads/2025/02/Travel-Guide-Ranthambore-National-Park-Safari.jpg",
-    title: "Travel Guide - Ranthambore National Park Safari",
-    date: "Febuary 20,2025",
-    link: "",
-  },
-  {
-    img: "https://www.ghumindiaghum.com/blog/wp-content/uploads/2025/02/Travel-Guide-Ranthambore-National-Park-Safari.jpg",
-    title: "Travel Guide - Ranthambore National Park Safari",
-    date: "Febuary 20,2025",
-    link: "",
-  },
-  {
-    img: "https://www.ghumindiaghum.com/blog/wp-content/uploads/2025/02/Travel-Guide-Ranthambore-National-Park-Safari.jpg",
-    title: "Travel Guide - Ranthambore National Park Safari",
-    date: "Febuary 20,2025",
-    link: "",
-  },
-  {
-    img: "https://www.ghumindiaghum.com/blog/wp-content/uploads/2025/02/Travel-Guide-Ranthambore-National-Park-Safari.jpg",
-    title: "Travel Guide - Ranthambore National Park Safari",
-    date: "Febuary 20,2025",
-    link: "",
-  },
-  {
-    img: "https://www.ghumindiaghum.com/blog/wp-content/uploads/2025/02/Travel-Guide-Ranthambore-National-Park-Safari.jpg",
-    title: "Travel Guide - Ranthambore National Park Safari",
-    date: "Febuary 20,2025",
-    link: "",
   },
 ];
 

@@ -3,7 +3,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect, useState } from "react";
 import { toast } from "react-hot-toast";
-import banner_img from "../../assets/images/banner_img.jpg";
+import banner_img from "../../assets/images/banner_result.webp";
 import SEO from "../../components/SEO";
 
 const Contact = () => {
@@ -80,7 +80,7 @@ const Contact = () => {
       />
 
       <div className="contact-banner" data-aos="fade-up">
-        <img src={banner_img} alt={banner_img} />
+        <img src={banner_img} alt={banner_img}  loading="lazy"/>
         <div className="contact-banner-desc">
           <h1>Contact Us</h1>
         </div>

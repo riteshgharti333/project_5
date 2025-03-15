@@ -25,7 +25,7 @@ const Service1 = () => {
       />
 
       <div className="service-banner" data-aos="fade-up">
-        <img src={banner_img} alt={banner_img} />
+        <img src={banner_img} alt={banner_img}  loading="lazy"/>
 
         <div className="service-banner-desc">
           <h1>Delhi Taxi Service</h1>

@@ -2,7 +2,7 @@ export const reviews = [
   {
     name: "Mackenzie Chernushin",
     review:
-      "I hired Getway Cab Sarvice to take me from Delhi to Jaipur to Agra. I had an excellent experience and I highly recommend this company for anyone looking for a driver or guide service. As a female traveler, I felt safe the entire time and our driver Chigu was both reliable and timely.",
+      "I hired Global India Travel Sarvice to take me from Delhi to Jaipur to Agra. I had an excellent experience and I highly recommend this company for anyone looking for a driver or guide service. As a female traveler, I felt safe the entire time and our driver Chigu was both reliable and timely.",
   },
   {
     name: " Judith Thierry",
@@ -29,17 +29,17 @@ export const reviews = [
   {
     name: "Sateesh Thakur",
     review:
-      "We highly recommend gate way cab service we booked golden triangle Tour 5days Driver Pankaj very polite humble And flexible he knows everything Cab and hotel very clean and agra Guide Mr. Tarun Joshi very polite and knowledge full and nice person I highly recommend gate way cab service and also we planned next trip for this company",
+      "We highly recommend Global India Travel service we booked golden triangle Tour 5days Driver Pankaj very polite humble And flexible he knows everything Cab and hotel very clean and agra Guide Mr. Tarun Joshi very polite and knowledge full and nice person I highly recommend gate way cab service and also we planned next trip for this company.",
   },
   {
     name: "Gaurav Thakur",
     review:
-      "I Book a cab from Delhi airport to agra Jaipur trip and driver gaurav thakur in this company l.ll hard recommended for this driver and this company thanks you so much",
+      "I Book a cab from Delhi airport to agra Jaipur trip and driver gaurav thakur in this company l.ll hard recommended for this driver and this company thanks you so much.",
   },
   {
     name: "Chandani Yadav",
     review:
-      "This company is very genuine we booked a suv innova crysta for agra same day tour price was good and the driver was very experience and polite good local outstation taxi company in delhi all the time they picked our call and responded thanks",
+      "This company is very genuine we booked a suv innova crysta for agra same day tour price was good and the driver was very experience and polite good local outstation taxi company in delhi all the time they picked our call and responded thanks.",
   },
 
   {
@@ -51,17 +51,17 @@ export const reviews = [
   {
     name: "Chandan Jana",
     review:
-      "Best cab service in delhi neat and clean vehicle time pancuality nice driver Mr harish Sukla thanks for making My journey memorable",
+      "Best cab service in delhi neat and clean vehicle time pancuality nice driver Mr harish Sukla thanks for making My journey memorable.",
   },
   {
     name: "Satya Yadav",
     review:
-      "I had recently book a cab service for Delhi local sightseeing driver Mr Vishal Yadav very professional and carrying person. They are very experience driver. Gateway cab service is very excellent service provider in Delhi. If you looking cap service in Delhi gateway services very tested I hope in future I will book again.",
+      "I had recently book a cab service for Delhi local sightseeing driver Mr Vishal Yadav very professional and carrying person. They are very experience driver. Gateway cab service is very excellent service provider in Delhi. If you looking cap service in Delhi Global India Travel services very tested I hope in future I will book again.",
   },
   {
     name: "Surender Kumar",
     review:
-      "Getway cab service Gave us the best experience seeing the golden Triangle visiting all of India s famous attraction and memorable palace loved every minute ajay was a great driver who catered our stay and travel to suit what we wanted out of our trip",
+      "Global India Travel service Gave us the best experience seeing the golden Triangle visiting all of India s famous attraction and memorable palace loved every minute ajay was a great driver who catered our stay and travel to suit what we wanted out of our trip",
   },
   {
     name: "Mahesh Sharma",
@@ -71,7 +71,7 @@ export const reviews = [
   {
     name: "Vishal Yadav",
     review:
-      "I book the cab Delhi to Nainital for 3 days driver Mr hariom Singh. Very nice and prohi person. Gateway cab owner is very responsible person",
+      "I book the cab Delhi to Nainital for 3 days driver Mr hariom Singh. Very nice and prohi person. Global India Travel owner is very responsible person",
   },
   {
     name: "Prashant Dhawangale",
@@ -90,12 +90,12 @@ export const reviews = [
   },
   {
     name: "Santosh Malagoudar",
-    review: "Mr Chigu is a good driver..highly recommend his service..",
+    review: "Mr Chigu is a good driver..highly recommend his service.",
   },
   {
     name: "Ranjit Thakur",
     review:
-      "Driver service is on time and driver behaviour is beautiful and well mentail",
+      "Driver service is on time and driver behaviour is beautiful and well mentail.",
   },
   { name: "Asiya", review: "Very friendly,helpful.Execellent service." },
   {
@@ -114,7 +114,7 @@ export const reviews = [
   {
     name: "Habung Tangu",
     review:
-      "May gateway cab Sarvesh Taxi booking Kia tha. For Agra Jaipur trip, both good service is available for me, thank you, if you want to applock any booking, you can book the company, if any company has a service, you will get driver, both good service is available.",
+      "May global india travel Taxi booking Kia tha. For Agra Jaipur trip, both good service is available for me, thank you, if you want to applock any booking, you can book the company, if any company has a service, you will get driver, both good service is available.",
   },
   {
     name: "Sumathi Arumugam",

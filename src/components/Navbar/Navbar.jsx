@@ -86,7 +86,7 @@ const Navbar = () => {
       >
         <div className="navbar-top-left">
           <Link to={"/"}>
-            <img src={logo} alt={logo} />
+            <img src={logo} alt={logo}  loading="lazy"/>
           </Link>
         </div>
 

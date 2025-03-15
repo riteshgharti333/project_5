@@ -29,7 +29,7 @@ const TourGuide = () => {
       />
 
       <div className="tourGuide-banner" data-aos="fade-up">
-        <img src={banner_img} alt={banner_img} />
+        <img src={banner_img} alt={banner_img}  loading="lazy"/>
 
         <div className="tourGuide-banner-desc">
           <h1>Tour Operator Service</h1>
@@ -40,12 +40,12 @@ const TourGuide = () => {
         <div className="tourGuide-contet-left" data-aos="fade-right">
           <h1>Tour Operator Service</h1>
           <p>
-            Getway Cab Service, based in the bustling area of Karol Bagh in
-            Delhi, stands out as a leading tour operator for North India. Our
-            mission is to provide travelers with an unforgettable journey
-            through this culturally rich and diverse region. North India is home
-            to a myriad of attractions, from the snow-capped peaks of the
-            Himalayas to the golden sands of the Thar Desert, and from the
+            Global India Travel Service, based in the bustling area of Karol
+            Bagh in Delhi, stands out as a leading tour operator for North
+            India. Our mission is to provide travelers with an unforgettable
+            journey through this culturally rich and diverse region. North India
+            is home to a myriad of attractions, from the snow-capped peaks of
+            the Himalayas to the golden sands of the Thar Desert, and from the
             serene banks of the Ganges to the vibrant hustle and bustle of
             Delhi, Jaipur, and Agra. We understand that each traveler has unique
             interests and preferences, which is why we offer a wide range of

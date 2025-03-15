@@ -1,8 +1,8 @@
-import jaipur1 from "../assets/images/smDestination/rjSmDestinationImg/amberfort.jpg";
-import jaipur2 from "../assets/images/smDestination/rjSmDestinationImg/cityplace.jpg";
-import jaipur3 from "../assets/images/smDestination/rjSmDestinationImg/hwamahal.jpg";
-import jaipur4 from "../assets/images/smDestination/rjSmDestinationImg/jantarmantar.webp";
-import jaipur5 from "../assets/images/smDestination/rjSmDestinationImg/nahargarh.jpg";
+import jaipur1 from "../assets/images/smDestination/rjSmDestinationImg/amberfort_result.webp";
+import jaipur2 from "../assets/images/smDestination/rjSmDestinationImg/cityplace_result.webp";
+import jaipur3 from "../assets/images/smDestination/rjSmDestinationImg/hwamahal_result.webp";
+import jaipur4 from "../assets/images/smDestination/rjSmDestinationImg/jantarmantar_result.webp";
+import jaipur5 from "../assets/images/smDestination/rjSmDestinationImg/nahargarh_result.webp";
 
 export const jaipurContent = {
   contentItem1: {
@@ -234,11 +234,11 @@ export const ranthamboreContent = {
 
 /////////////////
 
-import udaipur1 from "../assets/images/smDestination/rjSmDestinationImg3/city_palace.jpg";
-import udaipur2 from "../assets/images/smDestination/rjSmDestinationImg3/lake.jpg";
-import udaipur3 from "../assets/images/smDestination/rjSmDestinationImg3/Monsoon-Palace-Udaipur-600x449.jpg";
-import udaipur4 from "../assets/images/smDestination/rjSmDestinationImg3/Saheliyon-Ki-Bari-Udaipurs-Serene-Garden-of-Royal-Maidens.jpg";
-import udaipur5 from "../assets/images/smDestination/rjSmDestinationImg3/Udaipur_Lake_India.jpeg";
+import udaipur1 from "../assets/images/smDestination/rjSmDestinationImg3/city_palace_result.webp";
+import udaipur2 from "../assets/images/smDestination/rjSmDestinationImg3/lake_result.webp";
+import udaipur3 from "../assets/images/smDestination/rjSmDestinationImg3/Monsoon-Palace-Udaipur-600x449_result.webp";
+import udaipur4 from "../assets/images/smDestination/rjSmDestinationImg3/Saheliyon-Ki-Bari-Udaipurs-Serene-Garden-of-Royal-Maidens_result.webp";
+import udaipur5 from "../assets/images/smDestination/rjSmDestinationImg3/Udaipur_Lake_India_result.webp";
 
 export const udaipurContent = {
   contentItem1: {
@@ -349,12 +349,12 @@ export const udaipurContent = {
 };
 
 /////////////
-import jaisalmer1 from "../assets/images/smDestination/rjSmDestinationImg4/haveli.jpeg";
-import jaisalmer2 from "../assets/images/smDestination/rjSmDestinationImg4/Jaisalmer_Bada_Bagh_Main.jpg";
-import jaisalmer3 from "../assets/images/smDestination/rjSmDestinationImg4/Jaisalmerfort.jpg";
-import jaisalmer4 from "../assets/images/smDestination/rjSmDestinationImg4/kuldhara.jpg";
-import jaisalmer5 from "../assets/images/smDestination/rjSmDestinationImg4/samsand.jpg";
-import jaisalmer6 from "../assets/images/smDestination/rjSmDestinationImg4/Very-Beautiful-view-of-Gadisar-Lake-in-Jaisalmer-Rajasthan-India-1-1024x676.jpg";
+import jaisalmer1 from "../assets/images/smDestination/rjSmDestinationImg4/1700201154_34594-sam-sand-dunes-jaisalmer-rajasthan-tour-slider-image.webp";
+import jaisalmer2 from "../assets/images/smDestination/rjSmDestinationImg4/1_Jaisalmer_istock_1929884010.jpg";
+import jaisalmer3 from "../assets/images/smDestination/rjSmDestinationImg4/bada-bagh.jpg";
+import jaisalmer4 from "../assets/images/smDestination/rjSmDestinationImg4/patwaon-ki-haveli.jpg";
+import jaisalmer5 from "../assets/images/smDestination/rjSmDestinationImg4/photo-1621744299074-cc0ac49afc9d-1024x671.jpeg";
+import jaisalmer6 from "../assets/images/smDestination/rjSmDestinationImg4/Very-Beautiful-view-of-Gadisar-Lake-in-Jaisalmer-Rajasthan-India.jpg";
 
 export const jaisalmerContent = {
   contentItem1: {
@@ -370,7 +370,7 @@ export const jaisalmerContent = {
     title: "Must - Visit Places in Jaisalmer",
     contentCards: [
       {
-        img: jaisalmer3,
+        img: jaisalmer2,
         title: "Jaisalmer Fort – A Living Heritage",
         desc: [
           "One of the world's few 'living forts,' Jaisalmer Fort is home to palaces, temples, shops, and centuries-old residences.",
@@ -378,7 +378,7 @@ export const jaisalmerContent = {
         ],
       },
       {
-        img: jaisalmer1,
+        img: jaisalmer4,
         title: "Patwon Ki Haveli – A Cluster of Grandeur",
         desc: [
           "A collection of five havelis, known for their intricate carvings and mirror work.",
@@ -386,7 +386,7 @@ export const jaisalmerContent = {
         ],
       },
       {
-        img: jaisalmer5,
+        img: jaisalmer1,
         title: "Sam Sand Dunes – The Ultimate Desert Experience",
         desc: [
           "Enjoy a camel safari or a thrilling jeep ride across the golden dunes.",
@@ -402,7 +402,7 @@ export const jaisalmerContent = {
         ],
       },
       {
-        img: jaisalmer2,
+        img: jaisalmer3,
         title: "Bada Bagh – The Royal Cenotaphs",
         desc: [
           "An ancient site featuring royal cenotaphs (chhatris) of Jaisalmer rulers.",
@@ -410,7 +410,7 @@ export const jaisalmerContent = {
         ],
       },
       {
-        img: jaisalmer4,
+        img: jaisalmer5,
         title: "Kuldhara – The Mysterious Abandoned Village",
         desc: [
           "A ghost village with a fascinating legend of an entire town vanishing overnight.",
@@ -477,12 +477,12 @@ export const jaisalmerContent = {
 
 /////////////////
 
-import pushkar1 from "../assets/images/smDestination/rjSmDestinationImg5/Brahma-Temple-Pushkar.webp";
-import pushkar2 from "../assets/images/smDestination/rjSmDestinationImg5/pushkar-bazaar.png";
-import pushkar3 from "../assets/images/smDestination/rjSmDestinationImg5/pushkar-camel-safari.jpg";
-import pushkar4 from "../assets/images/smDestination/rjSmDestinationImg5/pushkar-lake.webp";
-import pushkar5 from "../assets/images/smDestination/rjSmDestinationImg5/PushkarCamelFair-1024x682.jpg";
-import pushkar6 from "../assets/images/smDestination/rjSmDestinationImg5/SAVITRI-TEMPLE-PUSHKAR-1-8.jpg.optimal.jpg";
+import pushkar1 from "../assets/images/smDestination/rjSmDestinationImg5/Brahma-Temple-Pushkar_result.webp";
+import pushkar2 from "../assets/images/smDestination/rjSmDestinationImg5/pushkar-bazaar_result.webp";
+import pushkar3 from "../assets/images/smDestination/rjSmDestinationImg5/pushkar-camel-safari_result.webp";
+import pushkar4 from "../assets/images/smDestination/rjSmDestinationImg5/pushkar-lake_result.webp";
+import pushkar5 from "../assets/images/smDestination/rjSmDestinationImg5/PushkarCamelFair-1024x682_result.webp";
+import pushkar6 from "../assets/images/smDestination/rjSmDestinationImg5/SAVITRI-TEMPLE-PUSHKAR-1-8.jpg.optimal_result.webp";
 
 export const pushkarContent = {
   contentItem1: {

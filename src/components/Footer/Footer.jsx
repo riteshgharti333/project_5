@@ -19,7 +19,7 @@ const Footer = () => {
   return (
     <div className="footer">
       <div className="footer-top">
-        <img src={logo} alt={logo} />
+        <img src={logo} alt={logo}  loading="lazy"/>
         <div className="footer-top-items">
           <div className="footer-top-item">
             <IoCallSharp className="footer-top-icon" />

@@ -1,6 +1,6 @@
 import "./Gallery.scss";
 import gallery_banner from "../../assets/images/photo-collage.webp";
-import galleryImages from "../../assets/galleryData";
+import { galleryImages } from "../../assets/galleryData";
 
 import { useState, useEffect } from "react";
 import AOS from "aos";
@@ -37,7 +37,7 @@ const Gallery = () => {
       />
 
       <div className="gallery-banner" data-aos="fade-up">
-        <img src={gallery_banner} alt={gallery_banner} />
+        <img src={gallery_banner} alt={gallery_banner} loading="lazy" />
         <h1>Gallery</h1>
       </div>
 
@@ -50,13 +50,14 @@ const Gallery = () => {
 
         {/* Gallery Images */}
         <div className="gallery-imgs">
-          {galleryImages.map((img, index) => (
+          {galleryImages.map((item, index) => (
             <img
               key={index}
-              src={img}
-              alt={`gallery-img-${index}`}
-              onClick={() => setSelectedImg(img)}
+              src={item.img}
+              alt={item.title}
+              onClick={() => setSelectedImg(item.img)}
               data-aos={getRandomEffect()}
+              loading="lazy"
             />
           ))}
         </div>
@@ -64,7 +65,7 @@ const Gallery = () => {
 
       {selectedImg && (
         <div className="image-modal" onClick={() => setSelectedImg(null)}>
-          <img src={selectedImg} alt="Fullscreen Preview" />
+          <img src={selectedImg} alt="Fullscreen Preview" loading="lazy" />
           <span className="close-btn" onClick={() => setSelectedImg(null)}>
             ×
           </span>

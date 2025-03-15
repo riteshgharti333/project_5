@@ -21,7 +21,7 @@ const Taxi = () => {
   return (
     <div className="taxi">
       <div className="taxi-top" data-aos="fade-up">
-        <h1>India Taxi Packages</h1>
+        <h2>India Taxi Packages</h2>
         <p>
           Planning to visit India? You're at the right place! Plan and book your
           incredible India tour package with our local experts and experience
@@ -57,10 +57,10 @@ const Taxi = () => {
           {taxies.map((item, index) => (
             <SwiperSlide key={index}>
               <div className="taxi-card">
-                <img src={item.img} alt={item.vehicle} />
+                <img src={item.img} alt={item.vehicle}  loading="lazy"/>
                 <div className="taxi-card-desc">
                   <div className="taxi-card-item">
-                    <p>Taxi Vehicle Type</p>
+                    <p>Vehicle</p>
                     <p>{item.vehicle}</p>
                   </div>
                   <div className="taxi-card-item">

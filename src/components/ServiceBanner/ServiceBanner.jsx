@@ -46,6 +46,7 @@ const ServiceBanner = ({ destinationImg }) => {
                 src={item.img}
                 alt={item.title}
                 className="serviceBanner-img"
+                loading="lazy"
               />
             </SwiperSlide>
           ))}

@@ -18,7 +18,7 @@ const OurTaxi = () => {
   return (
     <div className="ourTaxi">
       <div className="ourTaxi-top" data-aos="fade-up">
-        <h1>Our Taxi service : Trust the Wheel, Enjoy the Ride</h1>
+        <h2>Our Cab Service : Trust the Wheel, Enjoy the Ride</h2>
         <p>
           Traveling across North India is a dream for many, and having a
           reliable car rental service can make this dream a reality.{" "}
@@ -34,7 +34,7 @@ const OurTaxi = () => {
         {ourTaxies.map((item, index) => (
           <Link to={item.link} key={index}>
             <div className="ourTaxi-card">
-              <img src={item.img} alt={item.name} />
+              <img src={item.img} alt={item.name} loading="lazy" />
               <button>
                 <div className="btn-wrap">
                   <span>{item.name}</span>
