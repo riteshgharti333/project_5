@@ -46,7 +46,7 @@
     gap: 30px;
     padding: 50px 20px 0px 20px;
 
-    @include lg{
+    @include lg {
       flex-direction: column;
       max-width: 750px;
     }
@@ -54,8 +54,6 @@
     @include sm {
       padding: 50px 10px 0px 10px;
     }
-
-
 
     .taxiService-content-left {
       display: flex;
@@ -71,9 +69,8 @@
         color: $p-color;
         font-size: 18px;
       }
-
     }
-    
+
     .taxiService-content-right {
       flex: 3;
     }

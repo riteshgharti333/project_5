@@ -29,7 +29,7 @@ const TourGuide = () => {
       />
 
       <div className="tourGuide-banner" data-aos="fade-up">
-        <img src={banner_img} alt={banner_img}  loading="lazy"/>
+        <img src={banner_img} alt={banner_img} loading="lazy" />
 
         <div className="tourGuide-banner-desc">
           <h1>Tour Operator Service</h1>

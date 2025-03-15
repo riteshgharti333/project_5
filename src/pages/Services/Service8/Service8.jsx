@@ -19,12 +19,12 @@ const Service8 = () => {
       />
 
       <div className="service-banner" data-aos="fade-up">
-              <img src={banner_img} alt={banner_img}  loading="lazy"/>
-      
-              <div className="service-banner-desc">
-                <h1>Jammu & Kashmir Taxi Service</h1>
-              </div>
-            </div>
+        <img src={banner_img} alt={banner_img} loading="lazy" />
+
+        <div className="service-banner-desc">
+          <h1>Jammu & Kashmir Taxi Service</h1>
+        </div>
+      </div>
 
       <div className="service-container">
         <div className="service-container-top">

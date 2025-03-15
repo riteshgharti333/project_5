@@ -40,7 +40,7 @@ const Rental = () => {
         {ourTaxies.map((item, index) => (
           <Link to={item.link} key={index}>
             <div className="ourTaxi-card">
-              <img src={item.img} alt={item.name}  loading="lazy"/>
+              <img src={item.img} alt={item.name} loading="lazy" />
               <button>
                 <div className="btn-wrap">
                   <span>{item.name}</span>

@@ -103,7 +103,9 @@
                 background-color: #fff;
                 border-radius: 12px;
                 overflow: hidden;
-                transition: transform 0.3s ease, box-shadow 0.3s ease;
+                transition:
+                  transform 0.3s ease,
+                  box-shadow 0.3s ease;
                 box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 
                 &:hover {
@@ -150,7 +152,6 @@
         @include lg {
           display: none;
         }
-
       }
     }
 

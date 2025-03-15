@@ -62,7 +62,7 @@ const UpDestination4 = () => {
                         className="destination-content-item-card"
                         key={index}
                       >
-                        <img src={item.img} alt={item.title}  loading="lazy"/>
+                        <img src={item.img} alt={item.title} loading="lazy" />
 
                         <div className="destination-conten-desc">
                           <h3>{item.title}</h3>
@@ -71,7 +71,7 @@ const UpDestination4 = () => {
                           ))}
                         </div>
                       </div>
-                    )
+                    ),
                   )}
                 </div>
               </div>
@@ -85,7 +85,7 @@ const UpDestination4 = () => {
                         <span>{item.title} : </span>
                         {item.desc}
                       </li>
-                    )
+                    ),
                   )}
                 </ul>
               </div>
@@ -98,7 +98,7 @@ const UpDestination4 = () => {
                         <span>{item.title} : </span>
                         {item.desc}
                       </li>
-                    )
+                    ),
                   )}
                 </ul>
               </div>
@@ -112,7 +112,7 @@ const UpDestination4 = () => {
                         <span>{item.title} : </span>
                         {item.desc}
                       </li>
-                    )
+                    ),
                   )}
                 </ul>
               </div>
@@ -126,7 +126,7 @@ const UpDestination4 = () => {
                         <span>{item.title} : </span>
                         {item.desc}
                       </li>
-                    )
+                    ),
                   )}
                 </ul>
               </div>
@@ -140,7 +140,7 @@ const UpDestination4 = () => {
                         <span>{item.title} : </span>
                         {item.desc}
                       </li>
-                    )
+                    ),
                   )}
                 </ul>
               </div>
@@ -151,7 +151,7 @@ const UpDestination4 = () => {
                   {bodhGayaContent.contentItem9.contentLists.map(
                     (item, index) => (
                       <li key={index}>{item.title}</li>
-                    )
+                    ),
                   )}
                 </ul>
               </div>

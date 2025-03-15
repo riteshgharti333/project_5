@@ -11,8 +11,9 @@ const SEO = ({
 }) => {
   const currentUrl =
     url || (typeof window !== "undefined" ? window.location.href : "");
-  const fullImageUrl =
-    image?.startsWith("http") ? image : `${window.location.origin}${image || serviceImage}`;
+  const fullImageUrl = image?.startsWith("http")
+    ? image
+    : `${window.location.origin}${image || serviceImage}`;
 
   return (
     <Helmet>
@@ -52,17 +53,17 @@ const SEO = ({
         {JSON.stringify({
           "@context": "https://schema.org",
           "@type": "LocalBusiness",
-          "name": "Global India Travel",
-          "url": currentUrl,
-          "address": {
+          name: "Global India Travel",
+          url: currentUrl,
+          address: {
             "@type": "PostalAddress",
-            "streetAddress": "WZ95, Dharmpal Niwas",
-            "addressLocality": "Thodapur Indar Puri",
-            "addressRegion": "New Delhi",
-            "postalCode": "110012",
-            "addressCountry": "India",
+            streetAddress: "WZ95, Dharmpal Niwas",
+            addressLocality: "Thodapur Indar Puri",
+            addressRegion: "New Delhi",
+            postalCode: "110012",
+            addressCountry: "India",
           },
-          "telephone": "+91 70118 90082",
+          telephone: "+91 70118 90082",
         })}
       </script>
     </Helmet>

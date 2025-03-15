@@ -31,7 +31,7 @@ const TaxiService = () => {
       />
 
       <div className="taxiService-banner" data-aos="fade-up">
-        <img src={banner_img} alt={banner_img}  loading="lazy"/>
+        <img src={banner_img} alt={banner_img} loading="lazy" />
 
         <div className="taxiService-banner-desc">
           <h1>India Taxi Service</h1>

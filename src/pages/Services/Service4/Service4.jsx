@@ -19,7 +19,7 @@ const Service4 = () => {
         keywords="Rajasthan taxi service, Jaipur taxi, Udaipur cab, Jaisalmer taxi, outstation cabs Rajasthan, best taxi service in Rajasthan"
       />
       <div className="service-banner" data-aos="fade-up">
-        <img src={banner_img} alt={banner_img}  loading="lazy"/>
+        <img src={banner_img} alt={banner_img} loading="lazy" />
 
         <div className="service-banner-desc">
           <h1>Rajasthan Taxi Service</h1>

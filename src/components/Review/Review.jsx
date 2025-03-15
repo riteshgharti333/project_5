@@ -26,10 +26,10 @@ const Review = () => {
     <div className="review">
       <div className="review-container">
         <div className="review-left" data-aos="fade-up">
-          <div               className="review-left-top">
+          <div className="review-left-top">
             <h2>What our customers are saying?</h2>
             <p>
-Don't take our word, see what our clients have to say about us...
+              Don't take our word, see what our clients have to say about us...
             </p>
             <a
               href="https://www.google.com/maps/place/Global+India+Travels/@28.6281912,77.1493764,17z/data=!4m8!3m7!1s0x390d038fe22cbe27:0x7b234cd402107ba4!8m2!3d28.6281912!4d77.1493764!9m1!1b1!16s%2Fg%2F11w_w5858y?entry=ttu&g_ep=EgoyMDI1MDMwOC4wIKXMDSoASAFQAw%3D%3D"

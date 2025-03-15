@@ -21,7 +21,7 @@ const Navbar = () => {
   const [openIndex, setOpenIndex] = useState(null);
 
   const handleToggle = (index) => {
-    setOpenIndex((prevIndex) => (prevIndex === index ? null : index)); // Toggle submenu
+    setOpenIndex((prevIndex) => (prevIndex === index ? null : index));
   };
 
   const [scroll, setScroll] = useState(false);
@@ -36,9 +36,9 @@ const Navbar = () => {
       const currentScrollY = window.scrollY;
 
       if (currentScrollY > lastScrollY) {
-        setShowNavbarBottom(false); // Hide navbar-bottom when scrolling down
+        setShowNavbarBottom(false);
       } else {
-        setShowNavbarBottom(true); // Show navbar-bottom when scrolling up
+        setShowNavbarBottom(true);
       }
 
       setLastScrollY(currentScrollY);
@@ -86,7 +86,7 @@ const Navbar = () => {
       >
         <div className="navbar-top-left">
           <Link to={"/"}>
-            <img src={logo} alt={logo}  loading="lazy"/>
+            <img src={logo} alt={logo} loading="lazy" />
           </Link>
         </div>
 
@@ -184,7 +184,10 @@ const Navbar = () => {
             <Link className="services nav-popular">
               <li
                 onMouseEnter={() => setDropdownOpen(true)}
-                onMouseLeave={() => setDropdownOpen(false)}
+                onMouseLeave={() => {
+                  setDropdownOpen(false);
+                  setOpenIndex(null);
+                }}
               >
                 <span>
                   Popular Destination <IoIosArrowDown className="down-icon" />

@@ -46,7 +46,7 @@ const MainDestination1 = () => {
               {rjDestinations.destinationsCards.map((item, index) => (
                 <div className="mainDestination-card" key={index}>
                   <div className="mainDestination-card-left">
-                    <img src={item.img} alt={item.title}  loading="lazy"/>
+                    <img src={item.img} alt={item.title} loading="lazy" />
                   </div>
                   <div className="mainDestination-card-right">
                     <h2>{item.title}</h2>

@@ -28,7 +28,7 @@ const About = () => {
           setStartCount(true);
         }
       },
-      { threshold: 0.7 }
+      { threshold: 0.7 },
     );
 
     if (aboutContentRef.current) {
@@ -52,7 +52,7 @@ const About = () => {
       />
 
       <div className="about-banner" data-aos="fade-up">
-        <img src={banner_img} alt={banner_img}  loading="lazy"/>
+        <img src={banner_img} alt={banner_img} loading="lazy" />
 
         <div className="about-banner-desc">
           <h1>About Us</h1>
@@ -105,13 +105,13 @@ const About = () => {
               of vehicles includes sedans, SUVs, and luxury cars, catering to
               diverse customer preferences. Each car in our fleet is equipped
               with modern amenities, ensuring a pleasant experience. Whether
-              you're traveling solo or with family, Global India Travel Service has the
-              perfect vehicle for you. We are dedicated to offering exceptional
-              car rental, hotel booking, air ticketing, and comprehensive tour
-              packages, ensuring a seamless and unforgettable travel experience.
-              With our extensive range of services and customer-centric
-              approach, we cater to all your travel needs with the utmost
-              professionalism and care.
+              you're traveling solo or with family, Global India Travel Service
+              has the perfect vehicle for you. We are dedicated to offering
+              exceptional car rental, hotel booking, air ticketing, and
+              comprehensive tour packages, ensuring a seamless and unforgettable
+              travel experience. With our extensive range of services and
+              customer-centric approach, we cater to all your travel needs with
+              the utmost professionalism and care.
             </p>
 
             <p>
@@ -124,7 +124,7 @@ const About = () => {
           </div>
 
           <div className="about-content2-top-right" data-aos="fade-left">
-            <img src={vecation_img} alt={vecation_img}  loading="lazy"/>
+            <img src={vecation_img} alt={vecation_img} loading="lazy" />
           </div>
         </div>
 

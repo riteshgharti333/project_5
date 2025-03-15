@@ -37,7 +37,7 @@ const MainDestination5 = () => {
       <div className="mainDestination-container">
         <div className="mainDestination-container-top">
           <div className="mainDestination-container-left" data-aos="fade-up">
-          <h1>{ukDestinations.title} </h1>
+            <h1>{ukDestinations.title} </h1>
             <p className="sm-desc">{ukDestinations.desc} </p>
 
             <div className="mainDestination-cards">
@@ -46,7 +46,7 @@ const MainDestination5 = () => {
               {ukDestinations.destinationsCards.map((item, index) => (
                 <div className="mainDestination-card" key={index}>
                   <div className="mainDestination-card-left">
-                    <img src={item.img} alt={item.title}  loading="lazy"/>
+                    <img src={item.img} alt={item.title} loading="lazy" />
                   </div>
                   <div className="mainDestination-card-right">
                     <h2>{item.title}</h2>

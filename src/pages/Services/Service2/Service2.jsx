@@ -20,7 +20,7 @@ const Service2 = () => {
       />
 
       <div className="service-banner" data-aos="fade-up">
-        <img src={banner_img} alt={banner_img}  loading="lazy"/>
+        <img src={banner_img} alt={banner_img} loading="lazy" />
 
         <div className="service-banner-desc">
           <h1>Uttarakhand Taxi Service</h1>

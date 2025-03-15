@@ -1,10 +1,8 @@
-import nainital1 from "../assets/images/smDestination5/ukDestination1/naina-devi-temple_result.webp"
-import nainital2 from "../assets/images/smDestination5/ukDestination1/naini-lake_result.webp"
-import nainital3 from "../assets/images/smDestination5/ukDestination1/raj-bhavan_result.webp"
-import nainital4 from "../assets/images/smDestination5/ukDestination1/snow-view-point_result.webp"
-import nainital5 from "../assets/images/smDestination5/ukDestination1/tiffin-top_result.webp"
-
-
+import nainital1 from "../assets/images/smDestination5/ukDestination1/naina-devi-temple_result.webp";
+import nainital2 from "../assets/images/smDestination5/ukDestination1/naini-lake_result.webp";
+import nainital3 from "../assets/images/smDestination5/ukDestination1/raj-bhavan_result.webp";
+import nainital4 from "../assets/images/smDestination5/ukDestination1/snow-view-point_result.webp";
+import nainital5 from "../assets/images/smDestination5/ukDestination1/tiffin-top_result.webp";
 
 export const nainitalContent = {
   contentItem1: {
@@ -174,13 +172,11 @@ export const nainitalContent = {
 };
 
 /////////////////
-import rishikeshHaridwar1 from "../assets/images/smDestination5/ukDestination2/har-ki-pauri_result.webp"
-import rishikeshHaridwar2 from "../assets/images/smDestination5/ukDestination2/laxman-Jhula-&-ram-Jhula_result.webp"
-import rishikeshHaridwar3 from "../assets/images/smDestination5/ukDestination2/neelkanth-mahadev-temple_result.webp"
-import rishikeshHaridwar4 from "../assets/images/smDestination5/ukDestination2/parmarth-niketan_result.webp"
-import rishikeshHaridwar5 from "../assets/images/smDestination5/ukDestination2/river-rafting-rishikesh_result.webp"
-
-
+import rishikeshHaridwar1 from "../assets/images/smDestination5/ukDestination2/har-ki-pauri_result.webp";
+import rishikeshHaridwar2 from "../assets/images/smDestination5/ukDestination2/laxman-Jhula-&-ram-Jhula_result.webp";
+import rishikeshHaridwar3 from "../assets/images/smDestination5/ukDestination2/neelkanth-mahadev-temple_result.webp";
+import rishikeshHaridwar4 from "../assets/images/smDestination5/ukDestination2/parmarth-niketan_result.webp";
+import rishikeshHaridwar5 from "../assets/images/smDestination5/ukDestination2/river-rafting-rishikesh_result.webp";
 
 export const rishikeshHaridwarContent = {
   contentItem1: {
@@ -350,12 +346,11 @@ export const rishikeshHaridwarContent = {
 };
 ////////////////
 
-import kedarnathBadrinath1 from "../assets/images/smDestination5/ukDestination3/badrinath-temple_result.webp"
-import kedarnathBadrinath2 from "../assets/images/smDestination5/ukDestination3/kedarnath-temple_result.webp"
-import kedarnathBadrinath3 from "../assets/images/smDestination5/ukDestination3/nilkantha-peak_result.webp"
-import kedarnathBadrinath4 from "../assets/images/smDestination5/ukDestination3/tungnath-temple_result.webp"
-import kedarnathBadrinath5 from "../assets/images/smDestination5/ukDestination3/vasuki-tal_result.webp"
-
+import kedarnathBadrinath1 from "../assets/images/smDestination5/ukDestination3/badrinath-temple_result.webp";
+import kedarnathBadrinath2 from "../assets/images/smDestination5/ukDestination3/kedarnath-temple_result.webp";
+import kedarnathBadrinath3 from "../assets/images/smDestination5/ukDestination3/nilkantha-peak_result.webp";
+import kedarnathBadrinath4 from "../assets/images/smDestination5/ukDestination3/tungnath-temple_result.webp";
+import kedarnathBadrinath5 from "../assets/images/smDestination5/ukDestination3/vasuki-tal_result.webp";
 
 export const kedarnathBadrinathContent = {
   contentItem1: {

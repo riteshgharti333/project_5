@@ -19,7 +19,11 @@ const Blog3 = () => {
       <div className="blog-container">
         <div className="blog-content">
           <div className="blog-content-left">
-            <img src={blog3.blogContent1.img} alt={blog3.blogContent1.img}  loading="lazy"/>
+            <img
+              src={blog3.blogContent1.img}
+              alt={blog3.blogContent1.img}
+              loading="lazy"
+            />
             <div className="blog-content-item">
               <h1>{blog3.blogContent1.title}</h1>
 

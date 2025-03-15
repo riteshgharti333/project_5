@@ -57,7 +57,7 @@ const Taxi = () => {
           {taxies.map((item, index) => (
             <SwiperSlide key={index}>
               <div className="taxi-card">
-                <img src={item.img} alt={item.vehicle}  loading="lazy"/>
+                <img src={item.img} alt={item.vehicle} loading="lazy" />
                 <div className="taxi-card-desc">
                   <div className="taxi-card-item">
                     <p>Vehicle</p>

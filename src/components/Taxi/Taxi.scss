@@ -30,7 +30,7 @@
       font-size: 18px;
       color: $p-color;
 
-      @include sm{
+      @include sm {
         text-align: justify;
       }
     }
@@ -42,7 +42,9 @@
 
     .taxi-card {
       max-width: 400px;
-      box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+      box-shadow:
+        rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+        rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
       margin: 0 auto;
       img {
         width: 100%;
@@ -105,7 +107,6 @@
 .taxi-swiper {
   overflow: hidden;
   .swiper-slide {
-
     padding: 10px 10px 60px 10px;
   }
 }

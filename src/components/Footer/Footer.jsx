@@ -24,7 +24,8 @@ const Footer = () => {
           <div className="footer-top-item">
             <IoCallSharp className="footer-top-icon" />
             <p>
-              <a href="tel:+917011890082">+91 7011890082</a>, <a href="tel:+9718509639">+91 9718509639</a>
+              <a href="tel:+917011890082">+91 7011890082</a>,{" "}
+              <a href="tel:+9718509639">+91 9718509639</a>
             </p>
           </div>
           <div className="footer-top-item">

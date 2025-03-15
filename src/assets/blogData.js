@@ -313,7 +313,7 @@ import udaipur from "../assets/images/blogImg/udaipur_result.webp";
 
 export const blog5 = {
   link: "best-things-to-do-in-udaipur",
-  date : "1 Nov,2024",
+  date: "1 Nov,2024",
   blogContent1: {
     img: udaipur,
     title: "Best Things to Do in Udaipur",

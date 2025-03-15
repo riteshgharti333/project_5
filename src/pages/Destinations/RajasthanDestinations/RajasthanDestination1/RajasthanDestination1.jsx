@@ -71,7 +71,7 @@ const RajasthanDestination1 = () => {
                           ))}
                         </div>
                       </div>
-                    )
+                    ),
                   )}
                 </div>
               </div>
@@ -85,7 +85,7 @@ const RajasthanDestination1 = () => {
                         <span>{item.title} : </span>
                         {item.desc}
                       </li>
-                    )
+                    ),
                   )}
                 </ul>
               </div>
@@ -98,7 +98,7 @@ const RajasthanDestination1 = () => {
                         <span>{item.title} : </span>
                         {item.desc}
                       </li>
-                    )
+                    ),
                   )}
                 </ul>
               </div>
@@ -109,7 +109,7 @@ const RajasthanDestination1 = () => {
                   {jaipurContent.contentItem4.contentLists.map(
                     (item, index) => (
                       <li key={index}>{item.desc}</li>
-                    )
+                    ),
                   )}
                 </ul>
               </div>

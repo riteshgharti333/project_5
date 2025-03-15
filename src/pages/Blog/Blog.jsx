@@ -17,10 +17,13 @@ const Blog = () => {
       />
 
       <div className="blog-container">
-
         <div className="blog-content">
           <div className="blog-content-left">
-            <img src={blog1.blogContent1.img} alt={blog1.blogContent1.title}  loading="lazy"/>
+            <img
+              src={blog1.blogContent1.img}
+              alt={blog1.blogContent1.title}
+              loading="lazy"
+            />
             <div className="blog-content-item">
               <h1>{blog1.blogContent1.title}</h1>
 
@@ -38,7 +41,7 @@ const Blog = () => {
               {blog1.blogContent2.map((item, index) => (
                 <div key={index}>
                   <h3>{item.title}</h3>
-                  <img src={item.img} alt={item.img}  loading="lazy"/>
+                  <img src={item.img} alt={item.img} loading="lazy" />
                   <p>{item.desc}</p>
                 </div>
               ))}

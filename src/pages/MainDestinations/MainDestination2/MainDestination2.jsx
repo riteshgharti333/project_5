@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 import { upDestinations } from "../../../assets/mainDestination";
 import { upImgs } from "../../../assets/ImgsData/mainDestinationImgs";
 
-import SEO from "../../../components/SEO"
+import SEO from "../../../components/SEO";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -47,7 +47,7 @@ const MainDestination2 = () => {
               {upDestinations.destinationsCards.map((item, index) => (
                 <div className="mainDestination-card" key={index}>
                   <div className="mainDestination-card-left">
-                    <img src={item.img} alt={item.title}  loading="lazy"/>
+                    <img src={item.img} alt={item.title} loading="lazy" />
                   </div>
                   <div className="mainDestination-card-right">
                     <h2>{item.title}</h2>

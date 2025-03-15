@@ -30,7 +30,7 @@ export const amritsarContent = {
         desc: [
           "A historic garden marking the tragic massacre of 1919, a pivotal event in India’s freedom struggle.",
           "Experience: Walk through the bullet-ridden walls and the Flame of Eternal Remembrance.",
-      ],
+        ],
       },
       {
         img: amritsar5,

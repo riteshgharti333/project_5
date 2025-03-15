@@ -58,7 +58,7 @@ const UpDestination1 = () => {
                 >
                   {agraContent.contentItem3.contentCards.map((item, index) => (
                     <div className="destination-content-item-card" key={index}>
-                      <img src={item.img} alt={item.title}  loading="lazy"/>
+                      <img src={item.img} alt={item.title} loading="lazy" />
 
                       <div className="destination-conten-desc">
                         <h3>{item.title}</h3>

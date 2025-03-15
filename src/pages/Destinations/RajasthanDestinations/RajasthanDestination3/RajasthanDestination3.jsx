@@ -61,7 +61,7 @@ const RajasthanDestination3 = () => {
                         className="destination-content-item-card"
                         key={index}
                       >
-                        <img src={item.img} alt={item.title}  loading="lazy"/>
+                        <img src={item.img} alt={item.title} loading="lazy" />
 
                         <div className="destination-conten-desc">
                           <h3>{item.title}</h3>
@@ -70,7 +70,7 @@ const RajasthanDestination3 = () => {
                           ))}
                         </div>
                       </div>
-                    )
+                    ),
                   )}
                 </div>
               </div>
@@ -84,7 +84,7 @@ const RajasthanDestination3 = () => {
                         <span>{item.title} : </span>
                         {item.desc}
                       </li>
-                    )
+                    ),
                   )}
                 </ul>
               </div>
@@ -97,7 +97,7 @@ const RajasthanDestination3 = () => {
                         <span>{item.title} : </span>
                         {item.desc}
                       </li>
-                    )
+                    ),
                   )}
                 </ul>
               </div>
@@ -108,7 +108,7 @@ const RajasthanDestination3 = () => {
                   {udaipurContent.contentItem6.contentLists.map(
                     (item, index) => (
                       <li key={index}>{item.title}</li>
-                    )
+                    ),
                   )}
                 </ul>
               </div>

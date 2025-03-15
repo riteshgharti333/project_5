@@ -28,7 +28,7 @@
       font-size: 18px;
       color: $p-color;
 
-      @include sm{
+      @include sm {
         text-align: justify;
       }
     }
@@ -71,7 +71,9 @@
         width: 100%;
         height: 100%;
         object-fit: contain;
-        transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+        transition:
+          transform 0.3s ease-in-out,
+          opacity 0.3s ease-in-out;
       }
 
       button {

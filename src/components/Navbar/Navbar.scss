@@ -1,7 +1,9 @@
 @use "../../styles/responsive.scss" as *;
 
 .navbar {
-  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  transition:
+    transform 0.5s ease-in-out,
+    opacity 0.5s ease-in-out;
   overflow: visible !important;
 
   @include lg {
@@ -26,7 +28,9 @@
       width: 100%;
       opacity: 0;
       transform: translateY(-100%);
-      transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+      transition:
+        transform 0.5s ease-in-out,
+        opacity 0.5s ease-in-out;
 
       &.show {
         opacity: 1;
@@ -197,7 +201,9 @@
                 transform: translateY(-50%);
                 width: 250px;
                 background: #fff;
-                transition: opacity 0.3s ease, visibility 0.3s ease;
+                transition:
+                  opacity 0.3s ease,
+                  visibility 0.3s ease;
                 border: 1px solid $primary-color;
                 border-radius: 5px;
                 padding: 10px 20px;
@@ -231,7 +237,9 @@
           background: #fff;
           opacity: 0;
           visibility: hidden;
-          transition: opacity 0.5s ease, visibility 0.3s ease;
+          transition:
+            opacity 0.5s ease,
+            visibility 0.3s ease;
           border: 1px solid $primary-color;
           border-radius: 5px;
           padding: 10px 20px;

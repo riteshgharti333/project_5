@@ -11,7 +11,7 @@ import "aos/dist/aos.css";
 
 const HomeBanner = () => {
   const [isMobile, setIsMobile] = useState(
-    window.matchMedia("(max-width: 1199px)").matches
+    window.matchMedia("(max-width: 1199px)").matches,
   );
 
   useEffect(() => {
@@ -44,7 +44,7 @@ const HomeBanner = () => {
           pagination={{ clickable: true }}
           className="services-slide"
         >
-          { banners.map((item, index) => (
+          {banners.map((item, index) => (
             <SwiperSlide key={index} className="service_slide">
               <img src={item.img} alt="banner-img" loading="lazy" />
             </SwiperSlide>
