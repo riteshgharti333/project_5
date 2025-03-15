@@ -18,14 +18,14 @@ const Service1 = () => {
   return (
     <div className="service1">
       <SEO
-        title="Delhi Taxi Service | Local & Outstation Cabs at Best Prices"
+        title="Delhi Taxi Service | Best Driver Experience "
         description="Book a taxi in Delhi for local and outstation travel. Affordable rates, professional drivers, and 24/7 service. Choose from sedans, SUVs, and tempo travelers."
         url={window.location.href}
         keywords="Delhi taxi service, local cabs in Delhi, outstation taxi from Delhi, best taxi service in Delhi, airport taxi Delhi"
       />
 
       <div className="service-banner" data-aos="fade-up">
-        <img src={banner_img} alt={banner_img}  loading="lazy"/>
+        <img src={banner_img} alt={banner_img} loading="lazy" />
 
         <div className="service-banner-desc">
           <h1>Delhi Taxi Service</h1>
