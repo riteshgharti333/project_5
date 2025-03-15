@@ -15,7 +15,7 @@ const ServiceCard = ({ item }) => {
 
   return (
     <div className="service-card" data-aos="fade-up">
-      <img src={item.img} alt={item.img}  loading="lazy"/>
+      <img src={item.img} alt={item.img} loading="lazy" />
       <div className="service-card-items">
         <div className="service-card-item">
           <p>Vehicle</p>

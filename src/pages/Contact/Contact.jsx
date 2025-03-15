@@ -152,7 +152,7 @@ const Contact = () => {
 
       <div className="contact-address">
         <div className="contact-address-container">
-          <h1>Contact Us</h1>
+          <h2>Contact Us</h2>
           <p>
             We’d love to hear from you! Whether it’s inquiries, feedback, or
             support, our team is ready to help. Get in touch through our contact

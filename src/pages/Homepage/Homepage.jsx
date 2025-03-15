@@ -15,10 +15,10 @@ const Homepage = () => {
   return (
     <div className="homepage">
       <SEO
-        title="Best Taxi Service in India | Affordable Cabs & Tours"
-        description="Book affordable taxi services in India, including Delhi, Mumbai & major cities. Safe rides, 24/7 support, and top-rated drivers. Find the best cab rentals now!"
+        title="Best Taxi & Cab Service in India | Affordable Rides & Tours"
+        description="Book the best taxi and cab service in India, including Delhi and Mumbai. Safe rides with professional drivers. Explore India tours with our affordable rentals!"
         url={window.location.href}
-        keywords="best taxi service, taxi in India, very affordable cab rental, Delhi taxi service, Mumbai taxi, tour packages, best driver experience"
+        keywords="taxi service, cab service, India tour, global India, driver booking, Delhi taxi, Mumbai cab, best rental services"
       />
 
       <HomeBanner />

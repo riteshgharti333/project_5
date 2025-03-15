@@ -42,7 +42,7 @@ const Tempo = () => {
           <div className="tempo-left" data-aos="fade-right">
             <div className="tempo-content">
               <div className="tempo-content-item">
-                <h1>{tempo.contentItem1.title}</h1>
+                <h2>{tempo.contentItem1.title}</h2>
                 {tempo.contentItem1.desc.map((item, index) => (
                   <p key={index}>{item}</p>
                 ))}

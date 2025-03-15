@@ -18,7 +18,7 @@ const Rental = () => {
   return (
     <div className="rental">
       <div className="rental-top" data-aos="fade-up">
-        <h1>Car Rental Service: Hassle-Free Rides, Every Mile Smiles</h1>
+        <h2>Car Rental Service: Hassle-Free Rides, Every Mile Smiles</h2>
         <p>
           Exploring North India is an adventure filled with rich history,
           stunning landscapes, and vibrant cultures. To make your journey smooth

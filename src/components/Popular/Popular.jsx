@@ -17,7 +17,7 @@ const Popular = () => {
   return (
     <div className="popular">
       <div className="popular-top" data-aos="fade-up">
-        <h1>Popular Destinations</h1>
+        <h2>Popular Destinations</h2>
         <p>These popular destinations have a lot to offer</p>
       </div>
 

@@ -21,7 +21,7 @@ const Blogs = () => {
         <div className="blogs-cards">
           {blogs.map((item, index) => (
             <div className="blogs-card" key={index}>
-              <img src={item.img} alt={item.title}  loading="lazy"/>
+              <img src={item.img} alt={item.title} loading="lazy" />
 
               <div className="blogs-card-desc">
                 <Link to={`/blog/${item.link}`}>

@@ -44,7 +44,7 @@
     padding: 0px 10px;
     .about-content1-top {
       text-align: center;
-      h1 {
+      h2 {
         font-size: 30px;
         color: $text-color;
       }
@@ -266,7 +266,7 @@
       flex-direction: column;
       gap: 50px;
 
-      h1 {
+      h2 {
         color: $text-color;
         font-size: 30px;
       }
@@ -316,7 +316,7 @@
   .about-content3-item {
     text-align: center;
 
-    h1 {
+    h3 {
       color: $text-color;
       margin-bottom: 10px;
       font-size: 35px;

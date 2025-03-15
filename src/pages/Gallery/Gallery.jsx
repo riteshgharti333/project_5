@@ -42,7 +42,7 @@ const Gallery = () => {
       </div>
 
       <div className="gallery-content">
-        <h1>Our Gallery</h1>
+        <h2>Our Gallery</h2>
         <p>
           Discover the smiles of our happy customers! Our gallery showcases real
           experiences, comfortable rides, and the trust we build every day.

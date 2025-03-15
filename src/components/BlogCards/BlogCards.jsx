@@ -22,7 +22,7 @@ const BlogCards = () => {
 
   return (
     <div className="blogCards" data-aos="fade-up">
-      <h1>Our Blogs</h1>
+      <h2>Our Blogs</h2>
       <div className="blogCards-content" data-aos="fade-up">
         <Swiper
           modules={[Navigation, Pagination, Autoplay]}

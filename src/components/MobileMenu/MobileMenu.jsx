@@ -222,7 +222,7 @@ const MobileMenu = () => {
           Gallery
         </Link>
 
-        <Link className="menu-item" to="/blogs" onClick={handleCloseMenu}>
+        <Link className="menu-item" to="/blog" onClick={handleCloseMenu}>
           Blogs
         </Link>
 

@@ -97,7 +97,7 @@ const OutstationService3 = () => {
           </div>
         </div>
         <div className="outstationService-container-bottom">
-          <h1>{delhitouk.taxiFare}</h1>
+          <h3>{delhitouk.taxiFare}</h3>
           <div className="outstationService-cards">
             {taxiFees.map((item, index) => (
               <ServiceCard item={item} key={index} />

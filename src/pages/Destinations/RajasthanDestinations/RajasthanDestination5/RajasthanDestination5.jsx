@@ -120,7 +120,7 @@ const RajasthanDestination5 = () => {
           </div>
         </div>
         <div className="destination-container-bottom">
-          <h1>Our Taxi Services</h1>
+          <h3>Our Taxi Services</h3>
           <div className="destination-cards">
             {taxiFees.map((item, index) => (
               <ServiceCard item={item} key={index} />

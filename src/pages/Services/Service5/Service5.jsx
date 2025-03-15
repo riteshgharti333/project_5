@@ -42,7 +42,7 @@ const Service5 = () => {
       </div>
 
       <div className="service-content-bottom">
-        <h1>Uttar Pradesh Local/Outstation Taxi Fare</h1>
+        <h3>Uttar Pradesh Local/Outstation Taxi Fare</h3>
         <div className="service-cards">
           {taxiFees.map((item, index) => (
             <ServiceCard item={item} key={index} />

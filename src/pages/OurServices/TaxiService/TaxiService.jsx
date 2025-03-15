@@ -40,7 +40,7 @@ const TaxiService = () => {
 
       <div className="taxiService-content">
         <div className="taxiService-content-left" data-aos="fade-right">
-          <h1>India Taxi Service</h1>
+          <h2>India Taxi Service</h2>
           <p>
             Exploring the vast and varied landscapes of North India is best done
             at your own pace, and Global India Travel Service provides a
@@ -70,7 +70,7 @@ const TaxiService = () => {
       </div>
 
       <div className="taxiService-bottom">
-        <h1>Our Taxi Services</h1>
+        <h2>Our Taxi Services</h2>
         <div className="taxiService-cards">
           {taxiFees.map((item, index) => (
             <ServiceCard item={item} key={index} />

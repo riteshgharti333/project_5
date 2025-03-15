@@ -61,7 +61,7 @@ const About = () => {
 
       <div className="about-content1" data-aos="fade-up">
         <div className="about-content1-top">
-          <h1>Why Choose Us</h1>
+          <h2>Why Choose Us</h2>
         </div>
 
         <div className="about-content1-cards" data-aos="fade-up">
@@ -94,7 +94,7 @@ const About = () => {
       <div className="about-content2">
         <div className="about-content2-top">
           <div className="about-content2-top-left" data-aos="fade-right">
-            <h1>About Global India Travel</h1>
+            <h2>About Global India Travel</h2>
 
             <p>
               Global India Travel Cab Service, located in the bustling heart of
@@ -163,13 +163,13 @@ const About = () => {
       <div className="about-content3" ref={aboutContentRef} data-aos="fade-up">
         {aboutCount.map((item, index) => (
           <div className="about-content3-item" data-aos="zoom-in" key={index}>
-            <h1>
+            <h3>
               <CountUp
                 start={startCount ? 0 : null}
                 end={item.no}
                 duration={2.5}
               />
-            </h1>
+            </h3>
             <p>{item.title}</p>
           </div>
         ))}

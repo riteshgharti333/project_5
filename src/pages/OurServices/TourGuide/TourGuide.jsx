@@ -38,7 +38,7 @@ const TourGuide = () => {
 
       <div className="tourGuide-content">
         <div className="tourGuide-contet-left" data-aos="fade-right">
-          <h1>Tour Operator Service</h1>
+          <h2>Tour Operator Service</h2>
           <p>
             Global India Travel Service, based in the bustling area of Karol
             Bagh in Delhi, stands out as a leading tour operator for North
@@ -77,7 +77,7 @@ const TourGuide = () => {
       </div>
 
       <div className="tourGuide-bottom">
-        <h1>Our Taxi Services</h1>
+        <h2>Our Taxi Services</h2>
         <div className="tourGuide-cards">
           {taxiFees.map((item, index) => (
             <ServiceCard item={item} key={index} />
