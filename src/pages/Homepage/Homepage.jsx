@@ -1,7 +1,5 @@
 import "./Homepage.scss";
-
 import SEO from "../../components/SEO";
-
 import BlogCards from "../../components/BlogCards/BlogCards";
 import HomeBanner from "../../components/HomeBanner/HomeBanner";
 import OurTaxi from "../../components/OurTaxi/OurTaxi";
@@ -15,12 +13,11 @@ const Homepage = () => {
   return (
     <div className="homepage">
       <SEO
-        title="Best Taxi & Cab Service in India | Book Now"
+        title="Best Taxi & Cab Service in India | Affordable Rides"
         description="Book the best taxi and cab service in India, including Delhi and Mumbai. Safe rides with professional drivers. Explore India tours with our affordable rentals!"
         url={window.location.href}
-        keywords="taxi service, cab service, India tour, global India, driver booking, Delhi taxi, Mumbai cab, best rental services,taxi service, cab service, India tour, global India, driver booking, Delhi taxi, Mumbai cab, best rental services, service view, view detail, taxi service view, service view detail, India travel"
+        keywords="taxi service, cab service, India tour, global India, driver booking, Delhi taxi, Mumbai cab, best rental services, service view, view detail, taxi service view, service view detail, India travel"
       />
-
       <HomeBanner />
       <div className="homepage-content">
         <div className="child">

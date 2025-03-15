@@ -18,7 +18,7 @@ const OurTaxi = () => {
   return (
     <div className="ourTaxi">
       <div className="ourTaxi-top" data-aos="fade-up">
-        <h2>Our Cab Service : Trust the Wheel, Enjoy the Ride</h2>
+        <h1>Our Cab Service : Trust the Wheel, Enjoy the Ride</h1>
         <p>
           Traveling across North India is a dream for many, and having a
           reliable car rental service can make this dream a reality.{" "}
