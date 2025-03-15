@@ -164,7 +164,11 @@ const Contact = () => {
               <h3>Head Office - New Delhi</h3>
               <span>wz95/ Dharmpal Niwas,Thodapur Indar Puri</span>
               <span>New Delhi - 110012</span>
-              <span>Need live support? : +91 7011890082, +91 9718509639</span>
+              <span>
+                Need live support? :{" "}
+                <a href="tel:+917011890082">+91 7011890082</a>,{" "}
+                <a href="tel:+9718509639">+91 9718509639</a>
+              </span>
               <span>Email : Indiaglobaltravels1@gmail.com</span>
             </div>
           </div>

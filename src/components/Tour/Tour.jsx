@@ -12,10 +12,10 @@ const Tour = () => {
   return (
     <div className="tour">
       <div className="tour-top" data-aos="fade-up">
-        <h2>
+        <h1>
           Unveil India’s Wonders with Wanderlust India Expeditions – Curated
           Adventures, Timeless Memories
-        </h2>
+        </h1>
         <p>
           Ready to see India through new eyes? Wanderlust India Expeditions
           crafts journeys that blend iconic marvels with untold stories,

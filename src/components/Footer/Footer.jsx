@@ -19,11 +19,13 @@ const Footer = () => {
   return (
     <div className="footer">
       <div className="footer-top">
-        <img src={logo} alt={logo}  loading="lazy"/>
+        <img src={logo} alt={logo} loading="lazy" />
         <div className="footer-top-items">
           <div className="footer-top-item">
             <IoCallSharp className="footer-top-icon" />
-            <p> +91 70118 90082, +91 9718509639</p>
+            <p>
+              <a href="tel:+917011890082">+91 7011890082</a>, <a href="tel:+9718509639">+91 9718509639</a>
+            </p>
           </div>
           <div className="footer-top-item">
             <MdEmail className="footer-top-icon" />
@@ -111,10 +113,6 @@ const Footer = () => {
             >
               <FaInstagram className="footer-icon insta" />
             </a>
-
-            
-
-           
           </div>
         </div>
       </div>
