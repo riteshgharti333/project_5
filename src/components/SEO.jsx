@@ -25,6 +25,12 @@ const SEO = ({
       <title>{title}</title>
       <meta name="description" content={description} />
 
+      {/* ✅ Added Keywords Meta Tag */}
+      <meta name="keywords" content={keywords} />
+
+      {/* ✅ Added Author Meta Tag */}
+      <meta name="author" content={author} />
+
       {/* Canonical URL */}
       <link rel="canonical" href={currentUrl} />
 
@@ -49,7 +55,7 @@ const SEO = ({
             "postalCode": "110012",
             "addressCountry": "India",
           },
-          "telephone": "+91 70118 90082",
+          "phone": "+91 70118 90082",
         })}
       </script>
     </Helmet>

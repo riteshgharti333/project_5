@@ -3,7 +3,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect, useState } from "react";
 import { toast } from "react-hot-toast";
-import banner_img from "../../assets/images/banner_result.webp";
+import banner_img from "../../assets/images/banner_img.jpg";
 import SEO from "../../components/SEO";
 
 const Contact = () => {
@@ -80,7 +80,7 @@ const Contact = () => {
       />
 
       <div className="contact-banner" data-aos="fade-up">
-        <img src={banner_img} alt={banner_img}  loading="lazy"/>
+        <img src={banner_img} alt={banner_img} loading="lazy" />
         <div className="contact-banner-desc">
           <h1>Contact Us</h1>
         </div>
@@ -171,7 +171,7 @@ const Contact = () => {
 
           <div className="contact-map" data-aos="fade-up">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.0524128176435!2d77.1493764!3d28.628191199999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d038fe22cbe27%3A0x7b234cd402107ba4!2sGlobal%20India%20Travels!5e0!3m2!1sen!2sin!4v1741773204877!5m2!1sen!2sin" 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.0524128176435!2d77.1493764!3d28.628191199999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d038fe22cbe27%3A0x7b234cd402107ba4!2sGlobal%20India%20Travels!5e0!3m2!1sen!2sin!4v1741773204877!5m2!1sen!2sin"
               width="100%"
               height="400"
               style={{ border: 0 }}
