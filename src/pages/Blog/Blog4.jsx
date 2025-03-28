@@ -4,14 +4,19 @@ import BlogSidebar from "../../components/BlogSidebar/BlogSidebar";
 
 import { blog4 } from "../../assets/blogData";
 import SEO from "../../components/SEO";
+import { useLocation } from "react-router-dom";
 
 const Blog4 = () => {
+  const location = useLocation();
+  const baseUrl =
+    import.meta.env.VITE_BASE_URL || "https://globalindiatravels.com";
+  const fullUrl = `${baseUrl}${location.pathname}`;
   return (
     <div className="blog">
       <SEO
         title="Best Road Trips to Experience Rajasthan – A Journey Through Royal Landscapes"
         description="Explore Rajasthan’s breathtaking road trips! Drive through Jaipur, Udaipur, Jaisalmer, and Pushkar for a royal adventure filled with history, culture, and stunning landscapes."
-        url={window.location.href}
+        url={fullUrl}
         keywords="Rajasthan road trips, best road trips India, Jaipur to Jaisalmer road trip, Udaipur scenic drives, travel Rajasthan by car"
       />
 

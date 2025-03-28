@@ -5,14 +5,19 @@ import BlogSidebar from "../../components/BlogSidebar/BlogSidebar";
 
 import { blog3 } from "../../assets/blogData";
 import SEO from "../../components/SEO";
+import { useLocation } from "react-router-dom";
 
 const Blog3 = () => {
+  const location = useLocation();
+  const baseUrl =
+    import.meta.env.VITE_BASE_URL || "https://globalindiatravels.com";
+  const fullUrl = `${baseUrl}${location.pathname}`;
   return (
     <div className="blog">
       <SEO
         title="Best Way to Spend a Luxury Vacation in India"
         description="Discover the ultimate luxury vacation in India with royal palaces, heritage hotels, luxury trains, and premium experiences in Rajasthan, Kerala, Goa, and more."
-        url={window.location.href}
+        url={fullUrl}
         keywords="Luxury travel India, best luxury hotels India, royal vacation, luxury train tours, high-end resorts India"
       />
 

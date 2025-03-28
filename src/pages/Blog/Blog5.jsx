@@ -5,14 +5,19 @@ import BlogSidebar from "../../components/BlogSidebar/BlogSidebar";
 
 import { blog5 } from "../../assets/blogData";
 import SEO from "../../components/SEO";
+import { useLocation } from "react-router-dom";
 
 const Blog5 = () => {
+  const location = useLocation();
+  const baseUrl =
+    import.meta.env.VITE_BASE_URL || "https://globalindiatravels.com";
+  const fullUrl = `${baseUrl}${location.pathname}`;
   return (
     <div className="blog">
       <SEO
         title="Best Things to Do in Udaipur – Explore the City of Lakes"
         description="Discover the top things to do in Udaipur! Visit City Palace, take a boat ride on Lake Pichola, explore Sajjangarh Palace, and enjoy Rajasthani culture in this royal city."
-        url={window.location.href}
+        url={fullUrl}
         keywords="best things to do in Udaipur, Udaipur travel guide, City Palace Udaipur, Lake Pichola boat ride, places to visit in Udaipur"
       />
 

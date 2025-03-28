@@ -5,14 +5,22 @@ import BlogSidebar from "../../components/BlogSidebar/BlogSidebar";
 
 import { blog1 } from "../../assets/blogData";
 import SEO from "../../components/SEO";
+import { useLocation } from "react-router-dom";
 
 const Blog = () => {
+  
+  const location = useLocation();
+  const baseUrl =
+  import.meta.env.VITE_BASE_URL || "https://globalindiatravels.com";
+  const fullUrl = `${baseUrl}${location.pathname}`;
+
+
   return (
     <div className="blog">
       <SEO
         title="Best Places to Celebrate Holi Festival in India | Top Holi Destinations"
         description="Experience the vibrant Holi festival in India at the best destinations like Mathura, Vrindavan, Barsana, Jaipur, and more. Plan your colorful Holi celebration today!"
-        url={window.location.href}
+        url={fullUrl}
         keywords="Holi festival India, best Holi destinations, celebrate Holi in India, Mathura Holi, Vrindavan Holi, Barsana Lathmar Holi, Jaipur Holi"
       />
 

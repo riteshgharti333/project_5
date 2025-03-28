@@ -5,14 +5,20 @@ import BlogSidebar from "../../components/BlogSidebar/BlogSidebar";
 
 import { blog2 } from "../../assets/blogData";
 import SEO from "../../components/SEO";
+import { useLocation } from "react-router-dom";
 
 const Blog2 = () => {
+  const location = useLocation();
+  const baseUrl =
+    import.meta.env.VITE_BASE_URL || "https://globalindiatravels.com";
+  const fullUrl = `${baseUrl}${location.pathname}`;
+
   return (
     <div className="blog">
       <SEO
         title="Amazing Experiences Awaiting You on the Golden Triangle Tour"
         description="Explore the iconic Golden Triangle Tour of India covering Delhi, Agra, and Jaipur. Discover historical landmarks, cultural heritage, and unforgettable experiences!"
-        url={window.location.href}
+        url={fullUrl}
         keywords="Golden Triangle Tour, Delhi Agra Jaipur tour, India travel, Taj Mahal tour, best Golden Triangle itinerary"
       />
 
