@@ -8,7 +8,7 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-     "postbuild": "react-snap --source=dist"
+    "postbuild": "react-snap"
   },
   "dependencies": {
     "aos": "^2.3.4",
@@ -41,6 +41,7 @@
     "vite": "^6.2.0"
   },
   "reactSnap": {
+    "source": "dist",
     "include": [
       "/",
       "/about-us",
