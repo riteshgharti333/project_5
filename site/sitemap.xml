@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+    <!-- ✅ Main Pages -->
+    <url>
+        <loc>https://globalindiatravels.com/</loc>
+        <lastmod>2024-03-12</lastmod>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>https://globalindiatravels.com/about-us</loc>
+        <lastmod>2024-03-12</lastmod>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://globalindiatravels.com/contact-us</loc>
+        <lastmod>2024-03-12</lastmod>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://globalindiatravels.com/blog</loc>
+        <lastmod>2024-03-12</lastmod>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://globalindiatravels.com/our-gallery</loc>
+        <lastmod>2024-03-12</lastmod>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- ✅ Taxi & Tour Services -->
+    <url>
+        <loc>https://globalindiatravels.com/india-taxi-service</loc>
+        <lastmod>2024-03-12</lastmod>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://globalindiatravels.com/tour-guide</loc>
+        <lastmod>2024-03-12</lastmod>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- ✅ City-Specific Taxi Services -->
+    <url>
+        <loc>https://globalindiatravels.com/delhi-taxi-service</loc>
+        <lastmod>2024-03-12</lastmod>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://globalindiatravels.com/uttarakhand-taxi-service</loc>
+        <lastmod>2024-03-12</lastmod>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://globalindiatravels.com/himachal-taxi-service</loc>
+        <lastmod>2024-03-12</lastmod>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://globalindiatravels.com/rajasthan-taxi-service</loc>
+        <lastmod>2024-03-12</lastmod>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://globalindiatravels.com/uttar-pradesh-taxi-service</loc>
+        <lastmod>2024-03-12</lastmod>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://globalindiatravels.com/punjab-taxi-service</loc>
+        <lastmod>2024-03-12</lastmod>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://globalindiatravels.com/haryana-taxi-service</loc>
+        <lastmod>2024-03-12</lastmod>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://globalindiatravels.com/jammu-kashmir-taxi-service</loc>
+        <lastmod>2024-03-12</lastmod>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- ✅ Route-Specific Taxi Services -->
+    <url>
+        <loc>https://globalindiatravels.com/delhi-to-rajasthan-taxi-service</loc>
+        <lastmod>2024-03-12</lastmod>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://globalindiatravels.com/delhi-to-himachal-pradesh-taxi-service</loc>
+        <lastmod>2024-03-12</lastmod>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://globalindiatravels.com/delhi-to-uttarakhand-taxi-service</loc>
+        <lastmod>2024-03-12</lastmod>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://globalindiatravels.com/delhi-to-punjab-taxi-service</loc>
+        <lastmod>2024-03-12</lastmod>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://globalindiatravels.com/delhi-to-jammu-kashmir-taxi-service</loc>
+        <lastmod>2024-03-12</lastmod>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://globalindiatravels.com/delhi-to-uttar-pradesh-taxi-service</loc>
+        <lastmod>2024-03-12</lastmod>
+        <priority>0.6</priority>
+    </url>
+
+    <!-- ✅ Destination Pages -->
+    <url>
+        <loc>https://globalindiatravels.com/rajasthan-destinations</loc>
+        <lastmod>2024-03-12</lastmod>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://globalindiatravels.com/uttar-pradesh-destinations</loc>
+        <lastmod>2024-03-12</lastmod>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://globalindiatravels.com/himachal-pradesh-destinations</loc>
+        <lastmod>2024-03-12</lastmod>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://globalindiatravels.com/punjab-destinations</loc>
+        <lastmod>2024-03-12</lastmod>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- ✅ Blog Pages -->
+    <url>
+        <loc>https://globalindiatravels.com/blog/best-places-to-celebrate-holi-festival-in-india</loc>
+        <lastmod>2024-03-12</lastmod>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://globalindiatravels.com/blog/amazing-experiences-awaiting-you-on-the-golden-triangle-tour</loc>
+        <lastmod>2024-03-12</lastmod>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://globalindiatravels.com/blog/best-way-to-spend-luxury-vacation-in-india</loc>
+        <lastmod>2024-03-12</lastmod>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://globalindiatravels.com/blog/best-road-trips-to-experience-rajasthan</loc>
+        <lastmod>2024-03-12</lastmod>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://globalindiatravels.com/blog/best-things-to-do-in-udaipur</loc>
+        <lastmod>2024-03-12</lastmod>
+        <priority>0.6</priority>
+    </url>
+
+    <!-- ✅ Miscellaneous -->
+    <url>
+        <loc>https://globalindiatravels.com/tempo-service</loc>
+        <lastmod>2024-03-12</lastmod>
+        <priority>0.6</priority>
+    </url>
+
+</urlset>
