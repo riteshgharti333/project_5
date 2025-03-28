@@ -89,7 +89,16 @@ const Footer = () => {
       <div className="footer-bottom">
         <div className="container">
           <p>
-          Copyright 2025 all rights reserved Global India Travel
+            Copyright © 2025 All Rights Reserved. Global India Travels |
+            Developed and Designed by&nbsp;
+            <a
+              href="https://www.Wingstarnarketing.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="star-link"
+            >
+              Star Marketing
+            </a>
           </p>
 
           <div className="footer-icons">
