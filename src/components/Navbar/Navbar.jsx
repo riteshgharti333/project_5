@@ -138,7 +138,7 @@ const Navbar = () => {
               </li>
             </Link>
 
-            <Link className="services">
+            <div className="services">
               <li
                 onMouseEnter={() => setDropdownOpen(true)}
                 onMouseLeave={() => setDropdownOpen(false)}
@@ -157,9 +157,9 @@ const Navbar = () => {
                   </div>
                 )}
               </li>
-            </Link>
+            </div>
 
-            <Link className="services">
+            <div className="services">
               <li
                 onMouseEnter={() => setDropdownOpen(true)}
                 onMouseLeave={() => setDropdownOpen(false)}
@@ -179,9 +179,9 @@ const Navbar = () => {
                   </div>
                 )}
               </li>
-            </Link>
+            </div>
 
-            <Link className="services nav-popular">
+            <div className="services nav-popular">
               <li
                 onMouseEnter={() => setDropdownOpen(true)}
                 onMouseLeave={() => {
@@ -223,9 +223,9 @@ const Navbar = () => {
                   </div>
                 )}
               </li>
-            </Link>
+            </div>
 
-            <Link className="services">
+            <div className="services">
               <li
                 onMouseEnter={() => setDropdownOpen(true)}
                 onMouseLeave={() => setDropdownOpen(false)}
@@ -245,7 +245,7 @@ const Navbar = () => {
                   </div>
                 )}
               </li>
-            </Link>
+            </div>
 
             <Link to={"/our-gallery"}>
               <li>

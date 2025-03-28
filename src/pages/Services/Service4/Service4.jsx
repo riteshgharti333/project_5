@@ -8,14 +8,19 @@ import ServiceCard from "../../../components/ServiceCard/ServiceCard";
 import SEO from "../../../components/SEO";
 
 import banner_img from "../../../assets/images/banner_img.jpg";
+import { useLocation } from "react-router-dom";
 
 const Service4 = () => {
+  const location = useLocation();
+  const baseUrl =
+    import.meta.env.VITE_BASE_URL || "https://globalindiatravels.com";
+  const fullUrl = `${baseUrl}${location.pathname}`;
   return (
     <div className="service4">
       <SEO
         title="Rajasthan Taxi Service | Best Cabs for Local & Outstation Travel"
         description="Book a taxi in Rajasthan for local sightseeing, desert tours, and outstation travel. Affordable fares, professional drivers, and 24/7 service."
-        url={window.location.href}
+        url={fullUrl}
         keywords="Rajasthan taxi service, Jaipur taxi, Udaipur cab, Jaisalmer taxi, outstation cabs Rajasthan, best taxi service in Rajasthan"
       />
       <div className="service-banner" data-aos="fade-up">

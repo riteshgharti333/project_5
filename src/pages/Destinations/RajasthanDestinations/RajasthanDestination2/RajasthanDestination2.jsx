@@ -12,6 +12,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import SEO from "../../../../components/SEO";
+import { useLocation } from "react-router-dom";
 
 const RajasthanDestination2 = () => {
   useEffect(() => {
@@ -22,12 +23,17 @@ const RajasthanDestination2 = () => {
     });
   }, []);
 
+  const location = useLocation();
+  const baseUrl =
+    import.meta.env.VITE_BASE_URL || "https://globalindiatravels.com";
+  const fullUrl = `${baseUrl}${location.pathname}`;
+
   return (
     <div className="destination">
       <SEO
         title="Ranthambore National Park Safari | Best Wildlife Experience"
         description="Explore Ranthambore National Park, home to Bengal tigers, leopards, and diverse wildlife. Book your jungle safari for an unforgettable adventure!"
-        url={window.location.href}
+        url={baseUrl}
         keywords="Ranthambore safari, Ranthambore National Park, tiger safari India, wildlife tour, best jungle safari, Ranthambore travel guide"
       />
 
@@ -71,7 +77,7 @@ const RajasthanDestination2 = () => {
                           ))}
                         </div>
                       </div>
-                    ),
+                    )
                   )}
                 </div>
               </div>
@@ -85,7 +91,7 @@ const RajasthanDestination2 = () => {
                         <span>{item.title} : </span>
                         {item.desc}
                       </li>
-                    ),
+                    )
                   )}
                 </ul>
               </div>
@@ -98,7 +104,7 @@ const RajasthanDestination2 = () => {
                         <span>{item.title} : </span>
                         {item.desc}
                       </li>
-                    ),
+                    )
                   )}
                 </ul>
               </div>
@@ -112,7 +118,7 @@ const RajasthanDestination2 = () => {
                         <span>{item.title} : </span>
                         {item.desc}
                       </li>
-                    ),
+                    )
                   )}
                 </ul>
               </div>
@@ -126,7 +132,7 @@ const RajasthanDestination2 = () => {
                         <span>{item.title} : </span>
                         {item.desc}
                       </li>
-                    ),
+                    )
                   )}
                 </ul>
               </div>
@@ -137,7 +143,7 @@ const RajasthanDestination2 = () => {
                   {ranthamboreContent.contentItem8.contentLists.map(
                     (item, index) => (
                       <li key={index}>{item.title}</li>
-                    ),
+                    )
                   )}
                 </ul>
               </div>

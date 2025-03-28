@@ -10,6 +10,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import SEO from "../../../../components/SEO";
+import { useLocation } from "react-router-dom";
 
 const HpDestination2 = () => {
   useEffect(() => {
@@ -20,12 +21,17 @@ const HpDestination2 = () => {
     });
   }, []);
 
+  const location = useLocation();
+  const baseUrl =
+    import.meta.env.VITE_BASE_URL || "https://globalindiatravels.com";
+  const fullUrl = `${baseUrl}${location.pathname}`;
+
   return (
     <div className="destination">
       <SEO
         title="Explore Manali – Adventure, Snow, and Scenic Beauty | Travel Guide"
         description="Plan your trip to Manali! Experience breathtaking mountains, adventure sports, Solang Valley, Rohtang Pass, and serene landscapes. Book your Manali getaway now!"
-        url={window.location.href}
+        url={fullUrl}
         keywords="Manali tourism, best places in Manali, adventure in Manali, Manali travel guide, Rohtang Pass, Solang Valley, skiing in Manali, things to do in Manali"
       />
 
@@ -69,7 +75,7 @@ const HpDestination2 = () => {
                           ))}
                         </div>
                       </div>
-                    ),
+                    )
                   )}
                 </div>
               </div>
@@ -83,7 +89,7 @@ const HpDestination2 = () => {
                         <span>{item.title} : </span>
                         {item.desc}
                       </li>
-                    ),
+                    )
                   )}
                 </ul>
               </div>
@@ -96,7 +102,7 @@ const HpDestination2 = () => {
                         <span>{item.title} : </span>
                         {item.desc}
                       </li>
-                    ),
+                    )
                   )}
                 </ul>
               </div>
@@ -110,7 +116,7 @@ const HpDestination2 = () => {
                         <span>{item.title} : </span>
                         {item.desc}
                       </li>
-                    ),
+                    )
                   )}
                 </ul>
               </div>
@@ -124,7 +130,7 @@ const HpDestination2 = () => {
                         <span>{item.title} : </span>
                         {item.desc}
                       </li>
-                    ),
+                    )
                   )}
                 </ul>
               </div>
@@ -138,7 +144,7 @@ const HpDestination2 = () => {
                         <span>{item.title} : </span>
                         {item.desc}
                       </li>
-                    ),
+                    )
                   )}
                 </ul>
               </div>
@@ -149,7 +155,7 @@ const HpDestination2 = () => {
                   {manaliContent.contentItem9.contentLists.map(
                     (item, index) => (
                       <li key={index}>{item.title}</li>
-                    ),
+                    )
                   )}
                 </ul>
               </div>

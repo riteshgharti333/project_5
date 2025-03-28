@@ -9,6 +9,7 @@ import { useEffect } from "react";
 
 import banner_img from "../../../assets/images/banner_img.jpg";
 import SEO from "../../../components/SEO";
+import { useLocation } from "react-router-dom";
 
 const TourGuide = () => {
   useEffect(() => {
@@ -19,12 +20,17 @@ const TourGuide = () => {
     });
   }, []);
 
+  const location = useLocation();
+  const baseUrl =
+    import.meta.env.VITE_BASE_URL || "https://globalindiatravels.com";
+  const fullUrl = `${baseUrl}${location.pathname}`;
+  
   return (
     <div className="tourGuide">
       <SEO
         title="Best Tour Operator Service | Plan Your Perfect Trip Today"
         description="Explore top destinations with our professional tour operator service. Customized travel packages, guided tours, and seamless experiences. Book your dream trip now!"
-        url={window.location.href}
+        url={fullUrl}
         keywords="tour operator service, best travel agency, guided tours, holiday packages, customized travel plans, India tour services, sightseeing tours"
       />
 

@@ -11,6 +11,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import SEO from "../../../../components/SEO";
+import { useLocation } from "react-router-dom";
 
 const PbDestination2 = () => {
   useEffect(() => {
@@ -21,12 +22,17 @@ const PbDestination2 = () => {
     });
   }, []);
 
+  const location = useLocation();
+  const baseUrl =
+    import.meta.env.VITE_BASE_URL || "https://globalindiatravels.com";
+  const fullUrl = `${baseUrl}${location.pathname}`;
+
   return (
     <div className="destination">
       <SEO
         title="Explore Chandigarh – The City Beautiful | Rock Garden, Sukhna Lake & More"
         description="Discover Chandigarh, India's first planned city, known for its stunning architecture, Rock Garden, serene Sukhna Lake, and vibrant culture. A must-visit destination in Punjab."
-        url={window.location.href}
+        url={fullUrl}
         keywords="Chandigarh tourism, Rock Garden, Sukhna Lake, Chandigarh sightseeing, Punjab travel, best places in Chandigarh, things to do in Chandigarh"
       />
 
@@ -70,7 +76,7 @@ const PbDestination2 = () => {
                           ))}
                         </div>
                       </div>
-                    ),
+                    )
                   )}
                 </div>
               </div>
@@ -84,7 +90,7 @@ const PbDestination2 = () => {
                         <span>{item.title} : </span>
                         {item.desc}
                       </li>
-                    ),
+                    )
                   )}
                 </ul>
               </div>
@@ -97,7 +103,7 @@ const PbDestination2 = () => {
                         <span>{item.title} : </span>
                         {item.desc}
                       </li>
-                    ),
+                    )
                   )}
                 </ul>
               </div>
@@ -111,7 +117,7 @@ const PbDestination2 = () => {
                         <span>{item.title} : </span>
                         {item.desc}
                       </li>
-                    ),
+                    )
                   )}
                 </ul>
               </div>
@@ -125,7 +131,7 @@ const PbDestination2 = () => {
                         <span>{item.title} : </span>
                         {item.desc}
                       </li>
-                    ),
+                    )
                   )}
                 </ul>
               </div>
@@ -139,7 +145,7 @@ const PbDestination2 = () => {
                         <span>{item.title} : </span>
                         {item.desc}
                       </li>
-                    ),
+                    )
                   )}
                 </ul>
               </div>
@@ -150,7 +156,7 @@ const PbDestination2 = () => {
                   {chandigarhContent.contentItem9.contentLists.map(
                     (item, index) => (
                       <li key={index}>{item.title}</li>
-                    ),
+                    )
                   )}
                 </ul>
               </div>

@@ -14,6 +14,7 @@ import banner_img from "../../assets/images/banner_img.jpg";
 import SEO from "../../components/SEO";
 
 import vecation_img from "../../assets/images/vecation_result.webp";
+import { useLocation } from "react-router-dom";
 
 const About = () => {
   const [startCount, setStartCount] = useState(false);
@@ -28,7 +29,7 @@ const About = () => {
           setStartCount(true);
         }
       },
-      { threshold: 0.7 },
+      { threshold: 0.7 }
     );
 
     if (aboutContentRef.current) {
@@ -42,12 +43,17 @@ const About = () => {
     };
   }, []);
 
+  const location = useLocation();
+  const baseUrl =
+    import.meta.env.VITE_BASE_URL || "https://globalindiatravels.com";
+  const fullUrl = `${baseUrl}${location.pathname}`;
+
   return (
     <div className="about">
       <SEO
         title="About Us | Reliable Taxi & Car Rental Services You Can Trust"
         description="Learn about our trusted taxi and car rental services. We provide safe, affordable, and comfortable travel experiences with 24/7 customer support. Your journey, our priority!"
-        url={window.location.href}
+        url={fullUrl}
         keywords="about us, taxi service, car rental, best transportation, trusted travel, affordable rides, professional drivers, 24/7 taxi service, reliable taxi company"
       />
 

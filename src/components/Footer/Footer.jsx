@@ -89,15 +89,7 @@ const Footer = () => {
       <div className="footer-bottom">
         <div className="container">
           <p>
-            Global India Travel all rights reserved Devloped and Design by&nbsp;
-            <a
-              href="https://www.Wingstarnarketing.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="star-link"
-            >
-              Star Marketing
-            </a>
+          Copyright 2025 all rights reserved Global India Travel
           </p>
 
           <div className="footer-icons">

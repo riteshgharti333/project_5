@@ -12,6 +12,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import SEO from "../../../../components/SEO";
+import { useLocation } from "react-router-dom";
 
 const UpDestination3 = () => {
   useEffect(() => {
@@ -22,12 +23,17 @@ const UpDestination3 = () => {
     });
   }, []);
 
+  const location = useLocation();
+  const baseUrl =
+    import.meta.env.VITE_BASE_URL || "https://globalindiatravels.com";
+  const fullUrl = `${baseUrl}${location.pathname}`;
+
   return (
     <div className="destination">
       <SEO
         title="Ayodhya Tourism – Explore the Birthplace of Lord Rama"
         description="Visit Ayodhya, the sacred birthplace of Lord Rama. Explore Ram Janmabhoomi, Hanuman Garhi, Kanak Bhawan, and other historical temples in this holy city."
-        url={window.location.href}
+        url={fullUrl}
         keywords="Ayodhya tourism, Ram Janmabhoomi, Lord Rama birthplace, Ayodhya temples, Hanuman Garhi, religious places in India"
       />
 
@@ -71,7 +77,7 @@ const UpDestination3 = () => {
                           ))}
                         </div>
                       </div>
-                    ),
+                    )
                   )}
                 </div>
               </div>
@@ -85,7 +91,7 @@ const UpDestination3 = () => {
                         <span>{item.title} : </span>
                         {item.desc}
                       </li>
-                    ),
+                    )
                   )}
                 </ul>
               </div>
@@ -98,7 +104,7 @@ const UpDestination3 = () => {
                         <span>{item.title} : </span>
                         {item.desc}
                       </li>
-                    ),
+                    )
                   )}
                 </ul>
               </div>
@@ -109,7 +115,7 @@ const UpDestination3 = () => {
                   {ayodhyaContent.contentItem6.contentLists.map(
                     (item, index) => (
                       <li key={index}>{item.title}</li>
-                    ),
+                    )
                   )}
                 </ul>
               </div>

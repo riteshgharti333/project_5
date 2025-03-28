@@ -11,6 +11,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import SEO from "../../../../components/SEO";
+import { useLocation } from "react-router-dom";
 
 const RajasthanDestination4 = () => {
   useEffect(() => {
@@ -21,12 +22,17 @@ const RajasthanDestination4 = () => {
     });
   }, []);
 
+  const location = useLocation();
+  const baseUrl =
+    import.meta.env.VITE_BASE_URL || "https://globalindiatravels.com";
+  const fullUrl = `${baseUrl}${location.pathname}`;
+
   return (
     <div className="destination">
       <SEO
         title="Discover Jaisalmer – The Golden City of Rajasthan"
         description="Explore Jaisalmer, the Golden City of Rajasthan, famous for its majestic forts, desert safaris, and stunning Havelis. Plan your desert adventure now!"
-        url={window.location.href}
+        url={fullUrl}
         keywords="Jaisalmer tourism, Golden City Rajasthan, Jaisalmer fort, desert safari, best places in Jaisalmer, Rajasthan travel, Thar Desert"
       />
 

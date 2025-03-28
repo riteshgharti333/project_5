@@ -12,6 +12,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import SEO from "../../../../components/SEO";
+import { useLocation } from "react-router-dom";
 
 const UpDestination4 = () => {
   useEffect(() => {
@@ -22,12 +23,17 @@ const UpDestination4 = () => {
     });
   }, []);
 
+  const location = useLocation();
+  const baseUrl =
+    import.meta.env.VITE_BASE_URL || "https://globalindiatravels.com";
+  const fullUrl = `${baseUrl}${location.pathname}`;
+
   return (
     <div className="destination">
       <SEO
         title="Bodh Gaya Tourism – Visit the Land of Buddha’s Enlightenment"
         description="Explore Bodh Gaya, the sacred site where Gautama Buddha attained enlightenment. Visit the Mahabodhi Temple, Bodhi Tree, Great Buddha Statue, and more."
-        url={window.location.href}
+        url={fullUrl}
         keywords="Bodh Gaya tourism, Mahabodhi Temple, Gautama Buddha, Buddhist pilgrimage, Bodhi Tree, Great Buddha Statue"
       />
 
@@ -71,7 +77,7 @@ const UpDestination4 = () => {
                           ))}
                         </div>
                       </div>
-                    ),
+                    )
                   )}
                 </div>
               </div>
@@ -85,7 +91,7 @@ const UpDestination4 = () => {
                         <span>{item.title} : </span>
                         {item.desc}
                       </li>
-                    ),
+                    )
                   )}
                 </ul>
               </div>
@@ -98,7 +104,7 @@ const UpDestination4 = () => {
                         <span>{item.title} : </span>
                         {item.desc}
                       </li>
-                    ),
+                    )
                   )}
                 </ul>
               </div>
@@ -112,7 +118,7 @@ const UpDestination4 = () => {
                         <span>{item.title} : </span>
                         {item.desc}
                       </li>
-                    ),
+                    )
                   )}
                 </ul>
               </div>
@@ -126,7 +132,7 @@ const UpDestination4 = () => {
                         <span>{item.title} : </span>
                         {item.desc}
                       </li>
-                    ),
+                    )
                   )}
                 </ul>
               </div>
@@ -140,7 +146,7 @@ const UpDestination4 = () => {
                         <span>{item.title} : </span>
                         {item.desc}
                       </li>
-                    ),
+                    )
                   )}
                 </ul>
               </div>
@@ -151,7 +157,7 @@ const UpDestination4 = () => {
                   {bodhGayaContent.contentItem9.contentLists.map(
                     (item, index) => (
                       <li key={index}>{item.title}</li>
-                    ),
+                    )
                   )}
                 </ul>
               </div>

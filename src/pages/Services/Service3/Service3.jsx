@@ -8,14 +8,19 @@ import ServiceCard from "../../../components/ServiceCard/ServiceCard";
 import SEO from "../../../components/SEO";
 
 import banner_img from "../../../assets/images/banner_img.jpg";
+import { useLocation } from "react-router-dom";
 
 const Service3 = () => {
+  const location = useLocation();
+  const baseUrl =
+  import.meta.env.VITE_BASE_URL || "https://globalindiatravels.com";
+  const fullUrl = `${baseUrl}${location.pathname}`;
   return (
     <div className="service3">
       <SEO
         title="Himachal Taxi Service | Reliable Cabs for Local & Outstation Travel"
         description="Book a taxi in Himachal Pradesh for local sightseeing, adventure trips, and outstation travel. Affordable fares, expert drivers, and 24/7 service."
-        url={window.location.href}
+        url={fullUrl}
         keywords="Himachal taxi service, Shimla taxi, Manali cab, Dharamshala taxi, outstation cabs Himachal, best taxi service in Himachal"
       />
 

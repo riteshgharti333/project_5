@@ -11,6 +11,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import SEO from "../../../../components/SEO";
+import { useLocation } from "react-router-dom";
 
 const PbDestination1 = () => {
   useEffect(() => {
@@ -21,12 +22,18 @@ const PbDestination1 = () => {
     });
   }, []);
 
+  const location = useLocation();
+  const baseUrl =
+    import.meta.env.VITE_BASE_URL || "https://globalindiatravels.com";
+  const fullUrl = `${baseUrl}${location.pathname}`;
+  console.log(fullUrl);
+
   return (
     <div className="destination">
       <SEO
         title="Explore Amritsar – Golden Temple, Wagah Border & Heritage Sites"
         description="Visit Amritsar, home to the iconic Golden Temple, the patriotic Wagah Border ceremony, and the historic Jallianwala Bagh. Experience rich Sikh heritage and vibrant Punjabi culture."
-        url={window.location.href}
+        url={fullUrl}
         keywords="Amritsar tourism, Golden Temple, Wagah Border, Jallianwala Bagh, Punjab travel, best places in Amritsar, Amritsar sightseeing"
       />
 
@@ -70,7 +77,7 @@ const PbDestination1 = () => {
                           ))}
                         </div>
                       </div>
-                    ),
+                    )
                   )}
                 </div>
               </div>
@@ -84,7 +91,7 @@ const PbDestination1 = () => {
                         <span>{item.title} : </span>
                         {item.desc}
                       </li>
-                    ),
+                    )
                   )}
                 </ul>
               </div>
@@ -97,7 +104,7 @@ const PbDestination1 = () => {
                         <span>{item.title} : </span>
                         {item.desc}
                       </li>
-                    ),
+                    )
                   )}
                 </ul>
               </div>
@@ -111,7 +118,7 @@ const PbDestination1 = () => {
                         <span>{item.title} : </span>
                         {item.desc}
                       </li>
-                    ),
+                    )
                   )}
                 </ul>
               </div>
@@ -125,7 +132,7 @@ const PbDestination1 = () => {
                         <span>{item.title} : </span>
                         {item.desc}
                       </li>
-                    ),
+                    )
                   )}
                 </ul>
               </div>
@@ -139,7 +146,7 @@ const PbDestination1 = () => {
                         <span>{item.title} : </span>
                         {item.desc}
                       </li>
-                    ),
+                    )
                   )}
                 </ul>
               </div>
@@ -150,7 +157,7 @@ const PbDestination1 = () => {
                   {amritsarContent.contentItem9.contentLists.map(
                     (item, index) => (
                       <li key={index}>{item.title}</li>
-                    ),
+                    )
                   )}
                 </ul>
               </div>

@@ -4,7 +4,7 @@ import ServiceSidebar from "../../../components/ServiceSidebar/ServiceSidebar";
 import { MdArrowRightAlt } from "react-icons/md";
 import ServiceCard from "../../../components/ServiceCard/ServiceCard";
 import { taxiFees } from "../../../assets/serviceData";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { ukDestinations } from "../../../assets/mainDestination";
 import { ukImgs } from "../../../assets/ImgsData/mainDestinationImgs";
 
@@ -22,12 +22,17 @@ const MainDestination5 = () => {
     });
   }, []);
 
+  const location = useLocation();
+  const baseUrl =
+    import.meta.env.VITE_BASE_URL || "https://globalindiatravels.com";
+  const fullUrl = `${baseUrl}${location.pathname}`;
+
   return (
     <div className="mainDestination">
       <SEO
         title="Explore Uttarakhand – Nainital, Rishikesh, Haridwar, Kedarnath & Badrinath"
         description="Discover the beauty of Uttarakhand! Visit Nainital's lakes, experience yoga in Rishikesh, explore spirituality in Haridwar, and seek blessings at Kedarnath & Badrinath temples."
-        url={window.location.href}
+        url={fullUrl}
         keywords="Uttarakhand tourism, best places in Uttarakhand, Nainital travel guide, Rishikesh yoga, Haridwar Ganga Aarti, Kedarnath temple, Badrinath temple, Char Dham Yatra, pilgrimage in India"
       />
 

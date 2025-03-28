@@ -4,7 +4,7 @@ import ServiceSidebar from "../../../components/ServiceSidebar/ServiceSidebar";
 import { MdArrowRightAlt } from "react-icons/md";
 import ServiceCard from "../../../components/ServiceCard/ServiceCard";
 import { taxiFees } from "../../../assets/serviceData";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { rjDestinations } from "../../../assets/mainDestination";
 import { rjImgs } from "../../../assets/ImgsData/mainDestinationImgs";
 
@@ -22,12 +22,18 @@ const MainDestination1 = () => {
     });
   }, []);
 
+  const location = useLocation();
+  const baseUrl =
+    import.meta.env.VITE_BASE_URL || "https://globalindiatravels.com";
+  const fullUrl = `${baseUrl}${location.pathname}`;
+
+
   return (
     <div className="mainDestination1">
       <SEO
         title="Explore Rajasthan: Jaipur, Udaipur, Jaisalmer & Pushkar Tours"
         description="Discover Rajasthan's top destinations - Jaipur, Ranthambore, Udaipur, Jaisalmer & Pushkar. Explore royal palaces, forts, lakes, and cultural heritage. Plan your trip today!"
-        url={window.location.href}
+        url={fullUrl}
         keywords="Rajasthan tourism, Jaipur tour, Udaipur sightseeing, Jaisalmer desert safari, Pushkar travel, best places in Rajasthan, heritage tours Rajasthan"
       />
 

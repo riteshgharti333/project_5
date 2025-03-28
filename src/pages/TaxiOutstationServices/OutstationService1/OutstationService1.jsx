@@ -13,6 +13,7 @@ import "aos/dist/aos.css";
 import { useEffect } from "react";
 
 import SEO from "../../../components/SEO";
+import { useLocation } from "react-router-dom";
 
 const OutstationService1 = () => {
   useEffect(() => {
@@ -23,12 +24,17 @@ const OutstationService1 = () => {
     });
   }, []);
 
+  const location = useLocation();
+  const baseUrl =
+    import.meta.env.VITE_BASE_URL || "https://globalindiatravels.com";
+  const fullUrl = `${baseUrl}${location.pathname}`;
+
   return (
     <div className="outstationService">
       <SEO
         title="Delhi to Rajasthan Taxi Service | One-Way & Round Trip Cabs"
         description="Book a reliable taxi service from Delhi to Rajasthan for a comfortable journey. Choose from one-way, round-trip, and luxury car rentals at affordable prices."
-        url={window.location.href}
+        url={fullUrl}
         keywords="Delhi to Rajasthan taxi, one-way cab to Rajasthan, round-trip taxi from Delhi, car rental Delhi Rajasthan, best taxi service, Delhi Jaipur cab, Rajasthan road trip"
       />
 

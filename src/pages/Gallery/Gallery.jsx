@@ -7,6 +7,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 import SEO from "../../components/SEO";
+import { useLocation } from "react-router-dom";
 
 const animationEffects = [
   "fade-up",
@@ -27,12 +28,17 @@ const Gallery = () => {
     AOS.init({ duration: 1000, easing: "ease-in-out", once: true });
   }, []);
 
+  const location = useLocation();
+  const baseUrl =
+    import.meta.env.VITE_BASE_URL || "https://globalindiatravels.com";
+  const fullUrl = `${baseUrl}${location.pathname}`;
+
   return (
     <div className="gallery">
       <SEO
         title="Gallery | Explore Our Taxi & Car Rental Services in Pictures"
         description="Browse our gallery to see our premium taxi and car rental fleet. Explore high-quality images of our vehicles, services, and happy customers."
-        url={window.location.href}
+        url={fullUrl}
         keywords="taxi gallery, car rental images, taxi service photos, vehicle fleet, rental car pictures, best taxi service, travel gallery, taxi service showcase"
       />
 

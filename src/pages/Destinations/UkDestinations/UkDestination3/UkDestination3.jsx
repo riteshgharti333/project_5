@@ -11,6 +11,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import SEO from "../../../../components/SEO";
+import { useLocation } from "react-router-dom";
 
 const UkDestination3 = () => {
   useEffect(() => {
@@ -21,12 +22,17 @@ const UkDestination3 = () => {
     });
   }, []);
 
+  const location = useLocation();
+  const baseUrl =
+    import.meta.env.VITE_BASE_URL || "https://globalindiatravels.com";
+  const fullUrl = `${baseUrl}${location.pathname}`;
+
   return (
     <div className="destination">
       <SEO
         title="Kedarnath & Badrinath Tourism – Sacred Pilgrimage in Uttarakhand"
         description="Plan your pilgrimage to Kedarnath & Badrinath, two of the most sacred Char Dham sites in Uttarakhand. Experience divine blessings, breathtaking Himalayan views, and spiritual peace."
-        url={window.location.href}
+        url={fullUrl}
         keywords="Kedarnath temple, Badrinath yatra, Char Dham pilgrimage, Uttarakhand spiritual tourism, best time to visit Kedarnath, how to reach Badrinath, trekking to Kedarnath, Hindu pilgrimage sites"
       />
 

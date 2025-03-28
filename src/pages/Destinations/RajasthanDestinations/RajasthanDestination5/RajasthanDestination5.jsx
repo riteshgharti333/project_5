@@ -12,6 +12,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import SEO from "../../../../components/SEO";
+import { useLocation } from "react-router-dom";
 
 const RajasthanDestination5 = () => {
   useEffect(() => {
@@ -22,12 +23,17 @@ const RajasthanDestination5 = () => {
     });
   }, []);
 
+  const location = useLocation();
+  const baseUrl =
+    import.meta.env.VITE_BASE_URL || "https://globalindiatravels.com";
+  const fullUrl = `${baseUrl}${location.pathname}`;
+
   return (
     <div className="destination">
       <SEO
         title="Explore Pushkar – The Sacred City of Rajasthan"
         description="Visit Pushkar, the sacred city of Rajasthan, known for its holy Pushkar Lake, Brahma Temple, and vibrant camel fair. Experience spirituality and culture!"
-        url={window.location.href}
+        url={fullUrl}
         keywords="Pushkar tourism, Pushkar Lake, Brahma Temple, Pushkar Camel Fair, Rajasthan spiritual places, best places in Pushkar"
       />
 
@@ -71,7 +77,7 @@ const RajasthanDestination5 = () => {
                           ))}
                         </div>
                       </div>
-                    ),
+                    )
                   )}
                 </div>
               </div>
@@ -85,7 +91,7 @@ const RajasthanDestination5 = () => {
                         <span>{item.title} : </span>
                         {item.desc}
                       </li>
-                    ),
+                    )
                   )}
                 </ul>
               </div>
@@ -98,7 +104,7 @@ const RajasthanDestination5 = () => {
                         <span>{item.title} : </span>
                         {item.desc}
                       </li>
-                    ),
+                    )
                   )}
                 </ul>
               </div>
@@ -109,7 +115,7 @@ const RajasthanDestination5 = () => {
                   {pushkarContent.contentItem6.contentLists.map(
                     (item, index) => (
                       <li key={index}>{item.title}</li>
-                    ),
+                    )
                   )}
                 </ul>
               </div>

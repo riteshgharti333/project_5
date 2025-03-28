@@ -1,7 +1,7 @@
 // banner img
-import banner1 from "../assets/images/bannerimg/banner1.webp";
-import banner2 from "../assets/images/bannerimg/banner2.webp";
-import banner3 from "../assets/images/bannerimg/banner3.webp";
+import banner1 from "../assets/images/bannerimg/banner1.jpeg";
+import banner2 from "../assets/images/bannerimg/banner2.jpeg";
+import banner3 from "../assets/images/bannerimg/banner3.jpeg";
 import banner4 from "../assets/images/bannerimg/banner4.webp";
 
 // services icon

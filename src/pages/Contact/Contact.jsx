@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import { toast } from "react-hot-toast";
 import banner_img from "../../assets/images/banner_img.jpg";
 import SEO from "../../components/SEO";
+import { useLocation } from "react-router-dom";
 
 const Contact = () => {
   useEffect(() => {
@@ -70,12 +71,19 @@ const Contact = () => {
     }
   };
 
+  const location = useLocation();
+  const baseUrl =
+    import.meta.env.VITE_BASE_URL || "https://globalindiatravels.com";
+  const fullUrl = `${baseUrl}${location.pathname}`;
+
+  console.log(fullUrl);
+
   return (
     <div className="contact">
       <SEO
         title="Contact Us | Get in Touch for Taxi & Car Rental Services"
         description="Need a reliable taxi or car rental? Contact us today for 24/7 support, affordable fares, and professional service. Call, email, or visit us for quick assistance!"
-        url={window.location.href}
+        url={fullUrl}
         keywords="contact us, taxi service contact, car rental support, book a ride, 24/7 taxi help, customer support, taxi phone number, travel assistance"
       />
 

@@ -4,7 +4,7 @@ import ServiceSidebar from "../../../components/ServiceSidebar/ServiceSidebar";
 import { MdArrowRightAlt } from "react-icons/md";
 import ServiceCard from "../../../components/ServiceCard/ServiceCard";
 import { taxiFees } from "../../../assets/serviceData";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { hpDestinations } from "../../../assets/mainDestination";
 import { hpImgs } from "../../../assets/ImgsData/mainDestinationImgs";
 
@@ -22,12 +22,17 @@ const MainDestination4 = () => {
     });
   }, []);
 
+  const location = useLocation();
+  const baseUrl =
+    import.meta.env.VITE_BASE_URL || "https://globalindiatravels.com";
+  const fullUrl = `${baseUrl}${location.pathname}`;
+
   return (
     <div className="mainDestination">
       <SEO
         title="Explore Himachal Pradesh – Shimla, Manali & Dharamshala | Ultimate Travel Guide"
         description="Plan your trip to Himachal Pradesh! Discover the scenic beauty of Shimla, the adventure hub of Manali, and the spiritual retreat of Dharamshala. Perfect for nature lovers and adventure seekers."
-        url={window.location.href}
+        url={fullUrl}
         keywords="Himachal Pradesh tourism, Shimla travel, Manali adventure, Dharamshala spiritual, best places in Himachal, Himachal Pradesh sightseeing, things to do in Himachal"
       />
 

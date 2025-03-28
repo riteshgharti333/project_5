@@ -12,6 +12,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import SEO from "../../../../components/SEO";
+import { useLocation } from "react-router-dom";
 
 const RajasthanDestination1 = () => {
   useEffect(() => {
@@ -22,12 +23,18 @@ const RajasthanDestination1 = () => {
     });
   }, []);
 
+  const location = useLocation();
+  const baseUrl =
+    import.meta.env.VITE_BASE_URL || "https://globalindiatravels.com";
+  const fullUrl = `${baseUrl}${location.pathname}`;
+
+
   return (
     <div className="destination">
       <SEO
         title="Jaipur Tour - Explore the Pink City | Best Places to Visit"
         description="Plan your Jaipur trip with our exclusive travel guide. Explore Amer Fort, Hawa Mahal, City Palace, and more. Book your Jaipur tour today!"
-        url={window.location.href}
+        url={fullUrl}
         keywords="Jaipur tour, Jaipur sightseeing, best places in Jaipur, Amer Fort, Hawa Mahal, City Palace, Jaipur travel guide, Pink City tourism"
       />
 

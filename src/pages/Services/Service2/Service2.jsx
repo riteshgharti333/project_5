@@ -8,14 +8,19 @@ import banner_img from "../../../assets/images/banner_img.jpg";
 import { gatewayServices, ukTaxi, taxiFees } from "../../../assets/serviceData";
 import ServiceCard from "../../../components/ServiceCard/ServiceCard";
 import SEO from "../../../components/SEO";
+import { useLocation } from "react-router-dom";
 
 const Service2 = () => {
+  const location = useLocation();
+  const baseUrl =
+    import.meta.env.VITE_BASE_URL || "https://globalindiatravels.com";
+  const fullUrl = `${baseUrl}${location.pathname}`;
   return (
     <div className="service2">
       <SEO
         title="Uttarakhand Taxi Service | Best Cabs for Local & Outstation Travel"
         description="Book a taxi in Uttarakhand for local sightseeing, Char Dham Yatra, and outstation trips. Affordable fares, reliable service, and expert drivers. 24/7 availability."
-        url={window.location.href}
+        url={fullUrl}
         keywords="Uttarakhand taxi service, Char Dham Yatra taxi, Haridwar taxi, Rishikesh cab, Kedarnath Badrinath taxi, local cabs in Uttarakhand"
       />
 

@@ -11,6 +11,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import SEO from "../../../../components/SEO";
+import { useLocation } from "react-router-dom";
 
 const UkDestination1 = () => {
   useEffect(() => {
@@ -21,12 +22,17 @@ const UkDestination1 = () => {
     });
   }, []);
 
+  const location = useLocation();
+  const baseUrl =
+    import.meta.env.VITE_BASE_URL || "https://globalindiatravels.com";
+  const fullUrl = `${baseUrl}${location.pathname}`;
+  
   return (
     <div className="destination">
       <SEO
         title="Explore Nainital – The City of Lakes | Best Places to Visit"
         description="Plan your trip to Nainital, the City of Lakes. Enjoy boating at Naini Lake, visit Snow View Point, and explore the beauty of this Himalayan hill station."
-        url={window.location.href}
+        url={fullUrl}
         keywords="Nainital tourism, best places in Nainital, Naini Lake boating, Snow View Point, Nainital hill station, Uttarakhand travel, Himalayan destinations, Mall Road shopping, Nainital trip guide"
       />
 
@@ -70,7 +76,7 @@ const UkDestination1 = () => {
                           ))}
                         </div>
                       </div>
-                    ),
+                    )
                   )}
                 </div>
               </div>
@@ -84,7 +90,7 @@ const UkDestination1 = () => {
                         <span>{item.title} : </span>
                         {item.desc}
                       </li>
-                    ),
+                    )
                   )}
                 </ul>
               </div>
@@ -97,7 +103,7 @@ const UkDestination1 = () => {
                         <span>{item.title} : </span>
                         {item.desc}
                       </li>
-                    ),
+                    )
                   )}
                 </ul>
               </div>
@@ -111,7 +117,7 @@ const UkDestination1 = () => {
                         <span>{item.title} : </span>
                         {item.desc}
                       </li>
-                    ),
+                    )
                   )}
                 </ul>
               </div>
@@ -125,7 +131,7 @@ const UkDestination1 = () => {
                         <span>{item.title} : </span>
                         {item.desc}
                       </li>
-                    ),
+                    )
                   )}
                 </ul>
               </div>
@@ -139,7 +145,7 @@ const UkDestination1 = () => {
                         <span>{item.title} : </span>
                         {item.desc}
                       </li>
-                    ),
+                    )
                   )}
                 </ul>
               </div>
@@ -150,7 +156,7 @@ const UkDestination1 = () => {
                   {nainitalContent.contentItem9.contentLists.map(
                     (item, index) => (
                       <li key={index}>{item.title}</li>
-                    ),
+                    )
                   )}
                 </ul>
               </div>

@@ -11,6 +11,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import SEO from "../../../../components/SEO";
+import { useLocation } from "react-router-dom";
 
 const HpDestination1 = () => {
   useEffect(() => {
@@ -21,12 +22,17 @@ const HpDestination1 = () => {
     });
   }, []);
 
+  const location = useLocation();
+  const baseUrl =
+    import.meta.env.VITE_BASE_URL || "https://globalindiatravels.com";
+  const fullUrl = `${baseUrl}${location.pathname}`;
+
   return (
     <div className="destination">
       <SEO
         title="Discover Shimla – The Queen of Hills | Best Travel Guide"
         description="Explore Shimla, the Queen of Hills! Enjoy scenic landscapes, colonial charm, adventure activities, and the famous Mall Road. Plan your perfect Shimla trip today!"
-        url={window.location.href}
+        url={fullUrl}
         keywords="Shimla tourism, best places in Shimla, Shimla travel guide, things to do in Shimla, Shimla sightseeing, Mall Road Shimla, Kufri, Shimla adventure activities"
       />
 
@@ -70,7 +76,7 @@ const HpDestination1 = () => {
                           ))}
                         </div>
                       </div>
-                    ),
+                    )
                   )}
                 </div>
               </div>
@@ -84,7 +90,7 @@ const HpDestination1 = () => {
                         <span>{item.title} : </span>
                         {item.desc}
                       </li>
-                    ),
+                    )
                   )}
                 </ul>
               </div>
@@ -97,7 +103,7 @@ const HpDestination1 = () => {
                         <span>{item.title} : </span>
                         {item.desc}
                       </li>
-                    ),
+                    )
                   )}
                 </ul>
               </div>
@@ -111,7 +117,7 @@ const HpDestination1 = () => {
                         <span>{item.title} : </span>
                         {item.desc}
                       </li>
-                    ),
+                    )
                   )}
                 </ul>
               </div>
@@ -125,7 +131,7 @@ const HpDestination1 = () => {
                         <span>{item.title} : </span>
                         {item.desc}
                       </li>
-                    ),
+                    )
                   )}
                 </ul>
               </div>
@@ -139,7 +145,7 @@ const HpDestination1 = () => {
                         <span>{item.title} : </span>
                         {item.desc}
                       </li>
-                    ),
+                    )
                   )}
                 </ul>
               </div>
@@ -150,7 +156,7 @@ const HpDestination1 = () => {
                   {shimlaContent.contentItem9.contentLists.map(
                     (item, index) => (
                       <li key={index}>{item.title}</li>
-                    ),
+                    )
                   )}
                 </ul>
               </div>

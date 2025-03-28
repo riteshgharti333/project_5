@@ -7,14 +7,21 @@ import banner_img from "../../../assets/images/banner_img.jpg";
 import { gatewayServices, jkTaxi, taxiFees } from "../../../assets/serviceData";
 import ServiceCard from "../../../components/ServiceCard/ServiceCard";
 import SEO from "../../../components/SEO";
+import { useLocation } from "react-router-dom";
 
 const Service8 = () => {
+  const location = useLocation();
+  const baseUrl =
+    import.meta.env.VITE_BASE_URL || "https://globalindiatravels.com";
+  const fullUrl = `${baseUrl}${location.pathname}`;
+
+  console.log(fullUrl);
   return (
     <div className="service8">
       <SEO
         title="Jammu & Kashmir Taxi Service | Book Reliable Cabs for Travel"
         description="Book a taxi in Jammu & Kashmir for local sightseeing, airport transfers, and outstation trips. Affordable fares, experienced drivers, and 24/7 service."
-        url={window.location.href}
+        url={fullUrl}
         keywords="Jammu taxi service, Kashmir cabs, Srinagar taxi, Jammu to Vaishno Devi cab, Gulmarg car rental, best taxi in Jammu & Kashmir, outstation cabs Jammu"
       />
 

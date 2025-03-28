@@ -2,18 +2,24 @@ import "./Blogs.scss";
 import { MdOutlineDateRange } from "react-icons/md";
 import { FaRegCommentDots } from "react-icons/fa";
 import { FaArrowRightLong } from "react-icons/fa6";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 import { blogs } from "../../assets/blogData";
 import SEO from "../../components/SEO";
 
 const Blogs = () => {
+
+  const location = useLocation();
+  const baseUrl =
+    import.meta.env.VITE_BASE_URL || "https://globalindiatravels.com";
+  const fullUrl = `${baseUrl}${location.pathname}`;
+
   return (
     <div className="blogs">
       <SEO
         title="Latest Travel & Taxi Blogs | Tips, Guides & Updates"
         description="Explore expert travel tips, taxi service updates, and car rental guides. Stay informed with our latest blog posts on destinations, safety tips, and travel hacks!"
-        url={window.location.href}
+        url={fullUrl}
         keywords="travel blog, taxi service tips, car rental guides, travel updates, destination guides, best travel blogs, taxi industry news, travel hacks"
       />
 

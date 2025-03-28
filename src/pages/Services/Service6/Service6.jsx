@@ -8,14 +8,19 @@ import ServiceCard from "../../../components/ServiceCard/ServiceCard";
 import SEO from "../../../components/SEO";
 
 import banner_img from "../../../assets/images/banner_img.jpg";
+import { useLocation } from "react-router-dom";
 
 const Service6 = () => {
+  const location = useLocation();
+  const baseUrl =
+    import.meta.env.VITE_BASE_URL || "https://globalindiatravels.com";
+  const fullUrl = `${baseUrl}${location.pathname}`;
   return (
     <div className="service6">
       <SEO
         title="Punjab Taxi Service | Affordable & Reliable Cabs in Punjab"
         description="Book a taxi in Punjab for local travel, airport transfers, and outstation trips. Safe rides, professional drivers, and best fares for Amritsar, Chandigarh, Ludhiana, and more."
-        url={window.location.href}
+        url={fullUrl}
         keywords="Punjab taxi service, Chandigarh cabs, Amritsar car rental, Ludhiana taxi, Jalandhar cab booking, outstation taxi Punjab, best cab service Punjab"
       />
 

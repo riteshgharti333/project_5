@@ -11,6 +11,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import SEO from "../../../../components/SEO";
+import { useLocation } from "react-router-dom";
 
 const RajasthanDestination3 = () => {
   useEffect(() => {
@@ -21,12 +22,17 @@ const RajasthanDestination3 = () => {
     });
   }, []);
 
+  const location = useLocation();
+  const baseUrl =
+    import.meta.env.VITE_BASE_URL || "https://globalindiatravels.com";
+  const fullUrl = `${baseUrl}${location.pathname}`;
+
   return (
     <div className="destination">
       <SEO
         title="Explore Udaipur – The City of Lakes & Royal Heritage"
         description="Discover Udaipur, the City of Lakes, known for its stunning palaces, boat rides, and rich Rajasthani culture. Plan your royal getaway today!"
-        url={window.location.href}
+        url={baseUrl}
         keywords="Udaipur tourism, City of Lakes, Udaipur palaces, best places in Udaipur, Rajasthan travel, Udaipur boat ride, royal heritage"
       />
 
@@ -70,7 +76,7 @@ const RajasthanDestination3 = () => {
                           ))}
                         </div>
                       </div>
-                    ),
+                    )
                   )}
                 </div>
               </div>
@@ -84,7 +90,7 @@ const RajasthanDestination3 = () => {
                         <span>{item.title} : </span>
                         {item.desc}
                       </li>
-                    ),
+                    )
                   )}
                 </ul>
               </div>
@@ -97,7 +103,7 @@ const RajasthanDestination3 = () => {
                         <span>{item.title} : </span>
                         {item.desc}
                       </li>
-                    ),
+                    )
                   )}
                 </ul>
               </div>
@@ -108,7 +114,7 @@ const RajasthanDestination3 = () => {
                   {udaipurContent.contentItem6.contentLists.map(
                     (item, index) => (
                       <li key={index}>{item.title}</li>
-                    ),
+                    )
                   )}
                 </ul>
               </div>

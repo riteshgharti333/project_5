@@ -8,14 +8,20 @@ import banner_img from "../../../assets/images/banner_img.jpg";
 import { gatewayServices, upTaxi, taxiFees } from "../../../assets/serviceData";
 import ServiceCard from "../../../components/ServiceCard/ServiceCard";
 import SEO from "../../../components/SEO";
+import { useLocation } from "react-router-dom";
 
 const Service5 = () => {
+  const location = useLocation();
+  const baseUrl =
+    import.meta.env.VITE_BASE_URL || "https://globalindiatravels.com";
+  const fullUrl = `${baseUrl}${location.pathname}`;
+
   return (
     <div className="service5">
       <SEO
         title="Uttar Pradesh Taxi Service | Best Cabs for Local & Outstation Rides"
         description="Book a taxi in Uttar Pradesh for local sightseeing, religious tours, and outstation travel. Affordable fares, professional drivers, and 24/7 service."
-        url={window.location.href}
+        url={fullUrl}
         keywords="Uttar Pradesh taxi service, Agra cab, Varanasi taxi, Ayodhya cabs, outstation taxi UP, best taxi service in Uttar Pradesh"
       />
 

@@ -11,6 +11,7 @@ import "aos/dist/aos.css";
 import { useEffect } from "react";
 
 import SEO from "../../../components/SEO";
+import { useLocation } from "react-router-dom";
 
 const TaxiService = () => {
   useEffect(() => {
@@ -21,12 +22,17 @@ const TaxiService = () => {
     });
   }, []);
 
+  const location = useLocation();
+  const baseUrl =
+    import.meta.env.VITE_BASE_URL || "https://globalindiatravels.com";
+  const fullUrl = `${baseUrl}${location.pathname}`;
+
   return (
     <div className="taxiService">
       <SEO
         title="Best Taxi Service in India | Affordable & Reliable Cabs"
         description="Book a taxi anywhere in India with our affordable and reliable taxi service. 24/7 availability, professional drivers, and comfortable rides. Travel hassle-free today!"
-        url={window.location.href}
+        url={fullUrl}
         keywords="India taxi service, book a taxi, best cabs in India, reliable taxi, affordable taxi in India, airport taxi, city taxi service, outstation taxi"
       />
 

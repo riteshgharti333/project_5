@@ -4,7 +4,7 @@ import ServiceSidebar from "../../../components/ServiceSidebar/ServiceSidebar";
 import { MdArrowRightAlt } from "react-icons/md";
 import ServiceCard from "../../../components/ServiceCard/ServiceCard";
 import { taxiFees } from "../../../assets/serviceData";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { upDestinations } from "../../../assets/mainDestination";
 import { upImgs } from "../../../assets/ImgsData/mainDestinationImgs";
 
@@ -23,12 +23,17 @@ const MainDestination2 = () => {
     });
   }, []);
 
+  const location = useLocation();
+  const baseUrl =
+    import.meta.env.VITE_BASE_URL || "https://globalindiatravels.com";
+  const fullUrl = `${baseUrl}${location.pathname}`;
+
   return (
     <div className="mainDestination">
       <SEO
         title="Explore Uttar Pradesh – Land of Heritage & Spirituality"
         description="Discover Uttar Pradesh, home to the Taj Mahal, Varanasi’s ghats, Ayodhya’s sacred temples, and Bodh Gaya’s spiritual essence. Experience history and divinity!"
-        url={window.location.href}
+        url={fullUrl}
         keywords="Uttar Pradesh tourism, Taj Mahal, Varanasi ghats, Ayodhya temples, Bodh Gaya, Indian heritage, spiritual travel"
       />
 

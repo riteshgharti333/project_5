@@ -10,6 +10,7 @@ import { tempo } from "../../assets/outstationData";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 
 const Tempo = () => {
   useEffect(() => {
@@ -20,12 +21,18 @@ const Tempo = () => {
     });
   }, []);
 
+  const location = useLocation();
+  const baseUrl =
+    import.meta.env.VITE_BASE_URL || "https://globalindiatravels.com";
+  const fullUrl = `${baseUrl}${location.pathname}`;
+
+  console.log(fullUrl);
   return (
     <div className="tempo">
       <SEO
         title="Tempo & Bus Rental Services | Affordable Group Travel Solutions"
         description="Hire tempo travelers and buses for group travel, corporate trips, weddings, and tours. Affordable pricing, comfortable rides, and professional drivers. Book now!"
-        url={window.location.href}
+        url={fullUrl}
         keywords="tempo rental, bus hire, group travel service, tempo traveler booking, luxury bus rental, wedding bus hire, corporate travel, affordable tempo service"
       />
 

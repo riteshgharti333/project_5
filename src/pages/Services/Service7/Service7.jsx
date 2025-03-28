@@ -7,14 +7,19 @@ import banner_img from "../../../assets/images/banner_img.jpg";
 import { gatewayServices, hrTaxi, taxiFees } from "../../../assets/serviceData";
 import ServiceCard from "../../../components/ServiceCard/ServiceCard";
 import SEO from "../../../components/SEO";
+import { useLocation } from "react-router-dom";
 
 const Service7 = () => {
+  const location = useLocation();
+  const baseUrl =
+    import.meta.env.VITE_BASE_URL || "https://globalindiatravels.com";
+  const fullUrl = `${baseUrl}${location.pathname}`;
   return (
     <div className="service7">
       <SEO
         title="Haryana Taxi Service | Best Cabs for Local & Outstation Travel"
         description="Book a taxi in Haryana for city rides, airport transfers, and outstation trips. Affordable fares, professional drivers, and 24/7 service across Haryana."
-        url={window.location.href}
+        url={fullUrl}
         keywords="Haryana taxi service, Gurgaon cabs, Faridabad taxi, Chandigarh to Delhi cab, outstation taxi Haryana, best taxi service in Haryana"
       />
 

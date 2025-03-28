@@ -12,6 +12,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import SEO from "../../../components/SEO";
+import { useLocation } from "react-router-dom";
 
 const OutstationService5 = () => {
   useEffect(() => {
@@ -22,12 +23,17 @@ const OutstationService5 = () => {
     });
   }, []);
 
+  const location = useLocation();
+  const baseUrl =
+    import.meta.env.VITE_BASE_URL || "https://globalindiatravels.com";
+  const fullUrl = `${baseUrl}${location.pathname}`;
+
   return (
     <div className="outstationService">
       <SEO
         title="Delhi to Jammu & Kashmir Taxi Service | One-Way & Round Trip Cabs"
         description="Book a taxi from Delhi to Jammu & Kashmir for a smooth and comfortable ride. Affordable one-way & round-trip taxi services with professional drivers."
-        url={window.location.href}
+        url={fullUrl}
         keywords="Delhi to Jammu taxi, Delhi to Srinagar cab, one-way taxi Delhi to Kashmir, round-trip cab Delhi to Vaishno Devi, best taxi Delhi to Jammu & Kashmir"
       />
 

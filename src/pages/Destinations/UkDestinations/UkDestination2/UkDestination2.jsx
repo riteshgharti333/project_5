@@ -11,6 +11,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import SEO from "../../../../components/SEO";
+import { useLocation } from "react-router-dom";
 
 const UkDestination2 = () => {
   useEffect(() => {
@@ -21,12 +22,17 @@ const UkDestination2 = () => {
     });
   }, []);
 
+  const location = useLocation();
+  const baseUrl =
+    import.meta.env.VITE_BASE_URL || "https://globalindiatravels.com";
+  const fullUrl = `${baseUrl}${location.pathname}`;
+
   return (
     <div className="destination">
       <SEO
         title="Rishikesh & Haridwar Tourism – Yoga, Ganga Aarti & Adventure"
         description="Visit Rishikesh and Haridwar for spiritual peace, yoga retreats, and the famous Ganga Aarti. Explore adventure sports in Rishikesh like river rafting and bungee jumping."
-        url={window.location.href}
+        url={fullUrl}
         keywords="Rishikesh tourism, Haridwar travel, Ganga Aarti Haridwar, yoga in Rishikesh, river rafting Rishikesh, adventure sports in Uttarakhand, spiritual places in India, best ashrams in Rishikesh"
       />
 
@@ -70,7 +76,7 @@ const UkDestination2 = () => {
                           ))}
                         </div>
                       </div>
-                    ),
+                    )
                   )}
                 </div>
               </div>
@@ -84,7 +90,7 @@ const UkDestination2 = () => {
                         <span>{item.title} : </span>
                         {item.desc}
                       </li>
-                    ),
+                    )
                   )}
                 </ul>
               </div>
@@ -97,7 +103,7 @@ const UkDestination2 = () => {
                         <span>{item.title} : </span>
                         {item.desc}
                       </li>
-                    ),
+                    )
                   )}
                 </ul>
               </div>
@@ -111,7 +117,7 @@ const UkDestination2 = () => {
                         <span>{item.title} : </span>
                         {item.desc}
                       </li>
-                    ),
+                    )
                   )}
                 </ul>
               </div>
@@ -125,7 +131,7 @@ const UkDestination2 = () => {
                         <span>{item.title} : </span>
                         {item.desc}
                       </li>
-                    ),
+                    )
                   )}
                 </ul>
               </div>
@@ -139,7 +145,7 @@ const UkDestination2 = () => {
                         <span>{item.title} : </span>
                         {item.desc}
                       </li>
-                    ),
+                    )
                   )}
                 </ul>
               </div>
@@ -150,7 +156,7 @@ const UkDestination2 = () => {
                   {rishikeshHaridwarContent.contentItem9.contentLists.map(
                     (item, index) => (
                       <li key={index}>{item.title}</li>
-                    ),
+                    )
                   )}
                 </ul>
               </div>

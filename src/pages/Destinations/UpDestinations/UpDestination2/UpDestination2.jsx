@@ -12,6 +12,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import SEO from "../../../../components/SEO";
+import { useLocation } from "react-router-dom";
 
 const UpDestination2 = () => {
   useEffect(() => {
@@ -22,12 +23,17 @@ const UpDestination2 = () => {
     });
   }, []);
 
+  const location = useLocation();
+  const baseUrl =
+    import.meta.env.VITE_BASE_URL || "https://globalindiatravels.com";
+  const fullUrl = `${baseUrl}${location.pathname}`;
+
   return (
     <div className="destination">
       <SEO
         title="Varanasi Tourism – Explore the Spiritual Capital of India"
         description="Discover Varanasi, the spiritual heart of India. Visit the sacred Ganges River, Kashi Vishwanath Temple, Dashashwamedh Ghat, and experience mesmerizing Ganga Aarti."
-        url={window.location.href}
+        url={fullUrl}
         keywords="Varanasi tourism, Ganga Aarti, Kashi Vishwanath Temple, spiritual places in India, Varanasi ghats, pilgrimage destinations"
       />
 
@@ -71,7 +77,7 @@ const UpDestination2 = () => {
                           ))}
                         </div>
                       </div>
-                    ),
+                    )
                   )}
                 </div>
               </div>
@@ -85,7 +91,7 @@ const UpDestination2 = () => {
                         <span>{item.title} : </span>
                         {item.desc}
                       </li>
-                    ),
+                    )
                   )}
                 </ul>
               </div>
@@ -98,7 +104,7 @@ const UpDestination2 = () => {
                         <span>{item.title} : </span>
                         {item.desc}
                       </li>
-                    ),
+                    )
                   )}
                 </ul>
               </div>
@@ -109,7 +115,7 @@ const UpDestination2 = () => {
                   {varanasiContent.contentItem6.contentLists.map(
                     (item, index) => (
                       <li key={index}>{item.title}</li>
-                    ),
+                    )
                   )}
                 </ul>
               </div>

@@ -10,6 +10,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import SEO from "../../../../components/SEO";
+import { useLocation } from "react-router-dom";
 
 const HpDestination3 = () => {
   useEffect(() => {
@@ -20,12 +21,17 @@ const HpDestination3 = () => {
     });
   }, []);
 
+  const location = useLocation();
+  const baseUrl =
+    import.meta.env.VITE_BASE_URL || "https://globalindiatravels.com";
+  const fullUrl = `${baseUrl}${location.pathname}`;
+
   return (
     <div className="destination">
       <SEO
         title="Visit Dharamshala – The Land of Dalai Lama & Scenic Mountains"
         description="Explore Dharamshala – A serene hill station with Tibetan culture, monasteries, McLeod Ganj, and breathtaking mountain views. Plan your Dharamshala trip today!"
-        url={window.location.href}
+        url={fullUrl}
         keywords="Dharamshala tourism, things to do in Dharamshala, Dharamshala travel guide, McLeod Ganj, Tibetan culture, monasteries in Dharamshala, Himachal Pradesh tourism"
       />
 
@@ -69,7 +75,7 @@ const HpDestination3 = () => {
                           ))}
                         </div>
                       </div>
-                    ),
+                    )
                   )}
                 </div>
               </div>
@@ -83,7 +89,7 @@ const HpDestination3 = () => {
                         <span>{item.title} : </span>
                         {item.desc}
                       </li>
-                    ),
+                    )
                   )}
                 </ul>
               </div>
@@ -96,7 +102,7 @@ const HpDestination3 = () => {
                         <span>{item.title} : </span>
                         {item.desc}
                       </li>
-                    ),
+                    )
                   )}
                 </ul>
               </div>
@@ -110,7 +116,7 @@ const HpDestination3 = () => {
                         <span>{item.title} : </span>
                         {item.desc}
                       </li>
-                    ),
+                    )
                   )}
                 </ul>
               </div>
@@ -124,7 +130,7 @@ const HpDestination3 = () => {
                         <span>{item.title} : </span>
                         {item.desc}
                       </li>
-                    ),
+                    )
                   )}
                 </ul>
               </div>
@@ -138,7 +144,7 @@ const HpDestination3 = () => {
                         <span>{item.title} : </span>
                         {item.desc}
                       </li>
-                    ),
+                    )
                   )}
                 </ul>
               </div>
@@ -149,7 +155,7 @@ const HpDestination3 = () => {
                   {dharamshalaContent.contentItem9.contentLists.map(
                     (item, index) => (
                       <li key={index}>{item.title}</li>
-                    ),
+                    )
                   )}
                 </ul>
               </div>

@@ -4,7 +4,7 @@ import ServiceSidebar from "../../../components/ServiceSidebar/ServiceSidebar";
 import { MdArrowRightAlt } from "react-icons/md";
 import ServiceCard from "../../../components/ServiceCard/ServiceCard";
 import { taxiFees } from "../../../assets/serviceData";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { pbDestinations } from "../../../assets/mainDestination";
 import { pbImgs } from "../../../assets/ImgsData/mainDestinationImgs";
 
@@ -23,12 +23,17 @@ const MainDestination3 = () => {
     });
   }, []);
 
+  const location = useLocation();
+  const baseUrl =
+    import.meta.env.VITE_BASE_URL || "https://globalindiatravels.com";
+  const fullUrl = `${baseUrl}${location.pathname}`;
+
   return (
     <div className="mainDestination">
       <SEO
         title="Punjab Tourism – Explore Chandigarh & Amritsar's Iconic Landmarks"
         description="Discover Punjab's rich heritage with a visit to Chandigarh, the modern city with serene lakes and gardens, and Amritsar, home to the Golden Temple, Wagah Border, and Jallianwala Bagh."
-        url={window.location.href}
+        url={fullUrl}
         keywords="Punjab tourism, Chandigarh attractions, Amritsar Golden Temple, Wagah Border, Jallianwala Bagh, best places in Punjab, Punjab travel guide"
       />
 

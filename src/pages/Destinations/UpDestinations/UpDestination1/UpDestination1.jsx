@@ -12,6 +12,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import SEO from "../../../../components/SEO";
+import { useLocation } from "react-router-dom";
 
 const UpDestination1 = () => {
   useEffect(() => {
@@ -22,12 +23,17 @@ const UpDestination1 = () => {
     });
   }, []);
 
+  const location = useLocation();
+  const baseUrl =
+    import.meta.env.VITE_BASE_URL || "https://globalindiatravels.com";
+  const fullUrl = `${baseUrl}${location.pathname}`;
+
   return (
     <div className="destination1">
       <SEO
         title="Agra Tourism – Explore the Iconic Taj Mahal & Mughal Heritage"
         description="Visit Agra, home to the world-famous Taj Mahal, Agra Fort, and Fatehpur Sikri. Experience the rich Mughal history and stunning architecture of this iconic city."
-        url={window.location.href}
+        url={fullUrl}
         keywords="Agra tourism, Taj Mahal, Agra Fort, Fatehpur Sikri, Mughal architecture, historical places in India"
       />
 

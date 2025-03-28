@@ -12,6 +12,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import SEO from "../../../components/SEO";
+import { useLocation } from "react-router-dom";
 
 const OutstationService3 = () => {
   useEffect(() => {
@@ -22,12 +23,17 @@ const OutstationService3 = () => {
     });
   }, []);
 
+  const location = useLocation();
+  const baseUrl =
+    import.meta.env.VITE_BASE_URL || "https://globalindiatravels.com";
+  const fullUrl = `${baseUrl}${location.pathname}`;
+
   return (
     <div className="outstationService">
       <SEO
         title="Delhi to Uttarakhand Taxi Service | One-Way & Round Trip Cabs"
         description="Book a reliable taxi from Delhi to Uttarakhand for a hassle-free journey. Enjoy one-way, round-trip, and luxury car rentals at affordable prices with 24/7 service."
-        url={window.location.href}
+        url={fullUrl}
         keywords="Delhi to Uttarakhand taxi, one-way cab to Uttarakhand, round-trip taxi Delhi, car rental Delhi to Nainital, Delhi to Haridwar cab, best taxi service"
       />
 
