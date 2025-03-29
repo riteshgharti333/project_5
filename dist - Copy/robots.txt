@@ -1,4 +1,0 @@
-User-agent: *
-Disallow: 
-
-Sitemap: https://globalindiatravels.com/sitemap.xml
