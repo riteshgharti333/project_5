@@ -1,7 +1,6 @@
 User-agent: *
 Disallow: 
 
-Sitemap: https://globalindiatravels.com/sitemap.xml  
 Sitemap: https://globalindiatravels.com/sitemap-about.xml  
 Sitemap: https://globalindiatravels.com/sitemap-contact.xml  
 Sitemap: https://globalindiatravels.com/sitemap-gallery.xml  
