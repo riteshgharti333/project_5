@@ -37,7 +37,7 @@ export const services = [
     title: "Secure & Flexible Booking",
     smTitle: "Your Journey, Our Priority",
     desc: "We ensure secure payments and hassle-free reservations. Book with confidence—modify plans easily and enjoy 100% refunds on cancellations(terms apply).",
-    icon: RiSecurePaymentLine, // Fixed
+    icon: RiSecurePaymentLine, 
     servicesOption: [
       "Safe Transactions",
       "Instant Confirmation",
