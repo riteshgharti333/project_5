@@ -1,4 +1,14 @@
 User-agent: *
 Disallow: 
 
-Sitemap: https://globalindiatravels.com/sitemap.xml
+Sitemap: https://globalindiatravels.com/sitemap.xml  
+Sitemap: https://globalindiatravels.com/sitemap-about.xml  
+Sitemap: https://globalindiatravels.com/sitemap-contact.xml  
+Sitemap: https://globalindiatravels.com/sitemap-gallery.xml  
+Sitemap: https://globalindiatravels.com/sitemap-blog.xml  
+Sitemap: https://globalindiatravels.com/sitemap-tempo-service.xml  
+Sitemap: https://globalindiatravels.com/sitemap-india-taxi-service.xml  
+Sitemap: https://globalindiatravels.com/sitemap-tour-guide.xml  
+Sitemap: https://globalindiatravels.com/sitemap-rajasthan-destinations.xml  
+Sitemap: https://globalindiatravels.com/sitemap-delhi-to-rajasthan-taxi-service.xml  
+Sitemap: https://globalindiatravels.com/sitemap-rajasthan-taxi-service.xml  
