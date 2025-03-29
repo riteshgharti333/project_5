@@ -61,7 +61,7 @@ export const services = [
     title: "Timely & Reliable Journeys",
     smTitle: "Punctuality Meets Precision",
     desc: "From airport pickups to tour departures, we guarantee on-time services with verified drivers and well-maintained vehicles.",
-    icon: MdOutlineAccessTime, // Fixed
+    icon: MdOutlineAccessTime, 
     servicesOption: [
       "Strict Schedules",
       "Luxury & Economy Fleet",
@@ -73,7 +73,7 @@ export const services = [
     title: "Expert Local Guides",
     smTitle: "Unlock India’s Secrets",
     desc: "Explore hidden gems and cultural wonders with certified guides fluent in history, traditions, and regional insights.",
-    icon: GrUserExpert, // Fixed
+    icon: GrUserExpert, 
     servicesOption: [
       "Cultural Immersion",
       "Tailored Experiences",
@@ -85,7 +85,7 @@ export const services = [
     title: "Sustainable Tourism Initiatives",
     smTitle: "Travel Responsibly",
     desc: "We partner with eco-friendly accommodations and promote low-impact tours to protect India’s natural and cultural heritage.",
-    icon: IoBusOutline, // Fixed
+    icon: IoBusOutline, 
     servicesOption: [
       "Eco-Conscious Stays",
       "Green Practices",
