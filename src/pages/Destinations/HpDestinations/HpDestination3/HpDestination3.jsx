@@ -75,7 +75,7 @@ const HpDestination3 = () => {
                           ))}
                         </div>
                       </div>
-                    )
+                    ),
                   )}
                 </div>
               </div>
@@ -89,7 +89,7 @@ const HpDestination3 = () => {
                         <span>{item.title} : </span>
                         {item.desc}
                       </li>
-                    )
+                    ),
                   )}
                 </ul>
               </div>
@@ -102,7 +102,7 @@ const HpDestination3 = () => {
                         <span>{item.title} : </span>
                         {item.desc}
                       </li>
-                    )
+                    ),
                   )}
                 </ul>
               </div>
@@ -116,7 +116,7 @@ const HpDestination3 = () => {
                         <span>{item.title} : </span>
                         {item.desc}
                       </li>
-                    )
+                    ),
                   )}
                 </ul>
               </div>
@@ -130,7 +130,7 @@ const HpDestination3 = () => {
                         <span>{item.title} : </span>
                         {item.desc}
                       </li>
-                    )
+                    ),
                   )}
                 </ul>
               </div>
@@ -144,7 +144,7 @@ const HpDestination3 = () => {
                         <span>{item.title} : </span>
                         {item.desc}
                       </li>
-                    )
+                    ),
                   )}
                 </ul>
               </div>
@@ -155,7 +155,7 @@ const HpDestination3 = () => {
                   {dharamshalaContent.contentItem9.contentLists.map(
                     (item, index) => (
                       <li key={index}>{item.title}</li>
-                    )
+                    ),
                   )}
                 </ul>
               </div>

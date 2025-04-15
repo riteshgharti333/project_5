@@ -8,7 +8,6 @@ import { blogs } from "../../assets/blogData";
 import SEO from "../../components/SEO";
 
 const Blogs = () => {
-
   const location = useLocation();
   const baseUrl =
     import.meta.env.VITE_BASE_URL || "https://globalindiatravels.com";

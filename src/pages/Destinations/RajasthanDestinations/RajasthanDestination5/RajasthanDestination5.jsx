@@ -77,7 +77,7 @@ const RajasthanDestination5 = () => {
                           ))}
                         </div>
                       </div>
-                    )
+                    ),
                   )}
                 </div>
               </div>
@@ -91,7 +91,7 @@ const RajasthanDestination5 = () => {
                         <span>{item.title} : </span>
                         {item.desc}
                       </li>
-                    )
+                    ),
                   )}
                 </ul>
               </div>
@@ -104,7 +104,7 @@ const RajasthanDestination5 = () => {
                         <span>{item.title} : </span>
                         {item.desc}
                       </li>
-                    )
+                    ),
                   )}
                 </ul>
               </div>
@@ -115,7 +115,7 @@ const RajasthanDestination5 = () => {
                   {pushkarContent.contentItem6.contentLists.map(
                     (item, index) => (
                       <li key={index}>{item.title}</li>
-                    )
+                    ),
                   )}
                 </ul>
               </div>

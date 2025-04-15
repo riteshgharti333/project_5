@@ -76,8 +76,6 @@ const Contact = () => {
     import.meta.env.VITE_BASE_URL || "https://globalindiatravels.com";
   const fullUrl = `${baseUrl}${location.pathname}`;
 
-  console.log(fullUrl);
-
   return (
     <div className="contact">
       <SEO

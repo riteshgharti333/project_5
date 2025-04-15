@@ -8,12 +8,10 @@ import SEO from "../../components/SEO";
 import { useLocation } from "react-router-dom";
 
 const Blog = () => {
-  
   const location = useLocation();
   const baseUrl =
-  import.meta.env.VITE_BASE_URL || "https://globalindiatravels.com";
+    import.meta.env.VITE_BASE_URL || "https://globalindiatravels.com";
   const fullUrl = `${baseUrl}${location.pathname}`;
-
 
   return (
     <div className="blog">

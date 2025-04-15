@@ -76,7 +76,7 @@ const HpDestination1 = () => {
                           ))}
                         </div>
                       </div>
-                    )
+                    ),
                   )}
                 </div>
               </div>
@@ -90,7 +90,7 @@ const HpDestination1 = () => {
                         <span>{item.title} : </span>
                         {item.desc}
                       </li>
-                    )
+                    ),
                   )}
                 </ul>
               </div>
@@ -103,7 +103,7 @@ const HpDestination1 = () => {
                         <span>{item.title} : </span>
                         {item.desc}
                       </li>
-                    )
+                    ),
                   )}
                 </ul>
               </div>
@@ -117,7 +117,7 @@ const HpDestination1 = () => {
                         <span>{item.title} : </span>
                         {item.desc}
                       </li>
-                    )
+                    ),
                   )}
                 </ul>
               </div>
@@ -131,7 +131,7 @@ const HpDestination1 = () => {
                         <span>{item.title} : </span>
                         {item.desc}
                       </li>
-                    )
+                    ),
                   )}
                 </ul>
               </div>
@@ -145,7 +145,7 @@ const HpDestination1 = () => {
                         <span>{item.title} : </span>
                         {item.desc}
                       </li>
-                    )
+                    ),
                   )}
                 </ul>
               </div>
@@ -156,7 +156,7 @@ const HpDestination1 = () => {
                   {shimlaContent.contentItem9.contentLists.map(
                     (item, index) => (
                       <li key={index}>{item.title}</li>
-                    )
+                    ),
                   )}
                 </ul>
               </div>

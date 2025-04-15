@@ -1,7 +1,8 @@
+import "./OurTaxi.scss";
+
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import "./OurTaxi.scss";
 
 import { ourTaxies } from "../../assets/data";
 import { Link } from "react-router-dom";
@@ -18,7 +19,7 @@ const OurTaxi = () => {
   return (
     <div className="ourTaxi">
       <div className="ourTaxi-top" data-aos="fade-up">
-        <h1>Our Cab Service : Trust the Wheel, Enjoy the Ride</h1>
+        <h2>Our Cab Service : Trust the Wheel, Enjoy the Ride</h2>
         <p>
           Traveling across North India is a dream for many, and having a
           reliable car rental service can make this dream a reality.{" "}

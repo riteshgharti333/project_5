@@ -37,7 +37,7 @@ export const services = [
     title: "Secure & Flexible Booking",
     smTitle: "Your Journey, Our Priority",
     desc: "We ensure secure payments and hassle-free reservations. Book with confidence—modify plans easily and enjoy 100% refunds on cancellations(terms apply).",
-    icon: RiSecurePaymentLine, 
+    icon: RiSecurePaymentLine,
     servicesOption: [
       "Safe Transactions",
       "Instant Confirmation",
@@ -49,7 +49,7 @@ export const services = [
     title: "24/7 Travel Assistance",
     smTitle: "Always Here for You",
     desc: "Our dedicated team is available round-the-clock to resolve queries, adjust itineraries, or provide emergency support during your travels.",
-    icon: RiCustomerService2Line, // Fixed
+    icon: RiCustomerService2Line,
     servicesOption: [
       "Quick Response",
       "Multilingual Support",
@@ -61,7 +61,7 @@ export const services = [
     title: "Timely & Reliable Journeys",
     smTitle: "Punctuality Meets Precision",
     desc: "From airport pickups to tour departures, we guarantee on-time services with verified drivers and well-maintained vehicles.",
-    icon: MdOutlineAccessTime, 
+    icon: MdOutlineAccessTime,
     servicesOption: [
       "Strict Schedules",
       "Luxury & Economy Fleet",
@@ -73,7 +73,7 @@ export const services = [
     title: "Expert Local Guides",
     smTitle: "Unlock India’s Secrets",
     desc: "Explore hidden gems and cultural wonders with certified guides fluent in history, traditions, and regional insights.",
-    icon: GrUserExpert, 
+    icon: GrUserExpert,
     servicesOption: [
       "Cultural Immersion",
       "Tailored Experiences",
@@ -85,7 +85,7 @@ export const services = [
     title: "Sustainable Tourism Initiatives",
     smTitle: "Travel Responsibly",
     desc: "We partner with eco-friendly accommodations and promote low-impact tours to protect India’s natural and cultural heritage.",
-    icon: IoBusOutline, 
+    icon: IoBusOutline,
     servicesOption: [
       "Eco-Conscious Stays",
       "Green Practices",
@@ -143,8 +143,8 @@ export const ourTaxies = [
   {
     img: service_img2,
     title: "taxi service",
-    link: "punjab-taxi-service",
-    name: "Punjab Taxi Service",
+    link: "agra-destination",
+    name: "Agara Taxi Service",
   },
   {
     img: service_img3,

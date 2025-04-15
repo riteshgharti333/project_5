@@ -1,8 +1,9 @@
+import "./Tour.scss";
+
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { services } from "../../assets/data";
-import "./Tour.scss";
 
 const Tour = () => {
   useEffect(() => {
@@ -12,10 +13,10 @@ const Tour = () => {
   return (
     <div className="tour">
       <div className="tour-top" data-aos="fade-up">
-        <h1>
+        <h2>
           Unveil India’s Wonders with Wanderlust India Expeditions – Curated
           Adventures, Timeless Memories
-        </h1>
+        </h2>
         <p>
           Ready to see India through new eyes? Wanderlust India Expeditions
           crafts journeys that blend iconic marvels with untold stories,

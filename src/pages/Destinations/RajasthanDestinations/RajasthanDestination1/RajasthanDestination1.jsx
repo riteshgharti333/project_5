@@ -28,7 +28,6 @@ const RajasthanDestination1 = () => {
     import.meta.env.VITE_BASE_URL || "https://globalindiatravels.com";
   const fullUrl = `${baseUrl}${location.pathname}`;
 
-
   return (
     <div className="destination">
       <SEO

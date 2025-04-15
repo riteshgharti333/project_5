@@ -1,7 +1,8 @@
+import "./Rental.scss";
+
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import "./Rental.scss";
 
 import { ourTaxies } from "../../assets/data";
 import { Link } from "react-router-dom";

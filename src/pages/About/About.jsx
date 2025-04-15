@@ -29,7 +29,7 @@ const About = () => {
           setStartCount(true);
         }
       },
-      { threshold: 0.7 }
+      { threshold: 0.7 },
     );
 
     if (aboutContentRef.current) {
