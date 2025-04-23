@@ -1,16 +1,16 @@
 import { Helmet } from "react-helmet-async";
-import serviceImage from "../assets/images/servicesimg/service1_result.webp";
+import logo from "../assets/images/logo.png";
 
 const SEO = ({
   title = "Best Taxi & Cab Service in India | Affordable Rides",
   description = "Book the best taxi service in India. Explore global India tours, cab service, driver booking, and affordable rentals. View details now!",
   keywords = "taxi service, cab service, India tour, global India, driver booking, Delhi taxi, Mumbai cab, best rental services, service view, view detail, taxi service view, service view detail, India travel",
   url = "https://globalindiatravels.com", // Fallback URL for SSR
-  image = serviceImage,
+  image = logo,
   author = "Global India Travel",
 }) => {
   // ✅ Ensure consistent image URL for SSG (no window dependency)
-  const fullImageUrl = image?.startsWith("http")
+  const fullImageUrl = image?.startsWith("https")
     ? image
     : `${import.meta.env.VITE_BASE_URL || url}/${image}`;
 
@@ -52,6 +52,7 @@ const SEO = ({
           "@type": "Organization",
           name: "Global India Travel",
           url: url,
+          logo: fullImageUrl,
           contactPoint: {
             "@type": "ContactPoint",
             telephone: "+91 70118 90082",
