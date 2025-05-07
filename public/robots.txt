@@ -11,4 +11,7 @@ Sitemap: https://globalindiatravels.com/sitemap-india-taxi-service.xml
 Sitemap: https://globalindiatravels.com/sitemap-tour-guide.xml  
 Sitemap: https://globalindiatravels.com/sitemap-rajasthan-destinations.xml  
 Sitemap: https://globalindiatravels.com/sitemap-delhi-to-rajasthan-taxi-service.xml  
-Sitemap: https://globalindiatravels.com/sitemap-rajasthan-taxi-service.xml  
+Sitemap: https://globalindiatravels.com/sitemap-rajasthan-taxi-service.xml 
+Sitemap: https://globalindiatravels.com/sitemap-tour-guide.xml  
+
+

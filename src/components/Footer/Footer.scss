@@ -53,9 +53,9 @@
   .footer-center {
     .footer-center-items {
       display: flex;
-      justify-content: center;
-      margin: 50px 0px 50px 0px;
+      margin: 50px 40px 50px 40px;
       gap: 50px;
+      flex-wrap: wrap;
 
       @include lg {
         display: grid;
@@ -64,9 +64,10 @@
       @include md {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
+        margin: 50px 0px 50px 0px;
       }
       .footer-center-item {
-        margin: 0 auto;
+        // margin: 0 auto;
 
         @include md {
           margin-left: 20px;
@@ -82,6 +83,10 @@
             transition: all 0.3s ease-in-out;
             font-size: 18px;
             font-weight: 500;
+
+            @include sm {
+              font-size: 16px;
+            }
 
             &:hover {
               color: $btn-bg;

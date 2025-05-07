@@ -14,6 +14,8 @@ import {
 
 import { IoLogoWhatsapp } from "react-icons/io5";
 import { IoIosMail } from "react-icons/io";
+import { sameNavData } from "../../assets/sameNavData";
+import { map } from "framer-motion/client";
 
 const Navbar = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
@@ -235,13 +237,28 @@ const Navbar = () => {
                 </span>
 
                 {dropdownOpen && (
-                  <div className="services-link">
+                  <div className="services-link last-service">
                     <Link to={"/india-taxi-service"} className="service-link">
                       India Taxi Service
                     </Link>
                     <Link to={"/tour-guide"} className="service-link">
                       Tour Guide
                     </Link>
+                    <div className="same-day-nav service-link">
+                      Same Day Services
+                      <MdOutlineKeyboardArrowRight className="nav-right-icon" />
+                      <div className="same-day-dropdown">
+                        {sameNavData.map((item, index) => (
+                          <Link
+                            to={`/same-day-service/${item.link}`}
+                            key={index}
+                            className="same-day-link"
+                          >
+                            {item.title}
+                          </Link>
+                        ))}
+                      </div>
+                    </div>
                   </div>
                 )}
               </li>

@@ -10,6 +10,7 @@ import FloatingButtons from "./components/FloatingButtons/FloatingButtons";
 import ScrollToTopAndTrack from "./components/ScrollToTopAndTrack";
 import Blog6 from "./pages/Blog/Blog6";
 
+
 // Lazy-loaded pages
 const Homepage = lazy(() => import("./pages/Homepage/Homepage"));
 const About = lazy(() => import("./pages/About/About"));
@@ -141,6 +142,21 @@ const OutstationService6 = lazy(() =>
 );
 const Tempo = lazy(() => import("./pages/Tempo/Tempo"));
 
+
+// Same Day
+import SamePage1 from "./pages/SamePage/SamePage1";
+import SamePage2 from "./pages/SamePage/SamePage2";
+import SamePage3 from "./pages/SamePage/SamePage3";
+import SamePage4 from "./pages/SamePage/SamePage4";
+import SamePage5 from "./pages/SamePage/SamePage5";
+import SamePage6 from "./pages/SamePage/SamePage6";
+import SamePage7 from "./pages/SamePage/SamePage7";
+import SamePage8 from "./pages/SamePage/SamePage8";
+import SamePage9 from "./pages/SamePage/SamePage9";
+import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
+
+
+
 function App() {
   return (
     <div className="app">
@@ -149,6 +165,7 @@ function App() {
           <ScrollToTopAndTrack />
           <Navbar />
           <FloatingButtons />
+          <ScrollToTop />
 
           <Suspense fallback={<div style={{ height: "100vh" }} />}>
             <Routes>
@@ -298,6 +315,44 @@ function App() {
                 element={<OutstationService6 />}
               />
               <Route path="/tempo-service" element={<Tempo />} />
+
+              {/* Same Day Service */}
+              <Route
+                path="/same-day-service/delhi-to-Jaipur-taxi-service"
+                element={<SamePage1 />}
+              />
+              <Route
+                path="/same-day-service/delhi-to-neemrana-fort-taxi-service"
+                element={<SamePage2 />}
+              />
+              <Route
+                path="/same-day-service/delhi-to-mathura-virandavan-taxi-service"
+                element={<SamePage3 />}
+              />
+              <Route
+                path="/same-day-service/delhi-to-kurukshetra-taxi-service"
+                element={<SamePage4 />}
+              />
+              <Route
+                path="/same-day-service/delhi-to-chandigharh-taxi-service"
+                element={<SamePage5 />}
+              />
+              <Route
+                path="/same-day-service/delhi-to-rishikesh-taxi-service"
+                element={<SamePage6 />}
+              />
+              <Route
+                path="/same-day-service/delhi-to-bharatpur-taxi-service"
+                element={<SamePage7 />}
+              />
+              <Route
+                path="/same-day-service/ranthambore-taxi-service"
+                element={<SamePage8 />}
+              />
+              <Route
+                path="/same-day-service/delhi-to-haridwar-taxi-service"
+                element={<SamePage9 />}
+              />
             </Routes>
           </Suspense>
 

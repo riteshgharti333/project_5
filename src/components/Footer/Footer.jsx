@@ -14,6 +14,7 @@ import {
   outstationServices,
   taxiServices,
 } from "../../assets/data";
+import { sameNavData } from "../../assets/sameNavData";
 
 const Footer = () => {
   return (
@@ -66,6 +67,26 @@ const Footer = () => {
             <ul>
               {navPopularDestination.map((item, index) => (
                 <Link to={item.link} key={index}>
+                  <li>{item.title}</li>
+                </Link>
+              ))}
+            </ul>
+          </div>
+          <div className="footer-center-item">
+            <h3> Popular Destination </h3>
+            <ul>
+              {navPopularDestination.map((item, index) => (
+                <Link to={item.link} key={index}>
+                  <li>{item.title}</li>
+                </Link>
+              ))}
+            </ul>
+          </div>
+          <div className="footer-center-item">
+            <h3> Same Day Services </h3>
+            <ul>
+              {sameNavData.map((item, index) => (
+                <Link  to={`/same-day-service/${item.link}`} key={index}>
                   <li>{item.title}</li>
                 </Link>
               ))}

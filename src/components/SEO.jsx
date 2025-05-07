@@ -5,14 +5,13 @@ const SEO = ({
   title = "Best Taxi & Cab Service in India | Affordable Rides",
   description = "Book the best taxi service in India. Explore global India tours, cab service, driver booking, and affordable rentals. View details now!",
   keywords = "taxi service, cab service, India tour, global India, driver booking, Delhi taxi, Mumbai cab, best rental services, service view, view detail, taxi service view, service view detail, India travel",
-  url = "https://globalindiatravels.com", // Fallback URL for SSR
+  url = "https://globalindiatravels.com",
   image = logo,
   author = "Global India Travel",
 }) => {
- 
   const fullImageUrl = image?.startsWith("https")
-  ? image
-  : `${url.replace(/\/$/, "")}/${image.replace(/^\//, "")}`;
+    ? image
+    : `${url.replace(/\/$/, "")}/${image.replace(/^\//, "")}`;
 
   return (
     <Helmet>
@@ -61,9 +60,8 @@ const SEO = ({
             availableLanguage: ["en"],
           },
           sameAs: [
-            "https://www.facebook.com/globalindiatravels",
-            "https://www.instagram.com/globalindiatravels",
-            "https://www.linkedin.com/company/globalindiatravels",
+            "https://www.facebook.com/story.php?story_fbid=122118610604656777&id=61569703324498&mibextid=WC7FNe&rdid=wWHCKsMY0g04aEGH&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2Fp%2F1FSwuHsTm8%2F%3Fmibextid%3DWC7FNe#",
+            "https://www.instagram.com/p/DGmowV8TTPv/?igsh=bzFnaW1xdG9zdW81",
           ],
         })}
       </script>

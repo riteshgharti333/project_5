@@ -9,6 +9,7 @@ import {
   taxiServices,
 } from "../../assets/data";
 import { motion, AnimatePresence } from "framer-motion";
+import { sameNavData } from "../../assets/sameNavData";
 
 const MobileMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -17,7 +18,8 @@ const MobileMenu = () => {
   const [openServices, setOpenServices] = useState(false);
 
   const [openOutStation, setOpenOutStation] = useState(false);
-  const [activeDropdown, setActiveDropdown] = useState(null); // Track active submenu
+  const [activeDropdown, setActiveDropdown] = useState(null);
+  const [openSame, setOpenSame] = useState(false);
 
   const handleCloseMenu = () => {
     setIsOpen(false);
@@ -172,6 +174,41 @@ const MobileMenu = () => {
                       )}
                     </AnimatePresence>
                   </div>
+                ))}
+              </motion.div>
+            )}
+          </AnimatePresence>
+        </div>
+
+        {/* Same day services */}
+
+        <div className="services-dropdown">
+          <div
+            className="services-dropdown-item"
+            onClick={() => setOpenSame(!openSame)}
+          >
+            <span>Same Day Services</span>
+            <FaChevronRight className={`menu-icon ${openSame ? "open" : ""}`} />
+          </div>
+
+          <AnimatePresence>
+            {openSame && (
+              <motion.div
+                className="service-links"
+                initial={{ height: 0, opacity: 0 }}
+                animate={{ height: "auto", opacity: 1 }}
+                exit={{ height: 0, opacity: 0, transition: { duration: 0.4 } }}
+                transition={{ duration: 0.4, ease: "easeInOut" }}
+              >
+                {sameNavData.map((item, index) => (
+                  <Link
+                    to={`/same-day-service/${item.link}`}
+                    key={index}
+                    className="same-day-link"
+                    onClick={handleCloseMenu}
+                  >
+                    {item.title}
+                  </Link>
                 ))}
               </motion.div>
             )}

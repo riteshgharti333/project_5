@@ -16,10 +16,10 @@ const Blog6 = () => {
   return (
     <div className="blog">
       <SEO
-        title="Best Places to Celebrate Holi Festival in India | Top Holi Destinations"
-        description="Experience the vibrant Holi festival in India at the best destinations like Mathura, Vrindavan, Barsana, Jaipur, and more. Plan your colorful Holi celebration today!"
+        title="Rajasthan Taxi Hire: Top Destinations and Affordable Rates"
+        description="Explore Rajasthan with reliable and affordable taxi services. From Jaipur to Udaipur and beyond, discover top destinations, local taxi rates, and luxury travel options starting from Delhi."
         url={fullUrl}
-        keywords="Holi festival India, best Holi destinations, celebrate Holi in India, Mathura Holi, Vrindavan Holi, Barsana Lathmar Holi, Jaipur Holi"
+        keywords="Rajasthan taxi service, Jaipur taxi rates, Udaipur taxi booking, Delhi to Rajasthan taxi, luxury taxi in Rajasthan, Rajasthan road trip taxi, affordable Rajasthan travel, taxi rental Rajasthan"
       />
 
       <div className="blog-container">
