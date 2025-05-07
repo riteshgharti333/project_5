@@ -9,10 +9,10 @@ const SEO = ({
   image = logo,
   author = "Global India Travel",
 }) => {
-  // ✅ Ensure consistent image URL for SSG (no window dependency)
+ 
   const fullImageUrl = image?.startsWith("https")
-    ? image
-    : `${import.meta.env.VITE_BASE_URL || url}/${image}`;
+  ? image
+  : `${url.replace(/\/$/, "")}/${image.replace(/^\//, "")}`;
 
   return (
     <Helmet>

@@ -1,5 +1,5 @@
 User-agent: *
-Disallow: 
+Allow: /
 
 Sitemap: https://globalindiatravels.com/sitemap.xml  
 Sitemap: https://globalindiatravels.com/sitemap-about.xml  

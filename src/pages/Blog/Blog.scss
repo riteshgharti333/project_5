@@ -4,6 +4,8 @@
   height: 100%;
   background: #f1f1f1;
   padding: 30px 0px;
+
+  
   .blog-container {
     max-width: 1200px;
     margin: 0 auto;
@@ -28,6 +30,10 @@
 
         .blog-content-item {
           padding: 20px;
+
+          @include sm{
+            padding: 10px;
+          }
 
           ul,
           ol {
@@ -124,6 +130,8 @@
           p {
             font-size: 20px;
             color: $p-color;
+
+           
           }
         }
       }

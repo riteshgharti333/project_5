@@ -8,6 +8,7 @@ import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
 import FloatingButtons from "./components/FloatingButtons/FloatingButtons";
 import ScrollToTopAndTrack from "./components/ScrollToTopAndTrack";
+import Blog6 from "./pages/Blog/Blog6";
 
 // Lazy-loaded pages
 const Homepage = lazy(() => import("./pages/Homepage/Homepage"));
@@ -22,8 +23,8 @@ const Gallery = lazy(() => import("./pages/Gallery/Gallery"));
 const Contact = lazy(() => import("./pages/Contact/Contact"));
 
 // Services
-const TaxiService = lazy(
-  () => import("./pages/OurServices/TaxiService/TaxiService"),
+const TaxiService = lazy(() =>
+  import("./pages/OurServices/TaxiService/TaxiService")
 );
 const TourGuide = lazy(() => import("./pages/OurServices/TourGuide/TourGuide"));
 const Service1 = lazy(() => import("./pages/Services/Service1/Service1"));
@@ -36,142 +37,107 @@ const Service7 = lazy(() => import("./pages/Services/Service7/Service7"));
 const Service8 = lazy(() => import("./pages/Services/Service8/Service8"));
 
 // Main Destinations
-const MainDestination1 = lazy(
-  () => import("./pages/MainDestinations/MainDestination1/MainDestination1"),
+const MainDestination1 = lazy(() =>
+  import("./pages/MainDestinations/MainDestination1/MainDestination1")
 );
-const MainDestination2 = lazy(
-  () => import("./pages/MainDestinations/MainDestination2/MainDestination2"),
+const MainDestination2 = lazy(() =>
+  import("./pages/MainDestinations/MainDestination2/MainDestination2")
 );
-const MainDestination3 = lazy(
-  () => import("./pages/MainDestinations/MainDestination3/MainDestination3"),
+const MainDestination3 = lazy(() =>
+  import("./pages/MainDestinations/MainDestination3/MainDestination3")
 );
-const MainDestination4 = lazy(
-  () => import("./pages/MainDestinations/MainDestination4/MainDestination4"),
+const MainDestination4 = lazy(() =>
+  import("./pages/MainDestinations/MainDestination4/MainDestination4")
 );
-const MainDestination5 = lazy(
-  () => import("./pages/MainDestinations/MainDestination5/MainDestination5"),
+const MainDestination5 = lazy(() =>
+  import("./pages/MainDestinations/MainDestination5/MainDestination5")
 );
 
 // Regional Destinations
-const RajasthanDestination1 = lazy(
-  () =>
-    import(
-      "./pages/Destinations/RajasthanDestinations/RajasthanDestination1/RajasthanDestination1"
-    ),
+const RajasthanDestination1 = lazy(() =>
+  import(
+    "./pages/Destinations/RajasthanDestinations/RajasthanDestination1/RajasthanDestination1"
+  )
 );
-const RajasthanDestination2 = lazy(
-  () =>
-    import(
-      "./pages/Destinations/RajasthanDestinations/RajasthanDestination2/RajasthanDestination2"
-    ),
+const RajasthanDestination2 = lazy(() =>
+  import(
+    "./pages/Destinations/RajasthanDestinations/RajasthanDestination2/RajasthanDestination2"
+  )
 );
-const RajasthanDestination3 = lazy(
-  () =>
-    import(
-      "./pages/Destinations/RajasthanDestinations/RajasthanDestination3/RajasthanDestination3"
-    ),
+const RajasthanDestination3 = lazy(() =>
+  import(
+    "./pages/Destinations/RajasthanDestinations/RajasthanDestination3/RajasthanDestination3"
+  )
 );
-const RajasthanDestination4 = lazy(
-  () =>
-    import(
-      "./pages/Destinations/RajasthanDestinations/RajasthanDestination4/RajasthanDestination4"
-    ),
+const RajasthanDestination4 = lazy(() =>
+  import(
+    "./pages/Destinations/RajasthanDestinations/RajasthanDestination4/RajasthanDestination4"
+  )
 );
-const RajasthanDestination5 = lazy(
-  () =>
-    import(
-      "./pages/Destinations/RajasthanDestinations/RajasthanDestination5/RajasthanDestination5"
-    ),
+const RajasthanDestination5 = lazy(() =>
+  import(
+    "./pages/Destinations/RajasthanDestinations/RajasthanDestination5/RajasthanDestination5"
+  )
 );
-const UpDestination1 = lazy(
-  () =>
-    import("./pages/Destinations/UpDestinations/UpDestination1/UpDestination1"),
+const UpDestination1 = lazy(() =>
+  import("./pages/Destinations/UpDestinations/UpDestination1/UpDestination1")
 );
-const UpDestination2 = lazy(
-  () =>
-    import("./pages/Destinations/UpDestinations/UpDestination2/UpDestination2"),
+const UpDestination2 = lazy(() =>
+  import("./pages/Destinations/UpDestinations/UpDestination2/UpDestination2")
 );
-const UpDestination3 = lazy(
-  () =>
-    import("./pages/Destinations/UpDestinations/UpDestination3/UpDestination3"),
+const UpDestination3 = lazy(() =>
+  import("./pages/Destinations/UpDestinations/UpDestination3/UpDestination3")
 );
-const UpDestination4 = lazy(
-  () =>
-    import("./pages/Destinations/UpDestinations/UpDestination4/UpDestination4"),
+const UpDestination4 = lazy(() =>
+  import("./pages/Destinations/UpDestinations/UpDestination4/UpDestination4")
 );
-const PbDestination1 = lazy(
-  () =>
-    import(
-      "./pages/Destinations/PunjabDestinations/PbDestination1/PbDestination1"
-    ),
+const PbDestination1 = lazy(() =>
+  import(
+    "./pages/Destinations/PunjabDestinations/PbDestination1/PbDestination1"
+  )
 );
-const PbDestination2 = lazy(
-  () =>
-    import(
-      "./pages/Destinations/PunjabDestinations/PbDestination2/PbDestination2"
-    ),
+const PbDestination2 = lazy(() =>
+  import(
+    "./pages/Destinations/PunjabDestinations/PbDestination2/PbDestination2"
+  )
 );
-const HpDestination1 = lazy(
-  () =>
-    import("./pages/Destinations/HpDestinations/HpDestination1/HpDestination1"),
+const HpDestination1 = lazy(() =>
+  import("./pages/Destinations/HpDestinations/HpDestination1/HpDestination1")
 );
-const HpDestination2 = lazy(
-  () =>
-    import("./pages/Destinations/HpDestinations/HpDestination2/HpDestination2"),
+const HpDestination2 = lazy(() =>
+  import("./pages/Destinations/HpDestinations/HpDestination2/HpDestination2")
 );
-const HpDestination3 = lazy(
-  () =>
-    import("./pages/Destinations/HpDestinations/HpDestination3/HpDestination3"),
+const HpDestination3 = lazy(() =>
+  import("./pages/Destinations/HpDestinations/HpDestination3/HpDestination3")
 );
-const UkDestination1 = lazy(
-  () =>
-    import("./pages/Destinations/UkDestinations/UkDestination1/UkDestination1"),
+const UkDestination1 = lazy(() =>
+  import("./pages/Destinations/UkDestinations/UkDestination1/UkDestination1")
 );
-const UkDestination2 = lazy(
-  () =>
-    import("./pages/Destinations/UkDestinations/UkDestination2/UkDestination2"),
+const UkDestination2 = lazy(() =>
+  import("./pages/Destinations/UkDestinations/UkDestination2/UkDestination2")
 );
-const UkDestination3 = lazy(
-  () =>
-    import("./pages/Destinations/UkDestinations/UkDestination3/UkDestination3"),
+const UkDestination3 = lazy(() =>
+  import("./pages/Destinations/UkDestinations/UkDestination3/UkDestination3")
 );
 
 // Outstation Services
-const OutstationService1 = lazy(
-  () =>
-    import(
-      "./pages/TaxiOutstationServices/OutstationService1/OutstationService1"
-    ),
+const OutstationService1 = lazy(() =>
+  import("./pages/TaxiOutstationServices/OutstationService1/OutstationService1")
 );
-const OutstationService2 = lazy(
-  () =>
-    import(
-      "./pages/TaxiOutstationServices/OutstationService2/OutstationService2"
-    ),
+const OutstationService2 = lazy(() =>
+  import("./pages/TaxiOutstationServices/OutstationService2/OutstationService2")
 );
-const OutstationService3 = lazy(
-  () =>
-    import(
-      "./pages/TaxiOutstationServices/OutstationService3/OutstationService3"
-    ),
+const OutstationService3 = lazy(() =>
+  import("./pages/TaxiOutstationServices/OutstationService3/OutstationService3")
 );
-const OutstationService4 = lazy(
-  () =>
-    import(
-      "./pages/TaxiOutstationServices/OutstationService4/OutstationService4"
-    ),
+const OutstationService4 = lazy(() =>
+  import("./pages/TaxiOutstationServices/OutstationService4/OutstationService4")
 );
-const OutstationService5 = lazy(
-  () =>
-    import(
-      "./pages/TaxiOutstationServices/OutstationService5/OutstationService5"
-    ),
+const OutstationService5 = lazy(() =>
+  import("./pages/TaxiOutstationServices/OutstationService5/OutstationService5")
 );
-const OutstationService6 = lazy(
-  () =>
-    import(
-      "./pages/TaxiOutstationServices/OutstationService6/OutstationService6"
-    ),
+const OutstationService6 = lazy(() =>
+  import("./pages/TaxiOutstationServices/OutstationService6/OutstationService6")
 );
 const Tempo = lazy(() => import("./pages/Tempo/Tempo"));
 
@@ -208,6 +174,10 @@ function App() {
               <Route
                 path="/blog/best-things-to-do-in-udaipur"
                 element={<Blog5 />}
+              />
+              <Route
+                path="/blog/top-destinations-and-affordable-rates"
+                element={<Blog6 />}
               />
               <Route path="/our-gallery" element={<Gallery />} />
               <Route path="/contact-us" element={<Contact />} />

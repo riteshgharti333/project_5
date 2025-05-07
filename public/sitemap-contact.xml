@@ -2,13 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://globalindiatravels.com/contact-us</loc>
-    <lastmod>2025-03-29</lastmod>
-    <changefreq>monthly</changefreq>
+   <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-      <image:image>
-            <image:loc>https://globalindiatravels.com/images/logo.png</image:loc>
-            <image:title>Global India Travels Logo</image:title>
-            <image:caption>Company Logo for Global India Travels</image:caption>
-        </image:image>
   </url>
 </urlset>
