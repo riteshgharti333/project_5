@@ -5,6 +5,10 @@
   background: #f1f1f1;
   padding: 30px 0px;
 
+  @include md{
+    padding: 0px;
+  }
+
   
   .blog-container {
     max-width: 1200px;
@@ -24,6 +28,8 @@
       .blog-content-left {
         flex: 7;
         border-right: 1px solid #dddddd;
+
+        
         img {
           width: 100%;
         }
@@ -31,7 +37,7 @@
         .blog-content-item {
           padding: 20px;
 
-          @include sm{
+          @include md{
             padding: 10px;
           }
 
